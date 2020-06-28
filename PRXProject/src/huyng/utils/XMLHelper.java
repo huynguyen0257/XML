@@ -1,6 +1,7 @@
 package huyng.utils;
 
 import com.sun.xml.internal.stream.events.EndElementEvent;
+import huyng.constants.CrawlerConstant;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
@@ -13,18 +14,14 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class XMLHelper {
-    public static void main(String[] args) throws IOException, XMLStreamException {
-//        String document = (parseHTML("https://tiki.vn/nha-sach-tiki/c8322?src=c.8322.hamburger_menu_fly_out_banner&_lc=Vk4wMzkwMTYwMDU=&utm_expid=.tWaaGq4BT36INEYHSMsXpw.0&utm_referrer=https%253A%252F%252Ftiki.vn%252Fnha-sach-tiki%252Fc8322%253Fsrc%253Dc.8322.hamburger_menu_fly_out_banner&page=2", "div", "class", "product-box-list"));
-        String document = getDocument(getBufferedReaderForURL("https://tiki.vn/nha-sach-tiki/c8322?src=c.8322.hamburger_menu_fly_out_banner&_lc=Vk4wMzkwMTYwMDU=&utm_expid=.tWaaGq4BT36INEYHSMsXpw.0&utm_referrer=https%253A%252F%252Ftiki.vn%252Fnha-sach-tiki%252Fc8322%253Fsrc%253Dc.8322.hamburger_menu_fly_out_banner&page=2")
-                , "<div class=\"product-box-list\"", "div", new String[]{"Của Việc \"Đếch\" Quan"});
-        Iterator<XMLEvent> a = autoAddMissingEndTag(parseStringToXMLEventReader(document));
-    }
 
-    public static String getDocument(BufferedReader reader, String beginSignal, String tag, String[] IGNORE_TEXTS) throws IOException {
+    public static String getDocument(String url, String beginSignal, String tag, String[] IGNORE_TEXTS) throws IOException {
+        BufferedReader reader = getBufferedReaderForURL(url);
         String devide = " ";
 //            devide = "\n";
         String line = "";
@@ -71,7 +68,9 @@ public class XMLHelper {
         return document;
     }
 
-    private static Iterator<XMLEvent> autoAddMissingEndTag(XMLEventReader reader) {
+    public static Iterator<XMLEvent> autoAddMissingEndTag(String document) throws UnsupportedEncodingException, XMLStreamException {
+        XMLEventReader reader = parseStringToXMLEventReader(document);
+
         ArrayList<XMLEvent> events = new ArrayList<>();
         int endTagMarker = 0;
         while (endTagMarker >= 0) {
@@ -86,7 +85,7 @@ public class XMLHelper {
                     EndElement missingTag = new EndElementEvent(new QName(missingTagName));
                     event = missingTag;
                 }
-            } catch (NullPointerException e) {
+            } catch (NullPointerException | NoSuchElementException e) {
                 break;
             }
 
@@ -104,7 +103,7 @@ public class XMLHelper {
         return m.groupCount();
     }
 
-    protected static XMLEventReader parseStringToXMLEventReader(String xmlSection) throws UnsupportedEncodingException, XMLStreamException {
+    public static XMLEventReader parseStringToXMLEventReader(String xmlSection) throws UnsupportedEncodingException, XMLStreamException {
         byte[] buteArray = xmlSection.getBytes("UTF-8");
         ByteArrayInputStream inputStream = new ByteArrayInputStream(buteArray);
         XMLInputFactory inputFactory = XMLInputFactory.newInstance();
@@ -112,7 +111,7 @@ public class XMLHelper {
         return reader;
     }
 
-    protected static BufferedReader getBufferedReaderForURL(String urlString) throws IOException {
+    public static BufferedReader getBufferedReaderForURL(String urlString) throws IOException {
         URL url = new URL(urlString);
         URLConnection connection = url.openConnection();
         connection.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64)");
