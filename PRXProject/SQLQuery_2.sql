@@ -1,3 +1,16 @@
+-- Create a new database called 'PRXProject'
+-- Connect to the 'master' database to run this snippet
+USE master
+GO
+-- Create the new database if it does not exist already
+IF NOT EXISTS (
+    SELECT [name]
+        FROM sys.databases
+        WHERE [name] = N'PRXProject'
+)
+CREATE DATABASE PRXProject
+GO
+
 -- Create a new table called '[Laptop]' in schema '[dbo]'
 -- Drop the table if it already exists
 IF OBJECT_ID('[dbo].[Laptop]', 'U') IS NOT NULL
