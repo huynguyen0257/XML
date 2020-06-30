@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://huyng/schema/laptop"
+            targetNamespace="http://huyng/schema/laptop"
+            elementFormDefault="qualified">
+    <xsd:element name="laptop" type="Laptop"/>
+    <xsd:complexType name="Laptop">
+        <xsd:sequence>
+            <xsd:element name="id" type="xsd:int" minOccurs="0"/>
+            <xsd:element name="model" type="xsd:string"/>
+            <xsd:element name="cpu" type="xsd:string"/>
+            <xsd:element name="vga" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="ram" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="hardDisk" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="lcd" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="options" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="port" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="webcam" type="xsd:boolean"/>
+            <xsd:element name="fingerprintRecognition" type="xsd:boolean"/>
+            <xsd:element name="faceRecognition" type="xsd:boolean" minOccurs="0"/>
+            <xsd:element name="os" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="battery" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="size" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="weight" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="color" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="price" type="xsd:positiveInteger"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

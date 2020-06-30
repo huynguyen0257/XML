@@ -11,6 +11,20 @@ IF NOT EXISTS (
 CREATE DATABASE PRXProject
 GO
 
+-- Create a new table called '[Brand]' in schema '[dbo]'
+-- Drop the table if it already exists
+IF OBJECT_ID('[dbo].[Brand]', 'U') IS NOT NULL
+DROP TABLE [dbo].[Brand]
+GO
+-- Create the table in the specified schema
+CREATE TABLE [dbo].[Brand]
+(
+    [Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY, -- Primary Key column
+    [Name] NVARCHAR(50) NOT NULL
+    -- Specify more columns here
+);
+GO
+
 -- Create a new table called '[Laptop]' in schema '[dbo]'
 -- Drop the table if it already exists
 IF OBJECT_ID('[dbo].[Laptop]', 'U') IS NOT NULL
@@ -20,9 +34,9 @@ GO
 CREATE TABLE [dbo].[Laptop]
 (
     [Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY, -- Primary Key column
+    [Name] NVARCHAR(50) NOT NULL,
     [Model] NVARCHAR(50) NOT NULL,
     [Price] DECIMAL NOT NULL,
-    [Brand] NVARCHAR(50) NOT NULL,
     [CPU] NVARCHAR(50) NOT NULL,
     [VGA] NVARCHAR(50),
     [RAM] NVARCHAR(50),
@@ -38,20 +52,35 @@ CREATE TABLE [dbo].[Laptop]
     [Size] NVARCHAR(50),
     [Weight] NVARCHAR(50),
     [Color] NVARCHAR(50),
+    BrandId int FOREIGN KEY REFERENCES Brand(Id)
     -- Specify more columns here
 );
+GO
+
+-- Insert rows into table 'Brand' in schema '[dbo]'
+INSERT INTO [dbo].[Brand] VALUES
+('Lenovo'),('Apple'),('Asus')
+-- Add more rows here
 GO
 
 -- Insert rows into table '' in schema '[dbo]'
 INSERT INTO [dbo].[Laptop]
 ( -- Columns to insert data into
- [Model], [Price], [Brand],[CPU],Webcam,FingerprintRecognition,FaceRecognition
+ [Model],[Name], [Price],[CPU],Webcam,FingerprintRecognition,FaceRecognition,BrandId
 )
 VALUES
 ( -- First row: values for the columns in the list above
- 'test', 123126794, 'Lenovo','i5',0,0,0
+ 'Lenovo1','Lenovo Supervip1', 123126794,'i5',0,0,0,1
+),
+( -- First row: values for the columns in the list above
+ 'Lenovo2','Lenovo Supervip2', 123126794,'i5',0,0,0,1
+),
+( -- First row: values for the columns in the list above
+ 'Apple1','Apple Supervip1', 123126794,'i5',0,0,0,2
+),
+( -- First row: values for the columns in the list above
+ 'Asus1','Asus Supervip1', 123126794,'i5',0,0,0,3
 )
--- Add more rows here
 GO
 
 -- Select rows from a Table or View '[Laptop]' in schema '[dbo]'

@@ -2,19 +2,30 @@ package huyng.utils;
 
 import com.sun.xml.internal.stream.events.EndElementEvent;
 import huyng.constants.CrawlerConstant;
+import jdk.internal.org.xml.sax.SAXException;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.xml.sax.InputSource;
 
+import javax.xml.XMLConstants;
 import javax.xml.namespace.QName;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.*;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import javax.xml.validation.Validator;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathFactory;
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -40,21 +51,15 @@ public class XMLHelper {
             if (tagCount > 0 && line.contains("</" + tag + ">")) {
                 tagCount = tagCount - getAllMatches(line, "</" + tag + ">");
                 if (tagCount == 0) {
-                    if (IGNORE_TEXTS != null) {
-                        for (String ignore_text : IGNORE_TEXTS) {
-                            line = line.replaceAll(ignore_text, "");
-                        }
-                    }
+                    line = formatHTMLLine(line,IGNORE_TEXTS);
+
                     document += line.trim() + devide;
                     isFound = false;
                 }
             }
             if (isFound) {
-                if (IGNORE_TEXTS != null) {
-                    for (String ignore_text : IGNORE_TEXTS) {
-                        line = line.replaceAll(ignore_text, "");
-                    }
-                }
+                line = formatHTMLLine(line,IGNORE_TEXTS);
+
                 document += line.trim() + devide;
             }
         }
@@ -66,6 +71,21 @@ public class XMLHelper {
         document = document.replaceAll("<script.*?</script>", "");
 
         return document;
+    }
+    private static String formatHTMLLine(String line,String[] IGNORE_TEXTS){
+        if (IGNORE_TEXTS != null) {
+            for (String ignore_text : IGNORE_TEXTS) {
+                line = line.replaceAll(ignore_text, "");
+            }
+        }
+        line = line.replaceAll("&ocirc;", "o")
+                .replaceAll("&oacute;", "o")
+                .replaceAll("&igrave;", "i")
+                .replaceAll("&ecirc;", "e")
+                .replaceAll("&nbsp;", "")
+                .replaceAll("&agrave;", "a")
+                .replaceAll("&acirc;", "a");
+        return line;
     }
 
     public static Iterator<XMLEvent> autoAddMissingEndTag(String document) throws UnsupportedEncodingException, XMLStreamException {
@@ -118,5 +138,58 @@ public class XMLHelper {
         InputStream is = connection.getInputStream();
         BufferedReader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
         return reader;
+    }
+
+    public static Document parseStringToDOM(String doc) throws ParserConfigurationException, SAXException, IOException, org.xml.sax.SAXException {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        factory.setNamespaceAware(true);
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document domRs = builder.parse(new InputSource(new StringReader(doc)));
+        return domRs;
+    }
+
+    public static Element CreateElement(Document doc, String elementName, String elementVal, Map<String, String> attributes) {
+        if (doc != null){
+            Element element = doc.createElement(elementName);
+
+            if (elementVal != null) element.setTextContent(elementVal);
+
+            if (attributes != null) {
+                if (!attributes.isEmpty()){
+                    for (Map.Entry<String,String> entry : attributes.entrySet()){
+                        element.setAttribute(entry.getKey(),entry.getValue());
+                    }
+                }
+            }
+            return element;
+        }
+        return null;
+
+    }
+
+    public static XPath getXPath(){
+        XPathFactory factory = XPathFactory.newInstance();
+        XPath xPath = factory.newXPath();
+        return xPath;
+    }
+
+    public static boolean validateXMLSchema(String xsdPath, ByteArrayOutputStream xmlPath){
+        try {
+            SchemaFactory factory =
+                    SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+            Schema schema = factory.newSchema(new File(xsdPath));
+            Validator validator = schema.newValidator();
+
+            validator.validate(new StreamSource(new ByteArrayInputStream(xmlPath.toByteArray())));
+        } catch (IOException e){
+            System.out.println("Exception: "+e.getMessage());
+            return false;
+        }catch(org.xml.sax.SAXException e1){
+            System.out.println("SAX Exception: "+e1.getMessage());
+            return false;
+        }
+
+        return true;
+
     }
 }
