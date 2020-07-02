@@ -10,7 +10,7 @@ import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 import java.io.*;
 
-public class TrAxUtils {
+public class TrAxHelper {
 
 
     public static ByteArrayOutputStream transform(InputStream xmlIs, String xslPath)
@@ -29,7 +29,7 @@ public class TrAxUtils {
         return outputStream;
     }
 
-    public static String transform(Node node) throws TransformerException {
+    public static String transformDOMtoString(Node node) throws TransformerException {
         StringWriter sw = new StringWriter();
         Transformer t = TransformerFactory.newInstance().newTransformer();
         t.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");

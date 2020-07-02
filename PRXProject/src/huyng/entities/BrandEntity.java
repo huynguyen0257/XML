@@ -5,12 +5,25 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "Brand", schema = "dbo", catalog = "PRXProject")
+@NamedQueries({
+        @NamedQuery(name = "Brand.findAll", query = "select b from BrandEntity b"),
+        @NamedQuery(name = "Brand.findByName", query = "select b from BrandEntity b where b.name like :name"),
+})
 public class BrandEntity {
     private int id;
     private String name;
 
+
+    public BrandEntity(String name) {
+        this.name = name;
+    }
+
+    public BrandEntity() {
+    }
+
     @Id
     @Column(name = "Id")
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
@@ -33,9 +46,9 @@ public class BrandEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        BrandEntity that = (BrandEntity) o;
-        return id == that.id &&
-                Objects.equals(name, that.name);
+        BrandEntity entity = (BrandEntity) o;
+        return id == entity.id &&
+                Objects.equals(name, entity.name);
     }
 
     @Override

@@ -2,7 +2,7 @@ package huyng.utils;
 
 import com.sun.xml.internal.stream.events.EndElementEvent;
 import huyng.constants.CrawlerConstant;
-import jdk.internal.org.xml.sax.SAXException;
+import org.xml.sax.SAXException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.InputSource;
@@ -72,19 +72,28 @@ public class XMLHelper {
 
         return document;
     }
+
     private static String formatHTMLLine(String line,String[] IGNORE_TEXTS){
         if (IGNORE_TEXTS != null) {
             for (String ignore_text : IGNORE_TEXTS) {
                 line = line.replaceAll(ignore_text, "");
             }
         }
-        line = line.replaceAll("&ocirc;", "o")
-                .replaceAll("&oacute;", "o")
-                .replaceAll("&igrave;", "i")
-                .replaceAll("&ecirc;", "e")
+        line = line.replaceAll("&ocirc;", "ô")
+                .replaceAll("ó", "ó")
+                .replaceAll("&oacute;", "ó")
+                .replaceAll("&igrave;", "ì")
+                .replaceAll("&ecirc;", "ê")
+                .replaceAll("&egrave;", "è")
+                .replaceAll("&iacute;", "í")
+                .replaceAll("&ograve;", "ò")
                 .replaceAll("&nbsp;", "")
-                .replaceAll("&agrave;", "a")
-                .replaceAll("&acirc;", "a");
+                .replaceAll("&agrave;", "à")
+                .replaceAll("&aacute;", "á")
+//                .replaceAll("&reg;", "®")
+//                .replaceAll("&trade;", "™")
+//                .replaceAll("&amp;", "&")
+                .replaceAll("&acirc;", "â");
         return line;
     }
 
@@ -173,23 +182,12 @@ public class XMLHelper {
         return xPath;
     }
 
-    public static boolean validateXMLSchema(String xsdPath, ByteArrayOutputStream xmlPath){
-        try {
+    public static void validateXMLSchema(String xsdPath, ByteArrayOutputStream xmlPath) throws SAXException, IOException {
             SchemaFactory factory =
                     SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             Schema schema = factory.newSchema(new File(xsdPath));
             Validator validator = schema.newValidator();
 
             validator.validate(new StreamSource(new ByteArrayInputStream(xmlPath.toByteArray())));
-        } catch (IOException e){
-            System.out.println("Exception: "+e.getMessage());
-            return false;
-        }catch(org.xml.sax.SAXException e1){
-            System.out.println("SAX Exception: "+e1.getMessage());
-            return false;
-        }
-
-        return true;
-
     }
 }

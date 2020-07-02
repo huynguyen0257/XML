@@ -1,11 +1,14 @@
 package huyng.crawler;
 
 import huyng.constants.CrawlerConstant;
+import huyng.daos.BrandDAO;
+import huyng.daos.LaptopDAO;
+import huyng.entities.BrandEntity;
 import huyng.entities.LaptopEntity;
 import huyng.utils.JAXBHelper;
-import huyng.utils.TrAxUtils;
+import huyng.utils.TrAxHelper;
 import huyng.utils.XMLHelper;
-import jdk.internal.org.xml.sax.SAXException;
+import org.xml.sax.SAXException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -23,21 +26,62 @@ import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Iterator;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PhuCanhCrawler implements Serializable {
+//TODO: catch url SSL Exception
+//TODO: create method recrawl SSL exception
+//TODO: create method import record not valid
+public class PhuCanhCrawler implements Runnable {
+    @Override
+    public void run() {
+        try {
+            crawlerProcess();
+            int count = 0;
+            while (true) {
+                for (int i = 0; i < threads.size(); i++) {
+                    if (!threads.get(i).isAlive()) count++;
+                }
+                if (count == threads.size()) {
+                    closeStream();
+                    break;
+                }
+                count = 0;
+                System.out.println(Thread.currentThread().getName());
+                System.out.println("COUNT : " + count);
+                Thread.currentThread().sleep(1 * 60 * 1000);
+
+            }
+        } catch (XMLStreamException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
     public static void main(String[] args) {
         try {
 //            crawlerProcess();
-            eachPageCrawler("https://www.phucanh.vn/may-tinh-xach-tay-laptop-apple.html&page=1");
-//            getProductCrawler("https://www.phucanh.vn/laptop-apple-macbook-pro-muhr2-256gb-2019-silver-touch-bar.html",null);//Oke
-//            getProductCrawler("https://www.phucanh.vn/laptop-apple-macbook-pro-mv962-saa-256gb-2019-space-gray-touch-bar.html",null);//Not oke
+//            eachPageCrawler("https://www.phucanh.vn/may-tinh-xach-tay-laptop-apple.html&page=1");
+//            getLaptopCrawler("https://www.phucanh.vn/laptop-apple-macbook-pro-muhr2-256gb-2019-silver-touch-bar.html",null);//Oke
+//            getLaptopCrawler("https://www.phucanh.vn/laptop-asus-a512fa-ej1281t-i5-10210u/8gb/512gb-ssd/15.6quotfhd/vga-on/win10/silver.html",null);//Not oke
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private static File file = null;
+    private static FileWriter writer = null;
+    private static final Object LOCK = new Object();
+    private static List<Thread> threads = new ArrayList<>();
+
+    public static void closeStream() throws IOException {
+        writer.close();
     }
 
     /***
@@ -45,52 +89,78 @@ public class PhuCanhCrawler implements Serializable {
      * @throws IOException
      * @throws XMLStreamException
      */
-    public static void crawlerProcess() throws IOException, XMLStreamException {
+    public static void crawlerProcess() throws IOException, XMLStreamException, InterruptedException {
+        file = new File("src/huyng/crawler/PhucAnh.txt");
+        writer = new FileWriter(file);
+
         //Get brandName,Url of laptop
-        Hashtable<String, String> brand = getBrandCrawler();
-
-        brand.forEach((brandName, brandUrl) -> {
-//        testbrand.forEach((brandName, brandUrl) -> {
+        Hashtable<String, String> brands = getBrandCrawler();
+        brands.forEach((brandName, brandUrl) -> {
             try {
-                //TODO: Check brand on DB to create new
+                //Insert Brand to DB
+                BrandDAO brandDao = new BrandDAO();
+                List<BrandEntity> b = brandDao.findByName(brandName);
+                BrandEntity brand = null;
+                if (b.size() != 0) {
+                    brand = b.get(0);
+                } else {
+                    brand = new BrandEntity(brandName);
+                    brandDao.insert(brand);
+                    System.out.println("Insert Brand SUCCESS!!! --- " + brandName);
+                }
 
-
-                //Get html
+                //Crawl Laptop
                 String document = XMLHelper.getDocument(brandUrl, CrawlerConstant.PHU_CANH_PAGESIZE_START_SIGNAL, CrawlerConstant.PHU_CANH_PAGESIZE_TAG, null);
-
-                //Get number of paging
                 int pageSize = getPageSize(document);
 
                 for (int i = 0; i < pageSize; i++) {
+                    List<LaptopEntity> laptopOfBrand = new ArrayList<>();
                     String pageUrl = brandUrl + "?page=" + (i + 1);
-                    System.out.println("********************************CategoryUrl With PageSize : "+pageUrl);
-
-
-                    //Create Thread to crawl each page (use for)
-                    Thread t = new Thread(){
+                    BrandEntity finalBrand = brand;
+                    Thread t = new Thread() {
                         @Override
                         public void run() {
                             try {
-                                eachPageCrawler(pageUrl);
+                                laptopOfBrand.addAll(eachPageCrawler(pageUrl));
                             } catch (IOException e) {
                                 e.printStackTrace();
                             } catch (XMLStreamException e) {
                                 e.printStackTrace();
                             }
+
+                            //Save ListLaptop to DB
+                            LaptopDAO laptopDao = new LaptopDAO();
+                            laptopOfBrand.forEach((l) -> {
+                                l.setBrandByBrandId(finalBrand);
+                                try {
+
+                                    laptopDao.insert(l);
+                                } catch (Exception e) {
+                                    try {
+                                        synchronized (LOCK) {
+                                            writer.write("********************************ERROR insert LAPTOP********************************\n");
+                                            writer.write("Message : " + e.getMessage() + "\n");
+                                            writer.write(l.toString() + "\n\n\n");
+                                            writer.flush();
+                                        }
+                                    } catch (IOException ioException) {
+                                        ioException.printStackTrace();
+                                    }
+                                }
+                            });//End save list laptop
+                            System.out.println("********************************DONE LINK : " + pageUrl);
                         }
                     };
+                    threads.add(t);
                     t.start();
+//                    laptopOfBrand.addAll(eachPageCrawler(pageUrl));
+//                    System.out.println("********************************DONE LINK : " + pageUrl);
                 }
-
-                //Add list Product to mainList
-                //Marshalling to xml file
-                //Use Schema to validate
-                //Save to DB
             } catch (IOException | XMLStreamException e) {
                 e.printStackTrace();
             }
+            System.out.println("********************************DONE BRAND : " + brandName);
         });
-
     }
 
     /***
@@ -140,7 +210,8 @@ public class PhuCanhCrawler implements Serializable {
      * @throws IOException
      * @throws XMLStreamException
      */
-    public static void eachPageCrawler(String url) throws IOException, XMLStreamException {
+    public static List<LaptopEntity> eachPageCrawler(String url) throws IOException, XMLStreamException {
+        List<LaptopEntity> result = new ArrayList<>();
         String document = XMLHelper.getDocument(url, CrawlerConstant.PHU_CANH_EACH_PAGE_START_SIGNAL, CrawlerConstant.PHU_CANH_EACH_PAGE_TAG, new String[]{"&quot;"});
         Iterator<XMLEvent> xmlEvents = XMLHelper.autoAddMissingEndTag(document);
         String tagName = "";
@@ -177,14 +248,14 @@ public class PhuCanhCrawler implements Serializable {
                                     String productName = event.asCharacters().getData();
                                     laptop.setName(productName);
                                 }
-                                if ("span".equals(tagName)){
+                                if ("span".equals(tagName)) {
                                     attrHref = startElement.getAttributeByName(new QName("class"));
                                     if (attrHref != null && attrHref.getValue().equals("p-price2 ")) {
                                         xmlEvents.next();
                                         xmlEvents.next();
                                         xmlEvents.next();
                                         event = xmlEvents.next();
-                                        String price = event.asCharacters().getData().replaceAll("[.]","").replaceAll(" ₫ ","");
+                                        String price = event.asCharacters().getData().replaceAll("[.]", "").replaceAll(" ₫ ", "");
                                         laptop.setPrice(Integer.parseInt(price));
                                         laptops.put(laptop, detailLink);
                                         break;
@@ -197,11 +268,13 @@ public class PhuCanhCrawler implements Serializable {
                 }
             }
         }
+
         //get each product of Brand
-        laptops.forEach((laptopEntity, laptopUrl) ->{
+        laptops.forEach((laptopEntity, laptopUrl) -> {
             //get detail of product from url
             try {
-                getProductCrawler(laptopUrl,laptopEntity);
+                laptopEntity = getLaptopCrawler(laptopUrl, laptopEntity);
+                if (laptopEntity != null) result.add(laptopEntity);
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (TransformerException e) {
@@ -210,16 +283,13 @@ public class PhuCanhCrawler implements Serializable {
                 e.printStackTrace();
             } catch (ParserConfigurationException e) {
                 e.printStackTrace();
-            } catch (org.xml.sax.SAXException e) {
-                e.printStackTrace();
             } catch (XPathExpressionException e) {
                 e.printStackTrace();
             } catch (JAXBException e) {
                 e.printStackTrace();
             }
         });
-        //TODO:add to List Product
-        //TODO:return List Product
+        return result;
     }
 
     /***
@@ -228,45 +298,49 @@ public class PhuCanhCrawler implements Serializable {
      * @throws IOException
      * @throws XMLStreamException
      */
-    public static void getProductCrawler(String url, LaptopEntity productEntity) throws IOException, TransformerException, SAXException, ParserConfigurationException, org.xml.sax.SAXException, XPathExpressionException, JAXBException {
+    public static LaptopEntity getLaptopCrawler(String url, LaptopEntity productEntity) throws IOException, TransformerException, ParserConfigurationException, SAXException, XPathExpressionException, JAXBException {
         String document = XMLHelper.getDocument(url, CrawlerConstant.PHU_CANH_DETAIL_START_SIGNAL, CrawlerConstant.PHU_CANH_DETAIL_TAG, new String[]{"<p>.*?</p>"});
         String tagName = null;
-        Hashtable<String, String> productDetail = new Hashtable<>();
 
         InputStream is = new ByteArrayInputStream(document.getBytes("UTF-8"));
-        String xslPath = TrAxUtils.getXSLPath(LaptopEntity.class);
+        String xslPath = TrAxHelper.getXSLPath(LaptopEntity.class);
         if (xslPath == null) throw new IOException("Dose not have support this Entity!!!");
-        //TODO: Delete after test
-        System.out.println("ProductUrl = "+url);
-        System.out.println(document);
-        ByteArrayOutputStream ps = TrAxUtils.transform(is, xslPath);
+
+        ByteArrayOutputStream ps = TrAxHelper.transform(is, xslPath);
         Document newDoc = XMLHelper.parseStringToDOM(ps.toString());
 
         String exp = "//*[local-name()='laptop']";
 //        String exp = "/laptop";
         XPath xPath = XMLHelper.getXPath();
 
-        Node root = (Node) xPath.evaluate(exp,newDoc, XPathConstants.NODE);
-        Element name = XMLHelper.CreateElement(newDoc,"name",productEntity.getName(),null);
-        Element price = XMLHelper.CreateElement(newDoc,"price",productEntity.getPrice()+"",null);
+        Node root = (Node) xPath.evaluate(exp, newDoc, XPathConstants.NODE);
+        Element name = XMLHelper.CreateElement(newDoc, "name", productEntity.getName(), null);
+        Element price = XMLHelper.CreateElement(newDoc, "price", productEntity.getPrice() + "", null);
         root.appendChild(name);
         root.appendChild(price);
 
 
-        String xmlContent = TrAxUtils.transform(root);
+        String xmlContent = TrAxHelper.transformDOMtoString(root);
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream(xmlContent.getBytes("UTF-8").length);
-        outputStream.write(xmlContent.getBytes("UTF-8"),0,xmlContent.getBytes("UTF-8").length);
-        if (XMLHelper.validateXMLSchema(TrAxUtils.getXSDPath(LaptopEntity.class),outputStream)){
-            productEntity = (LaptopEntity) JAXBHelper.unmarshalling(xmlContent.getBytes("UTF-8"),LaptopEntity.class);
-            System.out.println(productEntity.toString());
-            System.out.println("DOME");
-            //TODO : Recoding JPA DAO
-//            return productEntity;
-        }else{
-                System.out.println("NOT VALID!!!");
-                System.out.println(ps.toString());
-
+        outputStream.write(xmlContent.getBytes("UTF-8"), 0, xmlContent.getBytes("UTF-8").length);
+        try {
+            XMLHelper.validateXMLSchema(TrAxHelper.getXSDPath(LaptopEntity.class), outputStream);
+            productEntity = (LaptopEntity) JAXBHelper.unmarshalling(xmlContent.getBytes("UTF-8"), LaptopEntity.class);
+            return productEntity;
+        } catch (SAXException | IOException e) {
+            synchronized (LOCK) {
+                writer.write("********************************NOT VALID********************************" + "\n");
+                writer.write(e.getMessage());
+                writer.write("ProductUrl = " + url + "\n");
+                writer.write("Before TrAx.tranform\n");
+                writer.write(document + "\n");
+                writer.write("After TrAx.tranform" + "\n");
+                writer.write(ps.toString() + "\n");
+                writer.write("\n\n");
+                writer.flush();
+            }
         }
+        return null;
     }
 
     /***
@@ -311,4 +385,6 @@ public class PhuCanhCrawler implements Serializable {
         }
         return 1;
     }
+
+
 }

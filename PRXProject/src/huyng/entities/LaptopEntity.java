@@ -1,7 +1,9 @@
 package huyng.entities;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Objects;
 
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -10,13 +12,9 @@ import java.util.Objects;
 @XmlRootElement(name = "laptop")
 public class LaptopEntity {
     private int id;
-    @XmlElement(required = true)
     private String name;
-    @XmlElement(required = true)
     private String model;
-    @XmlElement(required = true)
     private int price;
-    @XmlElement(required = true)
     private String cpu;
     private String vga;
     private String ram;
@@ -32,9 +30,11 @@ public class LaptopEntity {
     private String size;
     private String weight;
     private String color;
+    private BrandEntity brandByBrandId;
 
     @Id
     @Column(name = "Id")
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
@@ -254,6 +254,16 @@ public class LaptopEntity {
         return Objects.hash(id, name, model, price, cpu, vga, ram, hardDisk, lcd, options, port, webcam, fingerprintRecognition, faceRecognition, os, battery, size, weight, color);
     }
 
+    @ManyToOne
+    @JoinColumn(name = "BrandId", referencedColumnName = "Id", nullable = false)
+    public BrandEntity getBrandByBrandId() {
+        return brandByBrandId;
+    }
+
+    public void setBrandByBrandId(BrandEntity brandByBrandId) {
+        this.brandByBrandId = brandByBrandId;
+    }
+
     @Override
     public String toString() {
         return "LaptopEntity{" +
@@ -276,6 +286,7 @@ public class LaptopEntity {
                 ", size='" + size + '\'' +
                 ", weight='" + weight + '\'' +
                 ", color='" + color + '\'' +
+                ", brandByBrandId=" + brandByBrandId +
                 '}';
     }
 }

@@ -52,10 +52,15 @@ CREATE TABLE [dbo].[Laptop]
     [Size] NVARCHAR(50),
     [Weight] NVARCHAR(50),
     [Color] NVARCHAR(50),
-    BrandId int FOREIGN KEY REFERENCES Brand(Id)
+    BrandId int,
     -- Specify more columns here
 );
 GO
+-- Add a new column '[NewColumnName]' to table '[TableName]' in schema '[dbo]'
+ALTER TABLE [dbo].[Laptop]
+    ADD [BrandId] int NOT NULL
+GO
+ALTER TABLE Laptop ADD CONSTRAINT FK_Brand FOREIGN KEY (BrandId) references Brand(Id)  GO
 
 -- Insert rows into table 'Brand' in schema '[dbo]'
 INSERT INTO [dbo].[Brand] VALUES
@@ -83,9 +88,11 @@ VALUES
 )
 GO
 
--- Select rows from a Table or View '[Laptop]' in schema '[dbo]'
-SELECT * FROM [dbo].[Laptop]
-GO 
+SELECT COUNT(Model)
+
+-- Delete rows from table '[Brand]' in schema '[dbo]'
+DELETE FROM [dbo].[Brand]
+GO
 
 -- Delete rows from table '[Laptop]' in schema '[dbo]'
 DELETE FROM [dbo].[Laptop]
