@@ -10,6 +10,9 @@ import java.util.Objects;
 @Entity
 @Table(name = "Laptop", schema = "dbo", catalog = "PRXProject")
 @XmlRootElement(name = "laptop")
+@NamedQueries({
+        @NamedQuery(name = "Laptop.findByName", query = "select l from LaptopEntity l where l.model = :model"),
+})
 public class LaptopEntity {
     private int id;
     private String name;
@@ -22,15 +25,19 @@ public class LaptopEntity {
     private String lcd;
     private String options;
     private String port;
-    private boolean webcam;
-    private boolean fingerprintRecognition;
-    private boolean faceRecognition;
     private String os;
     private String battery;
-    private String size;
     private String weight;
     private String color;
-    private BrandEntity brandByBrandId;
+    private BrandEntity brand;
+
+    public LaptopEntity() {
+    }
+
+    public LaptopEntity(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
 
     @Id
     @Column(name = "Id")
@@ -144,36 +151,6 @@ public class LaptopEntity {
     }
 
     @Basic
-    @Column(name = "Webcam")
-    public boolean isWebcam() {
-        return webcam;
-    }
-
-    public void setWebcam(boolean webcam) {
-        this.webcam = webcam;
-    }
-
-    @Basic
-    @Column(name = "FingerprintRecognition")
-    public boolean isFingerprintRecognition() {
-        return fingerprintRecognition;
-    }
-
-    public void setFingerprintRecognition(boolean fingerprintRecognition) {
-        this.fingerprintRecognition = fingerprintRecognition;
-    }
-
-    @Basic
-    @Column(name = "FaceRecognition")
-    public boolean isFaceRecognition() {
-        return faceRecognition;
-    }
-
-    public void setFaceRecognition(boolean faceRecognition) {
-        this.faceRecognition = faceRecognition;
-    }
-
-    @Basic
     @Column(name = "OS")
     public String getOs() {
         return os;
@@ -191,16 +168,6 @@ public class LaptopEntity {
 
     public void setBattery(String battery) {
         this.battery = battery;
-    }
-
-    @Basic
-    @Column(name = "Size")
-    public String getSize() {
-        return size;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
     }
 
     @Basic
@@ -230,9 +197,6 @@ public class LaptopEntity {
         LaptopEntity that = (LaptopEntity) o;
         return id == that.id &&
                 price == that.price &&
-                webcam == that.webcam &&
-                fingerprintRecognition == that.fingerprintRecognition &&
-                faceRecognition == that.faceRecognition &&
                 Objects.equals(name, that.name) &&
                 Objects.equals(model, that.model) &&
                 Objects.equals(cpu, that.cpu) &&
@@ -244,49 +208,22 @@ public class LaptopEntity {
                 Objects.equals(port, that.port) &&
                 Objects.equals(os, that.os) &&
                 Objects.equals(battery, that.battery) &&
-                Objects.equals(size, that.size) &&
                 Objects.equals(weight, that.weight) &&
                 Objects.equals(color, that.color);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, model, price, cpu, vga, ram, hardDisk, lcd, options, port, webcam, fingerprintRecognition, faceRecognition, os, battery, size, weight, color);
+        return Objects.hash(id, name, model, price, cpu, vga, ram, hardDisk, lcd, options, port, os, battery, weight, color);
     }
 
     @ManyToOne
     @JoinColumn(name = "BrandId", referencedColumnName = "Id", nullable = false)
-    public BrandEntity getBrandByBrandId() {
-        return brandByBrandId;
+    public BrandEntity getBrand() {
+        return brand;
     }
 
-    public void setBrandByBrandId(BrandEntity brandByBrandId) {
-        this.brandByBrandId = brandByBrandId;
-    }
-
-    @Override
-    public String toString() {
-        return "LaptopEntity{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", model='" + model + '\'' +
-                ", price=" + price +
-                ", cpu='" + cpu + '\'' +
-                ", vga='" + vga + '\'' +
-                ", ram='" + ram + '\'' +
-                ", hardDisk='" + hardDisk + '\'' +
-                ", lcd='" + lcd + '\'' +
-                ", options='" + options + '\'' +
-                ", port='" + port + '\'' +
-                ", webcam=" + webcam +
-                ", fingerprintRecognition=" + fingerprintRecognition +
-                ", faceRecognition=" + faceRecognition +
-                ", os='" + os + '\'' +
-                ", battery='" + battery + '\'' +
-                ", size='" + size + '\'' +
-                ", weight='" + weight + '\'' +
-                ", color='" + color + '\'' +
-                ", brandByBrandId=" + brandByBrandId +
-                '}';
+    public void setBrand(BrandEntity brand) {
+        this.brand = brand;
     }
 }

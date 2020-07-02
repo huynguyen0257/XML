@@ -1,12 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<laptop xmlns="http://huyng/schema/laptop">
-    <weight>ThinkPad E590</weight>
-    <ram>4GB DDR4</ram>
-    <weight>32GB</weight>
-    <lcd>15.6" FHD (1920x1080) Anti-glare IPS 250 nits</lcd>
-    <webcam/>
-    <port>1 x USB-C (USB 3.1/DP 1.2/PD 3.0)</port>
-    <battery>3Cell 45WH</battery>
-    <size>14.53" x 9.94" x 0.78"; 369mm x 252.5mm x 19.9mm</size>
-    <os>No OS</os>
-</laptop>
+<table class="tbl-info-product">
+    <tbody>
+        <tr>
+            <th class="attribute-label">Mã sản phẩm / Model</th>
+            <td class="attribute-value ">P3540FA-BR0539</td>
+        </tr>
+        <tr>
+            <th class="attribute-label">Bộ Vi Xử Lý / CPU</th>
+            <td class="attribute-value highlight">Intel Core i3-8145U (2.1GHz - 3.9GHz / 4MB / 2 nhân, 4 luồng )</td>
+        </tr>
+        <tr>
+            <th class="attribute-label">Bộ Nhớ Trong / RAM</th>
+            <td class="attribute-value highlight">4GB DDR4 Onboard (1 slot) up to 16GB</td>
+        </tr>
+        <tr>
+            <th class="attribute-label">Ổ Cứng / HDD</th>
+            <td class="attribute-value highlight">1TB HDD 5400RPM</td>
+        </tr>
+        <tr>
+            <th class="attribute-label">Màn hình / LCD</th>
+            <td class="attribute-value ">15.6 FHD ( 1920 x 1080 ) chống lóa</td>
+        </tr>
+        <tr>
+            <th class="attribute-label">Chip Đồ Họa / VGA</th>
+            <td class="attribute-value highlight">Intel UHD Graphics 620</td>
+        </tr>
+        <tr>
+            <th class="attribute-label">Kết Nối / Network</th>
+            <td class="attribute-value ">WiFi 802.11ac , Bluetooth 4.2</td>
+        </tr>
+        <tr>
+            <th class="attribute-label">Giao Tiếp Mở Rộng</th>
+            <td class="attribute-value ">2x Type-A USB 3.0 (USB 3.1 Gen 1),2x Type-C USB 3.0 (USB 3.1 Gen 1), HDMI</td>
+        </tr>
+        <tr>
+            <th class="attribute-label">Dung Lượng Pin</th>
+            <td class="attribute-value ">4 cell 70 Wh</td>
+        </tr>
+        <tr>
+            <th class="attribute-label">Hệ Điều Hành / Operating System</th>
+            <td class="attribute-value highlight">FreeDos</td>
+        </tr>
+        <tr>
+            <th class="attribute-label">Trọng Lượng / Weight</th>
+            <td class="attribute-value ">1.69kg</td>
+        </tr>
+        <tr>
+            <th class="attribute-label">Màu Sắc</th>
+            <td class="attribute-value ">Grey</td>
+        </tr>
+        <tr>
+            <th class="attribute-label">Xuất Xứ / Bảo Hành</th>
+            <td class="attribute-value highlight">Chính Hãng VN</td>
+        </tr>
+    </tbody>
+</table>

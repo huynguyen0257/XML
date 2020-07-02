@@ -36,7 +36,7 @@ import java.util.regex.Pattern;
 //TODO: catch url SSL Exception
 //TODO: create method recrawl SSL exception
 //TODO: create method import record not valid
-public class PhuCanhCrawler implements Runnable {
+public class PACrawler implements Runnable {
     @Override
     public void run() {
         try {
@@ -53,7 +53,7 @@ public class PhuCanhCrawler implements Runnable {
                 count = 0;
                 System.out.println(Thread.currentThread().getName());
                 System.out.println("COUNT : " + count);
-                Thread.currentThread().sleep(1 * 60 * 1000);
+                Thread.currentThread().sleep(30 * 1000);
 
             }
         } catch (XMLStreamException e) {
@@ -64,6 +64,7 @@ public class PhuCanhCrawler implements Runnable {
             e.printStackTrace();
         }
     }
+
     public static void main(String[] args) {
         try {
 //            crawlerProcess();
@@ -90,7 +91,7 @@ public class PhuCanhCrawler implements Runnable {
      * @throws XMLStreamException
      */
     public static void crawlerProcess() throws IOException, XMLStreamException, InterruptedException {
-        file = new File("src/huyng/crawler/PhucAnh.txt");
+        file = new File(CrawlerConstant.ERROR_PHUCANH);
         writer = new FileWriter(file);
 
         //Get brandName,Url of laptop
@@ -131,7 +132,7 @@ public class PhuCanhCrawler implements Runnable {
                             //Save ListLaptop to DB
                             LaptopDAO laptopDao = new LaptopDAO();
                             laptopOfBrand.forEach((l) -> {
-                                l.setBrandByBrandId(finalBrand);
+                                l.setBrand(finalBrand);
                                 try {
 
                                     laptopDao.insert(l);
@@ -298,13 +299,11 @@ public class PhuCanhCrawler implements Runnable {
      * @throws IOException
      * @throws XMLStreamException
      */
-    public static LaptopEntity getLaptopCrawler(String url, LaptopEntity productEntity) throws IOException, TransformerException, ParserConfigurationException, SAXException, XPathExpressionException, JAXBException {
+    public static LaptopEntity getLaptopCrawler(String url, LaptopEntity laptop) throws IOException, TransformerException, ParserConfigurationException, SAXException, XPathExpressionException, JAXBException {
         String document = XMLHelper.getDocument(url, CrawlerConstant.PHU_CANH_DETAIL_START_SIGNAL, CrawlerConstant.PHU_CANH_DETAIL_TAG, new String[]{"<p>.*?</p>"});
-        String tagName = null;
 
         InputStream is = new ByteArrayInputStream(document.getBytes("UTF-8"));
-        String xslPath = TrAxHelper.getXSLPath(LaptopEntity.class);
-        if (xslPath == null) throw new IOException("Dose not have support this Entity!!!");
+        String xslPath = CrawlerConstant.PA_XSL_PATH;
 
         ByteArrayOutputStream ps = TrAxHelper.transform(is, xslPath);
         Document newDoc = XMLHelper.parseStringToDOM(ps.toString());
@@ -314,8 +313,8 @@ public class PhuCanhCrawler implements Runnable {
         XPath xPath = XMLHelper.getXPath();
 
         Node root = (Node) xPath.evaluate(exp, newDoc, XPathConstants.NODE);
-        Element name = XMLHelper.CreateElement(newDoc, "name", productEntity.getName(), null);
-        Element price = XMLHelper.CreateElement(newDoc, "price", productEntity.getPrice() + "", null);
+        Element name = XMLHelper.CreateElement(newDoc, "name", laptop.getName(), null);
+        Element price = XMLHelper.CreateElement(newDoc, "price", laptop.getPrice() + "", null);
         root.appendChild(name);
         root.appendChild(price);
 
@@ -325,8 +324,8 @@ public class PhuCanhCrawler implements Runnable {
         outputStream.write(xmlContent.getBytes("UTF-8"), 0, xmlContent.getBytes("UTF-8").length);
         try {
             XMLHelper.validateXMLSchema(TrAxHelper.getXSDPath(LaptopEntity.class), outputStream);
-            productEntity = (LaptopEntity) JAXBHelper.unmarshalling(xmlContent.getBytes("UTF-8"), LaptopEntity.class);
-            return productEntity;
+            laptop = (LaptopEntity) JAXBHelper.unmarshalling(xmlContent.getBytes("UTF-8"), LaptopEntity.class);
+            return laptop;
         } catch (SAXException | IOException e) {
             synchronized (LOCK) {
                 writer.write("********************************NOT VALID********************************" + "\n");

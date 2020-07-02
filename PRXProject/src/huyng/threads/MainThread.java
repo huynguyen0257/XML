@@ -1,8 +1,7 @@
 package huyng.threads;
 
-import huyng.crawler.PhuCanhCrawler;
-
-import java.io.IOException;
+import huyng.crawler.KLCrawler;
+import huyng.crawler.PACrawler;
 
 public class MainThread implements Runnable {
     public static void main(String[] args) {
@@ -12,8 +11,9 @@ public class MainThread implements Runnable {
 
     @Override
     public void run() {
-        Thread phucAnhThread = new Thread(new PhuCanhCrawler());
+        Thread phucAnhThread = new Thread(new PACrawler());
         phucAnhThread.start();
-        System.out.println("Main Thread : " + Thread.currentThread().getName() + " is DONE!!!");
+        Thread kimLongThread = new Thread(new KLCrawler());
+        kimLongThread.start();
     }
 }

@@ -1,6 +1,7 @@
 package huyng.entities;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.Objects;
 
 @Entity
@@ -12,7 +13,7 @@ import java.util.Objects;
 public class BrandEntity {
     private int id;
     private String name;
-
+    private Collection<LaptopEntity> laptopsById;
 
     public BrandEntity(String name) {
         this.name = name;
@@ -54,5 +55,14 @@ public class BrandEntity {
     @Override
     public int hashCode() {
         return Objects.hash(id, name);
+    }
+
+    @OneToMany(mappedBy = "brand")
+    public Collection<LaptopEntity> getLaptopsById() {
+        return laptopsById;
+    }
+
+    public void setLaptopsById(Collection<LaptopEntity> laptopsById) {
+        this.laptopsById = laptopsById;
     }
 }

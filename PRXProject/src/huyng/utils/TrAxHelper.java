@@ -38,13 +38,6 @@ public class TrAxHelper {
         return sw.toString();
     }
 
-    public static String getXSLPath(Class T) {
-        String path = null;
-        if (T == LaptopEntity.class) path = "/laptop.xsl";
-        if (path == null) return null;
-        return CrawlerConstant.XSL_PATH + path;
-    }
-
     public static String getXSDPath(Class T){
         String path = null;
         if (T == LaptopEntity.class) path = "/laptop.xsd";

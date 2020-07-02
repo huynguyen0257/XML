@@ -157,6 +157,14 @@ public class XMLHelper {
         return domRs;
     }
 
+    public static Document createNewDOM() throws ParserConfigurationException {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        factory.setNamespaceAware(true);
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document domRs = builder.newDocument();
+        return domRs;
+    }
+
     public static Element CreateElement(Document doc, String elementName, String elementVal, Map<String, String> attributes) {
         if (doc != null){
             Element element = doc.createElement(elementName);
