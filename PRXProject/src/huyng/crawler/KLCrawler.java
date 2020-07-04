@@ -107,15 +107,18 @@ public class KLCrawler implements Runnable {
 
                         //Inseart productOfBrand
                         productOfBrands.forEach(l -> {
-                            if (!laptopDAO.checkExisted(l.getModel())) {
+                            String newModel = laptopDAO.reformatModel(l.getModel(), finalBrand.getName());
+                            if (!laptopDAO.checkExisted(newModel)) {
                                 l.setBrand(finalBrand);
+                                l.setModel(newModel);
                                 laptopDAO.insert(l);
                             } else {
                                 synchronized (LOCK) {
                                     try {
                                         writer.write("********************************EXISTED********************************" + "\n");
-                                        writer.write("Name : " + l.getName());
-                                        writer.write("Model : " + l.getModel());
+                                        writer.write("Name : " + l.getName() + "\n");
+                                        writer.write("Read-Model : " + l.getModel() + "\n");
+                                        writer.write("Reformat-Model : " + newModel + "\n");
                                         writer.flush();
                                     } catch (IOException e) {
                                         e.printStackTrace();
@@ -130,19 +133,6 @@ public class KLCrawler implements Runnable {
             };
             t.start();
             THREADS.add(t);
-//            try {
-//                List<LaptopEntity> productOfBrands = getLaptopByBrandUrl(url);
-//
-//                //Inseart productOfBrand
-//                productOfBrands.forEach(l -> {
-//                    if (!laptopDAO.checkExisted(l.getModel())) {
-//                        l.setBrand(finalBrand);
-//                        laptopDAO.insert(l);
-//                    }
-//                });
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
         });
     }
 
@@ -346,6 +336,4 @@ public class KLCrawler implements Runnable {
         }
         return null;
     }
-
-    //TODO: EDit lai DB bo~ : ,[Webcam],[FingerprintRecognition],[FaceRecognition],[Size]
 }

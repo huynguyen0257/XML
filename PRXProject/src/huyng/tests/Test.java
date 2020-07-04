@@ -10,30 +10,33 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.xml.bind.JAXBException;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Test {
     public static void main(String[] args) throws JAXBException {
-//        JAXBHelper.generateJaxbPackage();
-        BrandDAO dao = new BrandDAO();
-        BrandEntity entity = new BrandEntity();
-        entity.setName("Nguyễn Gia Huy");
-        dao.insert(entity);
-//        BrandEntity a = dao.findByID(1);
-//        System.out.println(a);
-        List<BrandEntity> rs = dao.findAllByNameQuery("Brand.findAll");
-        rs.forEach((b)->{
-            System.out.println(b.toString());
-        });
+        String regex = "([ -][A-Z][A-Z0-9]+)";
+        Pattern pattern = Pattern.compile(regex);
+        String[] model = getStringTest();
+        for (int i = 0; i < model.length; i++) {
+            String newModel = model[i];
+            System.out.println("********* Oriranal : " + newModel + " **********");
+
+
+            Matcher matcher = pattern.matcher(newModel);
+            if (matcher.find()) newModel = matcher.group().replaceAll("-","").trim();
+            System.out.println(newModel);
+        }
     }
 
-    public static String removeUnicode(String string){
-        string = string.toLowerCase()
-                .replaceAll("[áàảạãắẵẳặằấầậẩẫ]","a")
-                .replaceAll("[óòọõỏốồộổỗơớôờợỡở]","o")
-                .replaceAll("[éèẹẽẻêệễểềế]","e")
-                .replaceAll("[úùụủũứừựữửư]","u")
-                .replaceAll("[íìịỉĩ]","i")
-                .replaceAll("[đ]","d");
-        return string;
+    public static String[] getStringTest() {
+        String text = "U747-FPC07427DK\n" +
+                "E749 L00U749VN00000113\n" +
+                "E559 L00E559VN00000074\n" +
+                "E549 L00E549VN00000110\n" +
+                "U937-FPC04866DK\n" +
+                "E549 L00E549VN00000111";
+        String[] result = text.split("\n");
+        return result;
     }
 }

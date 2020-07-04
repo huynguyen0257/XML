@@ -51,8 +51,6 @@ public class PACrawler implements Runnable {
                     break;
                 }
                 count = 0;
-                System.out.println(Thread.currentThread().getName());
-                System.out.println("COUNT : " + count);
                 Thread.currentThread().sleep(30 * 1000);
 
             }
@@ -67,7 +65,7 @@ public class PACrawler implements Runnable {
 
     public static void main(String[] args) {
         try {
-//            crawlerProcess();
+            crawlerProcess();
 //            eachPageCrawler("https://www.phucanh.vn/may-tinh-xach-tay-laptop-apple.html&page=1");
 //            getLaptopCrawler("https://www.phucanh.vn/laptop-apple-macbook-pro-muhr2-256gb-2019-silver-touch-bar.html",null);//Oke
 //            getLaptopCrawler("https://www.phucanh.vn/laptop-asus-a512fa-ej1281t-i5-10210u/8gb/512gb-ssd/15.6quotfhd/vga-on/win10/silver.html",null);//Not oke
@@ -107,7 +105,6 @@ public class PACrawler implements Runnable {
                 } else {
                     brand = new BrandEntity(brandName);
                     brandDao.insert(brand);
-                    System.out.println("Insert Brand SUCCESS!!! --- " + brandName);
                 }
 
                 //Crawl Laptop
@@ -132,10 +129,25 @@ public class PACrawler implements Runnable {
                             //Save ListLaptop to DB
                             LaptopDAO laptopDao = new LaptopDAO();
                             laptopOfBrand.forEach((l) -> {
-                                l.setBrand(finalBrand);
                                 try {
-
-                                    laptopDao.insert(l);
+                                    String newModel = laptopDao.reformatModel(l.getModel(), finalBrand.getName());
+                                    if (!laptopDao.checkExisted(newModel)) {
+                                        l.setBrand(finalBrand);
+                                        l.setModel(newModel);
+                                        laptopDao.insert(l);
+                                    } else {
+                                        synchronized (LOCK) {
+                                            try {
+                                                writer.write("********************************EXISTED********************************" + "\n");
+                                                writer.write("Name : " + l.getName() + "\n");
+                                                writer.write("Read-Model : " + l.getModel() + "\n");
+                                                writer.write("Reformat-Model : " + newModel + "\n");
+                                                writer.flush();
+                                            } catch (IOException e) {
+                                                throw e;
+                                            }
+                                        }
+                                    }
                                 } catch (Exception e) {
                                     try {
                                         synchronized (LOCK) {
@@ -149,18 +161,14 @@ public class PACrawler implements Runnable {
                                     }
                                 }
                             });//End save list laptop
-                            System.out.println("********************************DONE LINK : " + pageUrl);
                         }
                     };
                     threads.add(t);
                     t.start();
-//                    laptopOfBrand.addAll(eachPageCrawler(pageUrl));
-//                    System.out.println("********************************DONE LINK : " + pageUrl);
                 }
             } catch (IOException | XMLStreamException e) {
                 e.printStackTrace();
             }
-            System.out.println("********************************DONE BRAND : " + brandName);
         });
     }
 
@@ -256,7 +264,9 @@ public class PACrawler implements Runnable {
                                         xmlEvents.next();
                                         xmlEvents.next();
                                         event = xmlEvents.next();
-                                        String price = event.asCharacters().getData().replaceAll("[.]", "").replaceAll(" ₫ ", "");
+                                        String price = "0";
+                                        if (event.isCharacters())
+                                            price = event.asCharacters().getData().replaceAll("[.]", "").replaceAll(" ₫ ", "");
                                         laptop.setPrice(Integer.parseInt(price));
                                         laptops.put(laptop, detailLink);
                                         break;

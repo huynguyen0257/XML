@@ -1,17 +1,21 @@
-********************************NOT VALID********************************
-cvc-complex-type.2.4.a: Invalid content was found starting with element 'weight'. One of '{"http://huyng/schema/laptop":id, "http://huyng/schema/laptop":model}' is expected.ProductUrl = https://www.phucanh.vn/laptop-lenovo-thinkpad-x390-20q0s03m00-black-dong-san-pham-cao-cap.html
-Before TrAx.tranform
-<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 361px; height: 843px;" width="696"> <tbody> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hvàatilde;ng sản xuất</td> <td style="width: 261pt;" width="348">Lenovo</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chủng loại</td> <td style="width: 261pt;" width="348">ThinkPad X390</td> </tr> <tr style="height: 26.45pt;"> <td style="height: 26.45pt; width: 261pt;" width="348">Part Number</td> <td style="width: 261pt;" width="348">20Q0S03M00</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Mầu sắc</td> <td style="width: 261pt;" width="348">Đen</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ vi xử lvàyacute;</td> <td style="width: 261pt;" width="348">Intelvàreg; Corevàtrade; i5-8265U(1.6GHz/6MB) up to 3.90 GHz</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chipset</td> <td style="width: 261pt;" width="348">Intelvàreg;</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ nhớ trong</td> <td style="width: 261pt;" width="348">8GB DDR4</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Số khe cắm</td> <td style="width: 261pt;" width="348">no sockets</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Dung lượng tối đa</td> <td style="width: 261pt;" width="348">8GB</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">VGA</td> <td style="width: 261pt;" width="348">Intelvàreg; UHD Graphics 620</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ cứng</td> <td style="width: 261pt;" width="348">SSD 256GB M.2 NVMe</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ quang</td> <td style="width: 261pt;" width="348">No</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Card Reader</td> <td style="width: 261pt;" width="348">MicroSD card reader</td> </tr> <tr style="height: 30.0pt;"> <td style="height: 30.0pt; width: 261pt;" width="348">Bảo mật, công nghệ</td> <td style="width: 261pt;" width="348">Touch style match on chip fingerprint reader on the palm rest</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Màn hình</td> <td style="width: 261pt;" width="348">13.3" FHD (1920x1080) Anti-glare IPS 300 nits</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Webcam</td> <td style="width: 261pt;" width="348">HD + IR camera with ThinkShutter</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Audio</td> <td style="width: 261pt;" width="348">HD Audio, Realtek ALC3287 codec / stereo speakers, 1W x 2, Dolby Audio Premium</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Giao tiếp mạng</td> <td style="width: 261pt;" width="348">No</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Giao tiếp không dây</td> <td style="width: 261pt;" width="348">Intel Wireless-AC 9560, Wi-Fi 2x2 802.11ac + Bluetooth 5.0</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 99.0pt; width: 261pt;" rowspan="6" width="348">Cổng giao tiếp</td> <td style="width: 261pt;" width="348">1 x Thunderboltvàtrade; 3</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x USB Type-C</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">2 x USB 3.1 Gen1</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x HDMI 1.4</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x MicroSD</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x Audio</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Pin</td> <td style="width: 261pt;" width="348">6Cell 48WH</td> </tr> <tr style="height: 79.15pt;"> <td style="height: 79.15pt; width: 261pt;" width="348">Kích thước (rộng x dài x cao)</td> <td style="width: 261pt;" width="348">311.9 x 217.0 x 16.5mm / 12.27 x 8.54 x 0.61 inches</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Cân nặng</td> <td style="width: 261pt;" width="348">Starting at 1.22kg/2.68lbs.</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hệ điều hành</td> <td style="width: 261pt;" width="348">No OS</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Phụ kiện đi kèm</td> <td style="width: 261pt;" width="348">AC Adapter</td> </tr> </tbody> </table> </div> 
-After TrAx.tranform
-<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><weight>ThinkPad X390</weight><ram>8GB DDR4</ram><weight>8GB</weight><lcd>13.3" FHD (1920x1080) Anti-glare IPS 300 nits</lcd><port>1 x Thunderboltvàtrade; 3</port><battery>6Cell 48WH</battery><os>No OS</os></laptop>  
-
-
+********************************EXISTED********************************
+Name : Laptop LG Gram 17Z990-V.AH75A5 (i7-8565U/8GB/512Gb SSD/ 17/VGA ON/Win10/Silver Gray)
+Read-Model : Gram 17Z990-V.AH75A5 (Review chi tiết 
+Reformat-Model : AH75A5
 ********************************NOT VALID********************************
 cvc-complex-type.2.4.a: Invalid content was found starting with element 'name'. One of '{"http://huyng/schema/laptop":id, "http://huyng/schema/laptop":model}' is expected.ProductUrl = https://www.phucanh.vn/laptop-acer-nitro-series-an515-43-r65l-nh.q5xsv.004-black/fhd/ryzen-7.html
 Before TrAx.tranform
 <div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 519pt;" width="691"> <tbody> <tr style="height: 14.25pt;"> <td style="height: 14.25pt; width: 133pt;" width="177"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Sản phẩm</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Máy tính xách tay</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Tên Hãng</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Acer</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Model</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Nitro series AN515 43 R65L NH.Q5XSV.004</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Bộ VXL</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Ryzen 7 3750H 2.3Ghz Up to 4.0Ghz-4Mb</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Cạc đồ họa</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Radeon RX 560X 4GB DDR5</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Bộ nhớ</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">8Gb (2 Khe cắm / Hỗ trợ tối đa 32GB)</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Ổ cứng/ Ổ đĩa quang</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">256Gb SSD (</span></span>1 x 2.5" SATA , 1 x M.2 SATA/NVMe</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Màn hình</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">15.6Inch Full HD</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Kết nối</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">LAN, Wifi, Bluetooth</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Cổng giao tiếp</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">1 x USB 2.0 1 x USB 3.0 1 x HDMI 1 x Card Reader</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Webcam</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Có</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Nhận dạng vân tay</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Không có</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Nhận diện khuôn mặt</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Không có</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Tính năng khác</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Đèn bàn phím</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Hệ điều hành</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Windows 10 Home</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Pin</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">4 cell</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Kích thước</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">32.76 x 22.86 x 1.95 cm</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Trọng lượng</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">2.4 kg</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Màu sắc/ Chất liệu</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Black</span></span></td> </tr> </tbody> </table> </div> 
 After TrAx.tranform
 <?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"/>  
+
+
+********************************NOT VALID********************************
+cvc-complex-type.2.4.a: Invalid content was found starting with element 'weight'. One of '{"http://huyng/schema/laptop":id, "http://huyng/schema/laptop":model}' is expected.ProductUrl = https://www.phucanh.vn/laptop-lenovo-thinkpad-x390-20q0s03m00-black-dong-san-pham-cao-cap.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 361px; height: 843px;" width="696"> <tbody> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hvàatilde;ng sản xuất</td> <td style="width: 261pt;" width="348">Lenovo</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chủng loại</td> <td style="width: 261pt;" width="348">ThinkPad X390</td> </tr> <tr style="height: 26.45pt;"> <td style="height: 26.45pt; width: 261pt;" width="348">Part Number</td> <td style="width: 261pt;" width="348">20Q0S03M00</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Mầu sắc</td> <td style="width: 261pt;" width="348">Đen</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ vi xử lvàyacute;</td> <td style="width: 261pt;" width="348">Intelvàreg; Corevàtrade; i5-8265U(1.6GHz/6MB) up to 3.90 GHz</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chipset</td> <td style="width: 261pt;" width="348">Intelvàreg;</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ nhớ trong</td> <td style="width: 261pt;" width="348">8GB DDR4</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Số khe cắm</td> <td style="width: 261pt;" width="348">no sockets</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Dung lượng tối đa</td> <td style="width: 261pt;" width="348">8GB</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">VGA</td> <td style="width: 261pt;" width="348">Intelvàreg; UHD Graphics 620</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ cứng</td> <td style="width: 261pt;" width="348">SSD 256GB M.2 NVMe</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ quang</td> <td style="width: 261pt;" width="348">No</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Card Reader</td> <td style="width: 261pt;" width="348">MicroSD card reader</td> </tr> <tr style="height: 30.0pt;"> <td style="height: 30.0pt; width: 261pt;" width="348">Bảo mật, công nghệ</td> <td style="width: 261pt;" width="348">Touch style match on chip fingerprint reader on the palm rest</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Màn hình</td> <td style="width: 261pt;" width="348">13.3" FHD (1920x1080) Anti-glare IPS 300 nits</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Webcam</td> <td style="width: 261pt;" width="348">HD + IR camera with ThinkShutter</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Audio</td> <td style="width: 261pt;" width="348">HD Audio, Realtek ALC3287 codec / stereo speakers, 1W x 2, Dolby Audio Premium</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Giao tiếp mạng</td> <td style="width: 261pt;" width="348">No</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Giao tiếp không dây</td> <td style="width: 261pt;" width="348">Intel Wireless-AC 9560, Wi-Fi 2x2 802.11ac + Bluetooth 5.0</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 99.0pt; width: 261pt;" rowspan="6" width="348">Cổng giao tiếp</td> <td style="width: 261pt;" width="348">1 x Thunderboltvàtrade; 3</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x USB Type-C</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">2 x USB 3.1 Gen1</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x HDMI 1.4</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x MicroSD</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x Audio</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Pin</td> <td style="width: 261pt;" width="348">6Cell 48WH</td> </tr> <tr style="height: 79.15pt;"> <td style="height: 79.15pt; width: 261pt;" width="348">Kích thước (rộng x dài x cao)</td> <td style="width: 261pt;" width="348">311.9 x 217.0 x 16.5mm / 12.27 x 8.54 x 0.61 inches</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Cân nặng</td> <td style="width: 261pt;" width="348">Starting at 1.22kg/2.68lbs.</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hệ điều hành</td> <td style="width: 261pt;" width="348">No OS</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Phụ kiện đi kèm</td> <td style="width: 261pt;" width="348">AC Adapter</td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><weight>ThinkPad X390</weight><ram>8GB DDR4</ram><weight>8GB</weight><lcd>13.3" FHD (1920x1080) Anti-glare IPS 300 nits</lcd><port>1 x Thunderboltvàtrade; 3</port><battery>6Cell 48WH</battery><os>No OS</os></laptop>  
 
 
 ********************************NOT VALID********************************
@@ -22,14 +26,30 @@ After TrAx.tranform
 <?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><weight>IdeaPad S340-15IWL</weight><ram>4GB DDR4 onmain</ram><weight>12GB</weight><lcd>15.6" FHD TN AG 220N</lcd><port>2 x USB 3.1 (1 supports charging)</port><battery>3Cell 52.5WH</battery><os>Windows 10 Home</os></laptop>  
 
 
-********************************NOT VALID********************************
-cvc-complex-type.2.4.a: Invalid content was found starting with element 'weight'. One of '{"http://huyng/schema/laptop":id, "http://huyng/schema/laptop":model}' is expected.ProductUrl = https://www.phucanh.vn/laptop-lenovo-thinkpad-e590-20nbs00100-black-nhan-dang-van-tay.html
-Before TrAx.tranform
-<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 522pt;" width="696"> <tbody> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hvàatilde;ng sản xuất</td> <td style="width: 261pt;" width="348">Lenovo</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chủng loại</td> <td style="width: 261pt;" width="348">ThinkPad E590</td> </tr> <tr style="height: 26.45pt;"> <td style="height: 26.45pt; width: 261pt;" width="348">Part Number</td> <td style="width: 261pt;" width="348">20NBS00100</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Mầu sắc</td> <td style="width: 261pt;" width="348">Đen</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ vi xử lvàyacute;</td> <td style="width: 261pt;" width="348">Intelvàreg; Corevàtrade; i5-8265U(1.6GHz/6MB) up to 3.90 GHz</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chipset</td> <td style="width: 261pt;" width="348">Intelvàreg;</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ nhớ trong</td> <td style="width: 261pt;" width="348">4GB DDR4</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Số khe cắm</td> <td style="width: 261pt;" width="348">2</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Dung lượng tối đa</td> <td style="width: 261pt;" width="348">32GB</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">VGA</td> <td style="width: 261pt;" width="348">AMD Radeon RX 550X Graphics, 2GB DDR5 memory</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ cứng</td> <td style="width: 261pt;" width="348">1TB 5400RPM SATA HDD</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ quang</td> <td style="width: 261pt;" width="348">No</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Card Reader</td> <td style="width: 261pt;" width="348">MicroSD card reader</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bảo mật, công nghệ</td> <td style="width: 261pt;" width="348">Touch style fingerprint reader on the palm rest</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Màn hình</td> <td style="width: 261pt;" width="348">15.6" FHD (1920x1080) Anti-glare IPS 250 nits</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Webcam</td> <td style="width: 261pt;" width="348">HD 720p</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Audio</td> <td style="width: 261pt;" width="348">HD Audio, Conexant CX11880 codec / stereo speakers, 2W x 2, Dolby Advanced Audio</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Giao tiếp mạng</td> <td style="width: 261pt;" width="348">Gigabit Ethernet Connection</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Giao tiếp không dây</td> <td style="width: 261pt;" width="348">Intel Wireless-AC 9260, Wi-Fi 2x2 802.11ac + Bluetooth 5.0</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 115.5pt; width: 261pt;" rowspan="7" width="348">Cổng giao tiếp</td> <td style="width: 261pt;" width="348">1 x USB-C (USB 3.1/DP 1.2/PD 3.0)</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">2 x USB-A (USB 3.1)</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x USB 2.0</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">HDMI 1.4b</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">RJ45</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">Micro SD card slot</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">Combo Mic/Audio</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Pin</td> <td style="width: 261pt;" width="348">3Cell 45WH</td> </tr> <tr style="height: 79.15pt;"> <td style="height: 79.15pt; width: 261pt;" width="348">Kích thước (rộng x dài x cao)</td> <td style="width: 261pt;" width="348">14.53" x 9.94" x 0.78"; 369mm x 252.5mm x 19.9mm</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Cân nặng</td> <td style="width: 261pt;" width="348">Starting at 4.68 lb / 2.12 kg</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hệ điều hành</td> <td style="width: 261pt;" width="348">No OS</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Phụ kiện đi kèm</td> <td style="width: 261pt;" width="348">AC Adapter</td> </tr> </tbody> </table> </div> 
-After TrAx.tranform
-<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><weight>ThinkPad E590</weight><ram>4GB DDR4</ram><weight>32GB</weight><lcd>15.6" FHD (1920x1080) Anti-glare IPS 250 nits</lcd><port>1 x USB-C (USB 3.1/DP 1.2/PD 3.0)</port><battery>3Cell 45WH</battery><os>No OS</os></laptop>  
-
-
+********************************EXISTED********************************
+Name : Laptop Asus Vivobook A412FA-EK156T (i3-8145U/4GB/HDD 1TB/14FHD/VGA ON/Win10/Blue)
+Read-Model : A412FA-EK156T
+Reformat-Model : EK156T
+********************************EXISTED********************************
+Name : Laptop HP Pavilion 14-ce3018TU 8QN89PA (i5-1035G1/4Gb/256GB SSD/14FHD/VGA ON/Win10/Gold)
+Read-Model : Pavilion 14-ce3018TU 8QN89PA
+Reformat-Model : 8QN89PA
+********************************EXISTED********************************
+Name : Laptop Asus Vivobook S333JA-EG034T (i5-1035G1/8GB/512GB SSD/13.3FHD/VGA ON/Win10/Black/NumPad)
+Read-Model : S333JA-EG003T
+Reformat-Model : EG003T
+********************************EXISTED********************************
+Name : Laptop Asus Vivobook S333JA-EG044T (i7-1065G1/8GB/512GB SSD/13.3FHD/VGA ON/Win10/White/NumPad)
+Read-Model : S333JA-EG003T
+Reformat-Model : EG003T
+********************************EXISTED********************************
+Name : Laptop Asus X409JA-EK014T (i5-1035G1/4GB/512GB SSD/14FHD/VGA ON/Win10/Sliver)
+Read-Model : X409JA-EK014T
+Reformat-Model : EK014T
+********************************EXISTED********************************
+Name : Laptop MSI Gaming GS66 Stealth 10SE 213VN (i7-10750H/16GB/512GB SSD/15.6FHD, 240Hz/RTX2060 6GB/Win10/Black)
+Read-Model : GS66 Stealth 10SE 213VN
+Reformat-Model : 10SE 213VN
 ********************************NOT VALID********************************
 cvc-complex-type.2.4.a: Invalid content was found starting with element 'weight'. One of '{"http://huyng/schema/laptop":id, "http://huyng/schema/laptop":model}' is expected.ProductUrl = https://www.phucanh.vn/laptop-lenovo-thinkpad-x390-20q0s03x00-black-dong-san-pham-cao-cap.html
 Before TrAx.tranform
@@ -38,6 +58,194 @@ After TrAx.tranform
 <?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><weight>ThinkPad X390</weight><ram>8GB DDR4</ram><weight>8GB</weight><lcd>13.3" FHD (1920x1080) Anti-glare IPS 300 nits</lcd><port>1 x Thunderboltvàtrade; 3</port><battery>6Cell 48WH</battery><os>No OS</os></laptop>  
 
 
+********************************EXISTED********************************
+Name : Laptop MSI GE75 Raider 10SFS 076VN (I9-10980HK/16GB/500GB SSD+1TB HDD/17.3FHD, 240Hz /RTX2070 Super 8GB DDR6/Win10/Black/Balo)
+Read-Model : GE75 Raider 10SFS 076VN
+Reformat-Model : 10SFS 076VN
+********************************EXISTED********************************
+Name : Laptop MSI Gaming GL65 Leopard 10SDK 242VN (I7 10750H/16GB/512GB SSD/15.6FHD/GTX1660 TI 6GB DDR6/Win 10/Black/Balo)
+Read-Model : Gaming GL65 Leopard 10SDK 242VN
+Reformat-Model : 10SDK 242VN
+********************************EXISTED********************************
+Name : Laptop MSI Gaming GF63 Thin 9SC 1031VN (I7-9750H/8GB/512GB SSD/15.6FHD/NVIDIA GTX1650 MAX Q 4GB/Win 10/Black)
+Read-Model : GF63 Thin 9SC 1031VN
+Reformat-Model : 9SC 1031VN
+********************************EXISTED********************************
+Name : Laptop MSI Gaming GF65 Thin 10SER 622VN (i7-10750H/8GB/512GB SSD/15.6FHD, 144Hz/RTX2060 6GB DDR6/Win10/Black)
+Read-Model : Gaming GF65 Thin 10SER 622VN
+Reformat-Model : 10SER 622VN
+********************************EXISTED********************************
+Name : Laptop MSI Gaming GF63 Thin 9SC 1030VN (I5-9300H/8GB/512GB SSD/15.6FHD/NVIDIA GTX1650 MAX Q 4GB/Win 10/Black)
+Read-Model : Gaming GF63 Thin 9SC 1030VN
+Reformat-Model : 9SC 1030VN
+********************************EXISTED********************************
+Name : Laptop MSI Gaming GF75 Thin 10SCXR 248VN (i7-10750H/8GB/512GB SSD/17.3FHD, 144Hz/GTX1650 4GB DDR6/Win10/Black)
+Read-Model : Gaming GF75 Thin 10SCXR 248VN
+Reformat-Model : 10SCXR 248VN
+********************************EXISTED********************************
+Name : Laptop MSI GF75 Thin 10SCXR 038VN (i7-10750H/8GB/512GB SSD/17.3FHD-120Hz/GTX1650 4GB/Win10/Black)
+Read-Model : Gaming GF75 Thin 10SCXR 038VN
+Reformat-Model : 10SCXR 038VN
+********************************EXISTED********************************
+Name : Laptop MSI Gaming GF63 Thin 10SCSR 077VN (I7-10750H/8GB/512GB SSD/15.6FHD, 120Ghz/NVIDIA GTX1650 TI MAX Q 4GB/Win 10/Black)
+Read-Model : GF63 Thin 10SCSR 077VN
+Reformat-Model : 10SCSR 077VN
+********************************EXISTED********************************
+Name : Laptop MSI Gaming GS65 Stealth 9SD 1409VN (i5-9300H/8GB/512GB SSD/15.6FHD, 144Hz/GTX1660 6GB/Win10/Black)
+Read-Model : GS65 Stealth 9SD 1409VN
+Reformat-Model : 9SD 1409VN
+********************************EXISTED********************************
+Name : Laptop MSI Modern 14 A10RAS 1041VN (I7-10510U/8GB/512GB SSD/14FHD, 60Hz/Nvidia MX330 2GB/Win10/Silver/Túi Sleeve)
+Read-Model : Modern 14 A10RAS 1041VN
+Reformat-Model : A10RAS 1041VN
+********************************EXISTED********************************
+Name : Laptop MSI Modern 14 A10RB 888VN (I7-10510U/8GB/512GB SSD/14 FHD/Nvidia MX250-2GB/Win10/Grey/Túi Sleeve)
+Read-Model : Modern 14 A10RB 888VN
+Reformat-Model : A10RB 888VN
+********************************EXISTED********************************
+Name : Laptop MSI Gaming GF65 Thin 10SDR 623VN (i5-10300H/8GB/512GB SSD/15.6FHD, 144Hz/GTX1660 TI 6GB DDR6/Win10/Black)
+Read-Model : Gaming GF65 Thin 10SDR 623VN
+Reformat-Model : 10SDR 623VN
+********************************EXISTED********************************
+Name : Laptop MSI Bravo 15 A4DCR 052VN (Ryzen 5-4600H/8GB/256GB SSD/14FHD, 60Hz/RX 5300M 3GB DDR6/Win10/Black)
+Read-Model : Bravo 15 A4DCR 052VN
+Reformat-Model : A4DCR 052VN
+********************************EXISTED********************************
+Name : Laptop MSI Gaming GF63 Thin 10SCXR 074VN (I7-10750H/8GB/512GB SSD/15.6FHD-60Hz/GTX1650 MAX Q 4GB/Win 10/Black)
+Read-Model : GF63 Thin 10SCXR 074VN
+Reformat-Model : 10SCXR 074VN
+********************************NOT VALID********************************
+cvc-complex-type.2.4.a: Invalid content was found starting with element 'weight'. One of '{"http://huyng/schema/laptop":id, "http://huyng/schema/laptop":model}' is expected.ProductUrl = https://www.phucanh.vn/laptop-lenovo-thinkpad-e590-20nbs00100-black-nhan-dang-van-tay.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 522pt;" width="696"> <tbody> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hvàatilde;ng sản xuất</td> <td style="width: 261pt;" width="348">Lenovo</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chủng loại</td> <td style="width: 261pt;" width="348">ThinkPad E590</td> </tr> <tr style="height: 26.45pt;"> <td style="height: 26.45pt; width: 261pt;" width="348">Part Number</td> <td style="width: 261pt;" width="348">20NBS00100</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Mầu sắc</td> <td style="width: 261pt;" width="348">Đen</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ vi xử lvàyacute;</td> <td style="width: 261pt;" width="348">Intelvàreg; Corevàtrade; i5-8265U(1.6GHz/6MB) up to 3.90 GHz</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chipset</td> <td style="width: 261pt;" width="348">Intelvàreg;</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ nhớ trong</td> <td style="width: 261pt;" width="348">4GB DDR4</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Số khe cắm</td> <td style="width: 261pt;" width="348">2</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Dung lượng tối đa</td> <td style="width: 261pt;" width="348">32GB</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">VGA</td> <td style="width: 261pt;" width="348">AMD Radeon RX 550X Graphics, 2GB DDR5 memory</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ cứng</td> <td style="width: 261pt;" width="348">1TB 5400RPM SATA HDD</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ quang</td> <td style="width: 261pt;" width="348">No</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Card Reader</td> <td style="width: 261pt;" width="348">MicroSD card reader</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bảo mật, công nghệ</td> <td style="width: 261pt;" width="348">Touch style fingerprint reader on the palm rest</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Màn hình</td> <td style="width: 261pt;" width="348">15.6" FHD (1920x1080) Anti-glare IPS 250 nits</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Webcam</td> <td style="width: 261pt;" width="348">HD 720p</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Audio</td> <td style="width: 261pt;" width="348">HD Audio, Conexant CX11880 codec / stereo speakers, 2W x 2, Dolby Advanced Audio</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Giao tiếp mạng</td> <td style="width: 261pt;" width="348">Gigabit Ethernet Connection</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Giao tiếp không dây</td> <td style="width: 261pt;" width="348">Intel Wireless-AC 9260, Wi-Fi 2x2 802.11ac + Bluetooth 5.0</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 115.5pt; width: 261pt;" rowspan="7" width="348">Cổng giao tiếp</td> <td style="width: 261pt;" width="348">1 x USB-C (USB 3.1/DP 1.2/PD 3.0)</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">2 x USB-A (USB 3.1)</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x USB 2.0</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">HDMI 1.4b</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">RJ45</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">Micro SD card slot</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">Combo Mic/Audio</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Pin</td> <td style="width: 261pt;" width="348">3Cell 45WH</td> </tr> <tr style="height: 79.15pt;"> <td style="height: 79.15pt; width: 261pt;" width="348">Kích thước (rộng x dài x cao)</td> <td style="width: 261pt;" width="348">14.53" x 9.94" x 0.78"; 369mm x 252.5mm x 19.9mm</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Cân nặng</td> <td style="width: 261pt;" width="348">Starting at 4.68 lb / 2.12 kg</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hệ điều hành</td> <td style="width: 261pt;" width="348">No OS</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Phụ kiện đi kèm</td> <td style="width: 261pt;" width="348">AC Adapter</td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><weight>ThinkPad E590</weight><ram>4GB DDR4</ram><weight>32GB</weight><lcd>15.6" FHD (1920x1080) Anti-glare IPS 250 nits</lcd><port>1 x USB-C (USB 3.1/DP 1.2/PD 3.0)</port><battery>3Cell 45WH</battery><os>No OS</os></laptop>  
+
+
+********************************EXISTED********************************
+Name : Laptop Asus UX534FT-A9168T (i5-10210U/8GB/512GB SSD/15.6FHD/GTX1650 MAX Q 4GB/Win10/ Blue/Túi Sleeve)
+Read-Model : UX534FT-A9168T
+Reformat-Model : A9168T
+********************************EXISTED********************************
+Name : Laptop Asus D509DA-EJ116T (Ryzen 3-3200U/4GB/1TB HDD/15.6FHD/AMD Radeon/Win10/Silver)
+Read-Model : D509DA-EJ116T
+Reformat-Model : EJ116T
+********************************EXISTED********************************
+Name : Laptop Asus D409DA-EK093T (Ryzen 5-3500U/4Gb/1TB HDD/14FHD/ AMD Radeon/Win10/Silver)
+Read-Model : D409DA-EK095T
+Reformat-Model : EK095T
+********************************EXISTED********************************
+Name : Laptop HP 348 G7 9PH01PA (i5-10210U/8GB/512GB SSD/14FHD/VGA ON/DOS/Silver)
+Read-Model : 348 G7 9PH01PA
+Reformat-Model : 9PH01PA
+********************************EXISTED********************************
+Name : Laptop HP 348 G7 9PG86PA (i3-10110U/4GB/256GB SSD/14/VGA ON/WIN10/Silver)
+Read-Model : 348 G7 9PG86PA
+Reformat-Model : 9PG86PA
+********************************EXISTED********************************
+Name : Laptop HP Envy 13-aq1021TU 8QN79PA (i5-10210U/8Gb/256GB SSD/13.3FHD/VGA ON/Win10/Gold)
+Read-Model : Envy 13-aq1021TU 8QN79PA
+Reformat-Model : 8QN79PA
+********************************EXISTED********************************
+Name : Laptop HP ProBook 430 G7 9GQ07PA (i3-10110/4GB/256GB SSD/13.3HD/VGA ON/WIN 10/Silver/LED_KB)
+Read-Model : ProBook 430 G7 9GQ07PA
+Reformat-Model : 9GQ07PA
+********************************EXISTED********************************
+Name : Laptop HP Pavilion 14-ce2034TU 6YZ17PA (i3-8145U/4Gb/1Tb HDD/14FHD/VGA ON/Win10/Silver)
+Read-Model : Pavilion 14-ce2034TU 6YZ17PA
+Reformat-Model : 6YZ17PA
+********************************EXISTED********************************
+Name : Laptop HP Pavilion 14-ce3037TU 8ZR43PA (i5-1035G1/4Gb/256GB SSD/14FHD/VGA ON/Win10/Silver)
+Read-Model : Pavilion 14-ce3037TU 8ZR43PA
+Reformat-Model : 8ZR43PA
+********************************EXISTED********************************
+Name : Laptop HP ProBook 440 G7 9MV57PA (i7-10510U/8GB/256GB SSD/14 FHD/VGA ON/DOS/Silver)
+Read-Model : ProBook 440 G7 9MV57PA
+Reformat-Model : 9MV57PA
+********************************EXISTED********************************
+Name : Laptop HP ProBook 450 G7 9GQ38PA (i5-10210U/8GB/512GB SSD/15.6FHD/VGA ON/DOS/Silver)
+Read-Model : ProBook 450 G7 9GQ38PA
+Reformat-Model : 9GQ38PA
+********************************EXISTED********************************
+Name : Laptop HP 348 G7 9PG93PA (i5-10210U/4Gb/SSD 256Gb/14FHD/VGA ON/DOS/Silver)
+Read-Model : 348 G7 9PG93PA
+Reformat-Model : 9PG93PA
+********************************EXISTED********************************
+Name : Laptop HP ProBook 450 G7 9GQ43PA (i5-10210U/4GB/256GB SSD/15.6FHD/VGA ON/DOS/Silver)
+Read-Model : ProBook 450 G7 9GQ43PA
+Reformat-Model : 9GQ43PA
+********************************EXISTED********************************
+Name : Laptop HP 348 G7 9PG98PA (i5-10210U/8Gb/SSD 256Gb/14FHD/VGA ON/DOS/Silver)
+Read-Model : 348 G7 9PG98PA
+Reformat-Model : 9PG98PA
+********************************EXISTED********************************
+Name : Laptop HP ProBook 440 G7 9GQ22PA (i5-10210U/4Gb/256GB SSD/14FHD/VGA ON/DOS/Silver)
+Read-Model : ProBook 440 G7 9GQ22PA
+Reformat-Model : 9GQ22PA
+********************************EXISTED********************************
+Name : Laptop HP Pavilion 15-cs3061TX 8RE83PA (i5-1035G1/8Gb/512GB SSD/15.6FHD/MX250 2GB/Win10/Grey)
+Read-Model : Pavilion 15-cs3061TX 8RE83PA
+Reformat-Model : 8RE83PA
+********************************EXISTED********************************
+Name : Laptop HP ProBook 450 G7 9MV54PA (i5-10210U/4GB/512GB SSD/15.6FHD/VGA ON/DOS/Silver)
+Read-Model : ProBook 450 G7 9MV54PA
+Reformat-Model : 9MV54PA
+********************************EXISTED********************************
+Name : Laptop HP Pavilion 14-ce3019TU 8QP00PA (i5-1035G1/4Gb/1TB HDD/ 14FHD/VGA ON/Win10/Gold)
+Read-Model : Pavilion 14-ce3019TU 8QP00PA
+Reformat-Model : 8QP00PA
+********************************EXISTED********************************
+Name : Laptop HP Envy 13-aq1047TU 8XS69PA (i7-10510U/8Gb/512Gb SSD/13.3FHD/VGA ON/Win10/Vân gỗ/LED_KB)
+Read-Model : Envy 13-aq1047TU 8XS69PA
+Reformat-Model : 8XS69PA
+********************************EXISTED********************************
+Name : Laptop HP Pavilion Gaming 15-dk0231TX 8DS89PA (i5-9300H/8Gb/1Tb HDD/15.6FHD/GTX1650 4GB/Win 10/Black)
+Read-Model : Pavilion Gaming 15-dk0231TX 8DS89PA
+Reformat-Model : 8DS89PA
+********************************EXISTED********************************
+Name : Laptop HP ProBook 440 G7 9GQ14PA (i5-10210U/8Gb/512GB SSD/14FHD/VGA ON/DOS/Silver)
+Read-Model : ProBook 440 G7 9GQ14PA
+Reformat-Model : 9GQ14PA
+********************************EXISTED********************************
+Name : Laptop HP Pavilion Gaming 15-dk0233TX 8DS86PA (i7-9750H/8Gb/512Gb SSD/15.6FHD/GTX1650 4GB/Win 10/Black)
+Read-Model : Pavilion Gaming 15-dk0233TX 8DS86PA
+Reformat-Model : 8DS86PA
+********************************EXISTED********************************
+Name : Laptop HP Pavilion x360 14-dh1139TU 8QP77PA (i7-10510U/8GB/512GB SSD/14FHD TouchScreen/VGA ON/Win10/Gold)
+Read-Model : Pavilion x360 14-dh1139TU 8QP77PA
+Reformat-Model : 8QP77PA
+********************************EXISTED********************************
+Name : Laptop HP 348 G7 9PG95PA (i5-10210U/4Gb/512GB SSD/14FHD/VGA ON/DOS/Silver)
+Read-Model : 348 G7 9PG95PA
+Reformat-Model : 9PG95PA
+********************************EXISTED********************************
+Name : Laptop HP Pavilion 14-ce2037TU 6YZ13PA (i3-8145U/4Gb/1Tb HDD/14.0FHD/VGA ON/Win10/Pink)
+Read-Model : Pavilion 14-ce2037TU 6YZ13PA
+Reformat-Model : 6YZ13PA
+********************************EXISTED********************************
+Name : Laptop HP Envy 13-aq1048TU 8XS70PA (i5-10210U/8Gb/512GB SSD/13.3FHD/VGA ON/Win10/Vân gỗ)
+Read-Model : Envy 13-aq1048TU 8XS70PA
+Reformat-Model : 8XS70PA
+********************************EXISTED********************************
+Name : Laptop HP ProBook 440 G7 9GQ24PA (i3-10110U/4GB/256GB SSD/14FHD/VGA ON/DOS/Silver)
+Read-Model : ProBook 440 G7 9GQ24PA
+Reformat-Model : 9GQ24PA
+********************************EXISTED********************************
+Name : Laptop HP ProBook 450 G7 9GQ34PA (i5-10210U/8Gb/256GB SSD/15.6FHD/VGA ON/Dos/Silver/LEB_KB)
+Read-Model : ProBook 450 G7 9GQ34PA
+Reformat-Model : 9GQ34PA
+********************************EXISTED********************************
+Name : Laptop HP 348 G7 9PH16PA (I7-10510U/8Gb/SSD 512Gb/14FHD/VGA ON/DOS/Silver)
+Read-Model : 348 G7 9PH16PA
+Reformat-Model : 9PH16PA
+********************************EXISTED********************************
+Name : Laptop Lenovo Thinkpad T490S 20NYSBHC00 (Core i7-8665U/16Gb/512Gb SSD/14.0 FHD/VGA ON/ Dos/Black)
+Read-Model : Thinkpad T490S 20NYSBHC00
+Reformat-Model : 20NYSBHC00
+********************************EXISTED********************************
+Name : Laptop Lenovo Legion Gaming Y540 15IRH 81SY004WVN (Core i5-9300H/8Gb/1Tb HDD+128Gb SSD M2 2242/ 15.6 FHD/ NVIDIA GTX1650-4Gb/ Win10/Black)
+Read-Model : Legion Gaming Y540 15IRH 81SY004WVN
+Reformat-Model : 81SY004WVN
 ********************************NOT VALID********************************
 cvc-complex-type.2.4.a: Invalid content was found starting with element 'name'. One of '{"http://huyng/schema/laptop":id, "http://huyng/schema/laptop":model}' is expected.ProductUrl = https://www.phucanh.vn/laptop-lenovo-ideapad-s340-15iwl-81n800aavn-grey/-fhd/-mong/-vo-nhom.html
 Before TrAx.tranform
@@ -46,6 +254,50 @@ After TrAx.tranform
 <?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"/>  
 
 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Air MVH42 SA/A 512Gb (2020) (Silver)- Touch ID
+Read-Model : Macbook Air MVH42 SA/A 512Gb (2020)
+Reformat-Model : MVH42 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MXK32 SA/A 256Gb (2020) (Space Gray)- Touch Bar
+Read-Model : Macbook Pro MXK32 SA/A 256Gb (2020)
+Reformat-Model : MXK32 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Air MWTJ2 256Gb (2020) (Gray)- Touch ID
+Read-Model : Macbook Air MWTJ2 256Gb (2020)
+Reformat-Model : MWTJ2 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Air MWTL2 256Gb (2020) (Gold)- Touch ID
+Read-Model : Macbook Air MWTL2 256Gb (2020)
+Reformat-Model : MWTL2 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Air MVFH2 128Gb (2019) (Gray)
+Read-Model : Macbook Air MVFH2 128Gb (2019)
+Reformat-Model : MVFH2 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MV9A2 512Gb (2019) (Silver)- Touch Bar
+Read-Model : Macbook Pro MV9A2 512Gb (2019)
+Reformat-Model : MV9A2 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MUHQ2 128Gb (2019) (Silver)- Touch Bar
+Read-Model : Macbook Pro MUHQ2 128Gb (2019)
+Reformat-Model : MUHQ2 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MV972 SA/A 512Gb (2019) (Space Gray)- Touch Bar
+Read-Model : Macbook Pro MV972 SA/A 512Gb (2019)
+Reformat-Model : MV972 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MUHN2 SA/A 128Gb (2019) (Space Gray)- Touch Bar
+Read-Model : Macbook Pro MUHN2 SA/A 128Gb (2019)
+Reformat-Model : MUHN2 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MUHR2 256Gb (2019) (Silver)- Touch Bar
+Read-Model : Macbook Pro MUHR2 256Gb (2019)
+Reformat-Model : MUHR2 
+********************************EXISTED********************************
+Name : Laptop Dell Inspiron 3493 N4I5122W/WA (I5-1035G1/8Gb/256Gb SSD/ 14.0 FHD/VGA ON/ Win10/Silver)
+Read-Model : Inspiron 3493 N4I5122W/WA
+Reformat-Model : N4I5122W
 ********************************NOT VALID********************************
 cvc-complex-type.2.4.a: Invalid content was found starting with element 'weight'. One of '{"http://huyng/schema/laptop":id, "http://huyng/schema/laptop":model}' is expected.ProductUrl = https://www.phucanh.vn/laptop-lenovo-thinkpad-e590-20nbs07000-black-nhan-dang-van-tay.html
 Before TrAx.tranform
@@ -54,6 +306,106 @@ After TrAx.tranform
 <?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><weight>ThinkPad E590</weight><ram>4GB DDR4</ram><weight>32GB</weight><lcd>15.6" HD (1366x768) Anti-glare TN 220 nits</lcd><port>1 x USB-C (USB 3.1/DP 1.2/PD 3.0)</port><battery>3Cell 45WH</battery><os>No OS</os></laptop>  
 
 
+********************************EXISTED********************************
+Name : Laptop Dell Vostro 3590B P75F010 (I5-10210U/ RAM 8Gb/256Gb SSD/ 15.6 FHD/ DVDW/AMD Radeon 610 2Gb/ Win10/Black)
+Read-Model : Vostro 3590A P90F002N93A/P75F010N90A
+Reformat-Model : P90F002N93A
+********************************EXISTED********************************
+Name : Laptop Dell Inspiron 5593A P90F002N93A (i7-1065G7/8Gb/512Gb SSD/ 15.6'FHD/MX230-4G/ Win10/Silver)
+Read-Model : Inspiron 5593A P90F002N93A
+Reformat-Model : P90F002N93A
+********************************EXISTED********************************
+Name : Laptop Dell Gaming G7 7590Z P82F001 (Core i7-9750H/16Gb/1Tb+256Gb/15.6'FHD-144Hz/RTX 2060 6GB/Win10/Grey)
+Read-Model : Gaming G7 7590Z P82F001
+Reformat-Model : P82F001
+********************************EXISTED********************************
+Name : Laptop Dell Inspiron 3493 N4I5136W (I5-1035G1/ 4Gb/1Tb HDD/ 14.0''FHD/VGA ON/ Win10/Silver)
+Read-Model : Inspiron 3493 N4I5136W
+Reformat-Model : N4I5136W
+********************************EXISTED********************************
+Name : Laptop Dell Inspiron 5391 N3I3001W (I3-10110U/4Gb/128Gb SSD/ 13.3Inch FHD/VGA ON/ Win10/Silver)
+Read-Model : Inspiron5391 N3I3001W
+Reformat-Model : N3I3001W
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Air MWTK2 256Gb (2020) (Silver)- Touch ID
+Read-Model : Macbook Air MWTK2 256Gb (2020)
+Reformat-Model : MWTK2 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MXK52 SA/A 512Gb (2020) (Space Gray)- Touch Bar
+Read-Model : Macbook Pro MXK52 SA/A 512Gb (2020)
+Reformat-Model : MXK52 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Air MVFN2 SA/A 256Gb (2019) (Gold)
+Read-Model : Macbook Air MVFN2 SA/A 256Gb (2019)
+Reformat-Model : MVFN2 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Air MVFJ2 256Gb (2019) (Gray)
+Read-Model : Macbook Air MVFJ2 256Gb (2019)
+Reformat-Model : MVFJ2 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MUHP2 SA/A 256Gb (2019) (Space Gray)- Touch Bar
+Read-Model : Macbook Pro MUHP2 SA/A 256Gb (2019)
+Reformat-Model : MUHP2 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MWP72 SA/A 512Gb (2020) (Silver)- Touch Bar
+Read-Model : Macbook Pro MWP72 SA/A 512Gb (2020)
+Reformat-Model : MWP72 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MV972 512Gb (2019) (Space Gray)- Touch Bar
+Read-Model : Macbook Pro MV972 512Gb (2019)
+Reformat-Model : MV972 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Air MVH52 512Gb (2020) (Gold)- Touch ID
+Read-Model : Macbook Air MVH52 512Gb (2020)
+Reformat-Model : MVH52 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MV992 256Gb (2019) (Silver)- Touch Bar
+Read-Model : Macbook Pro MV992 256Gb (2019)
+Reformat-Model : MV992 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MXK62 SA/A 256Gb (2020) (Silver)- Touch Bar
+Read-Model : Macbook Pro MXK62 SA/A 256Gb (2020)
+Reformat-Model : MXK62 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MV932 512Gb (2019) (Silver)- Touch Bar
+Read-Model : Macbook Pro MV932 512Gb (2019)
+Reformat-Model : MV932 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MV912 512Gb (2019) (Space Gray)- Touch Bar
+Read-Model : Macbook Pro MV912 512Gb (2019)
+Reformat-Model : MV912 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Air MVH22 SA/A 512Gb (2020) (Gray)- Touch ID
+Read-Model : Macbook Air MVH22 SA/A 512Gb (2020)
+Reformat-Model : MVH22 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Air MVFM2 SA/A 128Gb (2019) (Gold)
+Read-Model : Macbook Air MVFM2 SA/A 128Gb (2019)
+Reformat-Model : MVFM2 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MXK72 SA/A 512Gb (2020) (Silver)- Touch Bar
+Read-Model : Macbook Pro MXK72 SA/A 512Gb (2020)
+Reformat-Model : MXK72 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MV902 256Gb (2019) (Space Gray)- Touch Bar
+Read-Model : Macbook Pro MV902 256Gb (2019)
+Reformat-Model : MV902 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Air MQD32 128Gb (2017) (Silver)
+Read-Model : Macbook Air MQD32 128Gb (2017)
+Reformat-Model : MQD32 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Air MVFL2 SA/A 256Gb (2019) (Silver)
+Read-Model : Macbook Air MVFL2 SA/A 256Gb (2019)
+Reformat-Model : MVFL2 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MWP42 SA/A 512Gb (2020) (Space Gray)- Touch Bar
+Read-Model : Macbook Pro MWP42 SA/A 512Gb (2020)
+Reformat-Model : MWP42 
+********************************EXISTED********************************
+Name : Laptop Apple Macbook Pro MV922 256Gb (2019) (Silver)- Touch Bar
+Read-Model : Macbook Pro MV922 256Gb (2019)
+Reformat-Model : MV922 
 ********************************NOT VALID********************************
 cvc-complex-type.2.4.a: Invalid content was found starting with element 'weight'. One of '{"http://huyng/schema/laptop":id, "http://huyng/schema/laptop":model}' is expected.ProductUrl = https://www.phucanh.vn/laptop-lenovo-thinkpad-t490s-20nxs00200-black-san-pham-cao-cap-thiet-ke-mong.html
 Before TrAx.tranform
@@ -62,3 +414,27 @@ After TrAx.tranform
 <?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><weight>ThinkPad T490s</weight><ram>8GB DDR4</ram><weight>8GB</weight><lcd>14" FHD (1920x1080) Anti-glare IPS 250 nits</lcd><port>2 x USB 3.1 Gen1</port><battery>3Cell 57WH</battery><os>No OS</os></laptop>  
 
 
+********************************EXISTED********************************
+Name : Laptop Lenovo Gaming Ideapad L340 15IRH 81LK01GKVN (Core i5-9300HF/8Gb/256Gb SSD/15.6 FHD/GTX1050-3Gb/Win 10/Black)
+Read-Model : Ideapad L340 15IRH 81LK01GKVN
+Reformat-Model : 81LK01GKVN
+********************************EXISTED********************************
+Name : Laptop Lenovo Thinkpad E14 20RAS0KX00 (Core i5-10210U/8Gb/256Gb SSD/14.0 FHD/VGA ON/Finger Print/Dos/Black)
+Read-Model : Thinkpad E14 20RAS0KX00
+Reformat-Model : 20RAS0KX00
+********************************EXISTED********************************
+Name : Laptop Lenovo Thinkpad E14 20RAS01000 (Core i5-10210U/4Gb/256Gb SSD/14.0 FHD/VGA ON/Finger Print/Dos/Black)
+Read-Model : Thinkpad E14 20RAS01000
+Reformat-Model : 20RAS01000
+********************************EXISTED********************************
+Name : Laptop Lenovo Legion Gaming Y540 15IRH 81SY00FAVN (Core i7 9750H/8Gb/ HDD 1Tb+128Gb SSD/ 15.6Inch FHD/ GTX1650 4Gb/ Win10/ Black
+Read-Model : Legion Gaming Y540 15IRH 81SY00FAVN
+Reformat-Model : 81SY00FAVN
+********************************EXISTED********************************
+Name : Laptop Lenovo Thinkbook 14S IML 20RS004XVN (Core i5 10210U/8Gb/512Gb SSD/14.0FHD/VGA ON/DOS/ Grey/nhôm)
+Read-Model : Thinkbook 14 IML 20RV00BGVN
+Reformat-Model : 20RV00BGVN
+********************************EXISTED********************************
+Name : Laptop Lenovo Gaming Ideapad L340 15IRH 81LK01GLVN (Core i7-9750HF/8Gb/256Gb SSD/15.6 FHD/GTX1050-3Gb/Win 10/Black)
+Read-Model : Ideapad L340 15IRH 81LK01GLVN
+Reformat-Model : 81LK01GLVN

@@ -1,5 +1,6 @@
 package huyng.daos;
 
+import huyng.entities.LaptopEntity;
 import huyng.utils.DBHelper;
 
 import javax.persistence.EntityManager;

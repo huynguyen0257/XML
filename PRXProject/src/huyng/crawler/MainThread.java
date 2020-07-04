@@ -1,7 +1,4 @@
-package huyng.threads;
-
-import huyng.crawler.KLCrawler;
-import huyng.crawler.PACrawler;
+package huyng.crawler;
 
 public class MainThread implements Runnable {
     public static void main(String[] args) {
