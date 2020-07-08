@@ -19,9 +19,25 @@ Name : HP 15s-du1037TX 8RK37PA : i5-10210U | 8GB RAM | 512GB SSD | GeForce MX130
 Read-Model : 8RK37PA
 Reformat-Model : 8RK37PA
 ********************************EXISTED********************************
+Name : HP 348 G7 9PG95PA : I5-10210U | 4GB RAM | 512GB SSD | UHD Graphics 630 | 14.0 FHD IPS |  Free DOS | Silver | Finger
+Read-Model : HP 348 G7 9PG95PA
+Reformat-Model : 9PG95PA
+********************************EXISTED********************************
+Name : HP Pavilion 14-ce3019TU 8QP00PA : I5-1035G1 | 4GB RAM | 1TB HDD | UHD Graphics 630 | 14.0 FHD | Win10
+Read-Model : 8QP00PA
+Reformat-Model : 8QP00PA
+********************************EXISTED********************************
+Name : HP ProBook 450 G7 9GQ38PA : I5-10210U | 8GB RAM | 512GB SSD | UHD Graphics 630 | 15.6 FHD | Finger | FreeDos
+Read-Model : 9GQ38PA
+Reformat-Model : 9GQ38PA
+********************************EXISTED********************************
 Name : HP Pavilion 15- cs3011TU 8QN96PA : I5-1035G1 | 8GB RAM | 512GB SSD PCIe | UHD Graphics 630 | 15.6 FHD | WIN10 | Grey 
 Read-Model : 8QN96PA
 Reformat-Model : 8QN96PA
+********************************EXISTED********************************
+Name : HP 348 G7 9PH01PA : I5-10210U | 8GB RAM | 512GB SSD | UHD Graphics 630 | 14.0 FHD IPS |  Free DOS | Silver | Finger
+Read-Model : HP 348 G7 9PH01PA
+Reformat-Model : 9PH01PA
 ********************************EXISTED********************************
 Name : HP 15s-fq1107TU 193Q3PA :  I3-1005G1 | 4GB RAM | 256GB SSD | UHD Graphics 630 | 15.6 HD | WIN10 | Silver
 Read-Model : 193Q3PA
@@ -30,6 +46,10 @@ Reformat-Model : 193Q3PA
 Name : HP Pavilion 15- cs3014TU 8QP20PA : I5-1035G1 | 4GB RAM | 256GB SSD PCIe | UHD Graphics 630 | 15.6 FHD | WIN10 | Gold
 Read-Model : 8QP20PA
 Reformat-Model : 8QP20PA
+********************************EXISTED********************************
+Name : Hp ProBook 450 G7 9GQ34PA : I5-10210U | 8GB RAM | 256GB SSD | UHD Graphics 630 | 15.6 FHD | Dos | Finger
+Read-Model : 9GQ34PA
+Reformat-Model : 9GQ34PA
 ********************************EXISTED********************************
 Name : HP Pavilion 14-ce2038TU 6YZ21PA : i5-8265U | 4GB RAM | 1TB HDD | UHD Graphics 620 | 14.0 FHD | Win10 | Pink
 Read-Model : 6YZ21PA
@@ -43,13 +63,33 @@ Name : HP 15s-fq1022TU 8VY75PA : i7-1065G7 | 8GB RAM | 512GB SSD PCIe | UHD Grap
 Read-Model : 8VY75PA
 Reformat-Model : 8VY75PA
 ********************************EXISTED********************************
+Name : HP Pavilion 14-ce2034TU 6YZ17PA : i3-8145U | 4GB RAM | 1TB HDD | UHD Graphics 620 | 14.0 FHD | WIN 10 | Silver
+Read-Model : 6YZ17PA
+Reformat-Model : 6YZ17PA
+********************************EXISTED********************************
+Name : HP Pavilion 14-ce3015TU 8QN68PA : i3-1005G1 | 4GB RAM | 1TB HDD | UHD Graphics 630 | 14.0 FHD | Win10 | Silver
+Read-Model : 8QN68PA
+Reformat-Model : 8QN68PA
+********************************EXISTED********************************
+Name : HP Probook 430 G7 9GQ07PA : I3-10110U | 4GB RAM | 256GB SSD | UHD Graphics 630 | 13.3 HD | Finger | Win10
+Read-Model : 9GQ07PA
+Reformat-Model : 9GQ07PA
+********************************EXISTED********************************
 Name : HP 15s-du1040TX 8RE77PA : i7-10510U | 8GB RAM | 512GB SSD | GeForce MX130 2GB + UHD Graphics 630 | 15.6 HD | Win10 | Silver
 Read-Model : 8RE77PA
 Reformat-Model : 8RE77PA
 ********************************EXISTED********************************
+Name : HP Pavilion 15- cs3061TX 8RE83PA : I5-1035G1 | 8GB RAM | 512GB SSD PCIe | GeForce MX250 2GB + UHD Graphics 630 | 15.6 FHD | WIN10 | Grey
+Read-Model : 8RE83PA
+Reformat-Model : 8RE83PA
+********************************EXISTED********************************
 Name : HP Pavilion 15- cs3116TX 9AV24PA : I5-1035G1 | 4GB RAM | 256GB SSD PCIe | GeForce MX250 2GB + UHD Graphics 630 | 15.6 FHD | WIN10 | Gold
 Read-Model : 9AV24PA
 Reformat-Model : 9AV24PA
+********************************EXISTED********************************
+Name : HP ProBook 450 G7 9MV54PA : I5-10210U | 4GB RAM | 512GB SSD | UHD Graphics 630 | 15.6 FHD | Finger | FreeDos
+Read-Model : 9MV54PA
+Reformat-Model : 9MV54PA
 ********************************EXISTED********************************
 Name : HP Pavilion 14-ce3013TU 8QN72PA : I3-1005G1 | 4GB RAM | 256GB SSD | UHD Graphics 630 | 14.0 FHD | Win10
 Read-Model : 8QN72PA
@@ -67,9 +107,37 @@ Name : HP Pavilion 15-cs3060TX 8RJ61PA : I5-1035G1 | 8GB RAM | 512GB SSD | GeFor
 Read-Model : 8RJ61PA
 Reformat-Model : 8RJ61PA
 ********************************EXISTED********************************
+Name : HP 348 G7 9PG86PA : I3-10110U | 4GB RAM | 256GB SSD | UHD Graphics 630 | 14.0 FHD | WIN10 | Silver | Fingerprint
+Read-Model : 9PG86PA
+Reformat-Model : 9PG86PA
+********************************EXISTED********************************
+Name : HP ProBook 450 G7 9GQ43PA : I5-10210U | 4GB RAM | 256GB SSD | UHD Graphics 630 | 15.6 FHD | Finger | FreeDos
+Read-Model : 9GQ43PA
+Reformat-Model : 9GQ43PA
+********************************EXISTED********************************
 Name : HP 14s-dq1022TU 8QN41PA : i7-1065G7 | 8GB RAM | 512GB SSD | UHD Graphics 630 | 14.0 HD | Win10 | Silver 
 Read-Model : 8QN41PA (VSC)
 Reformat-Model : 8QN41PA
+********************************EXISTED********************************
+Name : HP 348 G7 9PG93PA : I5-10210U | 4GB RAM | 256GB SSD | UHD Graphics 630 | 14.0 FHD IPS |  FreeDOS | Silver | Finger
+Read-Model : HP 348 G7 9PG93PA
+Reformat-Model : 9PG93PA
+********************************EXISTED********************************
+Name : HP ProBook 440 G7 9GQ24PA : I3-10110U | 4GB RAM | 256GB SSD | UHD Graphics 630 | 14.0 HD | Finger | FreeDos 
+Read-Model : 9GQ24PA
+Reformat-Model : 9GQ24PA
+********************************EXISTED********************************
+Name : HP 348 G7 9PG98PA : I5-10210U | 8GB RAM | 256GB SSD | UHD Graphics 630 | 14.0 FHD IPS |  FreeDOS | Silver | Finger
+Read-Model : HP 348 G7 9PG98PA
+Reformat-Model : 9PG98PA
+********************************EXISTED********************************
+Name : HP Pavilion 14-ce2037TU 6YZ13PA : i3-8145U | 4GB RAM | 1TB HDD | UHD Graphics 620 | 14.0 FHD | Win 10 | Pink
+Read-Model : 6YZ13PA
+Reformat-Model : 6YZ13PA
+********************************EXISTED********************************
+Name : HP ProBook 440 G7 9GQ22PA : I5-10210U | 4GB RAM | 256GB SSD | UHD Graphics 630 | 14.0 FHD | Finger | FreeDos 
+Read-Model : 9GQ22PA
+Reformat-Model : 9GQ22PA
 ********************************EXISTED********************************
 Name : HP Pavilion 15-cs3008TU 8QP02PA : I3-1005G1 | 4GB RAM | 256GB SSD | UHD Graphics 630 | 15.6 FHD | Win10 | Gold
 Read-Model : 8QP02PA
@@ -87,9 +155,45 @@ Name : HP ENVY 13-aq1022TU 8QN69PA : i5-10210U | 8GB RAM | 512GB SSD PCIe | UHD 
 Read-Model : 8QN69PA
 Reformat-Model : 8QN69PA
 ********************************EXISTED********************************
+Name : HP Pavilion Gaming 15-dk0233TX (8DS86PA) i7-9750H | 8GB RAM | 512GB SSD PCIe | GTX 1650 4GB + Intel Graphics 630 | 15.6 FHD IPS | Win 10
+Read-Model : 8DS86PA (FPT)
+Reformat-Model : 8DS86PA
+********************************EXISTED********************************
+Name : HP Envy 13-aq1021TU : I5-10210U | 8GB RAM | 256GB SSD | UHD Graphics 620 | 13.3 FHD | Win10 | Gold 
+Read-Model : 8QN79PA
+Reformat-Model : 8QN79PA
+********************************EXISTED********************************
+Name : HP ProBook 440 G7 9GQ14PA : I5-10210U | 8GB RAM | 512GB SSD | UHD Graphics 630 | 14.0 FHD | Finger | FreeDos 
+Read-Model : 9GQ14PA
+Reformat-Model : 9GQ14PA
+********************************EXISTED********************************
+Name : HP Pavilion x360 14-dh1139TU : i7-10510U | 8GB RAM | 512GB SSD | UHD Graphics 630 | 14.0 FHD Touch (+ Pen) | Win10 
+Read-Model : 8QP77PA
+Reformat-Model : 8QP77PA
+********************************EXISTED********************************
+Name : HP Pavilion Gaming 15-dk0231TX (8DS89PA) i5-9300H | 8GB RAM | 1TB HDD | GTX 1650 4GB + Intel Graphics 630 | 15.6 FHD IPS | Win 10
+Read-Model : 8DS89PA
+Reformat-Model : 8DS89PA
+********************************EXISTED********************************
 Name : HP Pavilion 15- cs3063TX 8RK42PA : I7-1065G7 | 8GB RAM | 512GB SSD PCIe | GeForce MX250 2GB + UHD Graphics 630 | 15.6 FHD | WIN10 | Gold
 Read-Model : 8RK42PA
 Reformat-Model : 8RK42PA
+********************************EXISTED********************************
+Name : HP ENVY 13-aq1047TU 8XS69PA : i7-10510U | 8GB RAM | 512GB SSD PCIe | UHD Graphics 630 | 13.3 FHD IPS | Win10 | Black Vân Gỗ
+Read-Model : 8XS69PA
+Reformat-Model : 8XS69PA
+********************************EXISTED********************************
+Name :  HP Envy 13-aq1048TU : I5-10210U | 8GB RAM | 512GB SSD PCIe | UHD Graphics 620 | 13.3 FHD | Win10 | Black Vân Gỗ
+Read-Model : 8XS70PA
+Reformat-Model : 8XS70PA
+********************************EXISTED********************************
+Name : HP ProBook 440 G7 9MV57PA : I7-10510U | 8GB RAM | 256GB SSD | UHD Graphics 630 | 14.0 FHD | Finger | FreeDos
+Read-Model : 9MV57PA
+Reformat-Model : 9MV57PA
+********************************EXISTED********************************
+Name : HP 348 G7 9PH16PA : I7-10510U | 8GB RAM | 512GB SSD PCIe | UHD Graphics 630 | 14.0 FHD | Freedos | Silver | Fingerprint
+Read-Model : 9PH16PA
+Reformat-Model : 9PH16PA
 ********************************EXISTED********************************
 Name : ASUS ZenBook UX434FAC-A6116T : i5-10210U | 8GB RAM | 512GB SSD | UHD Graphics 620 | 14.0 FHD IPS | Screen Pad | Win10 | Silver
 Read-Model : UX434FAC-A6116T
@@ -275,6 +379,10 @@ Name : Dell Inspiron 3493-WTW3M2 : I3-1005G1 | 4GB RAM | 256GB SSD | UHD Graphic
 Read-Model : N3493 WTW3M2
 Reformat-Model : WTW3M2
 ********************************EXISTED********************************
+Name : Dell Inspiron 5490-FMKJV1 : i5-10210U | 8GB RAM | 512GB SSD PCIe | GeForce MX230 2GB+ UHD Graphics 630 | 14.0 FHD | Win10
+Read-Model : FMKJV1
+Reformat-Model : FMKJV1
+********************************EXISTED********************************
 Name : Dell Vostro 5490 V4I5106W : i5-10210U | 8GB RAM | 256GB SSD PCIe | UHD Graphics 630 | 14.0 FHD | Finger | Win10 | Urban Gray
 Read-Model : V4I5106W
 Reformat-Model : V4I5106W
@@ -323,10 +431,6 @@ Name : Dell XPS 15 7590 : i7-9750H | 8GB RAM | 512GB SSD PCIe | GeForce GTX 1650
 Read-Model : 
 Reformat-Model : 
 ********************************EXISTED********************************
-Name :  Dell XPS 9380 : i7-8565U | RAM 8GB | 256GB SSD | UHD Graphics 630 | 13.3 FHD | WIN 10 | Silver
-Read-Model : XPS 9380 USA
-Reformat-Model : 9380-USA
-********************************EXISTED********************************
 Name : Dell G3 3590 N5I5518W : i5 9300H | 8GB RAM | 512GB SSD | GTX 1650 4GB + UHD Graphics 630 | 15.6 FHD IPS | Finger | Win10
 Read-Model : N5I5518W
 Reformat-Model : N5I5518W
@@ -363,10 +467,6 @@ Name : Dell Inspiron 3593 70211826 : i7-1065G7 | 8GB RAM | 512GB SSD PCIe | GeFo
 Read-Model : 70211826 - Black | 70211828 - Silver
 Reformat-Model : 70211826
 ********************************EXISTED********************************
-Name : Dell XPS 9380 : i7-8565U | 8GB RAM | 256GB SSD | UHD Graphics 630 | 13.3 4K Touch | Win10 | Gold 
-Read-Model : XPS 9380 USA
-Reformat-Model : 9380-USA
-********************************EXISTED********************************
 Name : Dell Inspiron 7591 N5I5591W : i5-9300H | 8GB RAM | 256GB SSD PCIe | GTX 1050 3GB + UHD Graphics 630 | 15.6 FHD | Win10 | Grey
 Read-Model : N5I5591W
 Reformat-Model : N5I5591W
@@ -374,10 +474,6 @@ Reformat-Model : N5I5591W
 Name : Dell XPS 15 7590 70196707 : i7-9750H | 16GB RAM | 512GB SSD PCIe | GeForce GTX 1650 4GB | 15.6 FHD IPS | Win10 + OFF 365 | Finger | Silver
 Read-Model : 70196707
 Reformat-Model : 70196707
-********************************EXISTED********************************
-Name : Dell G5 5590-4F4Y41 : i7-9750H | 8GB RAM | 256GB SSD + 1TB HDD | GTX 1650 4GB + UHD Graphics 630 | 15.6 FHD IPS | Win10
-Read-Model : 4F4Y41
-Reformat-Model : 4F4Y41
 ********************************EXISTED********************************
 Name : Dell XPS 7390 2in1 : i7-1065G7 | 16GB RAM | 512GB SSD PCIe | UHD Graphics 630 | 13.4 FHD IPS Touch | WIN 10
 Read-Model : XPS 7390 USA Outlet New
@@ -394,14 +490,6 @@ Reformat-Model : V5490
 Name : Dell XPS 13 7390 70197462 : i5-10210U | 8GB RAM | 256GB SSD PCIe | UHD Graphics 630 | 13.3 FHD | Win10 | Finger | Silver
 Read-Model : 70197462
 Reformat-Model : 70197462
-********************************EXISTED********************************
-Name : Dell G5 5590-4F4Y42 : i7-9750H | 16GB RAM | 512GB SSD | RTX 2060 6GB + UHD Graphics 630 | 15.6 FHD IPS | Win10
-Read-Model : 4F4Y42
-Reformat-Model : 4F4Y42
-********************************EXISTED********************************
-Name : Dell Inspiron 5490-FMKJV1 : i5-10210U | 8GB RAM | 512GB SSD PCIe | GeForce MX230 2GB+ UHD Graphics 630 | 14.0 FHD | Win10
-Read-Model : FMKJV1
-Reformat-Model : FMKJV1
 ********************************EXISTED********************************
 Name : Dell Vostro 3590-GRMGK2 : i7-10510U | 8GB RAM | 256GB SSD | AMD Radeon 610 2GB | 15.6 FHD | Win10
 Read-Model : GRMGK2

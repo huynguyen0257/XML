@@ -3,6 +3,8 @@
 
     <xsl:variable name="uppercase" select="'àảẩậâấãăắáạệêềếồốôộổọớóợỔưứìĩíđABCDEFGHIJKLMNOPQRSTUVWXYZ'"/>
     <xsl:variable name="lowercase" select="'aaaaaaaaaaaeeeeoooooooooouuiiidabcdefghijklmnopqrstuvwxyz'"/>
+    <xsl:param name="price"/>
+    <xsl:param name="name"/>
 
     <xsl:template match="/div/table/tbody">
         <xsl:element name="laptop" xmlns="http://huyng/schema/laptop">
@@ -29,7 +31,7 @@
                             <xsl:value-of select="td[2]/text()"/>
                         </xsl:element>
                     </xsl:when>
-                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'ng/')]">
+                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'o cung')]">
                         <xsl:element name="hardDisk">
                             <xsl:value-of select="td[2]/text()"/>
                         </xsl:element>
@@ -49,45 +51,6 @@
                             <xsl:value-of select="td[2]/text()"/>
                         </xsl:element>
                     </xsl:when>
-
-                    <!--region Deletesoon-->
-                    <!--                    &lt;!&ndash;Webcam&ndash;&gt;-->
-<!--                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'ebcam')]">-->
-<!--                        <xsl:element name="webcam">-->
-<!--                            <xsl:if test="td[2][contains(text(),'g') or text() = '']">-->
-<!--                                <xsl:text>0</xsl:text>-->
-<!--                            </xsl:if>-->
-<!--                            <xsl:if test="td[2][translate(text(),$uppercase,$lowercase) = 'co']">-->
-<!--                                <xsl:text>1</xsl:text>-->
-<!--                            </xsl:if>-->
-<!--                        </xsl:element>-->
-<!--                    </xsl:when>-->
-<!--                    &lt;!&ndash;van tay&ndash;&gt;-->
-<!--                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'ng v')]">-->
-<!--                        <xsl:element name="fingerprintRecognition">-->
-<!--                            <xsl:if test="td[2][contains(text(),'g') or text() = '']">-->
-<!--                                <xsl:text>0</xsl:text>-->
-<!--                            </xsl:if>-->
-<!--                            <xsl:if test="td[2][translate(text(),$uppercase,$lowercase) = 'co']">-->
-<!--                                <xsl:text>1</xsl:text>-->
-<!--                            </xsl:if>-->
-<!--                        </xsl:element>-->
-<!--                    </xsl:when>-->
-<!--                    &lt;!&ndash;khuon mat&ndash;&gt;-->
-<!--                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'n m')]">-->
-<!--                        <xsl:element name="faceRecognition">-->
-<!--                            <xsl:if test="td[2][contains(text(),'g') or text() = '']">-->
-<!--                                <xsl:text>0</xsl:text>-->
-<!--                            </xsl:if>-->
-<!--                            <xsl:if test="td[2][translate(text(),$uppercase,$lowercase) = 'co']">-->
-<!--                                <xsl:text>1</xsl:text>-->
-<!--                            </xsl:if>-->
-<!--                        </xsl:element>-->
-<!--                        &lt;!&ndash;                        <xsl:text>Nhan Duoc nhu Khuon mat</xsl:text>&ndash;&gt;-->
-<!--                    </xsl:when>-->
-                    <!--endregion-->
-
-
                     <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'he dieu hanh')]">
                         <xsl:element name="os">
                             <xsl:value-of select="td[2]/text()"/>
@@ -98,11 +61,6 @@
                             <xsl:value-of select="td[2]/text()"/>
                         </xsl:element>
                     </xsl:when>
-<!--                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'ch th')]">-->
-<!--                        <xsl:element name="size">-->
-<!--                            <xsl:value-of select="td[2]/text()"/>-->
-<!--                        </xsl:element>-->
-<!--                    </xsl:when>-->
                     <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'ng l')]">
                         <xsl:element name="weight">
                             <xsl:value-of select="td[2]/text()"/>
@@ -115,8 +73,12 @@
                     </xsl:when>
                 </xsl:choose>
             </xsl:for-each>
-
+            <xsl:element name="name">
+                <xsl:value-of select="$name"/>
+            </xsl:element>
+            <xsl:element name="price">
+                <xsl:value-of select="$price"/>
+            </xsl:element>
         </xsl:element>
-
     </xsl:template>
 </xsl:stylesheet>

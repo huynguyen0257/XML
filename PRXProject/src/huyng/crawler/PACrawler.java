@@ -5,13 +5,12 @@ import huyng.daos.BrandDAO;
 import huyng.daos.LaptopDAO;
 import huyng.entities.BrandEntity;
 import huyng.entities.LaptopEntity;
+import huyng.services.LaptopService;
 import huyng.utils.JAXBHelper;
+import huyng.utils.StringHelper;
 import huyng.utils.TrAxHelper;
 import huyng.utils.XMLHelper;
 import org.xml.sax.SAXException;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 
 import javax.xml.bind.JAXBException;
 import javax.xml.namespace.QName;
@@ -22,8 +21,6 @@ import javax.xml.stream.events.Attribute;
 import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 import javax.xml.transform.TransformerException;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import java.io.*;
 import java.util.ArrayList;
@@ -33,9 +30,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-//TODO: catch url SSL Exception
-//TODO: create method recrawl SSL exception
-//TODO: create method import record not valid
 public class PACrawler implements Runnable {
     @Override
     public void run() {
@@ -68,7 +62,7 @@ public class PACrawler implements Runnable {
             crawlerProcess();
 //            eachPageCrawler("https://www.phucanh.vn/may-tinh-xach-tay-laptop-apple.html&page=1");
 //            getLaptopCrawler("https://www.phucanh.vn/laptop-apple-macbook-pro-muhr2-256gb-2019-silver-touch-bar.html",null);//Oke
-//            getLaptopCrawler("https://www.phucanh.vn/laptop-asus-a512fa-ej1281t-i5-10210u/8gb/512gb-ssd/15.6quotfhd/vga-on/win10/silver.html",null);//Not oke
+//            getLaptopCrawler("https://www.phucanh.vn/laptop-asus-gaming-gl503vd-gz119t-black.html", new LaptopEntity("NguyenGiaHuy",277777329));//Not oke
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -78,6 +72,8 @@ public class PACrawler implements Runnable {
     private static FileWriter writer = null;
     private static final Object LOCK = new Object();
     private static List<Thread> threads = new ArrayList<>();
+    private static Hashtable<LaptopEntity, String> cpus = new Hashtable<>();
+    private static LaptopService laptopService = new LaptopService();
 
     public static void closeStream() throws IOException {
         writer.close();
@@ -88,7 +84,7 @@ public class PACrawler implements Runnable {
      * @throws IOException
      * @throws XMLStreamException
      */
-    public static void crawlerProcess() throws IOException, XMLStreamException, InterruptedException {
+    public static void crawlerProcess() throws IOException, XMLStreamException {
         file = new File(CrawlerConstant.ERROR_PHUCANH);
         writer = new FileWriter(file);
 
@@ -115,6 +111,7 @@ public class PACrawler implements Runnable {
                     List<LaptopEntity> laptopOfBrand = new ArrayList<>();
                     String pageUrl = brandUrl + "?page=" + (i + 1);
                     BrandEntity finalBrand = brand;
+                    int finalI = i;
                     Thread t = new Thread() {
                         @Override
                         public void run() {
@@ -127,26 +124,11 @@ public class PACrawler implements Runnable {
                             }
 
                             //Save ListLaptop to DB
-                            LaptopDAO laptopDao = new LaptopDAO();
                             laptopOfBrand.forEach((l) -> {
                                 try {
-                                    String newModel = laptopDao.reformatModel(l.getModel(), finalBrand.getName());
-                                    if (!laptopDao.checkExisted(newModel)) {
-                                        l.setBrand(finalBrand);
-                                        l.setModel(newModel);
-                                        laptopDao.insert(l);
-                                    } else {
-                                        synchronized (LOCK) {
-                                            try {
-                                                writer.write("********************************EXISTED********************************" + "\n");
-                                                writer.write("Name : " + l.getName() + "\n");
-                                                writer.write("Read-Model : " + l.getModel() + "\n");
-                                                writer.write("Reformat-Model : " + newModel + "\n");
-                                                writer.flush();
-                                            } catch (IOException e) {
-                                                throw e;
-                                            }
-                                        }
+                                    l.setBrand(finalBrand);
+                                    synchronized (LOCK) {
+                                        laptopService.insertLaptop(l, cpus.get(l));
                                     }
                                 } catch (Exception e) {
                                     try {
@@ -161,6 +143,7 @@ public class PACrawler implements Runnable {
                                     }
                                 }
                             });//End save list laptop
+                            System.out.println("PhuCanhCrawler SUSSCESS each page of brand " +finalBrand.getName()+" \t|Page : " + finalI);
                         }
                     };
                     threads.add(t);
@@ -314,27 +297,17 @@ public class PACrawler implements Runnable {
 
         InputStream is = new ByteArrayInputStream(document.getBytes("UTF-8"));
         String xslPath = CrawlerConstant.PA_XSL_PATH;
-
-        ByteArrayOutputStream ps = TrAxHelper.transform(is, xslPath);
-        Document newDoc = XMLHelper.parseStringToDOM(ps.toString());
-
-        String exp = "//*[local-name()='laptop']";
-//        String exp = "/laptop";
-        XPath xPath = XMLHelper.getXPath();
-
-        Node root = (Node) xPath.evaluate(exp, newDoc, XPathConstants.NODE);
-        Element name = XMLHelper.CreateElement(newDoc, "name", laptop.getName(), null);
-        Element price = XMLHelper.CreateElement(newDoc, "price", laptop.getPrice() + "", null);
-        root.appendChild(name);
-        root.appendChild(price);
-
-
-        String xmlContent = TrAxHelper.transformDOMtoString(root);
-        ByteArrayOutputStream outputStream = new ByteArrayOutputStream(xmlContent.getBytes("UTF-8").length);
-        outputStream.write(xmlContent.getBytes("UTF-8"), 0, xmlContent.getBytes("UTF-8").length);
+        Hashtable<String, String> params = new Hashtable<>();
+        params.put("name", laptop.getName());
+        params.put("price", laptop.getPrice() + "");
+        ByteArrayOutputStream ps = TrAxHelper.transform(is, xslPath, params);
         try {
-            XMLHelper.validateXMLSchema(TrAxHelper.getXSDPath(LaptopEntity.class), outputStream);
-            laptop = (LaptopEntity) JAXBHelper.unmarshalling(xmlContent.getBytes("UTF-8"), LaptopEntity.class);
+            XMLHelper.validateXMLSchema(JAXBHelper.getXSDPath(LaptopEntity.class), ps);
+            String removeNSPs = ps.toString().replaceAll("http://huyng/schema/laptop", "");
+
+            ByteArrayOutputStream formatXML = StringHelper.getByteArrayFromString(removeNSPs);
+            laptop = (LaptopEntity) JAXBHelper.unmarshalling(formatXML.toByteArray(), LaptopEntity.class);
+            cpus.put(laptop, laptopService.getCPUFromXMLString(ps.toString()));
             return laptop;
         } catch (SAXException | IOException e) {
             synchronized (LOCK) {

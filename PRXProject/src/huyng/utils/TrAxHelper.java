@@ -2,6 +2,7 @@ package huyng.utils;
 
 import huyng.constants.CrawlerConstant;
 import huyng.entities.LaptopEntity;
+import huyng.entities.ProcessorEntity;
 import org.w3c.dom.Node;
 
 import javax.xml.transform.*;
@@ -9,11 +10,12 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 import java.io.*;
+import java.util.Hashtable;
 
 public class TrAxHelper {
 
 
-    public static ByteArrayOutputStream transform(InputStream xmlIs, String xslPath)
+    public static ByteArrayOutputStream transform(InputStream xmlIs, String xslPath, Hashtable<String,String> params)
             throws FileNotFoundException, TransformerConfigurationException, TransformerException {
 
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
@@ -24,6 +26,11 @@ public class TrAxHelper {
         StreamSource xslSource = new StreamSource(new FileInputStream(xslPath));
         StreamResult result = new StreamResult(outputStream);
         Transformer trans = factory.newTransformer(xslSource);
+        if (params != null){
+            params.forEach((name,value)->{
+                trans.setParameter(name,value);
+            });
+        }
         trans.transform(source, result);
 
         return outputStream;
@@ -36,12 +43,5 @@ public class TrAxHelper {
         t.setOutputProperty(OutputKeys.INDENT, "yes");
         t.transform(new DOMSource(node), new StreamResult(sw));
         return sw.toString();
-    }
-
-    public static String getXSDPath(Class T){
-        String path = null;
-        if (T == LaptopEntity.class) path = "/laptop.xsd";
-        if (path == null) return null;
-        return CrawlerConstant.XSD_PATH + path;
     }
 }

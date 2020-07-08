@@ -3,14 +3,13 @@
 
     <persistence-unit name="NewPersistenceUnit">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <class>huyng.entities.BrandEntity</class>
-        <class>huyng.entities.LaptopEntity</class>
-        <class>huyng.entities.ProcessorEntity</class>
+        <class>entities.BrandEntity</class>
+        <class>entities.LaptopEntity</class>
         <properties>
             <property name="eclipselink.jdbc.url" value="jdbc:sqlserver://localhost:1433;database=PRXProject"/>
             <property name="eclipselink.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
-            <property name="eclipselink.jdbc.user" value="sa"/>
-            <property name="eclipselink.jdbc.password" value="yourStrong(!)Password"/>
+            <property name="eclipselink.jdbc.user" value=""/>
+            <property name="eclipselink.jdbc.password" value=""/>
         </properties>
     </persistence-unit>
 </persistence>

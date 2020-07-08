@@ -1,23 +1,16 @@
-package huyng.entities;
+package entities;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Objects;
 
-@XmlAccessorType(XmlAccessType.FIELD)
 @Entity
 @Table(name = "Laptop", schema = "dbo", catalog = "PRXProject")
-@XmlRootElement(name = "laptop")
-@NamedQueries({
-        @NamedQuery(name = "Laptop.findByModel", query = "select l from LaptopEntity l where l.model = :model"),
-})
 public class LaptopEntity {
     private int id;
     private String name;
     private String model;
     private int price;
+    private String cpu;
     private String vga;
     private String ram;
     private String hardDisk;
@@ -28,20 +21,10 @@ public class LaptopEntity {
     private String battery;
     private String weight;
     private String color;
-    private BrandEntity brand;
-    private ProcessorEntity processor;
-
-    public LaptopEntity() {
-    }
-
-    public LaptopEntity(String name, int price) {
-        this.name = name;
-        this.price = price;
-    }
+    private BrandEntity brandByBrandId;
 
     @Id
     @Column(name = "Id")
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
@@ -78,6 +61,16 @@ public class LaptopEntity {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    @Basic
+    @Column(name = "CPU")
+    public String getCpu() {
+        return cpu;
+    }
+
+    public void setCpu(String cpu) {
+        this.cpu = cpu;
     }
 
     @Basic
@@ -189,6 +182,7 @@ public class LaptopEntity {
                 price == that.price &&
                 Objects.equals(name, that.name) &&
                 Objects.equals(model, that.model) &&
+                Objects.equals(cpu, that.cpu) &&
                 Objects.equals(vga, that.vga) &&
                 Objects.equals(ram, that.ram) &&
                 Objects.equals(hardDisk, that.hardDisk) &&
@@ -203,48 +197,16 @@ public class LaptopEntity {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, model, price, vga, ram, hardDisk, lcd, options, port, os, battery, weight, color);
+        return Objects.hash(id, name, model, price, cpu, vga, ram, hardDisk, lcd, options, port, os, battery, weight, color);
     }
 
     @ManyToOne
     @JoinColumn(name = "BrandId", referencedColumnName = "Id", nullable = false)
-    public BrandEntity getBrand() {
-        return brand;
+    public BrandEntity getBrandByBrandId() {
+        return brandByBrandId;
     }
 
-    public void setBrand(BrandEntity brand) {
-        this.brand = brand;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "ProcessorId", referencedColumnName = "Id", nullable = false)
-    public ProcessorEntity getProcessor() {
-        return processor;
-    }
-
-    public void setProcessor(ProcessorEntity processor) {
-        this.processor = processor;
-    }
-
-    @Override
-    public String toString() {
-        return "LaptopEntity{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", model='" + model + '\'' +
-                ", price=" + price +
-                ", vga='" + vga + '\'' +
-                ", ram='" + ram + '\'' +
-                ", hardDisk='" + hardDisk + '\'' +
-                ", lcd='" + lcd + '\'' +
-                ", options='" + options + '\'' +
-                ", port='" + port + '\'' +
-                ", os='" + os + '\'' +
-                ", battery='" + battery + '\'' +
-                ", weight='" + weight + '\'' +
-                ", color='" + color + '\'' +
-                ", brand=" + brand +
-                ", processor=" + processor +
-                '}';
+    public void setBrandByBrandId(BrandEntity brandByBrandId) {
+        this.brandByBrandId = brandByBrandId;
     }
 }

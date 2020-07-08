@@ -6,7 +6,9 @@ import huyng.daos.BrandDAO;
 import huyng.daos.LaptopDAO;
 import huyng.entities.BrandEntity;
 import huyng.entities.LaptopEntity;
+import huyng.services.LaptopService;
 import huyng.utils.JAXBHelper;
+import huyng.utils.StringHelper;
 import huyng.utils.TrAxHelper;
 import huyng.utils.XMLHelper;
 import org.w3c.dom.Document;
@@ -37,11 +39,15 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+//TODO: Recode KL
+//TODO: print out all cpu and formated for 2 page
 public class KLCrawler implements Runnable {
-    private static final Object LOCK = new Object();
-    private static List<Thread> THREADS = new ArrayList<>();
-    private static File file = null;
-    private static FileWriter writer = null;
+    private final Object LOCK = new Object();
+    private List<Thread> THREADS = new ArrayList<>();
+    private File file = null;
+    private FileWriter writer = null;
+    private Hashtable<LaptopEntity,String> cpus = new Hashtable<>();
+    public LaptopService laptopService = new LaptopService();
 
     @Override
     public void run() {
@@ -60,8 +66,6 @@ public class KLCrawler implements Runnable {
                     break;
                 }
                 count = 0;
-                System.out.println(Thread.currentThread().getName());
-                System.out.println("COUNT : " + count);
                 Thread.currentThread().sleep(30 * 1000);
             }
         } catch (IOException e) {
@@ -73,7 +77,7 @@ public class KLCrawler implements Runnable {
         }
     }
 
-    public static void main(String[] args) throws IOException, XMLStreamException, InterruptedException {
+    public static void main(String[] args) throws IOException, XMLStreamException {
         KLCrawler crawler = new KLCrawler();
         crawler.processCrawler();
 
@@ -83,7 +87,7 @@ public class KLCrawler implements Runnable {
 //        crawler.getLaptopCrawler("https://kimlongcenter.com/san-pham/asus-rog-strix-g-g531g-val319t-i7-9750h-3902.html", new LaptopEntity("NguyenGiaHuy", 123612874));
     }
 
-    private void processCrawler() throws IOException, XMLStreamException, InterruptedException {
+    private void processCrawler() throws IOException, XMLStreamException {
         file = new File(CrawlerConstant.ERROR_KIMLONG);
         writer = new FileWriter(file);
         Hashtable<BrandEntity, String> brands = getBrandCrawler();
@@ -95,9 +99,7 @@ public class KLCrawler implements Runnable {
                 brand = b.get(0);
             } else {
                 brandDao.insert(brand);
-                System.out.println("Insert Brand SUCCESS!!! --- " + brand.getName());
             }
-            LaptopDAO laptopDAO = new LaptopDAO();
             BrandEntity finalBrand = brand;
             Thread t = new Thread() {
                 @Override
@@ -107,28 +109,28 @@ public class KLCrawler implements Runnable {
 
                         //Inseart productOfBrand
                         productOfBrands.forEach(l -> {
-                            String newModel = laptopDAO.reformatModel(l.getModel(), finalBrand.getName());
-                            if (!laptopDAO.checkExisted(newModel)) {
-                                l.setBrand(finalBrand);
-                                l.setModel(newModel);
-                                laptopDAO.insert(l);
-                            } else {
+                            l.setBrand(finalBrand);
+                            try {
                                 synchronized (LOCK) {
-                                    try {
-                                        writer.write("********************************EXISTED********************************" + "\n");
-                                        writer.write("Name : " + l.getName() + "\n");
-                                        writer.write("Read-Model : " + l.getModel() + "\n");
-                                        writer.write("Reformat-Model : " + newModel + "\n");
+                                    laptopService.insertLaptop(l, cpus.get(l));
+                                }
+                            } catch (Exception e) {
+                                try {
+                                    synchronized (LOCK) {
+                                        writer.write("********************************ERROR insert LAPTOP********************************\n");
+                                        writer.write("Message : " + e.getMessage() + "\n");
+                                        writer.write(l.toString() + "\n\n\n");
                                         writer.flush();
-                                    } catch (IOException e) {
-                                        e.printStackTrace();
                                     }
+                                } catch (IOException ioException) {
+                                    ioException.printStackTrace();
                                 }
                             }
                         });
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
+                    System.out.println("KimLongCrawler SUSSCESS Brand :" +finalBrand.getName());
                 }
             };
             t.start();
@@ -170,7 +172,7 @@ public class KLCrawler implements Runnable {
         return brands;
     }
 
-    private static int getPageSize(String url) throws IOException, ParserConfigurationException, SAXException, XPathExpressionException {
+    private int getPageSize(String url) throws IOException, ParserConfigurationException, SAXException, XPathExpressionException {
         String document = XMLHelper.getDocument(url, CrawlerConstant.KIM_LONG_PAGE_SIZE_START_SIGNAL, CrawlerConstant.KIM_LONG_PAGE_SIZE_TAG, new String[]{CrawlerConstant.DUPLICATE_SRC_KL});
         Document dom = XMLHelper.parseStringToDOM(document);
         String exp = "/ul/li[last()]/a";
@@ -233,12 +235,10 @@ public class KLCrawler implements Runnable {
     private List<LaptopEntity> getLaptopByBrandUrl(String url) throws ParserConfigurationException, SAXException, XPathExpressionException, IOException {
         List<LaptopEntity> laptops = new ArrayList<>();
         int pagesize = getPageSize(url);
-//                        System.out.println("Brand Name :" + entity.getName());
         for (int i = 0; i < pagesize; i++) {
             String pageUrl = url.substring(0, url.indexOf(".html")) + "/trang/" + (i + 1);
             Hashtable<LaptopEntity, String> listLaptopLink = eachPageCrawler(pageUrl);
             listLaptopLink.forEach((laptopEntity, laptopDetailUrl) -> {
-                System.out.println("LaptopName: " + laptopEntity.getName() + "\t|\tLaptopUrl = " + laptopDetailUrl);
                 try {
                     laptops.add(getLaptopCrawler(laptopDetailUrl, laptopEntity));
                 } catch (IOException e) {
@@ -250,49 +250,29 @@ public class KLCrawler implements Runnable {
         return laptops;
     }
 
-    private static LaptopEntity getLaptopCrawler(String url, LaptopEntity laptop) throws IOException {
+    private LaptopEntity getLaptopCrawler(String url, LaptopEntity laptop) throws IOException {
         String document = null;
         ByteArrayOutputStream ps = null;
         try {
-            document = XMLHelper.getDocument(url, CrawlerConstant.KIM_LONG_DETAIL_START_SIGNAL, CrawlerConstant.KIM_LONG_DETAIL_TAG, null);
+            document = XMLHelper.getDocument(url, CrawlerConstant.KIM_LONG_DETAIL_START_SIGNAL, CrawlerConstant.KIM_LONG_DETAIL_TAG, new String[]{"™","®"});
             String[] xsdOrder = new String[]{"model", "cpu", "vga", "ram", "hardDisk", "lcd", "options", "port", "os", "battery", "weight", "color"};
             XPath xPath = XMLHelper.getXPath();
 
             InputStream is = new ByteArrayInputStream(document.getBytes("UTF-8"));
             String xslPath = CrawlerConstant.KL_XSL_PATH;
-            ps = TrAxHelper.transform(is, xslPath);
-            Document dom = XMLHelper.parseStringToDOM(ps.toString());
-            String exp = "//*[local-name()='laptop']";
-            Node root = (Node) xPath.evaluate(exp, dom, XPathConstants.NODE);
 
-            Document newDom = XMLHelper.createNewDOM();
-            Element name = XMLHelper.CreateElement(newDom, "name", laptop.getName(), null);
-            Element price = XMLHelper.CreateElement(newDom, "price", laptop.getPrice() + "", null);
-//        Element laptopElement = XMLHelper.CreateElement(newRoot,"laptop",null,null);
-            Element laptopElement = newDom.createElementNS("http://huyng/schema/laptop", "laptop");
-            Element id = XMLHelper.CreateElement(newDom, "id", "0", null);
-            laptopElement.appendChild(id);
-            for (int i = 0; i < xsdOrder.length; i++) {
-                Node e = ((DeferredElementNSImpl) root).getElementsByTagName(xsdOrder[i]).item(0);
-                String value = null;
-                if (e != null)
-                    value = ((DeferredElementNSImpl) root).getElementsByTagName(xsdOrder[i]).item(0).getTextContent();
-                Element element = XMLHelper.CreateElement(newDom, xsdOrder[i], value, null);
-                laptopElement.appendChild(element);
-            }
-            laptopElement.appendChild(name);
-            laptopElement.appendChild(price);
-            newDom.appendChild(laptopElement);
-
-            String xmlContent = TrAxHelper.transformDOMtoString(newDom);
-            ByteArrayOutputStream outputStream = new ByteArrayOutputStream(xmlContent.getBytes("UTF-8").length);
-            outputStream.write(xmlContent.getBytes("UTF-8"), 0, xmlContent.getBytes("UTF-8").length);
-
+            Hashtable<String,String> params = new Hashtable<>();
+            params.put("name",laptop.getName());
+            params.put("price",laptop.getPrice()+"");
+            ps = TrAxHelper.transform(is, xslPath, params);
 
             try {
-                XMLHelper.validateXMLSchema(TrAxHelper.getXSDPath(LaptopEntity.class), outputStream);
-                laptop = (LaptopEntity) JAXBHelper.unmarshalling(xmlContent.getBytes("UTF-8"), LaptopEntity.class);
-            } catch (JAXBException | SAXParseException e) {
+                XMLHelper.validateXMLSchema(JAXBHelper.getXSDPath(LaptopEntity.class), ps);
+                String removeNSPs = ps.toString().replaceAll("http://huyng/schema/laptop","");
+                ps = StringHelper.getByteArrayFromString(removeNSPs);
+                laptop = (LaptopEntity) JAXBHelper.unmarshalling(ps.toByteArray(), LaptopEntity.class);
+                cpus.put(laptop,laptopService.getCPUFromXMLString(ps.toString()));
+            } catch (JAXBException | SAXException e) {
                 synchronized (LOCK) {
                     writer.write("********************************NOT VALID********************************" + "\n");
                     writer.write(e.getMessage());
@@ -308,18 +288,6 @@ public class KLCrawler implements Runnable {
 
 
             return laptop;
-        } catch (XPathExpressionException e) {
-            synchronized (LOCK) {
-                writer.write("********************************ERROR Xpath.evaluate********************************" + "\n");
-                writer.write("Exception: " + e.getMessage() + "\n\n");
-                writer.flush();
-            }
-        } catch (ParserConfigurationException | SAXException e) {
-            synchronized (LOCK) {
-                writer.write("********************************ERROR Create DOM********************************" + "\n");
-                writer.write("Exception: " + e.getMessage() + "\n\n");
-                writer.flush();
-            }
         } catch (TransformerException e) {
             synchronized (LOCK) {
                 writer.write("\n");

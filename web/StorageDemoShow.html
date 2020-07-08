@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Chart</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        function addRow(tableId, cells) {
+            var tableElem = document.getElementById(tableId);
+            var newCell;
+            var col = 0;
+            var newRow;
+            for (var i = 0; i < cells.length; i++) {
+                newRow = tableElem.insertRow(tableElem.rows.length);
+
+                newCell = newRow.insertCell(newRow.cells.length);
+                newCell.innerHTML = ++col;
+                newCell = newRow.insertCell(newRow.cells.length);
+                newCell.innerHTML = cells[i];
+                newCell.width = 200;
+            }
+            return newRow;
+        }
+
+        function showCart(items, tableID) {
+            var item = items.split(';');
+            addRow(tableID,item);
+        }
+    </script>
+</head>
+<body onload="showCart(sessionStorage.cart, 'tbItems')">
+<h1>Your Cart includes</h1>
+<table id="tbItems" border="1">
+    <tr>
+        <th>No.</th>
+        <th>Item Name</th>
+    </tr>
+</table>
+
+</body>
+</html>

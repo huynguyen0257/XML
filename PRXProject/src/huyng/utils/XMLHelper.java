@@ -2,11 +2,13 @@ package huyng.utils;
 
 import com.sun.xml.internal.stream.events.EndElementEvent;
 import huyng.constants.CrawlerConstant;
+import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.InputSource;
 
+import javax.print.Doc;
 import javax.xml.XMLConstants;
 import javax.xml.namespace.QName;
 import javax.xml.parsers.DocumentBuilder;
@@ -16,11 +18,14 @@ import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.*;
+import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 import java.io.*;
 import java.net.URL;
@@ -32,14 +37,18 @@ import java.util.regex.Pattern;
 public class XMLHelper {
 
     public static String getDocument(String url, String beginSignal, String tag, String[] IGNORE_TEXTS) throws IOException {
-        BufferedReader reader = getBufferedReaderForURL(url);
+        BufferedReader reader = null;
+        try{
+            reader = getBufferedReaderForURL(url);
+        }catch (FileNotFoundException e){
+            System.out.println("Link Not Existed : " +url);
+        }
         String devide = " ";
 //            devide = "\n";
         String line = "";
         String document = "";
         int tagCount = 0;
         boolean isFound = false;
-        //make sure we don't have case like this <div><div></div></div>
         while ((line = reader.readLine()) != null) {
             //check the begin tag
             if (!isFound && document.length() == 0 && line.contains(beginSignal)) {
@@ -73,6 +82,26 @@ public class XMLHelper {
         return document;
     }
 
+    public static String getDocumentWithStartEnd(String url, String beginSignal, String endSignal,String[] IGNORE_TEXTS) throws IOException {
+        BufferedReader reader = getBufferedReaderForURL(url);
+        String line = "";
+        String document = "";
+        int tagCount = 0;
+        boolean isFound = false;
+        while ((line = reader.readLine()) != null){
+            if (!isFound && document.length() == 0 && line.contains(beginSignal)) {
+                isFound = true;
+            }
+            if (isFound){
+                if (!line.contains(endSignal)){
+                    line = formatHTMLLine(line,IGNORE_TEXTS);
+                    document += line.trim();
+                }else break;
+            }
+        }
+        return document;
+    }
+
     private static String formatHTMLLine(String line,String[] IGNORE_TEXTS){
         if (IGNORE_TEXTS != null) {
             for (String ignore_text : IGNORE_TEXTS) {
@@ -81,6 +110,7 @@ public class XMLHelper {
         }
         line = line.replaceAll("&ocirc;", "ô")
                 .replaceAll("ó", "ó")
+                .replaceAll("cứng", "cung")
                 .replaceAll("&oacute;", "ó")
                 .replaceAll("&igrave;", "ì")
                 .replaceAll("&ecirc;", "ê")
@@ -90,9 +120,8 @@ public class XMLHelper {
                 .replaceAll("&nbsp;", "")
                 .replaceAll("&agrave;", "à")
                 .replaceAll("&aacute;", "á")
-//                .replaceAll("&reg;", "®")
-//                .replaceAll("&trade;", "™")
-//                .replaceAll("&amp;", "&")
+                .replaceAll("&reg;", "")
+                .replaceAll("&trade;", "")
                 .replaceAll("&acirc;", "â");
         return line;
     }
@@ -149,7 +178,7 @@ public class XMLHelper {
         return reader;
     }
 
-    public static Document parseStringToDOM(String doc) throws ParserConfigurationException, SAXException, IOException, org.xml.sax.SAXException {
+    public static Document parseStringToDOM(String doc) throws ParserConfigurationException, IOException, SAXException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setNamespaceAware(true);
         DocumentBuilder builder = factory.newDocumentBuilder();
@@ -165,7 +194,7 @@ public class XMLHelper {
         return domRs;
     }
 
-    public static Element CreateElement(Document doc, String elementName, String elementVal, Map<String, String> attributes) {
+    public static Element createElement(Document doc, String elementName, String elementVal, Map<String, String> attributes) {
         if (doc != null){
             Element element = doc.createElement(elementName);
 
@@ -198,4 +227,6 @@ public class XMLHelper {
 
             validator.validate(new StreamSource(new ByteArrayInputStream(xmlPath.toByteArray())));
     }
+
+
 }

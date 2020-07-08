@@ -2,55 +2,55 @@
     <tbody>
         <tr>
             <th class="attribute-label">Mã sản phẩm / Model</th>
-            <td class="attribute-value ">P3540FA-BR0539</td>
+            <td class="attribute-value ">VAL319T</td>
         </tr>
         <tr>
             <th class="attribute-label">Bộ Vi Xử Lý / CPU</th>
-            <td class="attribute-value highlight">Intel Core i3-8145U (2.1GHz - 3.9GHz / 4MB / 2 nhân, 4 luồng )</td>
+            <td class="attribute-value highlight">Intel Core i7 9750H (2.60GHz up to 4.50GHz, 6 nhân, 12 luồng, 12MB
+                cache)
+            </td>
         </tr>
         <tr>
             <th class="attribute-label">Bộ Nhớ Trong / RAM</th>
-            <td class="attribute-value highlight">4GB DDR4 Onboard (1 slot) up to 16GB</td>
+            <td class="attribute-value highlight">16GB DDR4 2666MHz (2x SO-DIMM socket, up to 32GB SDRAM)</td>
         </tr>
         <tr>
             <th class="attribute-label">Ổ Cứng / HDD</th>
-            <td class="attribute-value highlight">1TB HDD 5400RPM</td>
+            <td class="attribute-value highlight">512GB SSD PCIE G3X4, x1 slot 2.5 SATA (HDD/SSD)</td>
         </tr>
         <tr>
             <th class="attribute-label">Màn hình / LCD</th>
-            <td class="attribute-value ">15.6 FHD ( 1920 x 1080 ) chống lóa</td>
+            <td class="attribute-value ">15.6 FHD (1920 x 1080) IPS, 120Hz, Wide View, Narrow Bezel</td>
         </tr>
         <tr>
             <th class="attribute-label">Chip Đồ Họa / VGA</th>
-            <td class="attribute-value highlight">Intel UHD Graphics 620</td>
+            <td class="attribute-value highlight">NVIDIA GeForce RTX 2060 6GB GDDR6 + Intel UHD Graphics 630</td>
         </tr>
         <tr>
             <th class="attribute-label">Kết Nối / Network</th>
-            <td class="attribute-value ">WiFi 802.11ac , Bluetooth 4.2</td>
+            <td class="attribute-value ">802.11ac 2×2 Wi-Fi, Bluetooth 5.0</td>
         </tr>
         <tr>
             <th class="attribute-label">Giao Tiếp Mở Rộng</th>
-            <td class="attribute-value ">2x Type-A USB 3.0 (USB 3.1 Gen 1),2x Type-C USB 3.0 (USB 3.1 Gen 1), HDMI</td>
+            <td class="attribute-value ">1 x 3.5mm Audio Jack, 1 x HDMI 2.0b, 1 x Type C USB3.1 (GEN2) support DP
+                function, 1x RJ45, 3 x Type A USB3.1 (GEN1)
+            </td>
         </tr>
         <tr>
             <th class="attribute-label">Dung Lượng Pin</th>
-            <td class="attribute-value ">4 cell 70 Wh</td>
+            <td class="attribute-value ">4 Cell 66WHrs</td>
         </tr>
         <tr>
             <th class="attribute-label">Hệ Điều Hành / Operating System</th>
-            <td class="attribute-value highlight">FreeDos</td>
+            <td class="attribute-value highlight">Windows 10 Bản Quyền</td>
         </tr>
         <tr>
             <th class="attribute-label">Trọng Lượng / Weight</th>
-            <td class="attribute-value ">1.69kg</td>
-        </tr>
-        <tr>
-            <th class="attribute-label">Màu Sắc</th>
-            <td class="attribute-value ">Grey</td>
+            <td class="attribute-value ">2.4 kg</td>
         </tr>
         <tr>
             <th class="attribute-label">Xuất Xứ / Bảo Hành</th>
-            <td class="attribute-value highlight">Chính Hãng VN</td>
+            <td class="attribute-value highlight">Chính Hãng</td>
         </tr>
     </tbody>
 </table>
