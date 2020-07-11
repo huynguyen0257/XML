@@ -6,6 +6,8 @@
         <class>huyng.entities.BrandEntity</class>
         <class>huyng.entities.LaptopEntity</class>
         <class>huyng.entities.ProcessorEntity</class>
+        <class>huyng.entities.MonitorEntity</class>
+        <class>huyng.entities.RamEntity</class>
         <properties>
             <property name="eclipselink.jdbc.url" value="jdbc:sqlserver://localhost:1433;database=PRXProject"/>
             <property name="eclipselink.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>

@@ -24,4 +24,13 @@ public class StringHelper {
         return outputStream;
     }
 
+    public static String getCPUFromXMLString(String xmlString) {
+        return StringHelper.getStringByRegex("<cpu>.*?</cpu>", xmlString).get(0).replaceAll("</?cpu>", "");
+    }
+    public static String getRamFromXMLString(String xmlString) {
+        return StringHelper.getStringByRegex("<ram>.*?</ram>", xmlString).get(0).replaceAll("</?ram>", "");
+    }
+    public static String getLcdFromXMLString(String xmlString) {
+        return StringHelper.getStringByRegex("<lcd>.*?</lcd>", xmlString).get(0).replaceAll("</?lcd>", "");
+    }
 }

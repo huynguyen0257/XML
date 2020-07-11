@@ -55,7 +55,7 @@ public class CrawlerConstant {
     public static final String XSD_PATH = "src/huyng/jaxb";
 
     //File
-    public static final String ERROR_PHUCANH = "src/huyng/crawler/PhucAnhError.txt";
-    public static final String ERROR_KIMLONG = "src/huyng/crawler/KimLongError.txt";
-    public static final String ERROR_INTEL = "src/huyng/crawler/IntelError.txt";
+    public static final String ERROR_PHUCANH = "src/huyng/files/PhucAnhError.txt";
+    public static final String ERROR_KIMLONG = "src/huyng/files/KimLongError.txt";
+    public static final String ERROR_INTEL = "src/huyng/files/IntelError.txt";
 }

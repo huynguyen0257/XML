@@ -5,6 +5,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -25,6 +26,7 @@ import java.util.Objects;
         "baseClock",
         "boostClock",
         "cache",
+        "count",
         "mark",
         "laptops"
 
@@ -40,7 +42,8 @@ public class ProcessorEntity {
     private double baseClock;
     private double boostClock;
     private double cache;
-    private int mark;
+    private int count;
+    private double mark;
     private Collection<LaptopEntity> laptops;
 
     public ProcessorEntity() {
@@ -143,12 +146,22 @@ public class ProcessorEntity {
     }
 
     @Basic
+    @Column(name = "Count")
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    @Basic
     @Column(name = "Mark")
-    public int getMark() {
+    public double getMark() {
         return mark;
     }
 
-    public void setMark(int mark) {
+    public void setMark(double mark) {
         this.mark = mark;
     }
 
@@ -156,46 +169,32 @@ public class ProcessorEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ProcessorEntity that = (ProcessorEntity) o;
-        return id == that.id &&
-                core == that.core &&
-                thread == that.thread &&
-                baseClock == that.baseClock &&
-                boostClock == that.boostClock &&
-                cache == that.cache &&
-                mark == that.mark &&
-                Objects.equals(brand, that.brand) &&
-                Objects.equals(name, that.name) &&
-                Objects.equals(model, that.model);
+        ProcessorEntity entity = (ProcessorEntity) o;
+        return id == entity.id &&
+                core == entity.core &&
+                thread == entity.thread &&
+                Double.compare(entity.baseClock, baseClock) == 0 &&
+                Double.compare(entity.boostClock, boostClock) == 0 &&
+                Double.compare(entity.cache, cache) == 0 &&
+                count == entity.count &&
+                Double.compare(entity.mark, mark) == 0 &&
+                Objects.equals(brand, entity.brand) &&
+                Objects.equals(name, entity.name) &&
+                Objects.equals(model, entity.model);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, brand, name, model, core, thread, baseClock, boostClock, cache, mark);
+        return Objects.hash(id, brand, name, model, core, thread, baseClock, boostClock, cache, count, mark);
     }
 
     @OneToMany(mappedBy = "processor")
     public Collection<LaptopEntity> getLaptops() {
+        if (laptops == null) laptops = new ArrayList<>();
         return laptops;
     }
 
     public void setLaptops(Collection<LaptopEntity> laptops) {
         this.laptops = laptops;
-    }
-
-    @Override
-    public String toString() {
-        return "ProcessorEntity{" +
-                "id=" + id +
-                ", brand='" + brand + '\'' +
-                ", name='" + name + '\'' +
-                ", model='" + model + '\'' +
-                ", core=" + core +
-                ", thread=" + thread +
-                ", baseClock=" + baseClock +
-                ", boostClock=" + boostClock +
-                ", cache=" + cache +
-                ", mark=" + mark +
-                '}';
     }
 }

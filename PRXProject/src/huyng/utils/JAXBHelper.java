@@ -7,20 +7,18 @@ import com.sun.tools.internal.xjc.api.SchemaCompiler;
 import com.sun.tools.internal.xjc.api.XJC;
 import huyng.constants.CrawlerConstant;
 import huyng.entities.LaptopEntity;
+import huyng.entities.LaptopEntityList;
 import huyng.entities.ProcessorEntity;
 import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
-import org.xml.sax.XMLReader;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.parsers.SAXParserFactory;
-import javax.xml.transform.sax.SAXSource;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.StringWriter;
 
 public class JAXBHelper {
     public static void generateJaxbPackage(String xsdFilePath) throws JAXBException {
@@ -73,6 +71,23 @@ public class JAXBHelper {
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
         object = unmarshaller.unmarshal(new ByteArrayInputStream(array));
         return object;
+    }
+
+    public static String marshalToString(LaptopEntityList laptops) throws JAXBException {
+        try{
+            JAXBContext context = JAXBContext.newInstance(laptops.getClass(),LaptopEntity.class);
+            Marshaller marshaller = context.createMarshaller();
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,true);
+            marshaller.setProperty(Marshaller.JAXB_ENCODING,"UTF-8");
+
+            StringWriter writer = new StringWriter();
+            marshaller.marshal(laptops,writer);
+
+            return writer.toString();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public static String getXSDPath(Class T){

@@ -4,32 +4,29 @@ import javax.persistence.*;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 import java.util.Objects;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @Entity
 @Table(name = "Laptop", schema = "dbo", catalog = "PRXProject")
 @XmlRootElement(name = "laptop")
+@XmlType(name = "laptop")
 @NamedQueries({
         @NamedQuery(name = "Laptop.findByModel", query = "select l from LaptopEntity l where l.model = :model"),
+        @NamedQuery(name = "Laptop.findAll", query = "select l from LaptopEntity l where l.name LIKE :name"),
 })
 public class LaptopEntity {
     private int id;
     private String name;
-    private String model;
+    private String model; //xsl
     private int price;
-    private String vga;
-    private String ram;
-    private String hardDisk;
-    private String lcd;
-    private String options;
-    private String port;
-    private String os;
-    private String battery;
-    private String weight;
-    private String color;
+    private double weight; //xsl
+    private String image;
     private BrandEntity brand;
-    private ProcessorEntity processor;
+    private ProcessorEntity processor;//xsl
+    private RamEntity ram;//xsl
+    private MonitorEntity monitor;//xsl
 
     public LaptopEntity() {
     }
@@ -37,6 +34,12 @@ public class LaptopEntity {
     public LaptopEntity(String name, int price) {
         this.name = name;
         this.price = price;
+    }
+
+    public LaptopEntity(String name, int price, String image) {
+        this.name = name;
+        this.price = price;
+        this.image = image;
     }
 
     @Id
@@ -81,103 +84,23 @@ public class LaptopEntity {
     }
 
     @Basic
-    @Column(name = "VGA")
-    public String getVga() {
-        return vga;
-    }
-
-    public void setVga(String vga) {
-        this.vga = vga;
-    }
-
-    @Basic
-    @Column(name = "RAM")
-    public String getRam() {
-        return ram;
-    }
-
-    public void setRam(String ram) {
-        this.ram = ram;
-    }
-
-    @Basic
-    @Column(name = "HardDisk")
-    public String getHardDisk() {
-        return hardDisk;
-    }
-
-    public void setHardDisk(String hardDisk) {
-        this.hardDisk = hardDisk;
-    }
-
-    @Basic
-    @Column(name = "LCD")
-    public String getLcd() {
-        return lcd;
-    }
-
-    public void setLcd(String lcd) {
-        this.lcd = lcd;
-    }
-
-    @Basic
-    @Column(name = "Options")
-    public String getOptions() {
-        return options;
-    }
-
-    public void setOptions(String options) {
-        this.options = options;
-    }
-
-    @Basic
-    @Column(name = "Port")
-    public String getPort() {
-        return port;
-    }
-
-    public void setPort(String port) {
-        this.port = port;
-    }
-
-    @Basic
-    @Column(name = "OS")
-    public String getOs() {
-        return os;
-    }
-
-    public void setOs(String os) {
-        this.os = os;
-    }
-
-    @Basic
-    @Column(name = "Battery")
-    public String getBattery() {
-        return battery;
-    }
-
-    public void setBattery(String battery) {
-        this.battery = battery;
-    }
-
-    @Basic
     @Column(name = "Weight")
-    public String getWeight() {
+    public double getWeight() {
         return weight;
     }
 
-    public void setWeight(String weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
     @Basic
-    @Column(name = "Color")
-    public String getColor() {
-        return color;
+    @Column(name = "Image")
+    public String getImage() {
+        return image;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     @Override
@@ -189,21 +112,13 @@ public class LaptopEntity {
                 price == that.price &&
                 Objects.equals(name, that.name) &&
                 Objects.equals(model, that.model) &&
-                Objects.equals(vga, that.vga) &&
-                Objects.equals(ram, that.ram) &&
-                Objects.equals(hardDisk, that.hardDisk) &&
-                Objects.equals(lcd, that.lcd) &&
-                Objects.equals(options, that.options) &&
-                Objects.equals(port, that.port) &&
-                Objects.equals(os, that.os) &&
-                Objects.equals(battery, that.battery) &&
                 Objects.equals(weight, that.weight) &&
-                Objects.equals(color, that.color);
+                Objects.equals(image, that.image);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, model, price, vga, ram, hardDisk, lcd, options, port, os, battery, weight, color);
+        return Objects.hash(id, name, model, price, weight, image);
     }
 
     @ManyToOne
@@ -226,6 +141,26 @@ public class LaptopEntity {
         this.processor = processor;
     }
 
+    @ManyToOne
+    @JoinColumn(name = "RamId", referencedColumnName = "Id", nullable = false)
+    public RamEntity getRam() {
+        return ram;
+    }
+
+    public void setRam(RamEntity ram) {
+        this.ram = ram;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "MonitorId", referencedColumnName = "Id", nullable = false)
+    public MonitorEntity getMonitor() {
+        return monitor;
+    }
+
+    public void setMonitor(MonitorEntity monitor) {
+        this.monitor = monitor;
+    }
+
     @Override
     public String toString() {
         return "LaptopEntity{" +
@@ -233,18 +168,12 @@ public class LaptopEntity {
                 ", name='" + name + '\'' +
                 ", model='" + model + '\'' +
                 ", price=" + price +
-                ", vga='" + vga + '\'' +
-                ", ram='" + ram + '\'' +
-                ", hardDisk='" + hardDisk + '\'' +
-                ", lcd='" + lcd + '\'' +
-                ", options='" + options + '\'' +
-                ", port='" + port + '\'' +
-                ", os='" + os + '\'' +
-                ", battery='" + battery + '\'' +
                 ", weight='" + weight + '\'' +
-                ", color='" + color + '\'' +
+                ", image='" + image + '\'' +
                 ", brand=" + brand +
                 ", processor=" + processor +
+                ", ram=" + ram +
+                ", monitor=" + monitor +
                 '}';
     }
 }

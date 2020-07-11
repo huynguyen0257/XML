@@ -11,14 +11,14 @@ public class MainThread implements Runnable {
         Thread phucAnhThread = new Thread(new PACrawler());
         Thread kimLongThread = new Thread(new KLCrawler());
         Thread cpuThread = new Thread(new CPUCrawler());
-//        cpuThread.start();
-//        while (cpuThread.isAlive()){
-//            try {
-//                cpuThread.sleep(5*1000);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//        }
+        cpuThread.start();
+        while (cpuThread.isAlive()){
+            try {
+                cpuThread.sleep(5*1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
         phucAnhThread.start();
         kimLongThread.start();
     }

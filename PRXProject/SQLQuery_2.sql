@@ -63,8 +63,37 @@ CREATE TABLE [dbo].[Processor]
     [BaseClock] FLOAT NOT NULL,
     [BoostClock] FLOAT NOT NULL,
     [Cache] FLOAT NOT NULL,
-    [Mark] INT NOT NULL
-    -- Specify more columns here
+    [Count] INT NOT NULL,
+    [Mark] FLOAT NOT NULL
+);
+GO
+
+-- Create a new table called '[Ram]' in schema '[dbo]'
+-- Drop the table if it already exists
+IF OBJECT_ID('[dbo].[Ram]', 'U') IS NOT NULL
+DROP TABLE [dbo].[Ram]
+GO
+-- Create the table in the specified schema
+CREATE TABLE [dbo].[Ram]
+(
+    [Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY, -- Primary Key column
+    [Memory] INT NOT NULL,
+    [Mark] FLOAT NOT NULL
+);
+GO
+
+-- Drop the table if it already exists
+-- Create a new table called '[Monitor]' in schema '[dbo]'
+-- Drop the table if it already exists
+IF OBJECT_ID('[dbo].[Monitor]', 'U') IS NOT NULL
+DROP TABLE [dbo].[Monitor]
+GO
+-- Create the table in the specified schema
+CREATE TABLE [dbo].[Monitor]
+(
+    [Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY, -- Primary Key column
+    [Size] FLOAT NOT NULL,
+    [Mark] FLOAT NOT NULL
 );
 GO
 
@@ -83,26 +112,23 @@ CREATE TABLE [dbo].[Laptop]
     [Name] NVARCHAR(500) NOT NULL,
     [Model] NVARCHAR(500) NOT NULL,
     [Price] INT NOT NULL,
-    [VGA] NVARCHAR(500),
-    [RAM] NVARCHAR(500),
-    [HardDisk] NVARCHAR(500),
-    [LCD] NVARCHAR(500),
-    [Options] NVARCHAR(500),
-    [Port] NVARCHAR(500),
-    [OS] NVARCHAR(500),
-    [Battery] NVARCHAR(500),
-    [Weight] NVARCHAR(500),
-    [Color] NVARCHAR(500),
+    [Weight] FLOAT NOT NULL,
+    [Image] NVARCHAR(500),
     [BrandId] int NOT NULL,
-    [ProcessorId] int NOT NULL
+    [ProcessorId] int NOT NULL,
+    [RamId] int NOT NULL,
+    [MonitorId] int NOT NULL
     -- Specify more columns here
 );
 GO
 ALTER TABLE Laptop ADD CONSTRAINT FK_Brand FOREIGN KEY (BrandId) references Brand(Id)  
 ALTER TABLE Laptop ADD CONSTRAINT FK_Processor FOREIGN KEY (ProcessorId) references Processor(Id)
+ALTER TABLE Laptop ADD CONSTRAINT FK_Ram FOREIGN KEY (RamId) references Ram(Id)
+ALTER TABLE Laptop ADD CONSTRAINT FK_Monitor FOREIGN KEY (MonitorId) references Monitor(Id)
 
 
-
+UPDATE Laptop
+SET [Image] = 'https://kimlongcenter.com/upload/product/avata-dell-vostro-5590_2.jpg'
 
 
 

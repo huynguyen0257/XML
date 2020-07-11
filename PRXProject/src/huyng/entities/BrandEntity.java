@@ -47,9 +47,9 @@ public class BrandEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        BrandEntity entity = (BrandEntity) o;
-        return id == entity.id &&
-                Objects.equals(name, entity.name);
+        BrandEntity that = (BrandEntity) o;
+        return id == that.id &&
+                Objects.equals(name, that.name);
     }
 
     @Override

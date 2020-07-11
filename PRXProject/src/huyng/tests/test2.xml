@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<laptop xmlns="">
-    <model>81LK01GKVN (FPT)</model>
-    <cpu>Intel Core i5-9300HF (2.4GHz up to 4.1GHz 8MB)</cpu>
-    <vga>NVIDIA GeForce GTX 1050 3GB GDDR5</vga>
-    <ram>8GB DDR4 2666MHz (1x SO-DIMM socket, up to 16GB SDRAM)</ram>
-    <hardDisk>256GB SSD M.2 PCIe</hardDisk>
-    <lcd>15.6 FHD (1920 x 1080) IPS, Anti-Glare</lcd>
-    <options>Wireless 802.11 ac + Bluetooth 4.2</options>
-    <port>2x USB 3.1, 1x USB 3.1 Type-C, HDMI, RJ-45,</port>
-    <os>Windows 10 Bản Quyền </os>
-    <battery>3 Cell 45WHr</battery>
-    <weight>2.19kg</weight>
-    <color>Black</color>
-    <name>Lenovo IdeaPad L340-15IRH (81LK01GKVN) : i5-9300HF | 8GB RAM | 256GB SSD PCIe | GTX 1050 3GB | 15.6 FHD IPS |
-        Win10
+<laptop xmlns="http://huyng/schema/laptop">
+    <name>Acer Aspire 5 A514-53-50JA (NX.HUSSV.002) : i5-1035G1 | 4GB DDR4 | 256GB SSD | UHD Graphics 630 |14.0 FHD |
+        WIN 10 | Silver
     </name>
-    <price>15990000</price>
+    <price>15690000</price>
+    <model>A514-53-50JA (DGW)</model>
+    <cpu>Intel Core i5-1035G1 1.0GHz up to 3.6GHz 6MB</cpu>
+    <ram>4GB DDR4 2400MHz Onboard (1x SO-DIMM socket, up to 12GB SDRAM)</ram>
+    <lcd>14 FHD (1920 x 1080) IPS, Acer ComfyView LCD</lcd>
+    <weight>1.50</weight>
+    <image>https://kimlongcenter.com/upload/product/acer-5_6.jpg</image>
 </laptop>

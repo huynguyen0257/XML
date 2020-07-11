@@ -57,22 +57,24 @@ public class PACrawler implements Runnable {
         }
     }
 
-    public static void main(String[] args) {
-        try {
-            crawlerProcess();
-//            eachPageCrawler("https://www.phucanh.vn/may-tinh-xach-tay-laptop-apple.html&page=1");
-//            getLaptopCrawler("https://www.phucanh.vn/laptop-apple-macbook-pro-muhr2-256gb-2019-silver-touch-bar.html",null);//Oke
-//            getLaptopCrawler("https://www.phucanh.vn/laptop-asus-gaming-gl503vd-gz119t-black.html", new LaptopEntity("NguyenGiaHuy",277777329));//Not oke
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    public static void main(String[] args) {
+//        try {
+//            crawlerProcess();
+////            eachPageCrawler("https://www.phucanh.vn/may-tinh-xach-tay-laptop-apple.html&page=1");
+////            getLaptopCrawler("https://www.phucanh.vn/laptop-apple-macbook-pro-muhr2-256gb-2019-silver-touch-bar.html",null);//Oke
+////            getLaptopCrawler("https://www.phucanh.vn/laptop-asus-gaming-gl503vd-gz119t-black.html", new LaptopEntity("NguyenGiaHuy",277777329));//Not oke
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     private static File file = null;
     private static FileWriter writer = null;
     private static final Object LOCK = new Object();
     private static List<Thread> threads = new ArrayList<>();
     private static Hashtable<LaptopEntity, String> cpus = new Hashtable<>();
+    private static Hashtable<LaptopEntity, String> rams = new Hashtable<>();
+    private static Hashtable<LaptopEntity, String> lcds = new Hashtable<>();
     private static LaptopService laptopService = new LaptopService();
 
     public static void closeStream() throws IOException {
@@ -128,7 +130,7 @@ public class PACrawler implements Runnable {
                                 try {
                                     l.setBrand(finalBrand);
                                     synchronized (LOCK) {
-                                        laptopService.insertLaptop(l, cpus.get(l));
+                                        laptopService.insertLaptop(l, cpus.get(l), rams.get(l),lcds.get(l));
                                     }
                                 } catch (Exception e) {
                                     try {
@@ -148,8 +150,9 @@ public class PACrawler implements Runnable {
                     };
                     threads.add(t);
                     t.start();
+                    t.sleep(5*1000);
                 }
-            } catch (IOException | XMLStreamException e) {
+            } catch (IOException | XMLStreamException | InterruptedException e) {
                 e.printStackTrace();
             }
         });
@@ -230,11 +233,14 @@ public class PACrawler implements Runnable {
                             detailLink = CrawlerConstant.PHU_CANH_DOMAIN + attrHref.getValue();
                         }
 
-                        //get Laptop name
+                        //get Laptop name & img
                         while (xmlEvents.hasNext()) {
                             if (event.isStartElement()) {
                                 startElement = event.asStartElement();
                                 tagName = startElement.getName().getLocalPart();
+                                if ("img".equals(tagName)){
+                                    laptop.setImage(startElement.getAttributeByName(new QName("data-original")).getValue());
+                                }
                                 if ("h3".equals(tagName)) {
                                     event = xmlEvents.next();
                                     String productName = event.asCharacters().getData();
@@ -273,13 +279,9 @@ public class PACrawler implements Runnable {
                 e.printStackTrace();
             } catch (TransformerException e) {
                 e.printStackTrace();
-            } catch (SAXException e) {
-                e.printStackTrace();
-            } catch (ParserConfigurationException e) {
-                e.printStackTrace();
-            } catch (XPathExpressionException e) {
-                e.printStackTrace();
             } catch (JAXBException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         });
@@ -292,7 +294,8 @@ public class PACrawler implements Runnable {
      * @throws IOException
      * @throws XMLStreamException
      */
-    public static LaptopEntity getLaptopCrawler(String url, LaptopEntity laptop) throws IOException, TransformerException, ParserConfigurationException, SAXException, XPathExpressionException, JAXBException {
+    public static LaptopEntity getLaptopCrawler(String url, LaptopEntity laptop) throws IOException, TransformerException, JAXBException, InterruptedException {
+        Thread.currentThread().sleep(2*1000);
         String document = XMLHelper.getDocument(url, CrawlerConstant.PHU_CANH_DETAIL_START_SIGNAL, CrawlerConstant.PHU_CANH_DETAIL_TAG, new String[]{"<p>.*?</p>"});
 
         InputStream is = new ByteArrayInputStream(document.getBytes("UTF-8"));
@@ -300,6 +303,7 @@ public class PACrawler implements Runnable {
         Hashtable<String, String> params = new Hashtable<>();
         params.put("name", laptop.getName());
         params.put("price", laptop.getPrice() + "");
+        params.put("image", laptop.getImage());
         ByteArrayOutputStream ps = TrAxHelper.transform(is, xslPath, params);
         try {
             XMLHelper.validateXMLSchema(JAXBHelper.getXSDPath(LaptopEntity.class), ps);
@@ -307,7 +311,9 @@ public class PACrawler implements Runnable {
 
             ByteArrayOutputStream formatXML = StringHelper.getByteArrayFromString(removeNSPs);
             laptop = (LaptopEntity) JAXBHelper.unmarshalling(formatXML.toByteArray(), LaptopEntity.class);
-            cpus.put(laptop, laptopService.getCPUFromXMLString(ps.toString()));
+            cpus.put(laptop, StringHelper.getCPUFromXMLString(ps.toString()));
+            rams.put(laptop, StringHelper.getRamFromXMLString(ps.toString()));
+            lcds.put(laptop, StringHelper.getLcdFromXMLString(ps.toString()));
             return laptop;
         } catch (SAXException | IOException e) {
             synchronized (LOCK) {

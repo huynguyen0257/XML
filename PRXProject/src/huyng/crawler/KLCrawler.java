@@ -47,6 +47,8 @@ public class KLCrawler implements Runnable {
     private File file = null;
     private FileWriter writer = null;
     private Hashtable<LaptopEntity,String> cpus = new Hashtable<>();
+    private Hashtable<LaptopEntity,String> rams = new Hashtable<>();
+    private Hashtable<LaptopEntity,String> lcds = new Hashtable<>();
     public LaptopService laptopService = new LaptopService();
 
     @Override
@@ -77,15 +79,15 @@ public class KLCrawler implements Runnable {
         }
     }
 
-    public static void main(String[] args) throws IOException, XMLStreamException {
-        KLCrawler crawler = new KLCrawler();
-        crawler.processCrawler();
-
-//        crawler.getPageSize("https://kimlongcenter.com/danh-muc/laptop-dell-449.html");
-//        crawler.getPageUrl("https://kimlongcenter.com/danh-muc/laptop-dell-449.html");
-//        crawler.eachPageCrawler("https://kimlongcenter.com/danh-muc/laptop-asus-452/trang/1");
-//        crawler.getLaptopCrawler("https://kimlongcenter.com/san-pham/asus-rog-strix-g-g531g-val319t-i7-9750h-3902.html", new LaptopEntity("NguyenGiaHuy", 123612874));
-    }
+//    public static void main(String[] args) throws IOException, XMLStreamException, XPathExpressionException, SAXException, ParserConfigurationException {
+//        KLCrawler crawler = new KLCrawler();
+//        crawler.processCrawler();
+//
+////        crawler.getPageSize("https://kimlongcenter.com/danh-muc/laptop-dell-449.html");
+////        crawler.getPageUrl("https://kimlongcenter.com/danh-muc/laptop-dell-449.html");
+////        crawler.eachPageCrawler("https://kimlongcenter.com/danh-muc/laptop-asus-452/trang/1");
+////        crawler.getLaptopCrawler("https://kimlongcenter.com/san-pham/asus-rog-strix-g-g531g-val319t-i7-9750h-3902.html", new LaptopEntity("NguyenGiaHuy", 123612874));
+//    }
 
     private void processCrawler() throws IOException, XMLStreamException {
         file = new File(CrawlerConstant.ERROR_KIMLONG);
@@ -112,7 +114,7 @@ public class KLCrawler implements Runnable {
                             l.setBrand(finalBrand);
                             try {
                                 synchronized (LOCK) {
-                                    laptopService.insertLaptop(l, cpus.get(l));
+                                    laptopService.insertLaptop(l, cpus.get(l),rams.get(l),lcds.get(l));
                                 }
                             } catch (Exception e) {
                                 try {
@@ -209,6 +211,7 @@ public class KLCrawler implements Runnable {
         String exp_a = "/div/div/div/a";
         String exp_name = "div[@class='product-info']/h3/text()";
         String exp_price = "div[@class='product-info']/div/p[@class='price']";
+        String exp_img = "div[@class='product-img row']/img/@data-src";
         XPath xPath = XMLHelper.getXPath();
         NodeList aNodes = (NodeList) xPath.evaluate(exp_a, dom, XPathConstants.NODESET);
         for (int i = 0; i < aNodes.getLength(); i++) {
@@ -222,10 +225,11 @@ public class KLCrawler implements Runnable {
 
                 String name = (String) xPath.evaluate(exp_name, aNode, XPathConstants.STRING);
                 String priceString = (String) xPath.evaluate(exp_price, aNode, XPathConstants.STRING);
+                String image = (String) xPath.evaluate(exp_img, aNode, XPathConstants.STRING);
                 priceString = priceString.replaceAll("[.]", "")
                         .substring(0, priceString.indexOf(' ') - 2);
                 int price = Integer.parseInt(priceString);
-                LaptopEntity laptopEntity = new LaptopEntity(name, price);
+                LaptopEntity laptopEntity = new LaptopEntity(name, price, image);
                 result.put(laptopEntity, link);
             }
         }
@@ -255,15 +259,13 @@ public class KLCrawler implements Runnable {
         ByteArrayOutputStream ps = null;
         try {
             document = XMLHelper.getDocument(url, CrawlerConstant.KIM_LONG_DETAIL_START_SIGNAL, CrawlerConstant.KIM_LONG_DETAIL_TAG, new String[]{"™","®"});
-            String[] xsdOrder = new String[]{"model", "cpu", "vga", "ram", "hardDisk", "lcd", "options", "port", "os", "battery", "weight", "color"};
-            XPath xPath = XMLHelper.getXPath();
-
             InputStream is = new ByteArrayInputStream(document.getBytes("UTF-8"));
             String xslPath = CrawlerConstant.KL_XSL_PATH;
 
             Hashtable<String,String> params = new Hashtable<>();
             params.put("name",laptop.getName());
             params.put("price",laptop.getPrice()+"");
+            params.put("image",laptop.getImage());
             ps = TrAxHelper.transform(is, xslPath, params);
 
             try {
@@ -271,7 +273,9 @@ public class KLCrawler implements Runnable {
                 String removeNSPs = ps.toString().replaceAll("http://huyng/schema/laptop","");
                 ps = StringHelper.getByteArrayFromString(removeNSPs);
                 laptop = (LaptopEntity) JAXBHelper.unmarshalling(ps.toByteArray(), LaptopEntity.class);
-                cpus.put(laptop,laptopService.getCPUFromXMLString(ps.toString()));
+                cpus.put(laptop,StringHelper.getCPUFromXMLString(ps.toString()));
+                rams.put(laptop, StringHelper.getRamFromXMLString(ps.toString()));
+                lcds.put(laptop, StringHelper.getLcdFromXMLString(ps.toString()));
             } catch (JAXBException | SAXException e) {
                 synchronized (LOCK) {
                     writer.write("********************************NOT VALID********************************" + "\n");

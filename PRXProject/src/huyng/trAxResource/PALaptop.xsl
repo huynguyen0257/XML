@@ -3,81 +3,40 @@
 
     <xsl:variable name="uppercase" select="'àảẩậâấãăắáạệêềếồốôộổọớóợỔưứìĩíđABCDEFGHIJKLMNOPQRSTUVWXYZ'"/>
     <xsl:variable name="lowercase" select="'aaaaaaaaaaaeeeeoooooooooouuiiidabcdefghijklmnopqrstuvwxyz'"/>
+    <xsl:variable name="model" select="//td[contains(translate(text(),$uppercase,$lowercase),'model')]/parent::node()/td[2]"/>
+    <xsl:variable name="cpu" select="//td[contains(translate(text(),$uppercase,$lowercase),'vxl')]/parent::node()/td[2]"/>
+    <xsl:variable name="ram" select="//td[contains(translate(text(),$uppercase,$lowercase),'bo nho')]/parent::node()/td[2]"/>
+    <xsl:variable name="lcd" select="//td[contains(translate(text(),$uppercase,$lowercase),'man hinh')]/parent::node()/td[2]"/>
+    <xsl:variable name="weight" select="//td[contains(translate(text(),$uppercase,$lowercase),'ng l')]/parent::node()/td[2]"/>
     <xsl:param name="price"/>
     <xsl:param name="name"/>
+    <xsl:param name="image"/>
 
     <xsl:template match="/div/table/tbody">
         <xsl:element name="laptop" xmlns="http://huyng/schema/laptop">
-            <xsl:for-each select="tr">
-                <!--<editor-fold desc="Real td">-->
-                <xsl:choose>
-                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'model')]">
-                        <xsl:element name="model">
-                            <xsl:value-of select="td[2]/text()"/>
-                        </xsl:element>
-                    </xsl:when>
-                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'vxl')]">
-                        <xsl:element name="cpu">
-                            <xsl:value-of select="td[2]/text()"/>
-                        </xsl:element>
-                    </xsl:when>
-                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'cac d')]">
-                        <xsl:element name="vga">
-                            <xsl:value-of select="td[2]/text()"/>
-                        </xsl:element>
-                    </xsl:when>
-                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'bo nho')]">
-                        <xsl:element name="ram">
-                            <xsl:value-of select="td[2]/text()"/>
-                        </xsl:element>
-                    </xsl:when>
-                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'o cung')]">
-                        <xsl:element name="hardDisk">
-                            <xsl:value-of select="td[2]/text()"/>
-                        </xsl:element>
-                    </xsl:when>
-                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'man hinh')]">
-                        <xsl:element name="lcd">
-                            <xsl:value-of select="td[2]/text()"/>
-                        </xsl:element>
-                    </xsl:when>
-                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),' noi')]">
-                        <xsl:element name="options">
-                            <xsl:value-of select="td[2]/text()"/>
-                        </xsl:element>
-                    </xsl:when>
-                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),' giao ')]">
-                        <xsl:element name="port">
-                            <xsl:value-of select="td[2]/text()"/>
-                        </xsl:element>
-                    </xsl:when>
-                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'he dieu hanh')]">
-                        <xsl:element name="os">
-                            <xsl:value-of select="td[2]/text()"/>
-                        </xsl:element>
-                    </xsl:when>
-                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'pin')]">
-                        <xsl:element name="battery">
-                            <xsl:value-of select="td[2]/text()"/>
-                        </xsl:element>
-                    </xsl:when>
-                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'ng l')]">
-                        <xsl:element name="weight">
-                            <xsl:value-of select="td[2]/text()"/>
-                        </xsl:element>
-                    </xsl:when>
-                    <xsl:when test="td[1][contains(translate(text(),$uppercase,$lowercase),'/ ch')]">
-                        <xsl:element name="color">
-                            <xsl:value-of select="td[2]/text()"/>
-                        </xsl:element>
-                    </xsl:when>
-                </xsl:choose>
-            </xsl:for-each>
             <xsl:element name="name">
                 <xsl:value-of select="$name"/>
             </xsl:element>
             <xsl:element name="price">
                 <xsl:value-of select="$price"/>
+            </xsl:element>
+            <xsl:element name="model">
+                <xsl:value-of select="$model"/>
+            </xsl:element>
+            <xsl:element name="cpu">
+                <xsl:value-of select="$cpu"/>
+            </xsl:element>
+            <xsl:element name="ram">
+                <xsl:value-of select="$ram"/>
+            </xsl:element>
+            <xsl:element name="lcd">
+                <xsl:value-of select="$lcd"/>
+            </xsl:element>
+            <xsl:element name="weight">
+                <xsl:value-of select="translate($weight,'kgKG ,','     .')"/>
+            </xsl:element>
+            <xsl:element name="image">
+                <xsl:value-of select="$image"/>
             </xsl:element>
         </xsl:element>
     </xsl:template>

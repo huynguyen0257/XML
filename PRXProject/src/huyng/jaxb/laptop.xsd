@@ -7,20 +7,14 @@
     <xsd:complexType name="Laptop">
         <xsd:sequence>
             <xsd:element name="id" type="xsd:int" minOccurs="0"/>
-            <xsd:element name="model" type="xsd:string"/>
-            <xsd:element name="cpu" type="xsd:string"/>
-            <xsd:element name="vga" type="xsd:string"/>
-            <xsd:element name="ram" type="xsd:string" minOccurs="0"/>
-            <xsd:element name="hardDisk" type="xsd:string"/>
-            <xsd:element name="lcd" type="xsd:string"/>
-            <xsd:element name="options" type="xsd:string" minOccurs="0"/>
-            <xsd:element name="port" type="xsd:string"/>
-            <xsd:element name="os" type="xsd:string" minOccurs="0"/>
-            <xsd:element name="battery" type="xsd:string" minOccurs="0"/>
-            <xsd:element name="weight" type="xsd:string"/>
-            <xsd:element name="color" type="xsd:string" minOccurs="0"/>
             <xsd:element name="name" type="xsd:string"/>
             <xsd:element name="price" type="xsd:positiveInteger"/>
+            <xsd:element name="model" type="xsd:string"/>
+            <xsd:element name="cpu" type="xsd:string"/>
+            <xsd:element name="ram" type="xsd:string"/>
+            <xsd:element name="lcd" type="xsd:string"/>
+            <xsd:element name="weight" type="xsd:double"/>
+            <xsd:element name="image" type="xsd:string"/>
         </xsd:sequence>
     </xsd:complexType>
 </xsd:schema>

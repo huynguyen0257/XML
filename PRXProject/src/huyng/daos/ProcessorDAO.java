@@ -42,6 +42,7 @@ public class ProcessorDAO extends BaseDAO<ProcessorEntity, Integer> {
         return result;
     }
 
+
     public ProcessorEntity getAMDProcessor(String cpuNumber, String cpuModel) throws IOException, ParserConfigurationException, SAXException, TransformerException, XPathExpressionException, JAXBException {
         ProcessorEntity entity = null;
         String url = "https://www.amd.com/en/products/apu/amd-ryzen-" + cpuNumber + "-" + cpuModel + "#product-specs";
@@ -77,5 +78,18 @@ public class ProcessorDAO extends BaseDAO<ProcessorEntity, Integer> {
         ByteArrayOutputStream outputStream = StringHelper.getByteArrayFromString(removeNSps);
         entity = (ProcessorEntity) JAXBHelper.unmarshalling(outputStream.toByteArray(), ProcessorEntity.class);
         return entity;
+    }
+
+    public boolean update(ProcessorEntity entity){
+        try{
+            openConnection();
+            ProcessorEntity processor = em.find(ProcessorEntity.class,entity.getId());
+            processor.setCount(entity.getCount());
+//            processor = entity;
+            et.commit();
+            return true;
+        }finally {
+            closeConnection();
+        }
     }
 }
