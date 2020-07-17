@@ -1,0 +1,1128 @@
+********************************NOT VALID********************************
+cvc-datatype-valid.1.2.1: '' is not a valid value for 'double'.ProductUrl = https://www.phucanh.vn/laptop-acer-nitro-series-an515-43-r65l-nh.q5xsv.004-black/fhd/ryzen-7.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 519pt;" width="691"> <tbody> <tr style="height: 14.25pt;"> <td style="height: 14.25pt; width: 133pt;" width="177"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Sản phẩm</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Máy tính xách tay</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Tên Hãng</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Acer</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Model</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Nitro series AN515 43 R65L NH.Q5XSV.004</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Bộ VXL</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Ryzen 7 3750H 2.3Ghz Up to 4.0Ghz-4Mb</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Cạc đồ họa</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Radeon RX 560X 4GB DDR5</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Bộ nhớ</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">8Gb (2 Khe cắm / Hỗ trợ tối đa 32GB)</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Ổ cung/ Ổ đĩa quang</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">256Gb SSD (</span></span>1 x 2.5" SATA , 1 x M.2 SATA/NVMe</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Màn hình</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">15.6Inch Full HD</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Kết nối</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">LAN, Wifi, Bluetooth</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Cổng giao tiếp</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">1 x USB 2.0 1 x USB 3.0 1 x HDMI 1 x Card Reader</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Webcam</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Có</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Nhận dạng vân tay</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Không có</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Nhận diện khuôn mặt</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Không có</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Tính năng khác</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Đèn bàn phím</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Hệ điều hành</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Windows 10 Home</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Pin</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">4 cell</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Kích thước</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">32.76 x 22.86 x 1.95 cm</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Trọng lượng</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">2.4 kg</span></span></td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Màu sắc/ Chất liệu</span></span></td> <td style="width: 386pt;" width="514"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 12px;">Black</span></span></td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Laptop Acer Nitro series AN515 43 R65L NH.Q5XSV.004 (Ryzen7-3750H/8Gb/256Gb SSD/15.6' FHD/ RX560X-4Gb/Win10/Black)</name><price>17990000</price><model/><cpu/><ram/><lcd/><weight/><image>https://phucanhcdn.com/media/product/250_37296_nitro_series_an515_ha1__2_.jpg</image></laptop>  
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Gaming GL503VD-GZ119T (i7-7700HQ/8GB/1TB HDD+8Gb SSD/15.6FHD/GTX1050 4GB/Win10/Black)', model='GZ119T', price=25490000, weight=2.63, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_31257-laptop-asus-gaming-gl503vd-gz119t--black-.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus UX534FT-A9168T (i5-10210U/8GB/512GB SSD/15.6FHD/GTX1650 MAX Q 4GB/Win10/ Blue/Túi Sleeve)', model='A9168T', price=27990000, weight=1.65, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38826_laptop_asus_ux534ft_a9168t_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Gaming GX502GW-AZ129T (i7-9750H/16GB/1TB SSD/15.6FHD/RTX2070 8GB DDR6/Win10/Black/Balo/Chuột)', model='AZ129T', price=60690000, weight=2.1, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36737_laptop_asus_gaming_scar_gu502gv_az079t__black_metal__1_1.png', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus D409DA-EK093T (Ryzen 5-3500U/4Gb/1TB HDD/14FHD/ AMD Radeon/Win10/Silver)', model='EK095T', price=11590000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37432_laptop_asus_d409da_ek152t_1_1.png', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus D509DA-EJ116T (Ryzen 3-3200U/4GB/1TB HDD/15.6FHD/AMD Radeon/Win10/Silver)', model='EJ116T', price=9690000, weight=1.9, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36974_laptop_asus_d509da_ej116t__silver__1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************NOT VALID********************************
+cvc-minInclusive-valid: Value '0' is not facet-valid with respect to minInclusive '1' for type 'positiveInteger'.ProductUrl = https://www.phucanh.vn/laptop-dell-xps-13-9300-0n90h1-i7-1065g7/16gb/512gb-ssd/13.4uhd/touch/vga-on/win10off365/silver/vo-nhom.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 534pt;" width="711"> <tbody> <tr style="height: 13.8pt;"> <td style="height: 13.8pt; width: 137pt;" width="182">Sản phẩm</td> <td style="width: 397pt;" width="529">Máy tính xách tay</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Tên Hãng</td> <td style="width: 397pt;" width="529">Dell</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Model</td> <td style="width: 397pt;" width="529">XPS 13 9300 0N90H1</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Bộ VXL</td> <td style="width: 397pt;" width="529">Core i7 1065G7 1.3Ghz upto 3.9Ghz-8Mb</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Cạc đồ họa</td> <td style="width: 397pt;" width="529">VGA onboard Intel Graphics HD 620</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Bộ nhớ</td> <td style="width: 397pt;" width="529">16Gb (Ram onmain, không nâng cấp)</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Ổ cung/ Ổ đĩa quang</td> <td style="width: 397pt;" width="529">512Gb SSD/ Không có</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Màn hình</td> <td style="width: 397pt;" width="529">13.4 inch FHD</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Kết nối</td> <td style="width: 397pt;" width="529">Killer™ Wi-Fi 6 AX1650 (2 x 2), Bluetooth 5.1</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Cổng giao tiếp</td> <td style="width: 397pt;" width="529">2 Thunderbolt™ 3 (DisplayPort / Power Delivery (4 lanes of PCI Express Gen 3)</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Webcam</td> <td style="width: 397pt;" width="529">Có</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Nhận dạng vân tay</td> <td style="width: 397pt;" width="529">Có</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Nhận diện khuôn mặt</td> <td style="width: 397pt;" width="529">Không có</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Tính năng khác</td> <td style="width: 397pt;" width="529">Màn hình cảm ứng</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Hệ điều hành</td> <td style="width: 397pt;" width="529">Windows 10 Home + Office 365</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Pin</td> <td style="width: 397pt;" width="529">4 cell</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Kích thước</td> <td style="width: 397pt;" width="529">39.6 x 19.9 x 1.48 cm</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Trọng lượng</td> <td style="width: 397pt;" width="529">1.27 kg</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Màu sắc/ Chất liệu</td> <td>Silver/ vỏ nhôm</td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Laptop Dell XPS 13 9300 0N90H1 (I7-1065G7/16Gb/512Gb SSD/13.4''UHD/Touch/VGA ON/Win10+Off365/Silver/vỏ nhôm)</name><price>0</price><model>XPS 13 9300 0N90H1</model><cpu>Core i7 1065G7 1.3Ghz upto 3.9Ghz-8Mb</cpu><ram>16Gb (Ram onmain, không nâng cấp)</ram><lcd>13.4 inch FHD</lcd><weight>1.27   </weight><image/></laptop>  
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 14-ce3018TU 8QN89PA (Gold)', model='8QN89PA', price=15290000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37291_laptop_hp_pavilion_14_ce3026u_8wh93pa__gold__1_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP EliteBook 1050 G1 5JJ71PA (i7-8750H/RAM 16Gb/512Gb SSD/15.6FHD/GTX1050 Max Q 4GB/Dos/Silver)', model='5JJ71PA', price=44990000, weight=2.06, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_35943_laptop_hp_elitebook_1050_g1_5jj71pa__silver__1_4.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 348 G5 7CS02PA (i3-7020U/4Gb/500Gb HDD/DVDSM/14/VGA ON/Dos/Silver)', model='7CS02PA', price=9690000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36492_hp_348_g5_7cs02pa_1_4.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop LG Gram 17Z90N-V.AH75A5 (i7-1065G7/8GB/512GB SSD/17WQXGA(2560x1600)/VGA ON/WIN 10/Dark Silver/LED_KB)', model='AH75A5', price=42500000, weight=1.35, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38286_laptop_lg_gram_17z90n_v_ah75a5_1_5.jpg', brand=huyng.entities.BrandEntity@519ead9d, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************Missing LCD|Ram|Monitor********************************
+Index: 0, Size: 0ProductUrl = https://www.phucanh.vn/laptop-asus-gaming-rog-zephyrus-ga401iu-ha181t-ryzen-7-4800hs/16gb/512gb-ssd/15.6qhd/gtx1660-ti-6gb/win10/white/tui.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 519pt;" width="691"> <tbody> <tr style="height: 14.25pt;"> <td style="height: 14.25pt; width: 133pt;" width="177">Sản phẩm</td> <td style="width: 386pt;" width="514">Máy tính xách tay</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Tên Hãng</td> <td style="width: 386pt;" width="514">Asus</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Model</td> <td style="width: 386pt;" width="514">ROG Zephyrus GA401IU-HA181T</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Bộ VXL</td> <td style="width: 386pt;" width="514">Ryzen 7 4800HS 2.9Ghz-8MB</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Cạc đồ họa</td> <td style="width: 386pt;" width="514">Nvidia GTX1660 TI 6GB DDR6</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Bộ nhớ</td> <td style="width: 386pt;" width="514">16Gb (8GB DDR4 on board + 8GB DDR4-3200 SO-DIMM)</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Ổ cung/ Ổ đĩa quang</td> <td style="width: 386pt;" width="514">512GB M.2 NVMe™ PCIe® 3.0 SSD</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Màn hình</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Kết nối</td> <td style="width: 386pt;" width="514">Intel Wi-Fi 6(Gig+)(802.11ax)+Bluetooth 5.0 (Dual band) 2*2</td> </tr> <tr style="height: 42.75pt;"> <td style="height: 42.75pt;">Cổng giao tiếp</td> <td style="width: 386pt;" width="514">1x Type C USB 3.2 Gen 2; 2x Type A USB 3.2 Gen 1; 1x Type C USB 3.2 Gen 2 with Power Delivery, Display Port and G-Sync//1x 3.5mm combo audio jack; 1x TypeC (DP 1.4); 1x HDMI 2.0b</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Webcam</td> <td style="width: 386pt;" width="514">Có</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Nhận dạng vân tay</td> <td style="width: 386pt;" width="514">Không có</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Nhận diện khuôn mặt</td> <td style="width: 386pt;" width="514">Không có</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Tính năng khác</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Hệ điều hành</td> <td style="width: 386pt;" width="514">Windows 10 Home</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Pin</td> <td style="width: 386pt;" width="514">4 cell</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Kích thước</td> <td style="width: 386pt;" width="514">32.4 x 22.0 x 1.99 ~ 1.99 cm</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Trọng lượng</td> <td style="width: 386pt;" width="514">1.7 kg</td> </tr> <tr style="height: 14.25pt;"> <td style="height: 14.25pt;">Màu sắc/ Chất liệu</td> <td style="width: 386pt;" width="514">White</td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Laptop Asus Gaming ROG Zephyrus GA401IU-HA181T (Ryzen 7 4800HS/16GB/512GB SSD/15.6QHD/GTX1660 TI 6GB/Win10/White/Túi)</name><price>39990000</price><model>ROG Zephyrus GA401IU-HA181T</model><cpu>Ryzen 7 4800HS 2.9Ghz-8MB</cpu><ram>16Gb (8GB DDR4 on board + 8GB DDR4-3200 SO-DIMM)</ram><lcd/><weight>1.7   </weight><image/></laptop>  
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Acer Swift 1 SF114-32-P2SG NX.GZJSV.001 (Pentium N5000/4Gb/ HDD 64Gb eMMC/ 14.0' FHD/VGA ON/ Win 10/Aqua)', model='SF114-32-P2SG', price=8490000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_33120-acer-swift1-sf114.jpg', brand=huyng.entities.BrandEntity@64864e57, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MREF2 256Gb (2018) (Gold)', model='MACBOOK ', price=30190000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_33874_lap_app_mrea2.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MREC2 256Gb (2018) (Silver)', model='MACBOOK ', price=30190000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_33872_lap_app_mrea2.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MV922 SA/A 256Gb (2019) (Silver)- Touch Bar', model='MACBOOK ', price=57290000, weight=1.83, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_35635_laptop_apple_macbook_pro_mv922_256gb__2019___silver___touch_bar_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MV912 SA/A 512Gb (2019) (Space Gray)- Touch Bar', model='MACBOOK ', price=67190000, weight=1.83, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_35634_laptop_apple_macbook_pro_mv902_256gb__2019___space_gray___touch_bar_1_2.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MPXQ2 128Gb (2017) (Space Gray)', model='MACBOOK ', price=26890000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_29013_laptop_apple_macbook_pro_mpxq2_128gb__2017___space_gray__1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus TUF Gaming FA506II-AL012T (Ryzen 5 4600H/8GB/512GB SSD/15.6FHD-144Hz/GTX1650 TI 4GB/Win10/Black/RGB_KB)', model='AL012T', price=20690000, weight=2.1, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38523_laptop_asus_tuf_gaming_fa506iu_al010t_1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus A512FA-EJ1281T (i5-10210U/8GB/512GB SSD/15.6FHD/VGA ON/Win10/Silver)', model='EJ1281T', price=15990000, weight=1.7, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37569_laptop_asus_a512fa_ej1281t_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook A412DA-EK144T (Ryzen 5-3500U/8GB/512GB SSD/14FHD/AMD Radeon/Win10/Silver)', model='EK144T', price=13590000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36262_laptop_asus_a412da_ek144t__silver__1_1.png', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook S333JA-EG044T (i7-1065G1/8GB/512GB SSD/13.3FHD/VGA ON/Win10/White/NumPad)', model='EG003T', price=21990000, weight=1.2, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39428_asus_vivobook_s333ja_ha1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus D509DA-EJ286T (Ryzen 5-3500U/4GB/256GB SSD/15.6FHD/AMD Radeon/Win10/Silver)', model='EJ285T', price=11690000, weight=1.9, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37216_laptop_asus_d509da_ej286t__silver__1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus D509DA-EJ285T (Ryzen 3-3200U/4GB/256GB SSD/15.6FHD/AMD Radeon/Win10/Silver)', model='EJ116T', price=9790000, weight=1.9, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37215_laptop_asus_d509da_ej286t__silver__1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook X409JA-EK199T (i5-1035G1/4GB/512GB SSD/14FHD/VGA ON/Win10/Grey)', model='EK014T', price=13790000, weight=1.54, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39462_laptop_asus_vivobook_x409ja_ek199t_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************NOT VALID********************************
+cvc-datatype-valid.1.2.1: '' is not a valid value for 'double'.ProductUrl = https://www.phucanh.vn/laptop-fujitsu-u937-fpc04866dk-black-made-in-japan.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table width="789"> <tbody> <tr> <td width="202">Sản phẩm</td> <td width="587">Máy tính xách tay</td> </tr> <tr> <td>Tên Hãng</td> <td width="587">Fujitsu</td> </tr> <tr> <td>Model</td> <td width="587">U937-FPC04866DK</td> </tr> <tr> <td>Bộ VXL</td> <td width="587">Core i5 7200U (2.5Ghz-3Mb)</td> </tr> <tr> <td>Cạc đồ họa</td> <td width="587">VGA onboard, Intel HD Graphics 620</td> </tr> <tr> <td>Bộ nhớ</td> <td width="587">8Gb</td> </tr> <tr> <td>Ổ cung</td> <td width="587">256Gb SSD</td> </tr> <tr> <td>Màn hình</td> <td width="587">13.3Inch Full HD</td> </tr> <tr> <td>Ổ đĩa quang</td> <td width="587">Không có</td> </tr> <tr> <td>Kết nối</td> <td width="587">LAN, Wifi, Bluetooth</td> </tr> <tr> <td>Cổng giao tiếp</td> </tr> <tr> <td>Webcam</td> <td width="587">Có</td> </tr> <tr> <td>Nhận dạng vân tay</td> <td width="587">Không có</td> </tr> <tr> <td>Tính năng khác</td> <td width="587">Made in Japan</td> </tr> <tr> <td>Hệ điều hành</td> <td width="587">DOS</td> </tr> <tr> <td>Pin</td> <td width="587">4 cell</td> </tr> <tr> <td>Kích thước</td> </tr> <tr> <td>Trọng lượng</td> </tr> <tr> <td>Màu sắc/ Chất liệu</td> <td width="587">Black</td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Laptop Fujitsu U937-FPC04866DK Core i5 7200U 2.5Ghz-3Mb/ 8Gb/ 256Gb SSD/ 13.3Inch FHD/VGA ON/ DOS/Black)</name><price>41790000</price><model>U937-FPC04866DK</model><cpu>Core i5 7200U (2.5Ghz-3Mb)</cpu><ram>8Gb</ram><lcd>13.3Inch Full HD</lcd><weight/><image>https://phucanhcdn.com/media/product/250_29208_laptop_fujitsu_u937_fpc04866dk__black___made_in_japan.png</image></laptop>  
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook A412FA-EK734T (i5-10210U/8GB/512GB SSD/14FHD/VGA ON/Win10/Silver)', model='EK734T', price=15690000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37568_laptop_asus_a412fa_ek734t_2.png', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook X409MA-BV157T (Celeron N4020/4GB/256GB SSD/14/VGA ON/Win10/Silver)', model='BV157T', price=6990000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39284_laptop_asus_vivobook_x409ma_bv157t_1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook S333JA-EG003T (i5-1035G1/8GB/512GB SSD/13.3FHD/VGA ON/Win10/White/NumPad)', model='EG003T', price=18990000, weight=1.2, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39426_asus_vivobook_s333ja_eg003t_ha1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook X509MA-BR270T (Celeron N4020/4GB/256GB SSD/15.6/VGA ON/Win10/Silver)', model='BR270T', price=6990000, weight=1.75, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39286_asus_vivobook_x509ma_br270t_1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Gaming FA706IU-H7133T (Ryzen 7-4800H/8GB/512GB SSD/17.3FHD, 120Hz/GTX1660 TI 6GB/Win10/Gun Metal/Balo)', model='H7133T', price=26990000, weight=2.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39174_laptop_asus_gaming_fa706iu_h7133t_1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus X509MA-BR060T (Pentium N5000/4GB/256GB SSD/15.6/VGA ON/Win10/Silver)', model='BR060T', price=7990000, weight=1.9, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38121_laptop_asus_x509ma_br060t_1_1.png', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************NOT VALID********************************
+cvc-datatype-valid.1.2.1: '' is not a valid value for 'double'.ProductUrl = https://www.phucanh.vn/laptop-fujitsu-u747-fpc07427dk-black-made-in-japan.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table width="789"> <tbody> <tr> <td width="202">Sản phẩm</td> <td width="587">Máy tính xách tay</td> </tr> <tr> <td>Tên Hãng</td> <td width="587">Fujitsu</td> </tr> <tr> <td>Model</td> <td width="587">U747-FPC07427DK</td> </tr> <tr> <td>Bộ VXL</td> <td width="587">Core i5 7200U (2.5Ghz-3Mb)</td> </tr> <tr> <td>Cạc đồ họa</td> <td width="587">VGA onboard, Intel HD Graphics 620</td> </tr> <tr> <td>Bộ nhớ</td> <td width="587">8Gb</td> </tr> <tr> <td>Ổ cung</td> <td width="587">256Gb SSD</td> </tr> <tr> <td>Màn hình</td> <td width="587">14.0Inch Full HD</td> </tr> <tr> <td>Ổ đĩa quang</td> <td width="587">Không có</td> </tr> <tr> <td>Kết nối</td> <td width="587">LAN, Wifi, Bluetooth</td> </tr> <tr> <td>Cổng giao tiếp</td> </tr> <tr> <td>Webcam</td> <td width="587">Có</td> </tr> <tr> <td>Nhận dạng vân tay</td> <td width="587">Không có</td> </tr> <tr> <td>Tính năng khác</td> <td width="587">Made in Japan</td> </tr> <tr> <td>Hệ điều hành</td> <td width="587">DOS</td> </tr> <tr> <td>Pin</td> <td width="587">4 cell</td> </tr> <tr> <td>Kích thước</td> </tr> <tr> <td>Trọng lượng</td> </tr> <tr> <td>Màu sắc/ Chất liệu</td> <td width="587">Black</td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Laptop Fujitsu U747-FPC07427DK Core i5 7200U 2.5Ghz-3Mb/ 8Gb/ 256Gb SSD/ 14.0' FHD/VGA ON/ DOS/Black)</name><price>32790000</price><model>U747-FPC07427DK</model><cpu>Core i5 7200U (2.5Ghz-3Mb)</cpu><ram>8Gb</ram><lcd>14.0Inch Full HD</lcd><weight/><image>https://phucanhcdn.com/media/product/250_29207_laptop_fujitsu_u747.png</image></laptop>  
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Gaming G5 5590 4F4Y42 (Core i7-9750H/16Gb/512Gb SSD/ 15.6 inch FHD/RTX 2060 6GB/Win10/Black)', model='4F4Y42', price=40990000, weight=2.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36074_laptop_dell_gaming_g5_5590_ha4.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook A412FA-EK1188T (i3-10110U/4GB/256GB SSD/14FHD/VGA ON/Win10/Silver)', model='EK1187T', price=11990000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39540_images.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook A412DA-EK346T (Ryzen 3-3200U/4GB/512GB SSD/14FHD/AMD Radeon/Win10/Silver)', model='EK346T', price=10990000, weight=1.7, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36859_laptop_asus_a412da_ek346t__silver__1_6.png', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Vostro 3590 GRMGK1 (I5-10210U/4Gb/1Tb HDD/15.6'' FHD/DVDW/VGA ON/ Win10/Black)', model='GRMGK1', price=13990000, weight=2.1, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36994_dell_vostro_3590_h1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus TUF Gaming FA506II-AL016T (Ryzen 7 4800H/8GB/512GB SSD/15.6FHD-144Hz/GTX1650 TI 4GB/Win10/Grey/RGB_KB)', model='AL016T', price=22990000, weight=2.1, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38620_asus_tuf_gaming_fa506ii_al016t_2.png', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook X509MA-BR059T (Pentium N5000/4GB/1TB HDD/15.6/VGA ON/Win10/Silver)', model='BR059T', price=7690000, weight=1.9, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38319_laptop_asus_vivobook_x509ma_br059t_1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Gaming FX505DT-AL003T (Ryzen 7-3750H/8GB/512GB SSD/15.6FHD/GTX1650 4GB/Win10/Gun Metal)', model='AL003T', price=18590000, weight=2.2, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_35184_laptop_asus_tuf_gaming_fx705dd_au059t_1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus TUF Gaming FA506IV-HN202T (Ryzen 7 4800H/16GB/1TB SSD/15.6FHD-144Hz/GTX2060 TI 6GB/Win10/Grey/RGB_KB)', model='HN202T', price=31990000, weight=2.1, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39173_laptop_asus_tuf_gaming_fa506iv_hn202t_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook A412FA-EK155T (i3-8145U/4GB/1TB HDD/14FHD/VGA ON/Win10/Silver)', model='EK155T', price=10990000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_34936_laptop_asus_a412fa_ek155t__silver__1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Gaming ROG Zephyrus GA502IU-AL007T (Ryzen 7-4800HS/8GB/512GB SSD/15.6FHD-144Hz/GTX1660 TI 6G/ Win10/Black/Balo)', model='AL007T', price=29590000, weight=2.1, weightMark=0.0, image='', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus A512DA-EJ406T (Ryzen 5-3500U/8GB/512GB SSD/15.6FHD/AMD Radeon/Win10/Silver)', model='EJ406T', price=13690000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_35982_laptop_asus_a512da_ej406t__silver__1_2.png', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Laptop Microsoft Surface 256Gb (2017) (Platinum)', model='Surface 256Gb (2017)', price=33890000, weight=1.252, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_34924_laptop_microsoft_surface_256gb__2017___platinum__1.jpg', brand=huyng.entities.BrandEntity@5cefaec1, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Laptop Microsoft Laptop 3 Ryzen 7/512Gb (Black)- Cảm biến ánh sáng', model='Laptop 3 Ryzen 7/512Gb', price=59990000, weight=1.542, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37383_laptop_microsoft_laptop_3_ryzen_7_1_1.jpg', brand=huyng.entities.BrandEntity@5cefaec1, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Laptop Microsoft Laptop 3 i5/256Gb (Black)- Cảm biến ánh sáng', model='Laptop 3 i5/256Gb', price=27990000, weight=1.288, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37380_laptop_microsoft_laptop_3_ryzen_7_1_1.jpg', brand=huyng.entities.BrandEntity@5cefaec1, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Laptop Microsoft Laptop 3 i7/512Gb (Black)- Cảm biến ánh sáng', model='Laptop 3 i7/512Gb', price=59990000, weight=1.288, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37381_laptop_microsoft_laptop_3_ryzen_7_1_1.jpg', brand=huyng.entities.BrandEntity@5cefaec1, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Zenbook UX434FAC-A6116T (i5-10210U/8GB/512GB SSD/14FHD/VGA ON/Win10/Silver/ScreenPad)', model='A6116T', price=22990000, weight=1.26, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37218_laptop_asus_zenbook_ux434fac_a6116t_1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus TUF Gaming FA506IU-AL127T (Ryzen 7 4800H/8GB/512GB SSD/15.6FHD-144Hz/GTX1660 TI 6GB/Win10/Black/RGB_KB)', model='AL127T', price=25990000, weight=2.1, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38832_asus_tuf_gaming_fa506iu_al127t_1_4.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Zenbook UX434FLC-A6143T (i5-10210U/8GB/512GB SSD/14FHD/MX250 2GB/Win10/Blue/ScreenPad)', model='A6143T', price=24990000, weight=1.26, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38825_laptop_asus_zenbook_ux434flc_a6143t_1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook X409MA-BV032T (Celeron N4000/4GB/256GB SSD/14/VGA ON/Win10/Silver)', model='EK092T', price=6990000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38263_asus_vivobook_x409ma_bv032t_1_4.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus UX534FT-A9168T (i5-10210U/8GB/512GB SSD/15.6FHD/GTX1650 MAX Q 4GB/Win10/ Blue/Túi Sleeve)', model='A9168T', price=27990000, weight=1.65, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37220_laptop_asus_zenbook_ux534ft_a9168t_1_2.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook X509MA-BR057T (Celeron N4000/4GB/1TB HDD/15.6/VGA ON/Win10/Silver)', model='BR057T', price=6890000, weight=1.9, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38379_laptop_asus_vivobook_x509ma_br057t_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus TUF Gaming FA506IH-AL018T (Ryzen 5 4600H/8GB/512GB SSD/15.6FHD-144Hz/GTX1650 4GB DDR5/Win10/Black/RGB_KB)', model='AL018T', price=20490000, weight=2.1, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38764_laptop_asus_tuf_gaming_fa506ih_al018t_1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Zenbook Duo UX481FL-BM049T (i7-10510U/16GB/512GB SSD/14FHD/MX250 2GB/Win10/ Blue/SCR_PAD/Pen/Túi)', model='BM049T', price=38990000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37506_laptop_asus_zenbook_duo_ux481fl_bm049t_1_2.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Zenbook UX434FLC-A6173T (i7-10510U/8GB/512GB SSD/14FHD/MX250 2GB/Win10/Blue/ScreenPad)', model='A6173T', price=29990000, weight=1.26, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38830_laptop_asus_zenbook_ux434flc_a6173t_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI Gaming GF63 Thin 9SC 1031VN (I7-9750H/8GB/512GB SSD/15.6FHD/NVIDIA GTX1650 MAX Q 4GB/Win 10/Black)', model='9SC 1031VN', price=26290000, weight=1.86, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38202_laptop_msi_gaming_gf63_thin_9sc_1031vn_1_1.png', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus VivobookX409MA-BV156T (Celeron N4020/4GB/1TB HDD/14/VGA ON/Win10/Silver)', model='BV156T', price=6590000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39282_laptop_asus_vivobookx409ma_bv156t_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Gaming FA706II-H7125T (Ryzen 5-4600H/8GB/512GB SSD/17.3FHD, 120Hz/GTX1650 TI 4GB/Win10/Gun Metal/Balo)', model='H7125T', price=21990000, weight=2.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38978_laptop_asus_gaming_fa706ii_h7125t_1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook A412FA-EK156T (i3-8145U/4GB/HDD 1TB/14FHD/VGA ON/Win10/Blue)', model='EK156T', price=10990000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_34937_laptop_asus_a412fa_ek156t__blue__1.png', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Zenbook UX534FTC-AA189T (i7-10510U/16GB/1TB SSD/15.6FHD/GTX1650 Max Q 4GB/Win10/Blue/ScreenPad)', model='AA189T', price=38590000, weight=1.26, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38828_asus_zenbook_ux534ftc_aa189t_1_2.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI Modern 14 A10RAS 1041VN (I7-10510U/8GB/512GB SSD/14FHD, 60Hz/Nvidia MX330 2GB/Win10/Silver/Túi Sleeve)', model='A10RAS 1041VN', price=22990000, weight=1.19, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38769_laptop_msi_modern_14_a10ras_1041vn_4.png', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI GE75 Raider 10SFS 076VN (I9-10980HK/16GB/500GB SSD+1TB HDD/17.3FHD, 240Hz /RTX2070 Super 8GB DDR6/Win10/Black/Balo)', model='10SFS 076VN', price=66990000, weight=2.64, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39176_laptop_msi_ge75_raider_10sfs_076vn_1_1.jpg', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI GF75 Thin 10SCXR 038VN (i7-10750H/8GB/512GB SSD/17.3FHD-120Hz/GTX1650 4GB/Win10/Black)', model='10SCXR 038VN', price=26990000, weight=2.2, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38530_laptop_msi_gf75_thin_10scxr_038vn_1_1.png', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Zenbook UX434FAC-A6064T (i5-10210U/8GB/512GB SSD/14FHD/VGA ON/Win10/Blue/ScreenPad)', model='A6064T', price=22990000, weight=1.26, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38829_laptop_asus_zenbook_ux434fac_a6064t_1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI Gaming GF65 Thin 10SER 622VN (i7-10750H/8GB/512GB SSD/15.6FHD, 144Hz/RTX2060 6GB DDR6/Win10/Black)', model='10SER 622VN', price=33990000, weight=1.86, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38767_laptop_msi_gaming_gf65_thin_10ser_622vn_01_01.png', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI Gaming GL65 Leopard 10SDK 242VN (I7 10750H/16GB/512GB SSD/15.6FHD/GTX1660 TI 6GB DDR6/Win 10/Black/Balo)', model='10SDK 242VN', price=33490000, weight=2.3, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38768_msi_gaming_gl65_leopard_10sdk_242vn_1_3.jpg', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI Gaming GF75 Thin 10SCXR 248VN (i7-10750H/8GB/512GB SSD/17.3FHD, 144Hz/GTX1650 4GB DDR6/Win10/Black)', model='10SCXR 248VN', price=26590000, weight=2.2, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39180_laptop_msi_gaming_gf75_thin_10scxr_248vn__1.png', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook X509MA-BR269T (Celeron N4020/4GB/1TB HDD/15.6/VGA ON/Win10/Silver)', model='BR269T', price=6590000, weight=1.75, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39285_laptop_asus_vivobook_x509ma_br269t_3.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Gaming G531GT-AL007T (i5-9300H/8GB/512GB SSD/15.6FHD/GTX1650 4GB/Win10/Black)', model='AL007T', price=21990000, weight=2.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_35814_laptop_asus_gaming_g531gt_al007t_1_1.png', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook X409FA-EK098T (i3-8145U/4GB/1TB HDD/14FHD/VGA ON/Win10/Grey)', model='EK098T', price=10390000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37837_laptop_asus_x409fa_ek098t_1_1.png', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI Gaming GF63 Thin 9SC 1030VN (I5-9300H/8GB/512GB SSD/15.6FHD/NVIDIA GTX1650 MAX Q 4GB/Win 10/Black)', model='9SC 1030VN', price=19990000, weight=1.86, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38528_laptop_msi_gaming_gf63_thin_9sc_1030vn_1_2.jpg', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI Bravo 15 A4DCR 052VN (Ryzen 5-4600H/8GB/256GB SSD/14FHD, 60Hz/RX 5300M 3GB DDR6/Win10/Black)', model='A4DCR 052VN', price=19690000, weight=1.96, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38766_msi_bravo_15_a4dc_052vn_1_1.jpg', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Asus Vivobook X409MA-BV034T (Pentium N5000/4GB/256GB SSD/14/VGA ON/Win10/Silver)', model='BV034T', price=7990000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38343_laptop_asus_vivobook_x409ma_bv034t_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI Gaming GF63 Thin 10SCXR 074VN (I7-10750H/8GB/512GB SSD/15.6FHD-60Hz/GTX1650 MAX Q 4GB/Win 10/Black)', model='10SCXR 074VN', price=25990000, weight=1.86, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38527_laptop_msi_gaming_gf63_thin_10scxr_074vn_1_6.jpg', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI Gaming GS66 Stealth 10SE 213VN (i7-10750H/16GB/512GB SSD/15.6FHD, 240Hz/RTX2060 6GB/Win10/Black)', model='10SE 213VN', price=46990000, weight=2.1, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39183_laptop_msi_gaming_gs66_stealth_10se_213vn_1.png', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI Gaming GF65 Thin 10SDR 623VN (i5-10300H/8GB/512GB SSD/15.6FHD, 144Hz/GTX1660 TI 6GB DDR6/Win10/Black)', model='10SDR 623VN', price=28590000, weight=1.86, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39178_laptop_msi_gaming_gf65_thin_10sdr_623vn_1.png', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI Gaming GF63 Thin 10SCSR 077VN (I7-10750H/8GB/512GB SSD/15.6FHD, 120Ghz/NVIDIA GTX1650 TI MAX Q 4GB/Win 10/Black)', model='10SCSR 077VN', price=26690000, weight=1.86, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38373_laptop_msi_gaming_gf63_thin_10scsr_077vn_1.png', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop MSI Modern 14 A10RB 888VN (I7-10510U/8GB/512GB SSD/14 FHD/Nvidia MX250-2GB/Win10/Grey/Túi Sleeve)', model='A10RB 888VN', price=22990000, weight=1.19, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38204_laptop_msi_gaming_modern_14_a10rb_888vn_1.jpg', brand=huyng.entities.BrandEntity@e236143b, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 15s-fq1106TU 193Q2PA (i3-1005G1/4GB/256GB SSD/15.6/VGA ON/DOS/Silver)', model='193Q2PA', price=9990000, weight=1.74, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39056_laptop_hp_15s_fq0003tu_1a0d4pa_1_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 15-cs3061TX 8RE83PA (i5-1035G1/8Gb/512GB SSD/15.6FHD/MX250 2GB/Win10/Grey)', model='8RE83PA', price=17690000, weight=1.85, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37244_35372_laptop_hp_pavilion_15_cs2033tu_6yz14pa__grey__1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 15-cs3010TU 8QN78PA (i3-1005G1/4Gb/256GB SSD/15.6FHD/VGA ON/Win10/Grey)', model='8QN78PA', price=12690000, weight=1.85, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37238_35372_laptop_hp_pavilion_15_cs2033tu_6yz14pa__grey__1_2.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 14s-dq1022TU 8QN41PA (i7-1065G7/8Gb/512GB SSD/14/VGA ON/Win 10/Silver)', model='8QN41PA', price=16890000, weight=1.46, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37332_laptop_hp_14s_dq1020tu_8qn33pa__silver__1_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP ProBook 440 G7 9GQ24PA (i3-10110U/4GB/256GB SSD/14FHD/VGA ON/DOS/Silver)', model='9GQ24PA', price=12490000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38229_laptop_hp_probook_440_g7_9gq24pa_1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 15-cs3116TX 9AV24PA (i5-1035G1/4Gb/256GB SSD/15.6FHD/MX250 2GB/Win10/Gold)', model='9AV24PA', price=15990000, weight=1.85, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37246_35372_laptop_hp_pavilion_15_cs2033tu_6yz14pa__grey__1_3.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 15s-fq1107TU 193Q3PA (i3-1005G1/4GB/256GB SSD/15.6/VGA ON/Win10/Silver)', model='193Q3PA', price=10390000, weight=1.74, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39065_hp_15s_fq1107tu_193q3pa_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 15s-fq1022TU 8VY75PA (i7-1065G7/8Gb/512GB SSD/15.6FHD/VGA ON/Win 10/Silver)', model='8VY75PA', price=16990000, weight=1.74, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37327_laptop_hp_15s_fq1022tu_8vy75pa__silver__1_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 14s-cf0096TU 6ZF41PA (Pentium N5000/4GB/1TB HDD/14/VGA ON/Win10/Silver)', model='6ZF41PA', price=7290000, weight=1.7, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37891_laptop_hp_14s_cf0096tu_6zf41pa_1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 15s-fq0003TU 1A0D4PA (Pentium N5000/4GB/256GB SSD/15.6/VGA ON/Win10/Silver)', model='1A0D4PA', price=7890000, weight=1.74, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39050_laptop_hp_15s_fq0003tu_1a0d4pa_1_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 15s-fq1017TU 8VY69PA (i5-1035G1/4GB/512GB SSD/15.6/VGA ON/Win 10/Silver)', model='8VY69PA', price=14290000, weight=1.74, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39020_laptop_hp_15s_fq1017tu_8vy69pa_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 15-cs3015TU 8QP15PA (i5-1035G1/4Gb/256GB SSD/15.6FHD/VGA ON/Win10/Grey)', model='8QP15PA', price=14990000, weight=1.85, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37242_35372_laptop_hp_pavilion_15_cs2033tu_6yz14pa__grey__1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 14-ce2038TU 6YZ21PA (i5-8265U/4Gb/1Tb HDD/14FHD/VGA ON/Win10/Pink)', model='6YZ21PA', price=12690000, weight=1.63, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_35456_laptop_hp_pavilion_14_ce2039tu_6yz15pa__silver__1_2.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 348 G7 9PG98PA (i5-10210U/8Gb/SSD 256Gb/14FHD/VGA ON/DOS/Silver)', model='9PG98PA', price=14590000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37880_37879_laptop_hp_348_g7_9pg93pa_1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 15s-du1037TX 8RK37PA (i5-10210U/8Gb/512GB SSD/15.6/MX130 2GB/Win 10/Silver)', model='8RK37PA', price=16290000, weight=1.74, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37532_laptop_hp_15s_du1040tx_8re77pa_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 15-cs3014TU 8QP20PA (i5-1035G1/4Gb/256GB SSD/15.6FHD/VGA ON/Win10/Gold)', model='8QP20PA', price=14990000, weight=1.85, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37241_35651_laptop_hp_pavilion_15_cs2035tu_6yz08pa__gold__1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 15-cs3063TX 8RK42PA (i7-1065G7/8Gb/512GB SSD/15.6FHD/MX250 2GB/Win10/Gold)', model='8RK42PA', price=20990000, weight=1.85, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37245_35651_laptop_hp_pavilion_15_cs2035tu_6yz08pa__gold__1_2.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 15-cs3011TU 8QN96PA (i5-1035G1/8Gb/512GB SSD/15.6FHD/VGA ON/Win10/Grey)', model='8QN96PA', price=16690000, weight=1.85, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37239_35372_laptop_hp_pavilion_15_cs2033tu_6yz14pa__grey__1_2.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 15s-fq1021TU 8VY74PA (i5-1035G1/8Gb/512GB SSD/15.6/VGA ON/Win 10/Silver)', model='8VY74PA', price=15390000, weight=1.74, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37539_laptop_hp_15s_fq1021tu_8vy74pa_1_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 15-cs3060TX 8RJ61PA (i5-1035G1/8Gb/512GB SSD/15.6FHD/MX250 2GB/Win10/Gold)', model='8RJ61PA', price=17690000, weight=1.85, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37243_35651_laptop_hp_pavilion_15_cs2035tu_6yz08pa__gold__1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 14-ce3018TU 8QN89PA (i5-1035G1/4Gb/256GB SSD/14FHD/VGA ON/Win10/Gold)', model='8QN89PA', price=14790000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37345_35958_35958_laptop_hp_pavilion_14_e2036tu_6yz19pa__gold__3.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 14-ce3013TU 8QN72PA (i3-1005G1/4Gb/256GB SSD/14FHD/VGA ON/Win10/Silver)', model='8QN72PA', price=12690000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37333_laptop_hp_14s_dq1020tu_8qn33pa__silver__1_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 15s-du1040TX 8RE77PA (i7-10510U/8GB/512GB SSD/15.6/MX130 2GB/Win 10/Silver)', model='8RE77PA', price=17890000, weight=1.74, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37535_laptop_hp_15s_du1040tx_8re77pa_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************NOT VALID********************************
+cvc-datatype-valid.1.2.1: 'Thin Pad X390' is not a valid value for 'double'.ProductUrl = https://www.phucanh.vn/laptop-lenovo-thinkpad-x390-20q0s03m00-black-dong-san-pham-cao-cap.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 361px; height: 843px;" width="696"> <tbody> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hvàatilde;ng sản xuất</td> <td style="width: 261pt;" width="348">Lenovo</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chủng loại</td> <td style="width: 261pt;" width="348">ThinkPad X390</td> </tr> <tr style="height: 26.45pt;"> <td style="height: 26.45pt; width: 261pt;" width="348">Part Number</td> <td style="width: 261pt;" width="348">20Q0S03M00</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Mầu sắc</td> <td style="width: 261pt;" width="348">Đen</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ vi xử lvàyacute;</td> <td style="width: 261pt;" width="348">Intel Core i5-8265U(1.6GHz/6MB) up to 3.90 GHz</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chipset</td> <td style="width: 261pt;" width="348">Intel</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ nhớ trong</td> <td style="width: 261pt;" width="348">8GB DDR4</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Số khe cắm</td> <td style="width: 261pt;" width="348">no sockets</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Dung lượng tối đa</td> <td style="width: 261pt;" width="348">8GB</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">VGA</td> <td style="width: 261pt;" width="348">Intel UHD Graphics 620</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ cung</td> <td style="width: 261pt;" width="348">SSD 256GB M.2 NVMe</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ quang</td> <td style="width: 261pt;" width="348">No</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Card Reader</td> <td style="width: 261pt;" width="348">MicroSD card reader</td> </tr> <tr style="height: 30.0pt;"> <td style="height: 30.0pt; width: 261pt;" width="348">Bảo mật, công nghệ</td> <td style="width: 261pt;" width="348">Touch style match on chip fingerprint reader on the palm rest</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Màn hình</td> <td style="width: 261pt;" width="348">13.3" FHD (1920x1080) Anti-glare IPS 300 nits</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Webcam</td> <td style="width: 261pt;" width="348">HD + IR camera with ThinkShutter</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Audio</td> <td style="width: 261pt;" width="348">HD Audio, Realtek ALC3287 codec / stereo speakers, 1W x 2, Dolby Audio Premium</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Giao tiếp mạng</td> <td style="width: 261pt;" width="348">No</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Giao tiếp không dây</td> <td style="width: 261pt;" width="348">Intel Wireless-AC 9560, Wi-Fi 2x2 802.11ac + Bluetooth 5.0</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 99.0pt; width: 261pt;" rowspan="6" width="348">Cổng giao tiếp</td> <td style="width: 261pt;" width="348">1 x Thunderbolt 3</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x USB Type-C</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">2 x USB 3.1 Gen1</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x HDMI 1.4</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x MicroSD</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x Audio</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Pin</td> <td style="width: 261pt;" width="348">6Cell 48WH</td> </tr> <tr style="height: 79.15pt;"> <td style="height: 79.15pt; width: 261pt;" width="348">Kích thước (rộng x dài x cao)</td> <td style="width: 261pt;" width="348">311.9 x 217.0 x 16.5mm / 12.27 x 8.54 x 0.61 inches</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Cân nặng</td> <td style="width: 261pt;" width="348">Starting at 1.22kg/2.68lbs.</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hệ điều hành</td> <td style="width: 261pt;" width="348">No OS</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Phụ kiện đi kèm</td> <td style="width: 261pt;" width="348">AC Adapter</td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Laptop Lenovo Thinkpad X390 20Q0S03M00 (Core i5-8265U/8Gb/256Gb SSD/13.3'FHD/VGA ON/Dos/Black)</name><price>27690000</price><model/><cpu/><ram>8GB DDR4</ram><lcd>13.3" FHD (1920x1080) Anti-glare IPS 300 nits</lcd><weight>Thin Pad X390</weight><image>https://phucanhcdn.com/media/product/250_35796_laptop_lenovo_thinkpad_x390_20q0s03m00_1_1.png</image></laptop>  
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP ProBook 450 G7 9GQ43PA (i5-10210U/4GB/256GB SSD/15.6FHD/VGA ON/DOS/Silver)', model='9GQ43PA', price=16690000, weight=2.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38142_laptop_hp_probook_450_g7_9gq43pa_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion Gaming 15-dk0231TX 8DS89PA (i5-9300H/8Gb/1Tb HDD/15.6FHD/GTX1650 4GB/Win 10/Black)', model='8DS89PA', price=21590000, weight=2.3, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36224_laptop_hp_pavilion_gaming_15_dk0233tx_8ds86pa__black__1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Envy 13-aq1022TU 8QN69PA (i5-10210U/8Gb/512Gb SSD/13.3FHD/VGA ON/Win10/Gold)', model='8QN69PA', price=21690000, weight=1.28, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37344_laptop_hp_envy_13_aq1022tu_8qn69pa_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP ProBook 440 G7 9GQ22PA (i5-10210U/4Gb/256GB SSD/14FHD/VGA ON/DOS/Silver)', model='9GQ22PA', price=16990000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37767_laptop_hp_probook_440_g7_9gq14pa_1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Envy 13-aq1048TU 8XS70PA (i5-10210U/8Gb/512GB SSD/13.3FHD/VGA ON/Win10/Vân gỗ)', model='8XS70PA', price=22290000, weight=1.28, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37542_laptop_hp_envy_13_aq1022tu_8xs70pa_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 348 G7 9PG95PA (i5-10210U/4Gb/512GB SSD/14FHD/VGA ON/DOS/Silver)', model='9PG95PA', price=14990000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38442_laptop_hp_348_g7_9ph01pa_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Envy 13-aq1047TU 8XS69PA (i7-10510U/8Gb/512Gb SSD/13.3FHD/VGA ON/Win10/Vân gỗ/LED_KB)', model='8XS69PA', price=27690000, weight=1.28, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38145_laptop_hp_envy_13_aq1047tu_8xs69pa_1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP ProBook 450 G7 9GQ34PA (i5-10210U/8Gb/256GB SSD/15.6FHD/VGA ON/Dos/Silver/LEB_KB)', model='9GQ34PA', price=17590000, weight=2.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37541_laptop_hp_probook_450_g7_9gq34pa_1_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP ProBook 440 G7 9GQ14PA (i5-10210U/8Gb/512GB SSD/14FHD/VGA ON/DOS/Silver)', model='9GQ14PA', price=18590000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37766_laptop_hp_probook_440_g7_9gq14pa_1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 348 G7 9PH16PA (I7-10510U/8Gb/SSD 512Gb/14FHD/VGA ON/DOS/Silver)', model='9PH16PA', price=18990000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37881_37879_laptop_hp_348_g7_9pg93pa_1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion Gaming 15-dk0233TX 8DS86PA (i7-9750H/8Gb/512Gb SSD/15.6FHD/GTX1650 4GB/Win 10/Black)', model='8DS86PA', price=25990000, weight=2.3, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36226_laptop_hp_pavilion_gaming_15_dk0233tx_8ds86pa__black__1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion x360 14-dw0063TU 19D54PA (i7-1065G7/8GB/512GB SSD/14FHD TouchScreen/VGA ON/Win10+Office Home vàamp; Student/Gold/Pen)', model='19D54PA', price=20990000, weight=1.64, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39375_hp_pavilion_x360_14_dw0063tu_19d54pa_1_4.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP ProBook 450 G7 9MV54PA (i5-10210U/4GB/512GB SSD/15.6FHD/VGA ON/DOS/Silver)', model='9MV54PA', price=17890000, weight=2.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38143_laptop_hp_probook_450_g7_9mv54pa_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 14-ce3019TU 8QP00PA (i5-1035G1/4Gb/1TB HDD/ 14FHD/VGA ON/Win10/Gold)', model='8QP00PA', price=13990000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37346_35958_35958_laptop_hp_pavilion_14_e2036tu_6yz19pa__gold__3.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 14-ce3037TU 8ZR43PA (i5-1035G1/4Gb/256GB SSD/14FHD/VGA ON/Win10/Silver)', model='8ZR43PA', price=14990000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37348_35958_35958_laptop_hp_pavilion_14_e2036tu_6yz19pa__gold__3.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 348 G5 7XJ58PA (i3-7020U/4Gb/256Gb SSD/14/VGA ON/Dos/Silver)', model='7XJ58PA', price=9790000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36493_hp_348_g5_7cs02pa_2.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Envy 13-aq1021TU 8QN79PA (i5-10210U/8Gb/256GB SSD/13.3FHD/VGA ON/Win10/Gold)', model='8QN79PA', price=20990000, weight=1.28, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37751_laptop_hp_envy_13_aq1021tu_8qn79pa_1_2.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP ProBook 430 G7 9GQ07PA (i3-10110/4GB/256GB SSD/13.3HD/VGA ON/WIN 10/Silver/LED_KB)', model='9GQ07PA', price=14290000, weight=1.42, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38137_laptop_hp_probook_430_g7_9gq07pa_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 348 G7 9PG93PA (i5-10210U/4Gb/SSD 256Gb/14FHD/VGA ON/DOS/Silver)', model='9PG93PA', price=13990000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37879_laptop_hp_348_g7_9pg93pa_1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 348 G7 9PH01PA (i5-10210U/8GB/512GB SSD/14FHD/VGA ON/DOS/Silver)', model='9PH01PA', price=15690000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38443_laptop_hp_348_g7_9ph01pa_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 14-ce2034TU 6YZ17PA (i3-8145U/4Gb/1Tb HDD/14FHD/VGA ON/Win10/Silver)', model='6YZ17PA', price=11790000, weight=1.534, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_35761_laptop_hp_pavilion_14_ce2034tu_6yz17pa__silver__1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP ProBook 450 G7 9GQ38PA (i5-10210U/8GB/512GB SSD/15.6FHD/VGA ON/DOS/Silver)', model='9GQ38PA', price=18290000, weight=2.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37770_laptop_hp_probook_450_g6_8az17pa_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 14s-cf0126TU 9JU05PA (i3-7020U/4GB/256GB SSD/14/VGA ON/Win10/Silver)', model='9JU05PA', price=9790000, weight=1.43, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37497_laptop_hp_14s_cf0126tu_9ju05pa_1_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP Pavilion 14-ce3015TU 8QN68PA (i3-1005G1/4Gb/1Tb HDD/14FHD/VGA ON/Win10/Gold)', model='8QN68PA', price=12790000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37334_laptop_hp_14s_dq1020tu_8qn33pa__silver__1_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************NOT VALID********************************
+cvc-minInclusive-valid: Value '0' is not facet-valid with respect to minInclusive '1' for type 'positiveInteger'.ProductUrl = https://www.phucanh.vn/laptop-lenovo-ideapad-slim-3-14iil05-81wd00bfvn-i3-1005g1/8gb/512gb-ssd/vga-on/14.0fhd/win10/abyss-blue.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 534pt;" width="711"> <tbody> <tr style="height: 13.8pt;"> <td style="height: 13.8pt; width: 137pt;" width="182">Sản phẩm</td> <td style="width: 397pt;" width="529">Máy tính xách tay</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Tên Hãng</td> <td style="width: 397pt;" width="529">Lenovo</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Model</td> <td style="width: 397pt;" width="529">Ideapad Slim 3 14IIL05 81WD00BFVN</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Bộ VXL</td> <td style="width: 397pt;" width="529">Core i3 1005G1 1.2Ghz up to 3.4Ghz-4Mb</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Cạc đồ họa</td> <td style="width: 397pt;" width="529">VGA onboard Intel Graphics HD 620</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Bộ nhớ</td> <td style="width: 397pt;" width="529">8Gb (1 Khe cắm / Hỗ trợ tối đa 12GB)</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Ổ cung/ Ổ đĩa quang</td> <td style="width: 397pt;" width="529">512Gb SSD(HDD option max 2Tb)</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Màn hình</td> <td style="width: 397pt;" width="529">14.0Inch Full HD</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Kết nối</td> <td style="width: 397pt;" width="529">WiFi 6, Bluetooth® 5.0</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Cổng giao tiếp</td> <td style="width: 397pt;" width="529">2 x USB 3.1 Gen 1/ 1 x USB 2.0/ HDMI™ 1.4b/ SD Card Reader</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Webcam</td> <td style="width: 397pt;" width="529">Có</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Nhận dạng vân tay</td> <td style="width: 397pt;" width="529">Không có</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Nhận diện khuôn mặt</td> <td style="width: 397pt;" width="529">Không có</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Tính năng khác</td> <td style="width: 397pt;" width="529">Màn hình Full HD</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Hệ điều hành</td> <td style="width: 397pt;" width="529">Windows 10 Home</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Pin</td> <td style="width: 397pt;" width="529">2 cell</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Kích thước</td> <td style="width: 397pt;" width="529">32.7x 24.0 x 1.95 cm</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Trọng lượng</td> <td style="width: 397pt;" width="529">1.5 kg</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Màu sắc/ Chất liệu</td> <td style="width: 397pt;" width="529">Abyss Blue</td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Laptop Lenovo Ideapad Slim 3 14IIL05 81WD00BFVN (i3-1005G1/8GB/512GB SSD/VGA ON/14.0”FHD/Win10/Abyss Blue)</name><price>0</price><model>Ideapad Slim 3 14IIL05 81WD00BFVN</model><cpu>Core i3 1005G1 1.2Ghz up to 3.4Ghz-4Mb</cpu><ram>8Gb (1 Khe cắm / Hỗ trợ tối đa 12GB)</ram><lcd>14.0Inch Full HD</lcd><weight>1.5   </weight><image/></laptop>  
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 348 G5 7XJ62PA (i3-7020U/4Gb/ SSD 256Gb/14FHD/VGA ON/ Win 10/Silver)', model='7XJ62PA', price=10190000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36551_hp_348_g5_7xj62pa__silver__1_2.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP 348 G7 9PG86PA (i3-10110U/4GB/256GB SSD/14/VGA ON/WIN10/Silver)', model='9PG86PA', price=11590000, weight=1.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38526_', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop HP ProBook 440 G7 9MV57PA (i7-10510U/8GB/256GB SSD/14 FHD/VGA ON/DOS/Silver)', model='9MV57PA', price=21990000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38231_laptop_hp_probook_440_g7_9mv57pa_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************NOT VALID********************************
+cvc-minInclusive-valid: Value '0' is not facet-valid with respect to minInclusive '1' for type 'positiveInteger'.ProductUrl = https://www.phucanh.vn/laptop-lenovo-ideapad-slim-3-14iil05-81wd0060vn-i5-1035g4/8gb/512gb-ssd/vga-on/14.0fhd/win10/abyss-blue.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 534pt;" width="711"> <tbody> <tr style="height: 13.8pt;"> <td style="height: 13.8pt; width: 137pt;" width="182">Sản phẩm</td> <td style="width: 397pt;" width="529">Máy tính xách tay</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Tên Hãng</td> <td style="width: 397pt;" width="529">Lenovo</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Model</td> <td style="width: 397pt;" width="529">Ideapad Slim 3 14IIL05 81WD0060VN</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Bộ VXL</td> <td style="width: 397pt;" width="529">Core i5 1035G4 1.1Ghz up to 3.7Ghz-6Mb</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Cạc đồ họa</td> <td style="width: 397pt;" width="529">VGA onboard Intel Graphics HD 620</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Bộ nhớ</td> <td style="width: 397pt;" width="529">8Gb (1 Khe cắm / Hỗ trợ tối đa 12GB)</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Ổ cung/ Ổ đĩa quang</td> <td style="width: 397pt;" width="529">512Gb SSD(HDD option max 2Tb)</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Màn hình</td> <td style="width: 397pt;" width="529">14.0Inch Full HD</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Kết nối</td> <td style="width: 397pt;" width="529">WiFi 6, Bluetooth® 5.0</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Cổng giao tiếp</td> <td style="width: 397pt;" width="529">2 x USB 3.1 Gen 1/ 1 x USB 2.0/ HDMI™ 1.4b/ SD Card Reader</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Webcam</td> <td style="width: 397pt;" width="529">Có</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Nhận dạng vân tay</td> <td style="width: 397pt;" width="529">Không có</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Nhận diện khuôn mặt</td> <td style="width: 397pt;" width="529">Không có</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Tính năng khác</td> <td style="width: 397pt;" width="529">Màn hình Full HD</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Hệ điều hành</td> <td style="width: 397pt;" width="529">Windows 10 Home</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Pin</td> <td style="width: 397pt;" width="529">2 cell</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Kích thước</td> <td style="width: 397pt;" width="529">32.7x 24.0 x 1.95 cm</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Trọng lượng</td> <td style="width: 397pt;" width="529">1.5 kg</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Màu sắc/ Chất liệu</td> <td style="width: 397pt;" width="529">Abyss Blue</td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Laptop Lenovo Ideapad Slim 3 14IIL05 81WD0060VN (i5-1035G4/8GB/512GB SSD/VGA ON/14.0”FHD/Win10/Abyss Blue)</name><price>0</price><model>Ideapad Slim 3 14IIL05 81WD0060VN</model><cpu>Core i5 1035G4 1.1Ghz up to 3.7Ghz-6Mb</cpu><ram>8Gb (1 Khe cắm / Hỗ trợ tối đa 12GB)</ram><lcd>14.0Inch Full HD</lcd><weight>1.5   </weight><image/></laptop>  
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 3493 N4I5122W (I5-1035G1/8Gb/256Gb SSD/ 14.0 FHD/VGA ON/ Win10/Black)', model='N4I5122W', price=14590000, weight=1.66, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37989_inspiron_3493_ha1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 5593 N5I5461W (I5-1035G1/ 8Gb/ 512Gb SSD/ 15.6' FHD/ MX230-2GB/ Win10/Silver)', model='N5I5461W', price=18990000, weight=1.95, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36652_inspiron_5593_ha1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Vostro 3590 GRMGK2 (I7-10510U/ RAM 8Gb/256Gb SSD/ 15.6' FHD/ Radeon 610 2GB DDR5/ DVDRW/ Windows 10/Black)', model='GRMGK2', price=19990000, weight=2.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36995_dell_vostro_3590_h1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 5593A P90F002N93A (i7-1065G7/8Gb/512Gb SSD/ 15.6'FHD/MX230-4G/ Win10/Silver)', model='P90F002N93A', price=23390000, weight=1.95, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37183_inspiron_5593_h3s.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 5490 70196706 (I7-10510U/ 8Gb/512Gb SSD/ 14.0'' FHD/ MX230-2Gb/ Win10/Silver/vỏ nhôm)', model='70196706', price=21990000, weight=1.66, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36638_inspiron_5490_h1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 5490 FMKJV1 (I5-10210U/ 8Gb/512Gb SSD/ 14.0'' FHD/MX230 2GB/ Win10/Silver/Vỏ nhôm)', model='FMKJV1', price=20390000, weight=1.3, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36996_inspiron_5490_h5.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 3493 N4I7131W (I7-1065G7/ 8Gb/512Gb SSD/ 14.0FHD/MX230-2Gb/ Win10/Silver)', model='N4I7131W', price=19990000, weight=1.66, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37427_inspiron_3493_h1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 5491 N4TI5024W (I5-10210U/ 8Gb/SSD 512Gb/ 14.0'' FHD/Touch/MX230 2GB/ Win10/Silver/Vỏ nhôm)', model='N4TI5024W', price=22190000, weight=1.66, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36640_inspiron_5491_bac_ha5.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Vostro 3490 2N1R82 (I5-10210U/8Gb/256Gb SSD/ 14.0FHD/Radeon 610-2Gb/ Finger Print/ Win10/Black)', model='2N1R82', price=15490000, weight=1.72, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39300_dell_vostro_3490_ha1s.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 5391 N3I3001W (I3-10110U/4Gb/128Gb SSD/ 13.3Inch FHD/VGA ON/ Windows 10/IceLilac)', model='N3I3001W', price=14590000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36724_inprison_5391_ha6_tim.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Vostro 3590B P75F010 (I5-10210U/ RAM 8Gb/256Gb SSD/ 15.6 FHD/ DVDW/AMD Radeon 610 2Gb/ Win10/Black)', model='P90F002N93A', price=16490000, weight=2.1, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38543_vostro_3590b_ha1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Gaming G3 3590 N5I5518W (Core i5-9300H/8Gb/512Gb SSD/15.6' FHD/GTX1650-4Gb/Win10/Black)', model='N5I5518W', price=22690000, weight=2.3, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36647_gaming_g3_3590_ha5.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Vostro 3590 GRMGK3 (I5-10210U/ RAM 8Gb/256Gb SSD/ 15.6 FHD/ DVDW/VGA ON/ Win10/Black)', model='GRMGK3', price=14990000, weight=1.9, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38704_dell_vostro_3590_ha1s.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 5593 7WGNV1 (I5-1035G1/8Gb/512Gb SSD/ 15.6 FHD/VGA ON/Win10/Silver)', model='7WGNV1', price=17990000, weight=2.05, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36838_inspiron_5593_ha1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 3493 N4I5122W/WA (I5-1035G1/8Gb/256Gb SSD/ 14.0 FHD/VGA ON/ Win10/Silver)', model='N4I5122W', price=14690000, weight=1.66, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38578_inspiron_3493_h1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 5593 70196703 (i3-1005G1/4Gb/128Gb SSD/ 15.6'FHD/VGA ON/ Win10/Silver)', model='70196703', price=12690000, weight=1.95, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37128_inspiron_5593_h3s.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Vostro 5590 70197465 (I5-10210U/ 8Gb/ 256Gb SSD/ 15.6' FHD/ VGA ON/ Win10/ Urban Grey/vỏ nhôm)', model='70197465', price=17690000, weight=1.9, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37190_vostro_5590a_ha1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Vostro 3490 70207360 (I5-10210U/ RAM 8Gb/256Gb SSD/14.0FHD/VGA ON/Finger Print/ Win10/Black)', model='70207360', price=14790000, weight=1.7, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37819_vostro_3490_ha1s.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 5593 N5I5513W  (I5-1035G1/ 8Gb/ 256Gb SSD/ 15.6' FHD/ MX230 2GB/ Win10/Silver)', model='N5I5513W', price=17590000, weight=1.95, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36653_inspiron_5593_ha1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Vostro 5490 V4I3101W (I3-10110U/4Gb/ SSD 128Gb/ 14.0' FHD/VGA ON/ Win10/ Urban Gray/vỏ nhôm)', model='V4I3101W', price=13690000, weight=1.55, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36649_vostro_5490_h2.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 5491 C9TI7007W (I7-10510U/ 8Gb/256Gb SSD/ 14.0' FHD/Touch/ VGA ON/ Win10/Grey/Vỏ nhôm)', model='C9TI7007W', price=23390000, weight=1.68, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37179_inspiron_5491_xam_ha1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 7591 N5I5591W (Core i5-9300H/8Gb/256Gb SSD/15.6 FHD/GTX1050-3Gb/Win10/Silver', model='N5I5591W', price=23590000, weight=1.7, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_35820_laptop_dell_inspiron_7591_kj2g41_ha1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Vostro 5590 HYXT91 (I5-10210U/ 8Gb/1Tb HDD +128Gb SSD/ 15.6' FHD/ VGA Nvidia MX230 2GB GDDR5/ Win10/ Urban Grey/vỏ nhôm)', model='HYXT91', price=19890000, weight=1.9, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36998_vostro_5590a_ha1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 7490 6RKVN1 (i7-10510U/16Gb/512Gb SSD/MX250-2Gb/14''FHD/Win10/Vỏ nhôm/Silver)', model='6RKVN1', price=32990000, weight=1.09, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37340_inspiron_7490_ha1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Vostro 5490 V4I5106W (I5-10210U/ 8Gb/256Gb SSD/ 14.0'' FHD/ VGA ON/ Win10/ Urban Gray/vỏ nhôm)', model='V4I5106W', price=17390000, weight=1.55, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36650_vostro_5490_h1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Vostro 3590 V5I3101W (I3-10110U/4Gb/256Gb SSD/ 15.6 FHD/VGA ON/ Win10/Black)', model='V5I3101W', price=11290000, weight=1.9, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38358_vostro_3590_ha1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 5391 70197461 (I7-10510U/ 8Gb onmain/ 512Gb SSD/ 13.3Inch FHD/ Nvidia Geforce MX250 2GB GDDR5/ Win10/Silver)', model='70197461', price=23990000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37165_inprison_5391_ha1_bac4.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 3593 70205743 (Core i5 1035G1/4Gb/256Gb SSD/ 15.6 FHD/MX230 2Gb/ Win10/Black)', model='70205743', price=15290000, weight=2.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38359_inspiron_3593_ha1s.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************NOT VALID********************************
+cvc-datatype-valid.1.2.1: 'Thin Pad E590' is not a valid value for 'double'.ProductUrl = https://www.phucanh.vn/laptop-lenovo-thinkpad-e590-20nbs07000-black-nhan-dang-van-tay.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 205px; height: 839px;" width="715"> <tbody> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Hvàatilde;ng sản xuất</td> <td style="width: 261pt;" width="560">Lenovo</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Chủng loại</td> <td style="width: 261pt;" width="560">ThinkPad E590</td> </tr> <tr style="height: 26.45pt;"> <td style="height: 26.45pt; width: 261pt;" width="155">Part Number</td> <td style="width: 261pt;" width="560">20NBS07000</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Mầu sắc</td> <td style="width: 261pt;" width="560">Đen</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Bộ vi xử lvàyacute;</td> <td style="width: 261pt;" width="560">Intel Core i5-8265U(1.6GHz/6MB) up to 3.90 GHz</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Chipset</td> <td style="width: 261pt;" width="560">Intel</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Bộ nhớ trong</td> <td style="width: 261pt;" width="560">4GB DDR4</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Số khe cắm</td> <td style="width: 261pt;" width="560">2</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Dung lượng tối đa</td> <td style="width: 261pt;" width="560">32GB</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">VGA</td> <td style="width: 261pt;" width="560">Intel UHD Graphics 620</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Ổ cung</td> <td style="width: 261pt;" width="560">1TB 5400RPM SATA HDD/M2 option</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Ổ quang</td> <td style="width: 261pt;" width="560">No</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Card Reader</td> <td style="width: 261pt;" width="560">MicroSD card reader</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Bảo mật, công nghệ</td> <td style="width: 261pt;" width="560">No</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Màn hình</td> <td style="width: 261pt;" width="560">15.6" HD (1366x768) Anti-glare TN 220 nits</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Webcam</td> <td style="width: 261pt;" width="560">HD 720p</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" rowspan="2" width="155">Audio</td> <td style="width: 261pt;" width="560">HD Audio, Conexant CX11880 codec /</td> </tr> <tr style="height: 15.75pt;"> <td style="height: 15.75pt; border-left: none; width: 420pt;" width="560">stereo speakers, 2W x 2, Dolby Advanced Audio</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Giao tiếp mạng</td> <td style="width: 261pt;" width="560">Gigabit Ethernet Connection</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="155">Giao tiếp không dây</td> <td style="width: 261pt;" width="560">Intel Wireless-AC 9260, Wi-Fi 2x2 802.11ac + Bluetooth 5.0</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 115.5pt; width: 261pt;" rowspan="7" width="155">Cổng giao tiếp</td> <td style="width: 261pt;" width="560">1 x USB-C (USB 3.1/DP 1.2/PD 3.0)</td> </tr> <tr style="height: 15.75pt;"> <td style="height: 15.75pt; border-top: none; border-left: none; width: 420pt;" width="560">2 x USB-A (USB 3.1)</td> </tr> <tr style="height: 15.75pt;"> <td style="height: 15.75pt; border-top: none; border-left: none; width: 420pt;" width="560">1 x USB 2.0</td> </tr> <tr style="height: 15.75pt;"> <td style="height: 15.75pt; border-top: none; border-left: none; width: 420pt;" width="560">HDMI 1.4b</td> </tr> <tr style="height: 15.75pt;"> <td style="height: 15.75pt; border-top: none; border-left: none; width: 420pt;" width="560">RJ45</td> </tr> <tr style="height: 15.75pt;"> <td style="height: 15.75pt; border-top: none; border-left: none; width: 420pt;" width="560">Micro SD card slot</td> </tr> <tr style="height: 15.75pt;"> <td style="height: 15.75pt; border-top: none; border-left: none; width: 420pt;" width="560">Combo Mic/Audio</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Pin</td> <td style="width: 261pt;" width="560">3Cell 45WH</td> </tr> <tr style="height: 79.15pt;"> <td style="height: 79.15pt; width: 261pt;" width="155">Kích thước (rộng x dài x cao)</td> <td style="width: 261pt;" width="560">14.53" x 9.94" x 0.78"; 369mm x 252.5mm x 19.9mm</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Cân nặng</td> <td style="width: 261pt;" width="560">Starting at 4.68 lb / 2.12 kg</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Hệ điều hành</td> <td style="width: 261pt;" width="560">No OS</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="155">Phụ kiện đi kèm</td> <td style="width: 261pt;" width="560">AC Adapter</td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Laptop Lenovo Thinkpad E590 20NBS07000 (Core i5-8265U/4Gb/1Tb HDD/ 15.6'/VGA ON/ Dos/Black)</name><price>13990000</price><model/><cpu/><ram>4GB DDR4</ram><lcd>15.6" HD (1366x768) Anti-glare TN 220 nits</lcd><weight>Thin Pad E590</weight><image>https://phucanhcdn.com/media/product/250_35393_laptop_lenovo_thinkpad_e590_20nbs00l00__black__nh____n_da__ng_v__n_tay_3.jpg</image></laptop>  
+
+
+********************************NOT VALID********************************
+cvc-datatype-valid.1.2.1: 'Thin Pad X390' is not a valid value for 'double'.ProductUrl = https://www.phucanh.vn/laptop-lenovo-thinkpad-x390-20q0s03x00-black-dong-san-pham-cao-cap.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 338px; height: 843px;" width="696"> <tbody> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hvàatilde;ng sản xuất</td> <td style="width: 261pt;" width="348">Lenovo</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chủng loại</td> <td style="width: 261pt;" width="348">ThinkPad X390</td> </tr> <tr style="height: 26.45pt;"> <td style="height: 26.45pt; width: 261pt;" width="348">Part Number</td> <td style="width: 261pt;" width="348">20Q0S03X00</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Mầu sắc</td> <td style="width: 261pt;" width="348">Đen</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ vi xử lvàyacute;</td> <td style="width: 261pt;" width="348">Intel Core i7-8565U(1.8GHz/8MB) up to 4.60 GHz</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chipset</td> <td style="width: 261pt;" width="348">Intel</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ nhớ trong</td> <td style="width: 261pt;" width="348">8GB DDR4</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Số khe cắm</td> <td style="width: 261pt;" width="348">no sockets</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Dung lượng tối đa</td> <td style="width: 261pt;" width="348">8GB</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">VGA</td> <td style="width: 261pt;" width="348">Intel UHD Graphics 620</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ cung</td> <td style="width: 261pt;" width="348">SSD 256GB M.2 NVMe</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ quang</td> <td style="width: 261pt;" width="348">No</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Card Reader</td> <td style="width: 261pt;" width="348">MicroSD card reader</td> </tr> <tr style="height: 30.0pt;"> <td style="height: 30.0pt; width: 261pt;" width="348">Bảo mật, công nghệ</td> <td style="width: 261pt;" width="348">Touch style match on chip fingerprint reader on the palm rest</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Màn hình</td> <td style="width: 261pt;" width="348">13.3" FHD (1920x1080) Anti-glare IPS 300 nits</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Webcam</td> <td style="width: 261pt;" width="348">HD + IR camera with ThinkShutter</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Audio</td> <td style="width: 261pt;" width="348">HD Audio, Realtek ALC3287 codec / stereo speakers, 1W x 2, Dolby Audio Premium</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Giao tiếp mạng</td> <td style="width: 261pt;" width="348">No</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Giao tiếp không dây</td> <td style="width: 261pt;" width="348">Intel Wireless-AC 9560, Wi-Fi 2x2 802.11ac + Bluetooth 5.0</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 99.0pt; width: 261pt;" rowspan="6" width="348">Cổng giao tiếp</td> <td style="width: 261pt;" width="348">1 x Thunderbolt 3</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x USB Type-C</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">2 x USB 3.1 Gen1</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x HDMI 1.4</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x MicroSD</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x Audio</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Pin</td> <td style="width: 261pt;" width="348">6Cell 48WH</td> </tr> <tr style="height: 79.15pt;"> <td style="height: 79.15pt; width: 261pt;" width="348">Kích thước (rộng x dài x cao)</td> <td style="width: 261pt;" width="348">311.9 x 217.0 x 16.5mm / 12.27 x 8.54 x 0.61 inches</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Cân nặng</td> <td style="width: 261pt;" width="348">Starting at 1.22kg/2.68lbs.</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hệ điều hành</td> <td style="width: 261pt;" width="348">No OS</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Phụ kiện đi kèm</td> <td style="width: 261pt;" width="348">AC Adapter</td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Laptop Lenovo Thinkpad X390 20Q0S03X00 (Core i7-8565U/8Gb/256Gb SSD/ 13.3'FHD/VGA ON/Dos/Black)</name><price>33990000</price><model/><cpu/><ram>8GB DDR4</ram><lcd>13.3" FHD (1920x1080) Anti-glare IPS 300 nits</lcd><weight>Thin Pad X390</weight><image>https://phucanhcdn.com/media/product/250_35797_laptop_lenovo_thinkpad_x390_20q0s03m00_1_1.png</image></laptop>  
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Vostro 5490 70197464 (I7-10510U/ 8Gb/512Gb SSD/ 14.0' FHD/ MX 250 2Gb/ Win10/ Urban gray/vỏ nhôm)', model='70197464', price=22490000, weight=1.66, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36933_vostro_5490_haa3.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Gaming G3 3590 70191515(Core i7-9750H/8Gb/512Gb SSD/15.6' FHD/GTX1660 TI 6GB/Win10/Black)', model='70191515', price=28990000, weight=2.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36344_g3_3590_70191515_h1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell XPS 15-7590 70196708 (Core i7-9750H/16Gb/ 512Gb SSD/ 15.6' - 4K/Touch/GTX1650 4Gb/Win10 + Off365/Silver/vỏ nhôm)', model='70196708', price=51590000, weight=1.78, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36643_xps_15_7590_ha5.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 3493 N4I5136W (I5-1035G1/ 4Gb/1Tb HDD/ 14.0' FHD/VGA ON/ Win10/Black)', model='N4I5136W', price=13490000, weight=1.66, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37193_inspiron_3493_ha1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Gaming G5 5590M P82F001 (Core i5-9300H/8Gb/1Tb HDD + SSD 128Gb/15.6' FHD/GTX1650-4Gb/Win10/Black)', model='P82F001', price=25990000, weight=2.2, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36128_g5_5590m_h1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 5491 C1JW81 (I7-10510U/ 8Gb/512Gb SSD/ 14.0'' FHD/Touch/MX230 2GB/ Win10/Silver/vỏ nhôm)', model='C1JW81', price=23990000, weight=1.3, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36997_inspiron_5491_bac_ha5.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************NOT VALID********************************
+cvc-datatype-valid.1.2.1: '' is not a valid value for 'double'.ProductUrl = https://www.phucanh.vn/laptop-lenovo-ideapad-s340-15iwl-81n800aavn-grey/-fhd/-mong/-vo-nhom.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="width: 683.05pt; margin-left: .25pt; border-collapse: collapse;" width="911"> <tbody> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 15.0pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 15.0pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 15.0pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 15.0pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 15.0pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 15.0pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 15.0pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 15.0pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 15.0pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 15.0pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 15.0pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 15.0pt;" width="445">  </td> </tr> <tr style="height: 15.0pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 15.0pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 15.0pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 16.5pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 16.5pt;" rowspan="6" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 16.5pt;" width="445">  </td> </tr> <tr style="height: 16.5pt;"> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 16.5pt;" width="445">  </td> </tr> <tr style="height: 16.5pt;"> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 16.5pt;" width="445">  </td> </tr> <tr style="height: 16.5pt;"> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 16.5pt;" width="445">  </td> </tr> <tr style="height: 16.5pt;"> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 16.5pt;" width="445">  </td> </tr> <tr style="height: 16.5pt;"> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 16.5pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 25.5pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.5pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.5pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #F0F0F0; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> <tr style="height: 14.25pt;"> <td style="width: 349.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="465">  </td> <td style="width: 334.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.25pt;" width="445">  </td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Laptop Lenovo Ideapad S340 15IWL 81N800AAVN (Core i5-8265U/4Gb/1Tb HDD / 15.6' FHD/VGA ON/ Win10/Grey)</name><price>11990000</price><model/><cpu/><ram/><lcd/><weight/><image>https://phucanhcdn.com/media/product/250_35976_ideapad_s340_15iwl_h1a1.jpg</image></laptop>  
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell XPS 13 7390 70197462 (I5-10210U/8Gb/256Gb SSD/13.3''FHD/VGA ON/Win10/Silver/vỏ nhôm)', model='70197462', price=33690000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36641_laptop_dell_xps_13_7390_70197462_h1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell XPS 15-7590 70196707 (Core i7-9750H/16Gb/512Gb SSD/15.6' FHD/GTX1650 4Gb/ Win10+Offi365/Silver/Vỏ nhôm)', model='70196707', price=44990000, weight=1.78, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36642_xps_15_7590_siliver_ha2.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 7591 KJ2G41(Core i7-9750H/8Gb/256Gb SSD/15.6' FHD/GTX1050 3Gb/Win10/Silver)', model='KJ2G41', price=28490000, weight=1.8, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36075_laptop_dell_inspiron_7591_ha2.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Vostro 3490 70211829 (I3-10110U/4Gb/256Gb SSD/ 14.0FHD/VGA ON/ Finger Print/ Win10/Black)', model='70211829', price=11190000, weight=1.94, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38357_vostro_3490_ha1s.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 3493 WTW3M2 (Core i3 1005G1/ RAM 4Gb/ 256Gb SSD/ 14.0Inch FHD/ VGA ON/ Win10/ Black)', model='WTW3M2', price=10690000, weight=1.66, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38575_inspiron_3493_ha1s.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 7490 N4I5106W (I5-10210U/ 8Gb/ 512Gb SSD/ 14.0'' FHD/ MX250 2GB/ Win10/Silver/vỏ nhôm)', model='N4I5106W', price=27890000, weight=1.09, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37180_inspiron_7490_ha1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Gaming G5 5590 4F4Y41(Core i7-9750H/8Gb/1Tb HDD +256Gb SSD/15.6' FHD/GTX1650 4Gb/Win10/Black)', model='4F4Y41', price=32590000, weight=2.5, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36073_laptop_dell_gaming_g5_5590_ha4.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Gaming G3 3590 N5I5517W (Core i5-9300H/8Gb/256Gb SSD/15.6' FHD/GTX1050 3GB/Win10/Black)', model='N5I5517W', price=20690000, weight=2.3, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36646_gaming_g3_3590_ha5.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell XPS 13 7390 04PDV1 (I7-10510U/16Gb/ 512Gb SSD/13.3'' UHD/Touch/VGA ON/ Win10+Off365/Silver/vỏ nhôm)', model='04PDV1', price=52990000, weight=1.3, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37033_laptop_dell_xps_13_7390_70197462_h1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 3493 N4I5136W (I5-1035G1/ 4Gb/1Tb HDD/ 14.0''FHD/VGA ON/ Win10/Silver)', model='N4I5136W', price=13590000, weight=1.66, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37192_inspiron_3493_h1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 7391 N3TI5008W (I5-10210U/ 8Gb/ 512Gb SSD/ 13.3Inch FHD Touch + Pen/VGA ON/ Win10/Black)', model='N3TI5008W', price=24690000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36654_dell_inspiron_7391_ha2.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Dell Inspiron 5391 N3I3001W (I3-10110U/4Gb/128Gb SSD/ 13.3Inch FHD/VGA ON/ Win10/Silver)', model='N3I3001W', price=14690000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36723_inprison_5391_ha1_bac4.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************NOT VALID********************************
+cvc-minInclusive-valid: Value '0' is not facet-valid with respect to minInclusive '1' for type 'positiveInteger'.ProductUrl = https://www.phucanh.vn/laptop-lenovo-ideapad-slim-3-14are05-81w3002fvn-ryzen-3-4300u/4gb/512gb-ssd/vga-on/14.0fhd/win10/grey.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 534pt;" width="711"> <tbody> <tr style="height: 13.8pt;"> <td style="height: 13.8pt; width: 137pt;" width="182">Sản phẩm</td> <td style="width: 397pt;" width="529">Máy tính xách tay</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Tên Hãng</td> <td style="width: 397pt;" width="529">Lenovo</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Model</td> <td style="width: 397pt;" width="529">Ideapad Slim 3 14ARE05 81W3002FVN</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Bộ VXL</td> <td style="width: 397pt;" width="529">Ryzen 3 4300U 2.7Ghz up to 3.7Ghz-4Mb</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Cạc đồ họa</td> <td style="width: 397pt;" width="529">VGA onboard AMD Radeon Graphics Vega 3</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Bộ nhớ</td> <td style="width: 397pt;" width="529">4Gb (1 Khe cắm / Hỗ trợ tối đa 12GB)</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Ổ cung/ Ổ đĩa quang</td> <td style="width: 397pt;" width="529">512Gb SSD(HDD option max 2Tb)</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Màn hình</td> <td style="width: 397pt;" width="529">14.0Inch Full HD</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Kết nối</td> <td style="width: 397pt;" width="529">WiFi 6, Bluetooth® 5.0</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Cổng giao tiếp</td> <td style="width: 397pt;" width="529">2 x USB 3.1 Gen 1/ 1 x USB 2.0/ HDMI™ 1.4b/ SD Card Reader</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Webcam</td> <td style="width: 397pt;" width="529">Có</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Nhận dạng vân tay</td> <td style="width: 397pt;" width="529">Không có</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Nhận diện khuôn mặt</td> <td style="width: 397pt;" width="529">Không có</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Tính năng khác</td> <td style="width: 397pt;" width="529">Màn hình Full HD</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Hệ điều hành</td> <td style="width: 397pt;" width="529">Windows 10 Home</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Pin</td> <td style="width: 397pt;" width="529">2 cell</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Kích thước</td> <td style="width: 397pt;" width="529">32.7x 24.0 x 1.95 cm</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Trọng lượng</td> <td style="width: 397pt;" width="529">1.5 kg</td> </tr> <tr style="height: 13.8pt;"> <td style="height: 13.8pt;">Màu sắc/ Chất liệu</td> <td style="width: 397pt;" width="529">Grey</td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Laptop Lenovo Ideapad Slim 3 14ARE05 81W3002FVN (Ryzen 3-4300U/4GB/512GB SSD/VGA ON/14.0”FHD/Win10/Grey)</name><price>0</price><model>Ideapad Slim 3 14ARE05 81W3002FVN</model><cpu>Ryzen 3 4300U 2.7Ghz up to 3.7Ghz-4Mb</cpu><ram>4Gb (1 Khe cắm / Hỗ trợ tối đa 12GB)</ram><lcd>14.0Inch Full HD</lcd><weight>1.5   </weight><image/></laptop>  
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MV9A2 SA/A 512Gb (2019) (Silver)- Touch Bar', model='MACBOOK ', price=42490000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_35640_laptop_apple_macbook_pro_mv992_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MWTJ2 256Gb (2020) (Gray)- Touch ID', model='MACBOOK ', price=24590000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38602_laptop_apple_macbook_air_mwtj2_256gb__2020___gray___touch_id_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MV962 SA/A 256Gb (2019) (Space Gray)- Touch Bar', model='MACBOOK ', price=33990000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_35637_laptop_apple_macbook_pro_mv962_256gb__2019___space_gray___touch_bar_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MUHR2 SA/A 256Gb (2019) (Silver)- Touch Bar', model='MACBOOK ', price=31990000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36246_laptop_apple_macbook_pro_muhr2_256gb__2019___1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MXK32 SA/A 256Gb (2020) (Space Gray)- Touch Bar', model='MACBOOK ', price=33590000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39333_laptop_apple_macbook_pro_mxk32_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MVVJ2 SA/A 512Gb (2019) (Gray)- Touch Bar', model='MACBOOK ', price=57490000, weight=2.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37462_laptop_apple_macbook_pro_mvvj2_1_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVFJ2 SA/A 256Gb (2019) (Gray)', model='MACBOOK ', price=27490000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36105_laptop_apple_macbook_air_mvfh2sa_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MXK52 512Gb (2020) (Space Gray)- Touch Bar', model='MACBOOK ', price=36990000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38916_laptop_apple_macbook_pro_mxk52_1_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVH42 SA/A 512Gb (2020) (Silver)- Touch ID', model='MACBOOK ', price=31990000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38256_macbook_air_mvh42_1_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MXK62 SA/A 256Gb (2020) (Silver)- Touch Bar', model='MACBOOK ', price=33590000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39335_laptop_apple_macbook_pro_mxk62_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MV992 SA/A 256Gb (2019) (Silver)- Touch Bar', model='MACBOOK ', price=33990000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_35639_laptop_apple_macbook_pro_mv992_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MUHQ2 128Gb (2019) (Silver)- Touch Bar', model='MACBOOK ', price=27490000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37147_36245_laptop_apple_macbook_pro_muhq2_128gb__2019__1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVH52 512Gb (2020) (Gold)- Touch ID', model='MACBOOK ', price=30990000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38606_laptop_apple_macbook_air_mvh52_512gb__2020___gold___touch_id_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MVVM2 SA/A 1Tb (2019) (Silver)- Touch Bar', model='MACBOOK ', price=67890000, weight=2.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37463_laptop_apple_macbook_pro_mvvm2_1_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MWP52 SA/A 1Tb (2020) (Space Gray)- Touch Bar', model='MACBOOK ', price=50990000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39340_laptop_apple_macbook_pro_mwp52_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVFH2 128Gb (2019) (Gray)', model='MACBOOK ', price=23890000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36431_laptop_apple_macbook_air_mvfh2_128gb__2019___gray__1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MVVL2 SA/A 512Gb (2019) (Silver)- Touch Bar', model='MACBOOK ', price=57490000, weight=2.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37461_mvvl2_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MUHN2 SA/A 128Gb (2019) (Space Gray)- Touch Bar', model='MACBOOK ', price=27990000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36242_laptop_apple_macbook_pro_muhn2_128gb__2019___space_gray___touch_bar_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MUHQ2 SA/A 128Gb (2019) (Silver)- Touch Bar', model='MACBOOK ', price=27990000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36245_laptop_apple_macbook_pro_muhq2_128gb__2019__1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MWP42 SA/A 512Gb (2020) (Space Gray)- Touch Bar', model='MACBOOK ', price=45990000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39339_laptop_apple_macbook_pro_mwp42_512gb__2020___space_gray__1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVH42 512Gb (2020) (Silver)- Touch ID', model='MACBOOK ', price=30990000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38601_laptop_apple_macbook_air_mvh42_512gb__2020___silver___touch_id_2.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MWP72 SA/A 512Gb (2020) (Silver)- Touch Bar', model='MACBOOK ', price=45990000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39342_laptop_apple_macbook_pro_mwp72_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MVVK2 SA/A 1Tb (2019) (Gray)- Touch Bar', model='MACBOOK ', price=67890000, weight=2.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37460_laptop_apple_macbook_pro_mvvj2_1_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MWP82 SA/A 1Tb (2020) (Space Gray)- Touch Bar', model='MACBOOK ', price=50990000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39343_laptop_apple_macbook_pro_mwp82_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVFH2 SA/A 128Gb (2019) (Gray)', model='MACBOOK ', price=24990000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36104_laptop_apple_macbook_air_mvfh2sa_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MWTK2 SA/A 256Gb (2020) (Silver)- Touch ID', model='MACBOOK ', price=24990000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38259_laptop_apple_macbook_air_mwtk2_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVH22 512Gb (2020) (Gray)- Touch ID', model='MACBOOK ', price=30990000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38605_laptop_apple_macbook_air_mvh22_512gb__2020___gray___touch_id_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MUHR2 256Gb (2019) (Silver)- Touch Bar', model='MACBOOK ', price=30490000, weight=137.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36898_36245_laptop_apple_macbook_pro_muhq2_128gb__2019__1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MUHP2 256Gb (2019) (Space Gray)- Touch Bar', model='MACBOOK ', price=30490000, weight=137.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36897_laptop_apple_macbook_pro_muhp2_256gb__2019___space_gray___touch_bar_1_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVFM2 128Gb (2019) (Gold)', model='MACBOOK ', price=23890000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36433_aptop_apple_macbook_air_mvfm2_128gb__2019__1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVFL2 256Gb (2019) (Silver)- Touch ID', model='MACBOOK ', price=25590000, weight=125.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36677_apple_macbook_air_mvfl2_1_2.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MV972 SA/A 512Gb (2019) (Space Gray)- Touch Bar', model='MACBOOK ', price=42490000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_35638_laptop_apple_macbook_pro_mv962_256gb__2019___space_gray___touch_bar_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MXK52 SA/A 512Gb (2020) (Space Gray)- Touch Bar', model='MACBOOK ', price=37990000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39334_laptop_apple_macbook_pro_mxk52_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MWTL2 SA/A 256Gb (2020) (Gold)- Touch ID', model='MACBOOK ', price=24990000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38260_laptop_apple_macbook_air_mwtl2__1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MXK72 512Gb (2020) (Silver)- Touch Bar', model='MACBOOK ', price=36990000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38918_laptop_apple_macbook_pro_mxk72_256gb__2020___silver___touch_bar_2.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MUHN2 128Gb (2019) (Space Gray)- Touch Bar', model='MACBOOK ', price=27490000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37146_35638_laptop_apple_macbook_pro_mv962_256gb__2019___space_gray___touch_bar_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVFJ2 256Gb (2019) (Gray)', model='MACBOOK ', price=25890000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36475_laptop_apple_macbook_air_mvfj2_256gb__2019___gray__1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MV912 512Gb (2019) (Space Gray)- Touch Bar', model='MACBOOK ', price=52590000, weight=1.83, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37148_35634_laptop_apple_macbook_pro_mv902_256gb__2019___space_gray___touch_bar_1_2.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MQD32 128Gb (2017) (Silver)', model='MACBOOK ', price=18390000, weight=1.35, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_29016_laptop_apple_macbook_air_mqd32_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MUHP2 SA/A 256Gb (2019) (Space Gray)- Touch Bar', model='MACBOOK ', price=37300000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36244_laptop_apple_macbook_pro_muhp2_256gb__2019__1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MREE2 128Gb (2018) (Gold)', model='MACBOOK ', price=24790000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_33873_lap_app_mrea2.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MV902 256Gb (2019) (Space Gray)- Touch Bar', model='MACBOOK ', price=49890000, weight=183.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36557_apple_macbook_pro_mv902_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MREA2 128Gb (2018) (Silver)', model='MACBOOK ', price=25990000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_33871_lap_app_mrea2.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MWP72 512Gb (2020) (Silver)- Touch Bar', model='MACBOOK ', price=46990000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39341_laptop_apple_macbook_pro_mwp72_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MV992 256Gb (2019) (Silver)- Touch Bar', model='MACBOOK ', price=43990000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37378_35639_laptop_apple_macbook_pro_mv992_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVFK2 128Gb (2019) (Silver)', model='MACBOOK ', price=23890000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36432_laptop_apple_macbook_air_mvfk2_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MWP42 512Gb (2020) (Space Gray)- Touch Bar', model='MACBOOK ', price=44990000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_39185_laptop_apple_macbook_pro__1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MRE92 256Gb (2018) (Gray)', model='MACBOOK ', price=29490000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_33870_laptop_apple_macbook_air_mre82_128gb__2018___gray_.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook new MRQN2 256Gb  (Gold)', model='MACBOOK ', price=19390000, weight=0.92, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_33984_laptop_apple_macbook_new_mrqn2_256gb__2018___gold__2.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MXK72 SA/A 512Gb (2020) (Silver)- Touch Bar', model='MACBOOK ', price=37990000, weight=1.4, weightMark=0.0, image='', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************NOT VALID********************************
+cvc-datatype-valid.1.2.1: 'Thin Pad E590' is not a valid value for 'double'.ProductUrl = https://www.phucanh.vn/laptop-lenovo-thinkpad-e590-20nbs00100-black-nhan-dang-van-tay.html
+Before TrAx.tranform
+<div class="tbl-technical nd" style="width: 100%;height:150px;overflow: hidden;"> <table style="border-collapse: collapse; width: 522pt;" width="696"> <tbody> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hvàatilde;ng sản xuất</td> <td style="width: 261pt;" width="348">Lenovo</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chủng loại</td> <td style="width: 261pt;" width="348">ThinkPad E590</td> </tr> <tr style="height: 26.45pt;"> <td style="height: 26.45pt; width: 261pt;" width="348">Part Number</td> <td style="width: 261pt;" width="348">20NBS00100</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Mầu sắc</td> <td style="width: 261pt;" width="348">Đen</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ vi xử lvàyacute;</td> <td style="width: 261pt;" width="348">Intel Core i5-8265U(1.6GHz/6MB) up to 3.90 GHz</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Chipset</td> <td style="width: 261pt;" width="348">Intel</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bộ nhớ trong</td> <td style="width: 261pt;" width="348">4GB DDR4</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Số khe cắm</td> <td style="width: 261pt;" width="348">2</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Dung lượng tối đa</td> <td style="width: 261pt;" width="348">32GB</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">VGA</td> <td style="width: 261pt;" width="348">AMD Radeon RX 550X Graphics, 2GB DDR5 memory</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ cung</td> <td style="width: 261pt;" width="348">1TB 5400RPM SATA HDD</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Ổ quang</td> <td style="width: 261pt;" width="348">No</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Card Reader</td> <td style="width: 261pt;" width="348">MicroSD card reader</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Bảo mật, công nghệ</td> <td style="width: 261pt;" width="348">Touch style fingerprint reader on the palm rest</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Màn hình</td> <td style="width: 261pt;" width="348">15.6" FHD (1920x1080) Anti-glare IPS 250 nits</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Webcam</td> <td style="width: 261pt;" width="348">HD 720p</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Audio</td> <td style="width: 261pt;" width="348">HD Audio, Conexant CX11880 codec / stereo speakers, 2W x 2, Dolby Advanced Audio</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Giao tiếp mạng</td> <td style="width: 261pt;" width="348">Gigabit Ethernet Connection</td> </tr> <tr style="height: 25.5pt;"> <td style="height: 25.5pt; width: 261pt;" width="348">Giao tiếp không dây</td> <td style="width: 261pt;" width="348">Intel Wireless-AC 9260, Wi-Fi 2x2 802.11ac + Bluetooth 5.0</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 115.5pt; width: 261pt;" rowspan="7" width="348">Cổng giao tiếp</td> <td style="width: 261pt;" width="348">1 x USB-C (USB 3.1/DP 1.2/PD 3.0)</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">2 x USB-A (USB 3.1)</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">1 x USB 2.0</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">HDMI 1.4b</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">RJ45</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">Micro SD card slot</td> </tr> <tr style="height: 16.5pt;"> <td style="height: 16.5pt; width: 261pt;" width="348">Combo Mic/Audio</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Pin</td> <td style="width: 261pt;" width="348">3Cell 45WH</td> </tr> <tr style="height: 79.15pt;"> <td style="height: 79.15pt; width: 261pt;" width="348">Kích thước (rộng x dài x cao)</td> <td style="width: 261pt;" width="348">14.53" x 9.94" x 0.78"; 369mm x 252.5mm x 19.9mm</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Cân nặng</td> <td style="width: 261pt;" width="348">Starting at 4.68 lb / 2.12 kg</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Hệ điều hành</td> <td style="width: 261pt;" width="348">No OS</td> </tr> <tr style="height: 15.0pt;"> <td style="height: 15.0pt; width: 261pt;" width="348">Phụ kiện đi kèm</td> <td style="width: 261pt;" width="348">AC Adapter</td> </tr> </tbody> </table> </div> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Laptop Lenovo Thinkpad E590 20NBS00100 (Core i5-8265U/4Gb/1Tb HDD/ 15.6'/ RX 550X 2G/Dos/Black)</name><price>14990000</price><model/><cpu/><ram>4GB DDR4</ram><lcd>15.6" FHD (1920x1080) Anti-glare IPS 250 nits</lcd><weight>Thin Pad E590</weight><image>https://phucanhcdn.com/media/product/250_35507_thinkpad_e590_ha1s.jpg</image></laptop>  
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MWTL2 256Gb (2020) (Gold)- Touch ID', model='MACBOOK ', price=24590000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38604_laptop_apple_macbook_air_mwtl2_256gb__2020___gold___touch_id_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVFN2 256Gb (2019) (Gold)', model='MACBOOK ', price=25890000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36184_laptop_apple_macbook_air_mvfn2_256gb__2019___gold__1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVFM2 SA/A 128Gb (2019) (Gold)', model='MACBOOK ', price=24990000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36108_lap_app_mvfm2_sa_1_2.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MV922 256Gb (2019) (Silver)- Touch Bar', model='MACBOOK ', price=49890000, weight=183.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36558_apple_macbook_pro_mv922_1_2.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MWTK2 256Gb (2020) (Silver)- Touch ID', model='MACBOOK ', price=24590000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38603_laptop_apple_macbook_air_mwtk2_256gb__2020___silver___touch_id_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MR9U2 256Gb (2018) (Silver)- Touch bar', model='MACBOOK ', price=38890000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_32916-laptop-apple-macbook-pro-mr9q2-256gb--2017--silver-2.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook new MNYH2 256Gb (2017) (Silver)', model='MACBOOK ', price=19590000, weight=0.92, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_29102_laptop_apple_macbook_new_mnyh2_256gb__2017___silver__1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MRE82 128Gb (2018) (Gray)', model='MACBOOK ', price=24990000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_33869_laptop_apple_macbook_air_mre82_128gb__2018___gray_.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVH22 SA/A 512Gb (2020) (Gray)- Touch ID', model='MACBOOK ', price=31990000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38255_laptop_apple_macbook_air_mvh22_1_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVFN2 SA/A 256Gb (2019) (Gold)', model='MACBOOK ', price=31990000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36109_lap_app_mvfm2_sa_1_2.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVH52 SA/A 512Gb (2020) (Gold)- Touch ID', model='MACBOOK ', price=31990000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38257_apple_macbook_air_mvh52_1_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MQD32 SA/A 128Gb (2017) (Silver)', model='MACBOOK ', price=18990000, weight=135.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36240_laptop_apple_macbook_air_mqd32_1_3.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MWTJ2 SA/A 256Gb (2020) (Gray)- Touch ID', model='MACBOOK ', price=24990000, weight=1.29, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38258_laptop_apple_macbook_air_mwtj2_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MR9Q2 256Gb (2018) (Space Gray)- Touch bar', model='MACBOOK ', price=40750000, weight=137.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_32915-laptop-apple-macbook-pro-mr9q2-256gb--2017---space-gray-.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MPXR2 128Gb (2017) (Silver)', model='MACBOOK ', price=26690000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_29055_laptop_apple_macbook_pro_mpxr2_128gb__2017___silver__1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MV972 512Gb (2019) (Space Gray)- Touch Bar', model='MACBOOK ', price=37990000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37150_35638_laptop_apple_macbook_pro_mv962_256gb__2019___space_gray___touch_bar_1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MXK32 256Gb (2020) (Space Gray)- Touch Bar', model='MACBOOK ', price=32590000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38915_laptop_apple_macbook_pro_mxk32_256gb__2020___space_gray___touch_bar_2.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVFL2 SA/A 256Gb (2019) (Silver)', model='MACBOOK ', price=31990000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36107_apple_macbook_air_mvfl2_1_2.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook new MNYF2 256Gb (2017) (Space Grey)', model='MACBOOK ', price=19590000, weight=0.92, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_29098_laptop_apple_macbook_new_mnyf2_256gb__2017___space_grey__1_1.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MXK62 256Gb (2020) (Silver)- Touch Bar', model='MACBOOK ', price=32590000, weight=1.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38917_laptop_apple_macbook_pro_mxk62_256gb__2020___silver___touch_bar_1_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Air MVFK2 SA/A 128Gb (2019) (Silver)', model='MACBOOK ', price=24890000, weight=1.25, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36106_laptop_apple_macbook_air_mvfk2sa_1_2.png', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Apple Macbook Pro MV9A2 512Gb (2019) (Silver)- Touch Bar', model='MACBOOK ', price=37990000, weight=1.37, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37151_laptop_apple_macbook_pro_mv9a2_512gb__2019___silver___touch_bar_1_1.jpg', brand=huyng.entities.BrandEntity@2c48adef, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Lenovo Yoga 530 14IKB 81EK019JVN (Core i3-7130U/4Gb/256Gb SSD/ 14.0FHD/Touch/VGA ON/Win10/nhôm/Grey/kèm bút)', model='81EK019JVN', price=10290000, weight=1.6, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38201_yoga_530_14_ha2.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Lenovo Gaming Ideapad L340 15IRH 81LK01GKVN (Core i5-9300HF/8Gb/256Gb SSD/15.6 FHD/GTX1050-3Gb/Win 10/Black)', model='81LK01GKVN', price=16590000, weight=2.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38309_ideapad_l340_15irh_ha1.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Lenovo Legion Gaming Y540 15IRH 81SY00FAVN (Core i7 9750H/8Gb/ HDD 1Tb+128Gb SSD/ 15.6Inch FHD/ GTX1650 4Gb/ Win10/ Black', model='81SY00FAVN', price=23590000, weight=2.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37947_y540_15irh_h1.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Lenovo Thinkpad E14 20RAS0KX00 (Core i5-10210U/8Gb/256Gb SSD/14.0 FHD/VGA ON/Finger Print/Dos/Black)', model='20RAS0KX00', price=16490000, weight=1.7, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38308_thinkpad_e14_ha2.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Lenovo Thinkpad E14 20RAS01000 (Core i5-10210U/4Gb/256Gb SSD/14.0 FHD/VGA ON/Finger Print/Dos/Black)', model='20RAS01000', price=15990000, weight=1.7, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38307_thinkpad_e14_ha2.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Lenovo Ideapad 330 14IKB 81DA0013VN PA (Core i3-7020U/4Gb/240Gb SSD/ 14.0FHD/VGA ON/Win10/Grey)', model='81DA0013VN PA', price=8390000, weight=1.9, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38576_ideapad_330_14_ha2.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Lenovo Ideapad 330 14IKB 81DA0013VN (Core i3-7020U/4Gb/1Tb HDD/ 14.0'FHD/VGA ON/Win10/Grey)', model='81DA0013VN', price=8290000, weight=1.9, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_36029_ideapad_330_14ikb_ha1s.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Lenovo Gaming Ideapad L340 15IRH 81LK01GLVN (Core i7-9750HF/8Gb/256Gb SSD/15.6 FHD/GTX1050-3Gb/Win 10/Black)', model='81LK01GLVN', price=19490000, weight=2.0, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38310_ideapad_l340_15irh_ha1.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Lenovo Thinkbook 14 IML 20RV00BGVN(Core i5 10210U/4Gb/1Tb HDD + 128Gb SSD/14.0FHD/VGA ON/DOS/ Grey)', model='20RV00BGVN', price=14590000, weight=1.32, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37641_thinkbook_14_iml_ha1.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Lenovo Legion Gaming Y540 15IRH 81SY00FAVN (Core i7 9750H/8Gb/ HDD 1Tb+128Gb SSD/ 15.6Inch FHD/ GTX1650 4Gb/ Win10/ Black', model='81SY00FAVN', price=23590000, weight=2.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_37947_y540_15irh_h1.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Lenovo Legion Gaming Y540 15IRH 81SY004WVN (Core i5-9300H/8Gb/1Tb HDD+128Gb SSD M2 2242/ 15.6 FHD/ NVIDIA GTX1650-4Gb/ Win10/Black)', model='81SY004WVN', price=20390000, weight=2.4, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38759_y540_15irh_h1.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Laptop Lenovo Thinkpad X390 20NYSBHC00 (Core i7-8665U/16Gb/512Gb SSD/ 13.3FHD/VGA ON/Dos/Black)', model='20NYSBHC00', price=37990000, weight=1.2, weightMark=0.0, image='https://phucanhcdn.com/media/product/250_38313_thinkpad_x390_ha1.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+

@@ -1,7 +1,8 @@
 package huyng.utils;
 
-import java.io.ByteArrayOutputStream;
-import java.io.UnsupportedEncodingException;
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -21,6 +22,11 @@ public class StringHelper {
     public static ByteArrayOutputStream getByteArrayFromString(String string) throws UnsupportedEncodingException {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream(string.getBytes("UTF-8").length);
         outputStream.write(string.getBytes("UTF-8"), 0, string.getBytes("UTF-8").length);
+
+
+
+
+
         return outputStream;
     }
 

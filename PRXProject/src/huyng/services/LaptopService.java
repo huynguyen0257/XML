@@ -10,11 +10,22 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.xpath.XPathExpressionException;
 import java.io.IOException;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+
+import static java.lang.Math.sqrt;
 
 public class LaptopService {
+    private final int TIME_INCREASE_NEARBY = 7;
+    public enum CompareType {
+        POWER,
+        COMPACTNESSS,
+        ALL
+    }
+
     LaptopDAO dao;
     ProcessorDAO processorDAO;
     BrandDAO brandDAO;
@@ -29,40 +40,194 @@ public class LaptopService {
         this.monitorDAO = new MonitorDAO();
     }
 
-    public List<LaptopEntity> getAll() {
-        return dao.testApp();
+    public LaptopEntity getLaptopById(int id) {
+        return dao.findByID(id);
     }
 
-    public List<LaptopEntity> getByBrandName(String brandName) {
-        List<LaptopEntity> result = null;
-        List<BrandEntity> brands = brandDAO.findByName(brandName);
-        if (brands != null) result = (List<LaptopEntity>) brands.get(0).getLaptops();
+    public LaptopEntityList getAdviceLaptops(LaptopEntity currentLaptop, int numberOfAdviceLaptop) {
+        Hashtable<LaptopEntity, Double> laptopMark = new Hashtable<>();
+        List<LaptopEntity> laptops = dao.findAllByNameQuery("Laptop.findAll");
+        laptops.forEach(l -> {
+            double ramMark = l.getRam().getMark();
+            double processorMark = l.getProcessor().getMark();
+            double monitorMark = l.getMonitor().getMark();
+            double mark = (ramMark + processorMark + monitorMark + l.getWeightMark()) / 4;
+            laptopMark.put(l, mark);
+        });
+
+        Hashtable<Double, LaptopEntity> adviceLaptops = new Hashtable<>();
+        double currentLaptopMark = laptopMark.get(currentLaptop);
+        laptopMark.forEach((laptop, mark) -> {
+            if (laptop.getId() != currentLaptop.getId()) {
+                double IQRMark = sqrt((currentLaptopMark - mark) * (currentLaptopMark - mark));
+                if (adviceLaptops.size() < numberOfAdviceLaptop) {
+                    adviceLaptops.put(IQRMark, laptop);
+                } else {
+                    double maxIQR = Collections.max(Collections.list(adviceLaptops.keys()));
+                    if (IQRMark < maxIQR) {
+                        adviceLaptops.remove(maxIQR);
+                        while (adviceLaptops.containsKey(IQRMark)) {
+                            IQRMark += 0.000000001;
+                        }
+                        adviceLaptops.put(IQRMark, laptop);
+                    }
+                }
+            }
+        });
+        return new LaptopEntityList(new ArrayList<>(adviceLaptops.values()));
+    }
+
+    public LaptopEntityList getWithSuggest(String processorLevel, String ramMemory, String monitorSize, String priceString) {
+
+
+        int fromPrice = 0;
+        int toPrice = 999999999;
+        if (!priceString.isEmpty()) {
+            fromPrice = Integer.parseInt(!priceString.split("-")[0].equals("0") ? priceString.split("-")[0] + "000000" : "0");
+            toPrice = Integer.parseInt(!priceString.split("-")[1].equals("0") ? priceString.split("-")[1] + "000000" : "999999999");
+        }
+        double minSize = 0;
+        double maxSize = 50;
+        if (!processorLevel.contains("Ryzen") && !processorLevel.isEmpty()) {
+            processorLevel = processorLevel.substring(processorLevel.lastIndexOf("i"));
+        }
+        if (!monitorSize.isEmpty()) {
+            minSize = Double.parseDouble(monitorSize) - 0.5;
+            maxSize = Double.parseDouble(monitorSize) + 0.5;
+        }
+        int minMemory = 0;
+        int maxMemory = 50;
+        if (!ramMemory.isEmpty()) {
+            minMemory = Integer.parseInt(ramMemory) - 2;
+            maxMemory = Integer.parseInt(ramMemory) + 2;
+        }
+//        System.out.println("'" + processorLevel + "'");
+//        System.out.println(minMemory);
+//        System.out.println(maxMemory);
+//        System.out.println(minSize);
+//        System.out.println(maxSize);
+//        System.out.println(fromPrice);
+//        System.out.println(toPrice);
+        return getNearBy(processorLevel, minMemory, maxMemory, minSize, maxSize, fromPrice, toPrice, -1);
+    }
+
+    private LaptopEntityList getNearBy(String processorLevel, int minMemory, int maxMemory, double minSize, double maxSize, int fromPrice, int toPrice, int count) {
+        LaptopEntityList result = new LaptopEntityList(dao.getByRamMonitorProcessorPrice(processorLevel, minMemory, maxMemory, minSize, maxSize, fromPrice, toPrice));
+        if (result.getLaptop().size() == 0 && count < TIME_INCREASE_NEARBY){
+            count++;
+            System.out.println("NearBy Count: " +count);
+            if (count%2 == 0){//update monitor
+                minSize -= 0.5;
+                maxSize =+ 0.5;
+            }else {//update ram
+                minMemory += 2;
+                maxMemory -= 2;
+            }
+            result = getNearBy(processorLevel, minMemory, maxMemory, minSize, maxSize, fromPrice, toPrice, count);
+        }
         return result;
     }
 
-    public boolean insertLaptop(LaptopEntity entity, String cpu, String ram, String lcd) throws SAXException, JAXBException, TransformerException, IOException, XPathExpressionException, ParserConfigurationException, InterruptedException {
+    public Hashtable<LaptopEntity, Double> getCompareLaptop(List<Integer> ids, CompareType type) {
+        Hashtable<LaptopEntity, Double> compareEntities = new Hashtable<>();
+        if (ids != null) {
+            ids.forEach(id -> {
+                LaptopEntity laptop = dao.findByID(id);
+                double mark = 0;
+                if (type == CompareType.ALL) {
+                    mark = (laptop.getRam().getMark() + laptop.getProcessor().getMark() + laptop.getMonitor().getMark() + laptop.getWeightMark()) / 4;
+                } else if (type == CompareType.COMPACTNESSS) {
+                    mark = (laptop.getRam().getMark() + laptop.getProcessor().getMark() + laptop.getMonitor().getMark() * 2 + laptop.getWeightMark() * 2) / 6;
+                } else {//POWER
+                    mark = (laptop.getRam().getMark() * 2 + laptop.getProcessor().getMark() * 2 + laptop.getMonitor().getMark() + laptop.getWeightMark()) / 6;
+                }
+                compareEntities.put(laptop, mark);
+            });
+        }
+        List<Map.Entry<LaptopEntity, Double>> list = new ArrayList<Map.Entry<LaptopEntity, Double>>(compareEntities.entrySet());
+        Collections.sort(list, new Comparator<Map.Entry<LaptopEntity, Double>>() {
+            public int compare(Map.Entry<LaptopEntity, Double> entry1, Map.Entry<LaptopEntity, Double> entry2) {
+                return entry1.getValue().compareTo(entry2.getValue());
+            }
+        });
+        return list.stream().collect(Collectors.toMap(Map.Entry::getKey,
+                Map.Entry::getValue,
+                (v1, v2) -> v1,
+                Hashtable::new));
+    }
+
+    public List<LaptopEntity> getAll() {
+        return dao.findAllByNameQuery("Laptop.findAll");
+    }
+
+    public LaptopEntityList getAllWithPaging(int pageSize, int pageNumber) {
+        LaptopEntityList result = new LaptopEntityList();
+        result.setLaptop(dao.getAllWithPaging(pageSize, pageNumber));
+        result.setPageNumber(pageNumber);
+        result.setPageSize(pageSize);
+        int totalPage = getTotalPage(pageSize, dao.countAll());
+        result.setTotalPage(totalPage);
+        return result;
+    }
+
+    public int getNumberOfLaptop(){
+        return dao.countAll();
+    }
+
+    public LaptopEntityList getByBrandWithPaging(int brandId, int pageSize, int pageNumber) {
+        LaptopEntityList result = new LaptopEntityList();
+        result.setLaptop(dao.getByBrandWithPaging(brandId, pageSize, pageNumber));
+        result.setPageNumber(pageNumber);
+        result.setPageSize(pageSize);
+        result.setTotalPage(getTotalPage(pageSize, dao.countByBrandId(brandId)));
+        return result;
+    }
+
+    public boolean insertLaptop(LaptopEntity entity, String cpu, String ram, String lcd, String realPath) throws SAXException, JAXBException, TransformerException, IOException, XPathExpressionException, ParserConfigurationException, InterruptedException {
         boolean result = false;
-        String reformatModel = reformatModel(entity.getModel(), entity.getBrand().getName());
-        entity.setModel(reformatModel);
+        entity.setModel(reformatModel(entity.getModel(), entity.getBrand().getName()));
+        entity.setWeight(reformatWeight(entity.getWeight()));
 
 
         //Check laptop existed
         if (entity.getModel() != null && !dao.checkExisted(entity.getModel())) {
-            entity.setRam(getRamEntityByMemoryString(ram));
-            entity.setMonitor(getMonitorEntityBySize(lcd));
-            entity.setName(reformatName(entity.getName()));
-
             String cpuName = getCPUName(cpu).trim();
             String cpuModel = getCPUModel(cpuName);
-            ProcessorEntity p = getProcessorByModel(cpuName,cpuModel);
-            if (p != null){
-                p.setCount(p.getCount()+1);
-                processorDAO.update(p);
+
+            RamEntity ramEntity = getRamEntityByMemoryString(ram);
+            MonitorEntity monitorEntity = getMonitorEntityBySize(lcd);
+            ProcessorEntity p = getProcessorByModel(cpuName, cpuModel, realPath);
+            if (p != null && ramEntity != null && monitorEntity != null) {
+                p.setCount(p.getCount() + 1);
+                ramEntity.setCount(ramEntity.getCount() + 1);
+                monitorEntity.setCount(monitorEntity.getCount() + 1);
+                monitorDAO.updateCount(monitorEntity);
+                ramDAO.updateCount(ramEntity);
+                processorDAO.updateCount(p);
                 entity.setProcessor(p);
+                entity.setRam(ramEntity);
+                entity.setMonitor(monitorEntity);
                 result = dao.insert(entity) != null;
             }
         }
         return result;
+    }
+
+    public boolean updateLaptopWegihtMark(LaptopEntity entity) {
+        LaptopEntity updateEntity = dao.findByID(entity.getId());
+        updateEntity.setWeightMark(entity.getWeightMark());
+        return dao.updateWeightMark(updateEntity);
+    }
+
+
+    public int getTotalPage(int pageSize, int objectSize) {
+        if ((objectSize % pageSize) == 0) {
+            return objectSize / pageSize;
+        }
+        if (pageSize < objectSize) {
+            return objectSize / pageSize + 1;
+        }
+        return 1;
     }
 
     public RamEntity getRamEntityByMemoryString(String ram) {
@@ -77,26 +242,26 @@ public class LaptopService {
         }
 
         //Return Ram
-        int ramInt = Integer.parseInt(ram.replaceAll("G(b|B)",""));
+        int ramInt = Integer.parseInt(ram.replaceAll("G(b|B)", ""));
         result = ramDAO.getByMemory(ramInt);
         if (result == null) {
-            result = ramDAO.insert(new RamEntity(ramInt));
+            result = ramDAO.insert(new RamEntity(ramInt, 0));
         }
         return result;
     }
 
     public MonitorEntity getMonitorEntityBySize(String sizeStr) {
         MonitorEntity result = null;
-        double size =  Double.parseDouble(StringHelper.getStringByRegex("\\d+\\.?\\d", sizeStr).get(0).trim());
-
+        double size = Double.parseDouble(StringHelper.getStringByRegex("\\d+\\.?\\d", sizeStr).get(0).trim());
+        if (size == 1920) return null;
         result = monitorDAO.getBySize(size);
         if (result == null) {
-            result = monitorDAO.insert(new MonitorEntity(size));
+            result = monitorDAO.insert(new MonitorEntity(size, 0));
         }
         return result;
     }
 
-    public ProcessorEntity getProcessorByModel(String name, String model) throws SAXException, JAXBException, TransformerException, IOException, XPathExpressionException, ParserConfigurationException {
+    public ProcessorEntity getProcessorByModel(String name, String model, String realPath) throws SAXException, JAXBException, TransformerException, IOException, XPathExpressionException, ParserConfigurationException {
         ProcessorEntity p;
         //Check laptop existed
         if (model != null) {
@@ -111,7 +276,8 @@ public class LaptopService {
                 if (p != null) {
                     return p;
                 } else {
-                    p = processorDAO.getAMDProcessor(model.split(" ")[0], model.split(" ")[1]);
+                    p = processorDAO.getAMDProcessor(model.split(" ")[0], model.split(" ")[1], realPath);
+                    p.setCount(1);
                     ProcessorEntity newProcessor = processorDAO.insert(p);
                     return newProcessor;
                 }
@@ -119,7 +285,6 @@ public class LaptopService {
         }
         return null;
     }
-
 
     /***
      * Help to check laptop existed
@@ -258,7 +423,8 @@ public class LaptopService {
         return model;
     }
 
-    public String reformatName(String name) {
-        return StringHelper.getStringByRegex("[\\d\\w -]+(([(][\\d\\w]+[)])|)",name).get(0).trim();
+    public double reformatWeight(double weight) {
+        if (weight > 500) return weight / 1000;
+        else return weight;
     }
 }

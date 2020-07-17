@@ -46,16 +46,16 @@ public class CrawlerConstant {
     public static final String INTEL_PRODUCT_DETAIL_END_SIGNAL = "<div class=\"tech-section\">";
 
     //XSLT
-    public static final String PA_XSL_PATH = "src/huyng/trAxResource/PALaptop.xsl";
-    public static final String KL_XSL_PATH = "src/huyng/trAxResource/KLLaptop.xsl";
-    public static final String INTEL_XSL_PATH = "src/huyng/trAxResource/IntelProcessor.xsl";
-    public static final String AMD_XSL_PATH = "src/huyng/trAxResource/AMDProcessor.xsl";
+    public static final String PA_XSL_PATH = "WEB-INF/trAxResource/PALaptop.xsl";
+    public static final String KL_XSL_PATH = "WEB-INF/trAxResource/KLLaptop.xsl";
+    public static final String INTEL_XSL_PATH = "WEB-INF/trAxResource/IntelProcessor.xsl";
+    public static final String AMD_XSL_PATH = "WEB-INF/trAxResource/AMDProcessor.xsl";
 
     //XSD
-    public static final String XSD_PATH = "src/huyng/jaxb";
+    public static final String XSD_PATH = "WEB-INF/jaxbResource";
 
     //File
-    public static final String ERROR_PHUCANH = "src/huyng/files/PhucAnhError.txt";
-    public static final String ERROR_KIMLONG = "src/huyng/files/KimLongError.txt";
-    public static final String ERROR_INTEL = "src/huyng/files/IntelError.txt";
+    public static final String ERROR_PHUCANH = "WEB-INF/errorFile/PhucAnhError.txt";
+    public static final String ERROR_KIMLONG = "WEB-INF/errorFile/KimLongError.txt";
+    public static final String ERROR_INTEL = "WEB-INF/errorFile/IntelError.txt";
 }

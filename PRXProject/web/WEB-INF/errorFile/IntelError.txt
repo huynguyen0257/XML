@@ -1,0 +1,8 @@
+********************************ERROR Transform HTMLString to XMLString ********************************
+javax.xml.transform.TransformerException: com.sun.org.apache.xml.internal.utils.WrappedRuntimeException: XML document structures must start and end within the same entity.ProductUrl = https://www.intel.com/content/www/us/en/products/processors/core/i5-processors/i5-7200u.html
+Before TrAx.tranform
+<div>
+********************************Get CPU NULL********************************
+ProcessorEntity{id=0, brand='null', name='Intel® Core™ i5-7200U Processor', model='https://www.intel.com/content/www/us/en/products/processors/core/i5-processors/i5-7200u.html', core=0, thread=0, baseClock=0.0, boostClock=0.0, cache=0.0, count=0, mark=0.0, laptops=null}
+
+

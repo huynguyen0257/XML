@@ -1,141 +1,57 @@
 package huyng.tests;
 
-import huyng.daos.BrandDAO;
-import huyng.daos.LaptopDAO;
-import huyng.daos.ProcessorDAO;
-import huyng.entities.BrandEntity;
-import huyng.entities.LaptopEntity;
-import huyng.entities.ProcessorEntity;
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import huyng.daos.*;
+import huyng.entities.*;
 import huyng.services.LaptopService;
-import huyng.utils.DBHelper;
-import huyng.utils.JAXBHelper;
-import huyng.utils.StringHelper;
+import huyng.utils.StatisticHelper;
 import org.xml.sax.SAXException;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityTransaction;
 import javax.xml.bind.JAXBException;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.xpath.XPathExpressionException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Hashtable;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+
+import static java.lang.Math.sqrt;
 
 public class Test {
+    private final int NUMBER_OF_ADVICE_LAPTOP = 5;
+
     public static void main(String[] args) throws JAXBException, ParserConfigurationException, TransformerException, SAXException, XPathExpressionException, IOException {
-        LaptopService laptopService = new LaptopService();
-        String brandName = " ";
-        List<LaptopEntity> laptops = laptopService.getByBrandName(brandName);
-//        String[] model = getStringTest();
-        for (int i = 0; i < laptops.size(); i++) {
-            brandName = laptops.get(i).getBrand().getName();
-            String newModel = laptops.get(i).getModel();
-            System.out.print("Original: " + newModel + "\t|");
-            if (newModel.equals("G5 5590 | USA US011")
-                    || newModel.contains("THINKPAD X1 C7")
-                    || newModel.equals("THINKBOOK 15")
-                    || newModel.equals("G3 3590")
-                    || newModel.equals("N5593")
-                    || newModel.equals("V5490 | DN160")
-                    || newModel.equals("V5490 | DN164")
-                    || newModel.equals("V5490 DN211")
-                    || newModel.equals("3593A")
-                    || newModel.contains("70211826 - BLACK")) {
-                newModel = null;
-                System.out.println(newModel);
-                continue;
-            }
-            if (newModel.indexOf('(') != -1) newModel = newModel.substring(0, newModel.indexOf('('));
-            if (newModel.indexOf('|') != -1) newModel = newModel.substring(0, newModel.indexOf('|'));
-            newModel = newModel.replaceAll("  ", " ")
-                    .trim();
-            brandName = brandName.toLowerCase();
-            if (brandName.contains("asus") && newModel.lastIndexOf("-") != -1) {
-                newModel = newModel.substring(newModel.lastIndexOf("-") + 1);
-            } else if (brandName.contains("acer")) {
-                String regex = "(AS|) ?(PH|SF|PT|AN|A|T)\\d+[- ]?[\\d\\w]+[- ]?[\\d\\w]+";
-                List<String> stringfromRegex = StringHelper.getStringByRegex(regex,newModel);
-                if (newModel.contains("42 R5Z6")) {
-                    newModel = "42 R5Z6";
-                } else if (stringfromRegex.size() != 0) {
-                    newModel = stringfromRegex.get(0).replaceAll(" NH","").trim();
-                }
-            } else if (brandName.contains("lenovo") && newModel.lastIndexOf(" ") != -1) {
-
-                newModel = newModel.replaceAll("3-", " ").trim();
-                if (newModel.lastIndexOf("PA") < newModel.lastIndexOf(' ')) {
-                    newModel = newModel.substring(newModel.lastIndexOf(" ") + 1);
-                } else {
-                    String[] split = newModel.split(" ");
-                    newModel = split[split.length - 2] + " " + split[split.length - 1];
-                }
-            } else if (brandName.contains("hp") && newModel.lastIndexOf(" ") != -1) {
-                newModel = newModel.substring(newModel.lastIndexOf(" ") + 1);
-            } else if (brandName.contains("msi")) {
-                    newModel = newModel.replaceAll("[A-Z]([a-z])+", "").trim();
-                    if (newModel.indexOf("-") != -1)
-                        newModel = newModel.replaceAll("-", " ");
-                    String[] split = newModel.split(" ");
-                    if (split.length >= 3) {
-                        newModel = split[split.length - 2] + " " + split[split.length - 1];
-                    }
-            } else if (brandName.contains("dell")) {
-                if (newModel.indexOf("/") != -1) {
-                    newModel = newModel.substring(0, newModel.indexOf("/"));
-                }
-                newModel = newModel
-                        .replaceAll(" -", "")
-                        .replaceAll("-", " ")
-                        .replaceAll("  ", " ")
-                        .replaceAll(" USA", "-USA")
-                        .replaceAll("[|] USA ", "")
-                        .replaceAll("SEAL", "")
-                        .replaceAll("GREY", "")
-                        .replaceAll("FHD", "")
-                        .replaceAll("PRO", "")
-                        .replaceAll("REFURBISHED", "")
-                        .replaceAll("OUTLET NEW", "")
-                        .trim();
-                String[] split = newModel.split(" ");
-                newModel = split[split.length - 1];
-            } else if (brandName.contains("lg")) {
-                String regex = "([ .][A-Z][A-Z0-9]+)";
-                Pattern pattern = Pattern.compile(regex);
-                Matcher matcher = pattern.matcher(newModel);
-                if (matcher.find()) newModel = matcher.group().replaceAll("[.]", "").trim();
-            } else if (brandName.contains("apple")) {
-                String regex = "([A-Z][A-Z0-9]+ )";
-                Pattern pattern = Pattern.compile(regex);
-                Matcher matcher = pattern.matcher(newModel);
-                if (matcher.find()) newModel = matcher.group();
-            } else if (brandName.contains("fujitsu")) {
-                String regex = "([ -][A-Z][A-Z0-9]+)";
-                Pattern pattern = Pattern.compile(regex);
-                Matcher matcher = pattern.matcher(newModel);
-                if (matcher.find()) newModel = matcher.group().replaceAll("-", "").trim();
-            } else if (brandName.contains("microsoft")) {
-                //do not thing
-            }
-            System.out.println(newModel);
-        }
+        Test a = new Test();
+        a.testFunction();
     }
 
-    public static void textString(String text) {
-        System.out.println(StringHelper.getStringByRegex("[\\d\\w -]+(([(][\\d\\w]+[)])|)", text).get(0).trim());
+    public void testFunction() {
+        LaptopService service = new LaptopService();
+        String inputType = "power";
+        LaptopService.CompareType[] type = LaptopService.CompareType.values();
+        for (int i = 0; i < type.length; i++) {
+            if (inputType.toLowerCase().equals(type[i].toString().toLowerCase()))
+                System.out.println(type[i]);
+        }
+//        System.out.println(type);
     }
 
-    public static List<String> getStringByRegex(String regex, String string) {
-        List<String> result = new ArrayList<>();
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(string);
-        int count = 1;
-        while (matcher.find()) {
-            result.add(matcher.group());
+    public static int getTotalPage(int pageSize, int objectSize){
+        if ((objectSize % pageSize) == 0){
+            System.out.println("objectSize % pageSize");
+            return objectSize/pageSize;
         }
-        return result;
+        if (pageSize < objectSize){
+            System.out.println("pageSize < objectSize");
+            return objectSize/pageSize + 1;
+        }
+        return 1;
     }
 
     public static String[] getStringTest() {

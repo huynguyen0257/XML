@@ -1,10 +1,7 @@
 package huyng.entities;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import java.util.Objects;
 
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -14,7 +11,11 @@ import java.util.Objects;
 @XmlType(name = "laptop")
 @NamedQueries({
         @NamedQuery(name = "Laptop.findByModel", query = "select l from LaptopEntity l where l.model = :model"),
-        @NamedQuery(name = "Laptop.findAll", query = "select l from LaptopEntity l where l.name LIKE :name"),
+        @NamedQuery(name = "Laptop.findAll", query = "select l from LaptopEntity l"),
+        @NamedQuery(name = "Laptop.findByBrandId", query = "select l from LaptopEntity l where l.brand.id = :brandId"),
+        @NamedQuery(name = "Laptop.countByBrand", query = "select count (l.name) from LaptopEntity l where l.brand.id = :brandId"),
+        @NamedQuery(name = "Laptop.countAll", query = "select count (l.name) from LaptopEntity l"),
+        @NamedQuery(name = "Laptop.findBySuggest", query = "select l from LaptopEntity l where l.processor.name like :processorLevel and l.ram.memory > :minMemory and l.ram.memory <= :maxMemory and l.monitor.size <= :maxSize and l.monitor.size > :minSize and l.price > :fromPrice and l.price < :toPrice"),
 })
 public class LaptopEntity {
     private int id;
@@ -22,6 +23,7 @@ public class LaptopEntity {
     private String model; //xsl
     private int price;
     private double weight; //xsl
+    private double weightMark;
     private String image;
     private BrandEntity brand;
     private ProcessorEntity processor;//xsl
@@ -168,12 +170,22 @@ public class LaptopEntity {
                 ", name='" + name + '\'' +
                 ", model='" + model + '\'' +
                 ", price=" + price +
-                ", weight='" + weight + '\'' +
+                ", weight=" + weight +
+                ", weightMark=" + weightMark +
                 ", image='" + image + '\'' +
                 ", brand=" + brand +
                 ", processor=" + processor +
                 ", ram=" + ram +
                 ", monitor=" + monitor +
                 '}';
+    }
+
+    @Column(name = "WeightMark")
+    public double getWeightMark() {
+        return weightMark;
+    }
+
+    public void setWeightMark(double weightMark) {
+        this.weightMark = weightMark;
     }
 }

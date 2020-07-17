@@ -1,10 +1,7 @@
 package huyng.entities;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Objects;
@@ -14,22 +11,8 @@ import java.util.Objects;
 @XmlAccessorType(XmlAccessType.FIELD)
 @NamedQueries({
         @NamedQuery(name = "Processor.findByModel", query = "select p from ProcessorEntity p where p.model = :model"),
+        @NamedQuery(name = "Processor.findProcessorInUse", query = "select p from ProcessorEntity p where p.count != 0"),
         @NamedQuery(name = "Processor.findAll", query = "select p from ProcessorEntity p"),
-})
-@XmlType(name = "Processor", propOrder = {
-        "id",
-        "brand",
-        "name",
-        "model",
-        "core",
-        "thread",
-        "baseClock",
-        "boostClock",
-        "cache",
-        "count",
-        "mark",
-        "laptops"
-
 })
 @XmlRootElement(name = "processor")
 public class ProcessorEntity {
@@ -44,6 +27,7 @@ public class ProcessorEntity {
     private double cache;
     private int count;
     private double mark;
+    @XmlTransient
     private Collection<LaptopEntity> laptops;
 
     public ProcessorEntity() {
@@ -189,6 +173,7 @@ public class ProcessorEntity {
     }
 
     @OneToMany(mappedBy = "processor")
+    @XmlTransient
     public Collection<LaptopEntity> getLaptops() {
         if (laptops == null) laptops = new ArrayList<>();
         return laptops;
@@ -196,5 +181,23 @@ public class ProcessorEntity {
 
     public void setLaptops(Collection<LaptopEntity> laptops) {
         this.laptops = laptops;
+    }
+
+    @Override
+    public String toString() {
+        return "ProcessorEntity{" +
+                "id=" + id +
+                ", brand='" + brand + '\'' +
+                ", name='" + name + '\'' +
+                ", model='" + model + '\'' +
+                ", core=" + core +
+                ", thread=" + thread +
+                ", baseClock=" + baseClock +
+                ", boostClock=" + boostClock +
+                ", cache=" + cache +
+                ", count=" + count +
+                ", mark=" + mark +
+                ", laptops=" + laptops +
+                '}';
     }
 }

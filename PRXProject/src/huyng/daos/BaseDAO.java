@@ -71,6 +71,8 @@ public class BaseDAO<T, PK extends Serializable> {
         }
     }
 
+
+
     protected static String removeUnicode(String string){
         string = string.toLowerCase()
                 .replaceAll("[áàảạãắẵẳặằấầậẩẫ]","a")

@@ -1,6 +1,7 @@
 package huyng.entities;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlTransient;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Objects;
@@ -9,18 +10,22 @@ import java.util.Objects;
 @Table(name = "Monitor", schema = "dbo", catalog = "PRXProject")
 @NamedQueries({
         @NamedQuery(name = "Monitor.findBySize", query = "select m from MonitorEntity m where m.size = :size"),
+        @NamedQuery(name = "Monitor.findAll", query = "select m from MonitorEntity m"),
 })
 public class MonitorEntity {
     private int id;
     private double size;
+    private int count;
     private double mark;
+    @XmlTransient
     private Collection<LaptopEntity> laptops;
 
     public MonitorEntity() {
     }
 
-    public MonitorEntity(double size) {
+    public MonitorEntity(double size, int count) {
         this.size = size;
+        this.count = count;
     }
 
     @Id
@@ -70,6 +75,7 @@ public class MonitorEntity {
     }
 
     @OneToMany(mappedBy = "monitor")
+    @XmlTransient
     public Collection<LaptopEntity> getLaptops() {
         if (laptops == null) laptops = new ArrayList<>();
         return laptops;
@@ -77,5 +83,15 @@ public class MonitorEntity {
 
     public void setLaptops(Collection<LaptopEntity> laptops) {
         this.laptops = laptops;
+    }
+
+    @Basic
+    @Column(name = "Count")
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 }

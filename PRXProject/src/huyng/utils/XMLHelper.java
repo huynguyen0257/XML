@@ -2,6 +2,7 @@ package huyng.utils;
 
 import com.sun.xml.internal.stream.events.EndElementEvent;
 import huyng.constants.CrawlerConstant;
+import huyng.entities.*;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 import org.w3c.dom.Document;
@@ -10,6 +11,9 @@ import org.xml.sax.InputSource;
 
 import javax.print.Doc;
 import javax.xml.XMLConstants;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
 import javax.xml.namespace.QName;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -186,33 +190,6 @@ public class XMLHelper {
         return domRs;
     }
 
-    public static Document createNewDOM() throws ParserConfigurationException {
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        factory.setNamespaceAware(true);
-        DocumentBuilder builder = factory.newDocumentBuilder();
-        Document domRs = builder.newDocument();
-        return domRs;
-    }
-
-    public static Element createElement(Document doc, String elementName, String elementVal, Map<String, String> attributes) {
-        if (doc != null){
-            Element element = doc.createElement(elementName);
-
-            if (elementVal != null) element.setTextContent(elementVal);
-
-            if (attributes != null) {
-                if (!attributes.isEmpty()){
-                    for (Map.Entry<String,String> entry : attributes.entrySet()){
-                        element.setAttribute(entry.getKey(),entry.getValue());
-                    }
-                }
-            }
-            return element;
-        }
-        return null;
-
-    }
-
     public static XPath getXPath(){
         XPathFactory factory = XPathFactory.newInstance();
         XPath xPath = factory.newXPath();
@@ -228,5 +205,37 @@ public class XMLHelper {
             validator.validate(new StreamSource(new ByteArrayInputStream(xmlPath.toByteArray())));
     }
 
+    public static String marshallToXmlString(Object objects, Class T) throws JAXBException {
+        JAXBContext jaxbContext = null;
+        if (T.getName().equals(RamEntityList.class.getName()))
+            jaxbContext = JAXBContext.newInstance(RamEntityList.class, RamEntity.class);
+        if (T.getName().equals(LaptopEntityList.class.getName()))
+            jaxbContext = JAXBContext.newInstance(LaptopEntityList.class, LaptopEntity.class);
+        if (T.getName().equals(MonitorEntityList.class.getName()))
+            jaxbContext = JAXBContext.newInstance(MonitorEntityList.class, MonitorEntity.class);
+        if (T.getName().equals(BrandEntityList.class.getName()))
+            jaxbContext = JAXBContext.newInstance(BrandEntityList.class, BrandEntity.class);
+        Marshaller marshaller = jaxbContext.createMarshaller();
+        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+        marshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
 
+        StringWriter writer = new StringWriter();
+        marshaller.marshal(objects, writer);
+        return writer.toString();
+    }
+
+//    public static void marshallerToTransfer(LaptopEntityList laptops, OutputStream os){
+//        try{
+//            JAXBContext jaxbContext = JAXBContext.newInstance(LaptopEntityList.class);
+//            Marshaller marshal = jaxbContext.createMarshaller();
+//            marshal.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,true);
+//            marshal.setProperty(Marshaller.JAXB_ENCODING,"UTF-8");
+//            marshal.marshal(laptops,os);
+//            StringWriter writer = new StringWriter();
+//            marshal.marshal(laptops,writer);
+//            System.out.println(writer.toString());
+//        } catch (JAXBException e) {
+//            e.printStackTrace();
+//        }
+//    }
 }

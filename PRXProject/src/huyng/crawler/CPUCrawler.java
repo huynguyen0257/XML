@@ -34,12 +34,16 @@ public class CPUCrawler implements Runnable {
     private static List<Thread> THREADS = new ArrayList<>();
     private static File file = null;
     private static FileWriter writer = null;
+    private static String realPath;
+
+    public CPUCrawler(String realPath) {
+        this.realPath = realPath;
+    }
 
     @Override
     public void run() {
-        CPUCrawler crawler = new CPUCrawler();
         try {
-            crawler.processCrawler();
+            processCrawler();
             int count = 0;
             while (true) {
                 for (int i = 0; i < THREADS.size(); i++) {
@@ -75,7 +79,7 @@ public class CPUCrawler implements Runnable {
 
 
     public void processCrawler() throws IOException, ParserConfigurationException, SAXException, XPathExpressionException {
-        file = new File(CrawlerConstant.ERROR_INTEL);
+        file = new File(realPath+CrawlerConstant.ERROR_INTEL);
         writer = new FileWriter(file);
         String doc = XMLHelper.getDocument(CrawlerConstant.INTEL_ALL_PRODUCT, CrawlerConstant.INTEL_PAGAING_START_SIGNAL, CrawlerConstant.INTEL_PAGAING_TAG, null);
         Document dom = XMLHelper.parseStringToDOM(doc);
@@ -162,7 +166,7 @@ public class CPUCrawler implements Runnable {
         params.put("name", name);
         ByteArrayOutputStream ps = null;
         try {
-            ps = TrAxHelper.transform(new ByteArrayInputStream(doc.getBytes("UTF-8")), CrawlerConstant.INTEL_XSL_PATH, params);
+            ps = TrAxHelper.transform(new ByteArrayInputStream(doc.getBytes("UTF-8")), realPath+CrawlerConstant.INTEL_XSL_PATH, params);
         } catch (TransformerException e) {
             synchronized (LOCK) {
                 writer.write("********************************ERROR Transform HTMLString to XMLString ********************************" + "\n");
@@ -172,11 +176,11 @@ public class CPUCrawler implements Runnable {
                 writer.write(doc + "\n");
                 writer.flush();
             }
-            return entity;
+            return null;
         }
 
         try {
-            XMLHelper.validateXMLSchema(JAXBHelper.getXSDPath(ProcessorEntity.class), ps);
+            XMLHelper.validateXMLSchema(realPath+JAXBHelper.getXSDPath(ProcessorEntity.class), ps);
             String removeNSps = ps.toString().replaceAll("http://huyng/schema/processor", "");
             ByteArrayOutputStream outputStream = StringHelper.getByteArrayFromString(removeNSps);
             entity = (ProcessorEntity) JAXBHelper.unmarshalling(outputStream.toByteArray(), ProcessorEntity.class);
@@ -191,6 +195,7 @@ public class CPUCrawler implements Runnable {
                 writer.write(ps.toString() + "\n");
                 writer.write("\n\n");
                 writer.flush();
+                entity = null;
             }
         }
         return entity;

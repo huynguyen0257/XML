@@ -1,39 +1,101 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="WEB-INF/js/main.js"></script>
     <title>Smart Choice</title>
 </head>
 <body>
-<div class="header">
+<header>
     <h1>SMART CHOICE</h1>
-</div>
+</header>
 <div class="navBar">
+    <h2>HOME</h2>
+    <h2>Brand</h2>
     <ul>
         <li>LG</li>
         <li>DELL</li>
     </ul>
 </div>
 <div class="content">
-    <div class="suggest-container">
-        <div class="abc"></div>
-    </div>
-    <div class="some-laptops">
-        <h1>Some advices</h1>
-        <div class="items">
-            <div class="item">
-                <img src="https://www.w3schools.com/w3images/steak.jpg"/>
-                <div class="item-info">
-                    <h3>Item1</h3>
-                    <h4>Price</h4>
-                    <p>description</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <table border="1" class="compare">
+        <tr>
+            <th class="weight">
+                Select Weight :
+                <select id="select-compare-type-box" name="compareWeight" class="select-box-weight" onchange="location = this.value;">
+                    <option value="power" selected="true">BY POWER</option>
+                    <option value="compactness">BY COMPACTNESS</option>
+                </select>
+            </th>
+            <td class="laptop-compare-image">
+                <img src="https://kimlongcenter.com/upload/product/asus-s531fl-kimlongcenter.jpg"/>
+            </td>
+            <td class="laptop-compare-image">
+                <img src="https://kimlongcenter.com/upload/product/dell-5590-mat-truoc_1.jpg"/>
+            </td>
+        </tr>
+        <tr>
+            <th><h2>Name</h2></th>
+            <td>Asus Vivobook S531FL-BQ420T : i5-10210U | 8GB RAM | 512GB SSD PCIe | GeForce MX250 2GB| 15.6 FHD | Win10
+                | Finger | Silver
+            </td>
+            <td>Dell Vostro 5590 : i5-10210U | 8GB RAM | 128GB SSD + 1TB HDD | GeForce MX230 2GB + UHD Graphics 630 |
+                15.6 FHD | Win10 | Finger
+            </td>
+        </tr>
+        <tr>
+            <th><h2>Mark</h2></th>
+            <td><h2>12.3</h2></td>
+            <td><h2>12.0</h2></td>
+        </tr>
+        <tr>
+            <th>CPU</th>
+            <td>Core i7</td>
+            <td>Core i5</td>
+        </tr>
+        <tr>
+            <th>Core</th>
+            <td>4</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <th>Thread</th>
+            <td>4</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>Base Clock</th>
+            <td>2.3GHz</td>
+            <td>2.4GHz</td>
+        </tr>
+        <tr>
+            <th>Boost Clock</th>
+            <td>4.0GHz</td>
+            <td>3.8GHz</td>
+        </tr>
+        <tr>
+            <th>Cache</th>
+            <td>8MB</td>
+            <td>8MB</td>
+        </tr>
+        <tr>
+            <th>RAM</th>
+            <td>16GB</td>
+            <td>16GB</td>
+        </tr>
+        <tr>
+            <th>Monitor</th>
+            <td>15.6 inch</td>
+            <td>14 inch</td>
+        </tr>
+        <tr>
+            <th>Weight</th>
+            <td>2.3 kg</td>
+            <td>2.0 kg</td>
+        </tr>
+    </table>
 </div>
-<div class="footer">
-    <h4>I am a footer</h4>
-</div>
+<footer>
+    <h4>Nguyen Gia Huy - SE63158</h4>
+</footer>
 </body>
 </html>

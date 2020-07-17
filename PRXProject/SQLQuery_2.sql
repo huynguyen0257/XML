@@ -78,6 +78,7 @@ CREATE TABLE [dbo].[Ram]
 (
     [Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY, -- Primary Key column
     [Memory] INT NOT NULL,
+    [Count] INT NOT NULL,
     [Mark] FLOAT NOT NULL
 );
 GO
@@ -93,6 +94,7 @@ CREATE TABLE [dbo].[Monitor]
 (
     [Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY, -- Primary Key column
     [Size] FLOAT NOT NULL,
+    [Count] INT NOT NULL,
     [Mark] FLOAT NOT NULL
 );
 GO
@@ -113,6 +115,7 @@ CREATE TABLE [dbo].[Laptop]
     [Model] NVARCHAR(500) NOT NULL,
     [Price] INT NOT NULL,
     [Weight] FLOAT NOT NULL,
+    [WeightMark] FLOAT NOT NULL,
     [Image] NVARCHAR(500),
     [BrandId] int NOT NULL,
     [ProcessorId] int NOT NULL,
@@ -121,14 +124,6 @@ CREATE TABLE [dbo].[Laptop]
     -- Specify more columns here
 );
 GO
-ALTER TABLE Laptop ADD CONSTRAINT FK_Brand FOREIGN KEY (BrandId) references Brand(Id)  
-ALTER TABLE Laptop ADD CONSTRAINT FK_Processor FOREIGN KEY (ProcessorId) references Processor(Id)
-ALTER TABLE Laptop ADD CONSTRAINT FK_Ram FOREIGN KEY (RamId) references Ram(Id)
-ALTER TABLE Laptop ADD CONSTRAINT FK_Monitor FOREIGN KEY (MonitorId) references Monitor(Id)
-
-
-UPDATE Laptop
-SET [Image] = 'https://kimlongcenter.com/upload/product/avata-dell-vostro-5590_2.jpg'
 
 
 
@@ -162,7 +157,9 @@ SET [Image] = 'https://kimlongcenter.com/upload/product/avata-dell-vostro-5590_2
 
 
 
-SELECT COUNT(Model)
+
+
+SELECT COUNT(Name)
 FROM Laptop
 
 SELECT COUNT(Model)
@@ -177,6 +174,30 @@ DELETE FROM [dbo].[Laptop]
 GO
 
 -- Delete rows from table '[Laptop]' in schema '[dbo]'
-DELETE FROM [dbo].[Processor]
--- WHERE Brand = 'AMD'
+DELETE FROM [dbo].[Ram]
 GO
+
+-- Delete rows from table '[Laptop]' in schema '[dbo]'
+DELETE FROM [dbo].[Monitor]
+GO
+
+-- Update rows in table '[Processor]' in schema '[dbo]'
+UPDATE [dbo].[Processor]
+SET
+    [Count] = 0,
+    [Mark] = 0
+    -- Add more columns and values here
+GO
+
+-- Delete rows from table '[Laptop]' in schema '[dbo]'
+DELETE FROM [dbo].[Processor]
+GO
+-- -- Delete rows from table '[Laptop]' in schema '[dbo]'
+-- DELETE FROM [dbo].[Monitor]
+-- GO
+-- DELETE FROM [dbo].[Ram]
+-- GO
+-- ALTER TABLE Laptop ADD CONSTRAINT FK_Brand FOREIGN KEY (BrandId) references Brand(Id)  
+-- ALTER TABLE Laptop ADD CONSTRAINT FK_Processor FOREIGN KEY (ProcessorId) references Processor(Id)
+-- ALTER TABLE Laptop ADD CONSTRAINT FK_Ram FOREIGN KEY (RamId) references Ram(Id)
+-- ALTER TABLE Laptop ADD CONSTRAINT FK_Monitor FOREIGN KEY (MonitorId) references Monitor(Id)

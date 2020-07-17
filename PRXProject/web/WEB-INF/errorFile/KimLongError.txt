@@ -1,0 +1,178 @@
+********************************NOT VALID********************************
+cvc-datatype-valid.1.2.1: '990  ram' is not a valid value for 'double'.ProductUrl = https://kimlongcenter.com/san-pham/laptop-acer-swift-5-sf514-54t-793c-nx-hlgsv-001-i7-1065g7-4138.html
+Before TrAx.tranform
+<table class="tbl-info-product">  <tbody>   <tr>  <th class="attribute-label">Mã sản phẩm / Model </th>  <td class="attribute-value ">SF514-54T-793C (DGW)</td>  </tr>   <tr>  <th class="attribute-label">Bộ Vi Xử Lý / CPU </th>  <td class="attribute-value highlight">Intel Core i7-1065G7 ( 1.3 GHz up to 3.9 GHz / 8MB / 4 nhân, 8 luồng )</td>  </tr>   <tr>  <th class="attribute-label">Bộ Nhớ Trong / RAM </th>  <td class="attribute-value highlight">8GB LPDDR4 2666MHz</td>  </tr>   <tr>  <th class="attribute-label">Ổ Cứng / HDD </th>  <td class="attribute-value highlight">512GB PCIe NVMe SSD</td>  </tr>   <tr>  <th class="attribute-label">Màn hình / LCD </th>  <td class="attribute-value ">14 FHD (1920 x 1080) IPS (In-Plane Switching) technology, Touch, high-brightness Acer CineCrystalTM LED-backlit TFT LCD</td>  </tr>   <tr>  <th class="attribute-label">Chip Đồ Họa / VGA </th>  <td class="attribute-value highlight">Intel Iris Plus Graphics</td>  </tr>   <tr>  <th class="attribute-label">Kết Nối / Network  </th>  <td class="attribute-value ">Intel Wireless Wi-Fi 6 AX201</td>  </tr>   <tr>  <th class="attribute-label">Giao Tiếp Mở Rộng  </th>  <td class="attribute-value ">1x USB Type-C; 1x USB 3.1; 1x USB 2.0; 1x HDMI; 1x Finger Print; 1x DC-in jack for AC adapter; 1x 3.5 mm headphone/speaker jack</td>  </tr>   <tr>  <th class="attribute-label">Dung Lượng Pin </th>  <td class="attribute-value ">4 Cell 56Whr</td>  </tr>   <tr>  <th class="attribute-label">Hệ Điều Hành / Operating System </th>  <td class="attribute-value highlight">Windows 10 Bản Quyền</td>  </tr>   <tr>  <th class="attribute-label">Trọng Lượng / Weight </th>  <td class="attribute-value ">990 gram</td>  </tr>   <tr>  <th class="attribute-label">Màu Sắc </th>  <td class="attribute-value ">Trắng</td>  </tr>   <tr>  <th class="attribute-label">Xuất Xứ / Bảo Hành </th>  <td class="attribute-value highlight">Chính Hãng VN</td>  </tr>    </tbody>  </table> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Acer Swift 5 SF514-54T-793C (NX.HLGSV.001) : i7-1065G7 | 8GB RAM | 512GB SSD | Intel® Iris® Plus Graphics | 14.0FHD IPS TOUCH | WIN 10 | WHITE</name><price>27490000</price><model>SF514-54T-793C (DGW)</model><cpu>Intel Core i7-1065G7 ( 1.3 GHz up to 3.9 GHz / 8MB / 4 nhân, 8 luồng )</cpu><ram>8GB LPDDR4 2666MHz</ram><lcd>14 FHD (1920 x 1080) IPS (In-Plane Switching) technology, Touch, high-brightness Acer CineCrystalTM LED-backlit TFT LCD</lcd><weight>990  ram</weight><image>https://kimlongcenter.com/upload/product/acer-swift-5_2.jpg</image></laptop>  
+
+
+********************************NOT VALID********************************
+cvc-datatype-valid.1.2.1: '990  ram' is not a valid value for 'double'.ProductUrl = https://kimlongcenter.com/san-pham/laptop-acer-swift-5-sf514-54t-55tt-nx-hlgsv-002-i5-1035g1-4137.html
+Before TrAx.tranform
+<table class="tbl-info-product">  <tbody>   <tr>  <th class="attribute-label">Mã sản phẩm / Model </th>  <td class="attribute-value ">SF514-54T-55TT (DGW)</td>  </tr>   <tr>  <th class="attribute-label">Bộ Vi Xử Lý / CPU </th>  <td class="attribute-value highlight">Intel Core i5-1035G1 1.0GHz up to 3.6GHz 6MB</td>  </tr>   <tr>  <th class="attribute-label">Bộ Nhớ Trong / RAM </th>  <td class="attribute-value highlight">8GB LPDDR4 2666MHz</td>  </tr>   <tr>  <th class="attribute-label">Ổ Cứng / HDD </th>  <td class="attribute-value highlight">512GB PCIe NVMe SSD</td>  </tr>   <tr>  <th class="attribute-label">Màn hình / LCD </th>  <td class="attribute-value ">14 FHD (1920 x 1080) IPS (In-Plane Switching) technology, Touch, high-brightness Acer CineCrystalTM LED-backlit TFT LCD</td>  </tr>   <tr>  <th class="attribute-label">Chip Đồ Họa / VGA </th>  <td class="attribute-value highlight">Intel Iris Plus Graphics</td>  </tr>   <tr>  <th class="attribute-label">Kết Nối / Network  </th>  <td class="attribute-value ">Intel Wireless Wi-Fi 6 AX201</td>  </tr>   <tr>  <th class="attribute-label">Giao Tiếp Mở Rộng  </th>  <td class="attribute-value ">1x USB Type-C; 1x USB 3.1; 1x USB 2.0; 1x HDMI; 1x Finger Print; 1x DC-in jack for AC adapter; 1x 3.5 mm headphone/speaker jack</td>  </tr>   <tr>  <th class="attribute-label">Dung Lượng Pin </th>  <td class="attribute-value ">4 Cell 56Whr</td>  </tr>   <tr>  <th class="attribute-label">Hệ Điều Hành / Operating System </th>  <td class="attribute-value highlight">Windows 10 Bản Quyền</td>  </tr>   <tr>  <th class="attribute-label">Trọng Lượng / Weight </th>  <td class="attribute-value ">990 gram</td>  </tr>   <tr>  <th class="attribute-label">Màu Sắc </th>  <td class="attribute-value ">Trắng</td>  </tr>   <tr>  <th class="attribute-label">Xuất Xứ / Bảo Hành </th>  <td class="attribute-value highlight">Chính Hãng VN</td>  </tr>    </tbody>  </table> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Acer Swift 5 SF514-54T-55TT (NX.HLGSV.002) : i5-1035G1 | 8GB RAM | 512GB SSD | Intel® Iris® Plus Graphics | 14.0FHD IPS TOUCH | WIN 10 | WHITE</name><price>23990000</price><model>SF514-54T-55TT (DGW)</model><cpu>Intel Core i5-1035G1 1.0GHz up to 3.6GHz 6MB</cpu><ram>8GB LPDDR4 2666MHz</ram><lcd>14 FHD (1920 x 1080) IPS (In-Plane Switching) technology, Touch, high-brightness Acer CineCrystalTM LED-backlit TFT LCD</lcd><weight>990  ram</weight><image>https://kimlongcenter.com/upload/product/acer-swift-5_1.jpg</image></laptop>  
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Lenovo ThinkPad X1 Carbon C7 GEN 7 : i7-10510U | 8GB RAM | 512GB SSD | UHD Graphics 630 | 14.0 FHD IPS | FreeDos | Black', model='ThinkPad X1 C7', price=41890000, weight=1.19, weightMark=0.0, image='https://kimlongcenter.com/upload/product/1234.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Lenovo Ideapad S145 15IWL (81MV00F3VN) Pentium 5405U | 4GB RAM | 256GB SSD | UHD Graphics 610 | 15.6 FHD | Win10 | Gray', model='81MV00F3VN', price=7390000, weight=1.85, weightMark=0.0, image='https://kimlongcenter.com/upload/product/3604.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Lenovo Thinkbook 15 : i5-1035G1 | 4GB RAM | 1TB HDD | AMD R630 2GB + Intel Graphics HD 620 | 15.6 FHD | Backlit Key | FreeDos | Silver', model='Thinkbook 15', price=14490000, weight=1.69, weightMark=0.0, image='https://kimlongcenter.com/upload/product/57239457293759374509823475892.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Lenovo Ideapad S145 15IWL (81MV00F1VN) Celeron 4205U | 4GB RAM | 500GB HDD | UHD Graphics 620 | 15.6 FHD | FreeDos | Gray', model='81MV00F1VN', price=5990000, weight=1.9, weightMark=0.0, image='https://kimlongcenter.com/upload/product/3605.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Lenovo IdeaPad L340-15IRH (81LK01GLVN) : i7-9750HF | 8GB RAM | 256GB SSD PCIe | GTX 1050 3GB | 15.6 FHD IPS | Win10', model='81LK01GLVN', price=18990000, weight=2.19, weightMark=0.0, image='https://kimlongcenter.com/upload/product/81lk007jvn.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Lenovo IdeaPad L340-15IRH (81LK01GKVN) : i5-9300HF | 8GB RAM | 256GB SSD PCIe | GTX 1050 3GB | 15.6 FHD IPS | Win10', model='81LK01GKVN', price=15990000, weight=2.19, weightMark=0.0, image='https://kimlongcenter.com/upload/product/81lk007hvn.jpg', brand=huyng.entities.BrandEntity@6d238dd9, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Acer Swift 5 SF514-54T-793C (NX.HLGSV.001) : i7-1065G7 | 8GB RAM | 512GB SSD | Intel® Iris® Plus Graphics | 14.0FHD IPS TOUCH | WIN 10 | WHITE', model='null', price=27490000, weight=0.0, weightMark=0.0, image='https://kimlongcenter.com/upload/product/acer-swift-5_2.jpg', brand=huyng.entities.BrandEntity@6485d218, processor=null, ram=null, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Acer Swift 5 SF514-54T-55TT (NX.HLGSV.002) : i5-1035G1 | 8GB RAM | 512GB SSD | Intel® Iris® Plus Graphics | 14.0FHD IPS TOUCH | WIN 10 | WHITE', model='null', price=23990000, weight=0.0, weightMark=0.0, image='https://kimlongcenter.com/upload/product/acer-swift-5_1.jpg', brand=huyng.entities.BrandEntity@6485d218, processor=null, ram=null, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Acer Swift SF114-32-P2SG (NX.GZJSV.001) : N5000U | 4GB RAM | 64GB eMMC HDD | UHD Graphics 605 | 14.0 FHD | Finger | Win 10 | Aqua Green ', model='SF114-32-P2SG', price=8390000, weight=1.4, weightMark=0.0, image='https://kimlongcenter.com/upload/product/acer-swift-sf114.jpg', brand=huyng.entities.BrandEntity@6485d218, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************NOT VALID********************************
+cvc-datatype-valid.1.2.1: '4-Cell 60 WHr' is not a valid value for 'double'.ProductUrl = https://kimlongcenter.com/san-pham/dell-g7-7590z-i7-9750h-rtx-2060-6gb-144hz-3687.html
+Before TrAx.tranform
+<table class="tbl-info-product">  <tbody>   <tr>  <th class="attribute-label">Mã sản phẩm / Model </th>  <td class="attribute-value ">N7590Z</td>  </tr>   <tr>  <th class="attribute-label">Bộ Vi Xử Lý / CPU </th>  <td class="attribute-value highlight">Intel Core i7-9750H (2.6GHz upto 4.5GHz, 6Cores, 12Threads, 12MB cache, FSB 8GT/s)</td>  </tr>   <tr>  <th class="attribute-label">Bộ Nhớ Trong / RAM </th>  <td class="attribute-value highlight">16GB DDR4 2666Mhz</td>  </tr>   <tr>  <th class="attribute-label">Ổ Cứng / HDD </th>  <td class="attribute-value highlight">256GB SSD M.2 PCIe</td>  </tr>   <tr>  <th class="attribute-label">Màn hình / LCD </th>  <td class="attribute-value ">15.6 inch FHD (1920 x 1080) IPS 144Hz</td>  </tr>   <tr>  <th class="attribute-label">Chip Đồ Họa / VGA </th>  <td class="attribute-value highlight">NVIDIA GeForce RTX 2060 6GB GDDR6 + UHD Graphics 630</td>  </tr>   <tr>  <th class="attribute-label">Kết Nối / Network  </th>  <td class="attribute-value ">Wireless 1550 2x2 AC + Bluetooth 5.0</td>  </tr>   <tr>  <th class="attribute-label">Giao Tiếp Mở Rộng  </th>  <td class="attribute-value ">1x HDMI 2.0  3x SuperSpeed USB 3.1 Gen 1 Type-A with PowerShare 1x 2-in-1 SD / MicroMedia Card slot 1x Wedge lock slot 1x Headphone Jack Only on GTX1050Ti:  1 USB-C DisplayPort Alt-Mode only 1 RJ45 1 USB-C DisplayPort/USB-C Thunderbolti 1 Mini DisplayPorti 1 RJ-45 Killer Networks E2500V2 Gigabit Ethernet Port</td>  </tr>   <tr>  <th class="attribute-label">Dung Lượng Pin </th>  <td class="attribute-value ">2.4 kg</td>  </tr>   <tr>  <th class="attribute-label">Hệ Điều Hành / Operating System </th>  <td class="attribute-value highlight">Windows 10</td>  </tr>   <tr>  <th class="attribute-label">Trọng Lượng / Weight </th>  <td class="attribute-value ">4-Cell 60 WHr</td>  </tr>   <tr>  <th class="attribute-label">Màu Sắc </th>  <td class="attribute-value ">Black</td>  </tr>   <tr>  <th class="attribute-label">Xuất Xứ / Bảo Hành </th>  <td class="attribute-value highlight">Chính hãng VN</td>  </tr>    </tbody>  </table> 
+After TrAx.tranform
+<?xml version="1.0" encoding="UTF-8"?>  <laptop xmlns="http://huyng/schema/laptop"><name>Dell G7 7590Z : i7-9750H | 16GB RAM | 256GB SSD + 1TB HDD | RTX 2060 6GB + UHD Graphics 630 | 15.6 FHD 144Hz | RGB | Finger | Win10 </name><price>36990000</price><model>N7590Z</model><cpu>Intel Core i7-9750H (2.6GHz upto 4.5GHz, 6Cores, 12Threads, 12MB cache, FSB 8GT/s)</cpu><ram>16GB DDR4 2666Mhz</ram><lcd>15.6 inch FHD (1920 x 1080) IPS 144Hz</lcd><weight>4-Cell 60 WHr</weight><image>https://kimlongcenter.com/upload/product/1_48.jpg</image></laptop>  
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : For input string: "8 "
+LaptopEntity{id=0, name='HP Pavilion 14- ce3026TU 8WH93PA : i5-1035G1 | 8GB RAM | 512GB SSD PCIe | UHD Graphics 630 | 14.0 FHD | Win10 | Gold', model='8WH93PA', price=15490000, weight=1.6, weightMark=0.0, image='https://kimlongcenter.com/upload/product/ngoai_39.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : For input string: "8 "
+LaptopEntity{id=0, name='HP Pavilion x360 14-dh1138TU : i5-10210U | 8GB RAM | 512GB SSD | UHD Graphics 630 | 14.0 FHD Touch | Win10 ', model='8QP75PA', price=17190000, weight=1.58, weightMark=0.0, image='https://kimlongcenter.com/upload/product/pavilion-x360_avatar.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Asus TUF Gaming FX505DT-AL003T : Ryzen 7-3750H | 8GB RAM | 512GB PCIe SSD | GeForce GTX 1650 4GB + Radeon RX Vega 10 | 15.6 FHD IPS 120Hz | LED RGB | Win 10', model='AL003T', price=17990000, weight=2.2, weightMark=0.0, image='https://kimlongcenter.com/upload/product/3434.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : For input string: "4 "
+LaptopEntity{id=0, name='HP Pavilion 15-cs3008TU 8QP02PA : I3-1005G1 | 4GB RAM | 256GB SSD | UHD Graphics 630 | 15.6 FHD | Win10 | Gold', model='8QP02PA', price=12590000, weight=1.85, weightMark=0.0, image='https://kimlongcenter.com/upload/product/avata-ngoai-hp-pavilion-15_1.jpg', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Asus F571GT-BQ266T : i7-9750H | 8GB RAM | 512GB SSD + 32GB Optane | GTX 1650 4GB + UHD Graphics 630 | 15.6 FHD | Win10 | Finger | Hàng Trưng Bày', model='BQ266T', price=17990000, weight=2.1, weightMark=0.0, image='https://kimlongcenter.com/upload/product/avartar-ngoai_1_1.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : For input string: "8 "
+LaptopEntity{id=0, name='HP Pavilion x360 14-dh1139TU : i7-10510U | 8GB RAM | 512GB SSD | UHD Graphics 630 | 14.0 FHD Touch (+ Pen) | Win10 ', model='8QP77PA', price=19490000, weight=1.58, weightMark=0.0, image='https://kimlongcenter.com/upload/product/pavilion-x360_avatar_1.png', brand=huyng.entities.BrandEntity@519eaccd, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Asus ROG Zephyrus G15 GA502IU-AL007T : R7-4800HS | 8GB RAM | 512GB SSD PCIe | GTX 1660Ti 6GB | 15.6 FHD IPS 144Hz |  Win10 | Black', model='AL007T', price=28490000, weight=2.1, weightMark=0.0, image='https://kimlongcenter.com/upload/product/ngoai_60.jpg', brand=huyng.entities.BrandEntity@64861057, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Dell Inspiron 3593A : i3-1005G1 | 4GB RAM | 1TB HDD | UHD Graphics 630 | 15.6 HD | Win10 | Black ', model='3593A', price=10990000, weight=2.2, weightMark=0.0, image='https://kimlongcenter.com/upload/product/dell-3593-a_2.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Dell Inspiron 3573-70178837 : N5000U | 4GB RAM | 500GB HDD | UHD Graphics 605 | 15.6 HD | FreeDos', model='70178837', price=7390000, weight=2.1, weightMark=0.0, image='https://kimlongcenter.com/upload/product/3555.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Dell Vostro 5481 : i5-8265U | 4GB RAM | 128GB SSD + 1TB HDD | GeForce MX130 2GB + UHD Graphics 620 | 14.0 FHD IPS | Finger | Ledkey | Win10', model='V5481', price=16990000, weight=1.5, weightMark=0.0, image='https://kimlongcenter.com/upload/product/dell-vostro-5481-i5-8265u-4gb-ram.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Dell Vostro 5490 : i5-10210U | 8GB RAM | 256GB SSD PCIe | UHD Graphics 630 | 14.0 FHD | Win10 | Urban Gray', model='V5490 DN211', price=16690000, weight=1.5, weightMark=0.0, image='https://kimlongcenter.com/upload/product/avata-dell-vostro-5490.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Dell Vostro 5490 : i5-10210U | 8GB RAM | 256GB SSD PCIe | GeForce MX230 2GB + UHD Graphics 630 | 14.0 FHD | Finger | Win10', model='V5490 | DN164', price=17790000, weight=1.5, weightMark=0.0, image='https://kimlongcenter.com/upload/product/avata-dell-vostro-5490_5.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Dell Inspiron 5490 : i5-10210U | 8GB RAM | 256GB SSD PCIe | UHD Graphics 630 | 14.0 FHD | Win10 | Silver , Gold', model='N5490', price=17490000, weight=1.6, weightMark=0.0, image='https://kimlongcenter.com/upload/product/avatar-ngoai.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Dell G7 7590Z : i7-9750H | 16GB RAM | 256GB SSD + 1TB HDD | RTX 2060 6GB + UHD Graphics 630 | 15.6 FHD 144Hz | RGB | Finger | Win10 ', model='null', price=36990000, weight=0.0, weightMark=0.0, image='https://kimlongcenter.com/upload/product/1_48.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=null, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Dell Inspiron 5593 : i7-1065G7 | 8GB RAM | 512GB SSD PCIe | GeForce MX230 4GB + UHD Graphics 630 | 15.6 FHD | Finger | Win10 | Led_key | Silver', model='N5593', price=21390000, weight=1.95, weightMark=0.0, image='https://kimlongcenter.com/upload/product/5584a_1_1_1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Dell XPS 15 7590 : i7-9750H | 8GB RAM | 512GB SSD PCIe | GeForce GTX 1650 4GB + UHD Graphics 630	| 15.6 FHD IPS | Win10 | Finger | Silver ', model='', price=41490000, weight=1.8, weightMark=0.0, image='https://kimlongcenter.com/upload/product/1_54.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Dell Vostro 5490 : i7-10510U | 8GB RAM | 512GB SSD PCIe | GeForce MX250 2GB + UHD Graphics 630 | 14.0 FHD | Finger | Win10 ', model='V5490 | DN160', price=21990000, weight=1.5, weightMark=0.0, image='https://kimlongcenter.com/upload/product/avata-dell-vostro-5490_4.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Dell XPS 7390 2in1 : i7-1065G7 | 32GB RAM | 512GB SSD PCIe | UHD Graphics 630 | 13.4 FHD IPS Touch | WIN 10', model='7390-USA', price=34890000, weight=1.3, weightMark=0.0, image='https://kimlongcenter.com/upload/product/untitled-2_2.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Dell XPS 7390 2in1 : i7-1065G7 | 16GB RAM | 256GB SSD PCIe | UHD Graphics 630 | 13.4 FHD IPS Touch | WIN 10 | Black, White', model='7390-USA', price=29990000, weight=1.3, weightMark=0.0, image='https://kimlongcenter.com/upload/product/untitled-2_4.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Dell Inspiron 3593 70211826 : i7-1065G7 | 8GB RAM | 512GB SSD PCIe | GeForce MX230 2GB + UHD Graphics 630 | 15.6 FHD | Win10 | Black, Silver', model='70211826 - Black | 70211828 - Silver', price=19390000, weight=1.9, weightMark=0.0, image='https://kimlongcenter.com/upload/product/ngoai_4.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Dell G5 5590 : i7-9750H | 16GB RAM | 512GB SSD | RTX 2060 6GB + UHD Graphics 630 | 15.6 FHD IPS 144Hz | Win10 | Black', model='G5 5590 | USA US011', price=29990000, weight=2.68, weightMark=0.0, image='https://kimlongcenter.com/upload/product/avar-at.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************ERROR ON INSERT LAPTOP********************************
+Message : null
+LaptopEntity{id=0, name='Dell G3 3590 : i7-9750H | 16GB RAM | 256GB SSD + 1TB HDD | GTX 1650 4GB + UHD Graphics 630 | 15.6 FHD IPS 60hz | Win10 | Finger | Black , White', model='G3 3590', price=27490000, weight=2.2, weightMark=0.0, image='https://kimlongcenter.com/upload/product/3590a.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Dell Inspiron 5490 : i7-10510U | 8GB RAM | 256GB SSD PCIe | GeForce MX230 2GB + UHD Graphics 630 | 14.0 FHD | Win10 | Silver, Gold', model='N5490', price=20690000, weight=1.4, weightMark=0.0, image='https://kimlongcenter.com/upload/product/n5490a.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Dell XPS 7390 2in1 : i7-1065G7 | 16GB RAM | 512GB SSD PCIe | UHD Graphics 630 | 13.4 FHD IPS Touch | WIN 10', model='7390-USA', price=33290000, weight=1.3, weightMark=0.0, image='https://kimlongcenter.com/upload/product/untitled-2_1.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+
+********************************LAPTOP EXISTED********************************
+LaptopEntity{id=0, name='Dell Inspiron 7501 : i5-10300H | 8GB RAM | 512GB SSD | GTX 1650Ti 4GB + UHD Graphics 630 | 15.6 FHD WVA | WIN 10 | Silver', model='3085GTX4G', price=29990000, weight=1.75, weightMark=0.0, image='https://kimlongcenter.com/upload/product/jhgjhdgkjdsg.jpg', brand=huyng.entities.BrandEntity@64873844, processor=null, ram=huyng.entities.RamEntity@745f, monitor=null}
+
+

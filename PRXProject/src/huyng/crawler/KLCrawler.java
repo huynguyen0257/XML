@@ -39,17 +39,20 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-//TODO: Recode KL
-//TODO: print out all cpu and formated for 2 page
 public class KLCrawler implements Runnable {
     private final Object LOCK = new Object();
     private List<Thread> THREADS = new ArrayList<>();
     private File file = null;
     private FileWriter writer = null;
-    private Hashtable<LaptopEntity,String> cpus = new Hashtable<>();
-    private Hashtable<LaptopEntity,String> rams = new Hashtable<>();
-    private Hashtable<LaptopEntity,String> lcds = new Hashtable<>();
+    private Hashtable<LaptopEntity, String> cpus = new Hashtable<>();
+    private Hashtable<LaptopEntity, String> rams = new Hashtable<>();
+    private Hashtable<LaptopEntity, String> lcds = new Hashtable<>();
     public LaptopService laptopService = new LaptopService();
+    private static String realPath;
+
+    public KLCrawler(String realPath) {
+        this.realPath = realPath;
+    }
 
     @Override
     public void run() {
@@ -90,7 +93,7 @@ public class KLCrawler implements Runnable {
 //    }
 
     private void processCrawler() throws IOException, XMLStreamException {
-        file = new File(CrawlerConstant.ERROR_KIMLONG);
+        file = new File(realPath+CrawlerConstant.ERROR_KIMLONG);
         writer = new FileWriter(file);
         Hashtable<BrandEntity, String> brands = getBrandCrawler();
         brands.forEach((brand, url) -> {
@@ -114,12 +117,16 @@ public class KLCrawler implements Runnable {
                             l.setBrand(finalBrand);
                             try {
                                 synchronized (LOCK) {
-                                    laptopService.insertLaptop(l, cpus.get(l),rams.get(l),lcds.get(l));
+                                    if (!laptopService.insertLaptop(l, cpus.get(l), rams.get(l), lcds.get(l), realPath)) {
+                                        writer.write("********************************LAPTOP EXISTED********************************\n");
+                                        writer.write(l.toString() + "\n\n\n");
+                                        writer.flush();
+                                    }
                                 }
                             } catch (Exception e) {
                                 try {
                                     synchronized (LOCK) {
-                                        writer.write("********************************ERROR insert LAPTOP********************************\n");
+                                        writer.write("********************************ERROR ON INSERT LAPTOP********************************\n");
                                         writer.write("Message : " + e.getMessage() + "\n");
                                         writer.write(l.toString() + "\n\n\n");
                                         writer.flush();
@@ -132,7 +139,7 @@ public class KLCrawler implements Runnable {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    System.out.println("KimLongCrawler SUSSCESS Brand :" +finalBrand.getName());
+                    System.out.println("KimLongCrawler SUSSCESS Brand :" + finalBrand.getName());
                 }
             };
             t.start();
@@ -258,22 +265,21 @@ public class KLCrawler implements Runnable {
         String document = null;
         ByteArrayOutputStream ps = null;
         try {
-            document = XMLHelper.getDocument(url, CrawlerConstant.KIM_LONG_DETAIL_START_SIGNAL, CrawlerConstant.KIM_LONG_DETAIL_TAG, new String[]{"™","®"});
+            document = XMLHelper.getDocument(url, CrawlerConstant.KIM_LONG_DETAIL_START_SIGNAL, CrawlerConstant.KIM_LONG_DETAIL_TAG, new String[]{"™", "®"});
             InputStream is = new ByteArrayInputStream(document.getBytes("UTF-8"));
-            String xslPath = CrawlerConstant.KL_XSL_PATH;
+            String xslPath = realPath + CrawlerConstant.KL_XSL_PATH;
 
-            Hashtable<String,String> params = new Hashtable<>();
-            params.put("name",laptop.getName());
-            params.put("price",laptop.getPrice()+"");
-            params.put("image",laptop.getImage());
+            Hashtable<String, String> params = new Hashtable<>();
+            params.put("name", laptop.getName());
+            params.put("price", laptop.getPrice() + "");
+            params.put("image", laptop.getImage());
             ps = TrAxHelper.transform(is, xslPath, params);
-
             try {
-                XMLHelper.validateXMLSchema(JAXBHelper.getXSDPath(LaptopEntity.class), ps);
-                String removeNSPs = ps.toString().replaceAll("http://huyng/schema/laptop","");
+                XMLHelper.validateXMLSchema(realPath + JAXBHelper.getXSDPath(LaptopEntity.class), ps);
+                String removeNSPs = ps.toString().replaceAll("http://huyng/schema/laptop", "");
                 ps = StringHelper.getByteArrayFromString(removeNSPs);
                 laptop = (LaptopEntity) JAXBHelper.unmarshalling(ps.toByteArray(), LaptopEntity.class);
-                cpus.put(laptop,StringHelper.getCPUFromXMLString(ps.toString()));
+                cpus.put(laptop, StringHelper.getCPUFromXMLString(ps.toString()));
                 rams.put(laptop, StringHelper.getRamFromXMLString(ps.toString()));
                 lcds.put(laptop, StringHelper.getLcdFromXMLString(ps.toString()));
             } catch (JAXBException | SAXException e) {
@@ -288,6 +294,16 @@ public class KLCrawler implements Runnable {
                     writer.write("\n\n");
                     writer.flush();
                 }
+            } catch (IndexOutOfBoundsException e) {
+                writer.write("********************************Missing LCD|Ram|Monitor********************************" + "\n");
+                writer.write(e.getMessage());
+                writer.write("ProductUrl = " + url + "\n");
+                writer.write("Before TrAx.tranform\n");
+                writer.write(document + "\n");
+                writer.write("After TrAx.tranform" + "\n");
+                writer.write(ps.toString() + "\n");
+                writer.write("\n\n");
+                writer.flush();
             }
 
 

@@ -1,6 +1,7 @@
 package huyng.entities;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlTransient;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -13,6 +14,7 @@ import java.util.Objects;
 public class BrandEntity {
     private int id;
     private String name;
+    @XmlTransient
     private Collection<LaptopEntity> laptops;
 
     public BrandEntity() {
@@ -58,6 +60,7 @@ public class BrandEntity {
     }
 
     @OneToMany(mappedBy = "brand")
+    @XmlTransient
     public Collection<LaptopEntity> getLaptops() {
         return laptops;
     }

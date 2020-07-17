@@ -12,6 +12,7 @@ import huyng.utils.TrAxHelper;
 import huyng.utils.XMLHelper;
 import org.xml.sax.SAXException;
 
+import javax.servlet.ServletContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.namespace.QName;
 import javax.xml.parsers.ParserConfigurationException;
@@ -31,6 +32,20 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class PACrawler implements Runnable {
+    private static File file = null;
+    private static FileWriter writer = null;
+    private static final Object LOCK = new Object();
+    private static List<Thread> threads = new ArrayList<>();
+    private static Hashtable<LaptopEntity, String> cpus = new Hashtable<>();
+    private static Hashtable<LaptopEntity, String> rams = new Hashtable<>();
+    private static Hashtable<LaptopEntity, String> lcds = new Hashtable<>();
+    private static LaptopService laptopService = new LaptopService();
+    private static String realPath;
+
+    public PACrawler(String realPath) {
+        this.realPath = realPath;
+    }
+
     @Override
     public void run() {
         try {
@@ -57,7 +72,8 @@ public class PACrawler implements Runnable {
         }
     }
 
-//    public static void main(String[] args) {
+
+    //    public static void main(String[] args) {
 //        try {
 //            crawlerProcess();
 ////            eachPageCrawler("https://www.phucanh.vn/may-tinh-xach-tay-laptop-apple.html&page=1");
@@ -68,14 +84,6 @@ public class PACrawler implements Runnable {
 //        }
 //    }
 
-    private static File file = null;
-    private static FileWriter writer = null;
-    private static final Object LOCK = new Object();
-    private static List<Thread> threads = new ArrayList<>();
-    private static Hashtable<LaptopEntity, String> cpus = new Hashtable<>();
-    private static Hashtable<LaptopEntity, String> rams = new Hashtable<>();
-    private static Hashtable<LaptopEntity, String> lcds = new Hashtable<>();
-    private static LaptopService laptopService = new LaptopService();
 
     public static void closeStream() throws IOException {
         writer.close();
@@ -87,7 +95,7 @@ public class PACrawler implements Runnable {
      * @throws XMLStreamException
      */
     public static void crawlerProcess() throws IOException, XMLStreamException {
-        file = new File(CrawlerConstant.ERROR_PHUCANH);
+        file = new File(realPath + CrawlerConstant.ERROR_PHUCANH);
         writer = new FileWriter(file);
 
         //Get brandName,Url of laptop
@@ -128,14 +136,18 @@ public class PACrawler implements Runnable {
                             //Save ListLaptop to DB
                             laptopOfBrand.forEach((l) -> {
                                 try {
-                                    l.setBrand(finalBrand);
                                     synchronized (LOCK) {
-                                        laptopService.insertLaptop(l, cpus.get(l), rams.get(l),lcds.get(l));
+                                        l.setBrand(finalBrand);
+                                        if (!laptopService.insertLaptop(l, cpus.get(l), rams.get(l), lcds.get(l), realPath)) {
+                                            writer.write("********************************LAPTOP EXISTED********************************\n");
+                                            writer.write(l.toString() + "\n\n\n");
+                                            writer.flush();
+                                        }
                                     }
                                 } catch (Exception e) {
                                     try {
                                         synchronized (LOCK) {
-                                            writer.write("********************************ERROR insert LAPTOP********************************\n");
+                                            writer.write("********************************ERROR ON INSERT LAPTOP********************************\n");
                                             writer.write("Message : " + e.getMessage() + "\n");
                                             writer.write(l.toString() + "\n\n\n");
                                             writer.flush();
@@ -145,12 +157,12 @@ public class PACrawler implements Runnable {
                                     }
                                 }
                             });//End save list laptop
-                            System.out.println("PhuCanhCrawler SUSSCESS each page of brand " +finalBrand.getName()+" \t|Page : " + finalI);
+                            System.out.println("PhuCanhCrawler SUSSCESS each page of brand " + finalBrand.getName() + " \t|Page : " + finalI);
                         }
                     };
                     threads.add(t);
                     t.start();
-                    t.sleep(5*1000);
+                    t.sleep(5 * 1000);
                 }
             } catch (IOException | XMLStreamException | InterruptedException e) {
                 e.printStackTrace();
@@ -238,7 +250,7 @@ public class PACrawler implements Runnable {
                             if (event.isStartElement()) {
                                 startElement = event.asStartElement();
                                 tagName = startElement.getName().getLocalPart();
-                                if ("img".equals(tagName)){
+                                if ("img".equals(tagName)) {
                                     laptop.setImage(startElement.getAttributeByName(new QName("data-original")).getValue());
                                 }
                                 if ("h3".equals(tagName)) {
@@ -295,18 +307,18 @@ public class PACrawler implements Runnable {
      * @throws XMLStreamException
      */
     public static LaptopEntity getLaptopCrawler(String url, LaptopEntity laptop) throws IOException, TransformerException, JAXBException, InterruptedException {
-        Thread.currentThread().sleep(2*1000);
+        Thread.currentThread().sleep(2 * 1000);
         String document = XMLHelper.getDocument(url, CrawlerConstant.PHU_CANH_DETAIL_START_SIGNAL, CrawlerConstant.PHU_CANH_DETAIL_TAG, new String[]{"<p>.*?</p>"});
 
         InputStream is = new ByteArrayInputStream(document.getBytes("UTF-8"));
-        String xslPath = CrawlerConstant.PA_XSL_PATH;
+        String xslPath = realPath + CrawlerConstant.PA_XSL_PATH;
         Hashtable<String, String> params = new Hashtable<>();
         params.put("name", laptop.getName());
         params.put("price", laptop.getPrice() + "");
         params.put("image", laptop.getImage());
         ByteArrayOutputStream ps = TrAxHelper.transform(is, xslPath, params);
         try {
-            XMLHelper.validateXMLSchema(JAXBHelper.getXSDPath(LaptopEntity.class), ps);
+            XMLHelper.validateXMLSchema(realPath + JAXBHelper.getXSDPath(LaptopEntity.class), ps);
             String removeNSPs = ps.toString().replaceAll("http://huyng/schema/laptop", "");
 
             ByteArrayOutputStream formatXML = StringHelper.getByteArrayFromString(removeNSPs);
@@ -327,6 +339,16 @@ public class PACrawler implements Runnable {
                 writer.write("\n\n");
                 writer.flush();
             }
+        } catch (IndexOutOfBoundsException e) {
+            writer.write("********************************Missing LCD|Ram|Monitor********************************" + "\n");
+            writer.write(e.getMessage());
+            writer.write("ProductUrl = " + url + "\n");
+            writer.write("Before TrAx.tranform\n");
+            writer.write(document + "\n");
+            writer.write("After TrAx.tranform" + "\n");
+            writer.write(ps.toString() + "\n");
+            writer.write("\n\n");
+            writer.flush();
         }
         return null;
     }

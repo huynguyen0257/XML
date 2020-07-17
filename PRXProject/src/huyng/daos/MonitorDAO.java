@@ -1,6 +1,8 @@
 package huyng.daos;
 
 import huyng.entities.MonitorEntity;
+import huyng.entities.ProcessorEntity;
+import huyng.entities.RamEntity;
 
 import java.util.List;
 
@@ -21,5 +23,28 @@ public class MonitorDAO extends BaseDAO<MonitorEntity, Integer> {
             closeConnection();
         }
         return result;
+    }
+
+    public boolean updateCount(MonitorEntity entity){
+        try{
+            openConnection();
+            MonitorEntity processor = em.find(MonitorEntity.class,entity.getId());
+            processor.setCount(entity.getCount());
+            et.commit();
+            return true;
+        }finally {
+            closeConnection();
+        }
+    }
+
+    public void updateMark(MonitorEntity entity){
+        try{
+            openConnection();
+            MonitorEntity newEntity = em.find(MonitorEntity.class,entity.getId());
+            newEntity.setMark(entity.getMark());
+            et.commit();
+        }finally {
+            closeConnection();
+        }
     }
 }

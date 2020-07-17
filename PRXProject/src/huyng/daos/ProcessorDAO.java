@@ -2,6 +2,7 @@ package huyng.daos;
 
 import huyng.constants.CrawlerConstant;
 import huyng.entities.ProcessorEntity;
+import huyng.entities.RamEntity;
 import huyng.utils.JAXBHelper;
 import huyng.utils.StringHelper;
 import huyng.utils.TrAxHelper;
@@ -18,6 +19,8 @@ import javax.xml.xpath.XPathExpressionException;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Hashtable;
 import java.util.List;
 
@@ -42,8 +45,30 @@ public class ProcessorDAO extends BaseDAO<ProcessorEntity, Integer> {
         return result;
     }
 
+    public List<String> getLevelOfProcessor() {
+        Hashtable<String, String> result = new Hashtable<>();
+        try {
+            openConnection();
+            List<ProcessorEntity> entities = em.createNamedQuery("Processor.findProcessorInUse").getResultList();
+            entities.forEach(e -> {
+                String level = null;
+                String name = e.getName().replaceAll("[+]", "-");
+                if (e.getBrand().equals("Intel")) level = name.substring(0, name.indexOf("-"));
+                if (e.getBrand().equals("AMD")) level = name.split(" ")[0] + " " + name.split(" ")[1];
+                level = level.trim();
+                name = level.substring(level.lastIndexOf(" ") + 1);
+                if (!result.containsKey(name)) result.put(name, level);
+            });
+        } finally {
+            closeConnection();
+        }
+        List<String> rs = new ArrayList<String>(result.values());
+        Collections.sort(rs);
+        return rs;
+    }
 
-    public ProcessorEntity getAMDProcessor(String cpuNumber, String cpuModel) throws IOException, ParserConfigurationException, SAXException, TransformerException, XPathExpressionException, JAXBException {
+
+    public ProcessorEntity getAMDProcessor(String cpuNumber, String cpuModel, String realPath) throws IOException, ParserConfigurationException, SAXException, TransformerException, XPathExpressionException, JAXBException {
         ProcessorEntity entity = null;
         String url = "https://www.amd.com/en/products/apu/amd-ryzen-" + cpuNumber + "-" + cpuModel + "#product-specs";
         String doc = null;
@@ -72,23 +97,33 @@ public class ProcessorDAO extends BaseDAO<ProcessorEntity, Integer> {
         params.put("brand", "AMD");
         params.put("model", cpuModel);
         params.put("cache", a + "");
-        ByteArrayOutputStream ps = TrAxHelper.transform(new ByteArrayInputStream(doc.getBytes("UTF-8")), CrawlerConstant.AMD_XSL_PATH, params);
-        XMLHelper.validateXMLSchema(JAXBHelper.getXSDPath(ProcessorEntity.class), ps);
+        ByteArrayOutputStream ps = TrAxHelper.transform(new ByteArrayInputStream(doc.getBytes("UTF-8")), realPath + CrawlerConstant.AMD_XSL_PATH, params);
+        XMLHelper.validateXMLSchema(realPath + JAXBHelper.getXSDPath(ProcessorEntity.class), ps);
         String removeNSps = ps.toString().replaceAll("http://huyng/schema/processor", "");
         ByteArrayOutputStream outputStream = StringHelper.getByteArrayFromString(removeNSps);
         entity = (ProcessorEntity) JAXBHelper.unmarshalling(outputStream.toByteArray(), ProcessorEntity.class);
         return entity;
     }
 
-    public boolean update(ProcessorEntity entity){
-        try{
+    public boolean updateCount(ProcessorEntity entity) {
+        try {
             openConnection();
-            ProcessorEntity processor = em.find(ProcessorEntity.class,entity.getId());
+            ProcessorEntity processor = em.find(ProcessorEntity.class, entity.getId());
             processor.setCount(entity.getCount());
-//            processor = entity;
             et.commit();
             return true;
-        }finally {
+        } finally {
+            closeConnection();
+        }
+    }
+
+    public void updateMark(ProcessorEntity entity) {
+        try {
+            openConnection();
+            ProcessorEntity newEntity = em.find(ProcessorEntity.class, entity.getId());
+            newEntity.setMark(entity.getMark());
+            et.commit();
+        } finally {
             closeConnection();
         }
     }

@@ -1,6 +1,8 @@
 package huyng.entities;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Objects;
@@ -9,18 +11,23 @@ import java.util.Objects;
 @Table(name = "Ram", schema = "dbo", catalog = "PRXProject")
 @NamedQueries({
         @NamedQuery(name = "Ram.findByMemory", query = "select r from RamEntity r where r.memory = :memory"),
+        @NamedQuery(name = "Ram.getAll", query = "select r from RamEntity r"),
 })
+@XmlRootElement(name = "ram")
 public class RamEntity {
     private int id;
     private int memory;
+    private int count;
     private double mark;
+
     private Collection<LaptopEntity> laptops;
 
     public RamEntity() {
     }
 
-    public RamEntity(int memory) {
+    public RamEntity(int memory, int count) {
         this.memory = memory;
+        this.count = count;
     }
 
     @Id
@@ -69,7 +76,8 @@ public class RamEntity {
         return Objects.hash(id, memory, mark);
     }
 
-    @OneToMany(mappedBy = "ram")
+    @OneToMany(mappedBy = "ram", fetch = FetchType.LAZY)
+    @XmlTransient
     public Collection<LaptopEntity> getLaptops() {
         if (laptops == null) laptops = new ArrayList<>();
         return laptops;
@@ -77,5 +85,15 @@ public class RamEntity {
 
     public void setLaptops(Collection<LaptopEntity> laptops) {
         this.laptops = laptops;
+    }
+
+    @Basic
+    @Column(name = "Count")
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 }
