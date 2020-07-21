@@ -133,6 +133,10 @@ function loadCell(tableElement, rowNumber, cellNumber, laptop) {
                 row.cells[i + 1].style.background = "none";
             }
             row.cells[cellNumber].style.background = "green";
+        }else if (model.highestMark == mark){
+            for (var i = 0; i < model.laptops.length; i++) {
+                row.cells[i + 1].style.background = "none";
+            }
         }
         row.cells[cellNumber].firstElementChild.innerHTML = Math.round(mark * 100) / 100 + "";
     } else if (rowNumber == 3) { //CPU name

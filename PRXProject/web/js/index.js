@@ -1,4 +1,4 @@
-function laptop(id,img, name, cpu, core, thread, baseClock, boostClock, cache, ram, monitor, weight, price,model) {
+function laptop(id, img, name, cpu, core, thread, baseClock, boostClock, cache, ram, monitor, weight, price, model) {
     this.id = id;
     this.img = img;
     this.name = name;
@@ -26,12 +26,20 @@ var model = {
 
 function getAdvice(form) {
     deleteChild()
-    model.laptops = [];
     var processorLevel = form.cpu.value;
     var ramMemory = form.ram.value;
     var monitorSize = form.monitorSize.value;
     var priceString = form.price.value;
-    callUrl("AdviceServlet",{"processorLevel":processorLevel,"ramMemory":ramMemory,"monitorSize":monitorSize,"priceString":priceString});
+    callUrl("AdviceServlet", {
+        "processorLevel": processorLevel,
+        "ramMemory": ramMemory,
+        "monitorSize": monitorSize,
+        "priceString": priceString
+    }).then(rs =>{
+        model.xmlDOM = rs;
+        searchNode();
+        renderListAdvice()
+    })
 }
 
 function callUrl(url, data) {
@@ -42,16 +50,18 @@ function callUrl(url, data) {
     }
     url += "?" + addDataToUrl(data);
     model.xmlHttp.open("GET", url, true);
-    model.xmlHttp.onreadystatechange = function () {
-        if (this.readyState == 4){
-            model.xmlDOM = model.xmlHttp.responseXML;
-            // window.alert(model.xmlDOM);
-            searchNode();
-            renderListAdvice();
-        }
-    }
-    model.xmlHttp.send(null);
-    // xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    return new Promise(function (resolve, reject) {
+        model.xmlHttp.onreadystatechange = function () {
+            if (model.xmlHttp.readyState === 4) {
+                if (model.xmlHttp.status != 200) {
+                    reject("Error, status code = " + model.xmlHttp.status);
+                } else {
+                    resolve(model.xmlHttp.responseXML);
+                }
+            }
+        };
+        model.xmlHttp.send(null);
+    });
 }
 
 function addDataToUrl(data) {
@@ -66,8 +76,8 @@ function searchNode() {
     var numberOfLaptop = document.evaluate("count(//laptop)", model.xmlDOM, null, XPathResult.NUMBER_TYPE, null).numberValue;
     for (var i = 0; i < numberOfLaptop; i++) {
         model.laptops[i] = new laptop(
-            document.evaluate("/laptops/laptop[" + (i + 1) + "]/id", model.xmlDOM,null, XPathResult.STRING_TYPE, null).stringValue,
-            document.evaluate("/laptops/laptop[" + (i + 1) + "]/image", model.xmlDOM,null, XPathResult.STRING_TYPE, null).stringValue,
+            document.evaluate("/laptops/laptop[" + (i + 1) + "]/id", model.xmlDOM, null, XPathResult.STRING_TYPE, null).stringValue,
+            document.evaluate("/laptops/laptop[" + (i + 1) + "]/image", model.xmlDOM, null, XPathResult.STRING_TYPE, null).stringValue,
             document.evaluate("/laptops/laptop[" + (i + 1) + "]/name", model.xmlDOM, null, XPathResult.STRING_TYPE, null).stringValue,
             document.evaluate("/laptops/laptop[" + (i + 1) + "]/processor/name", model.xmlDOM, null, XPathResult.STRING_TYPE, null).stringValue,
             document.evaluate("/laptops/laptop[" + (i + 1) + "]/processor/core", model.xmlDOM, null, XPathResult.STRING_TYPE, null).stringValue,
@@ -86,42 +96,28 @@ function searchNode() {
 
 function renderListAdvice() {
     var items = document.getElementById("items");
-    if (model.laptops.length == 0){
-        var h1 = document.createElement("h1");
-        h1.style.color = "red";
-        h1.innerHTML = "We can not find any laptop near match with your suggest!!!";
-        items.appendChild(h1);
+    items.innerHTML = `
+            ${model.laptops.length === 0 ? `<h1 style="color: #ff0000">We can not find any laptop near match with your suggest!!!</h1>` :
+        model.laptops.map((item) => `
+                <div class="item">
+                <a href="MainServlet?btAction=showDetailLaptop&laptopId=${item.id}">
+                    <img src="${item.img}"/>
+                </a>
+                <div class="item-info">
+                    <a href="MainServlet?btAction=showDetailLaptop&laptopId=${item.id}">
+                        <h3>${item.name}</h3>
+                    </a>
+                    <h4>${item.price}</h4>
+                    <p>${item.model}</p>
+                </div>
+            </div>
+                `).join('')
     }
-    for (var i = 0; i < model.laptops.length; i++) {
-        var currentLaptop = model.laptops[i];
-        var divElement = document.createElement("div");
-        divElement.className = "item";
-        var a1 = document.createElement("a");
-        a1.href = "MainServlet?btAction=showDetailLaptop&laptopId=" + currentLaptop.id;
-        var imageElement = document.createElement("img");
-        imageElement.src = currentLaptop.img;
-        var childDivElement = document.createElement("div");
-        childDivElement.className = "item-info";
-        var h3Element = document.createElement("h3");
-        h3Element.innerHTML = currentLaptop.name;
-        var a2 = document.createElement("a");
-        a2.href = "MainServlet?btAction=showDetailLaptop&laptopId=" + currentLaptop.id;
-        var h4Element = document.createElement("h4");
-        h4Element.innerHTML = "Price : " + currentLaptop.price + " VND";
-        var pElement = document.createElement("p");
-        pElement.innerHTML = currentLaptop.model;
-        a2.appendChild(h3Element);
-        a1.appendChild(imageElement);
-        childDivElement.appendChild(a2);
-        childDivElement.appendChild(h4Element);
-        childDivElement.appendChild(pElement);
-        divElement.appendChild(a1);
-        divElement.appendChild(childDivElement);
-        items.appendChild(divElement);
-    }
+    `;
 }
 
 function deleteChild() {
+    model.laptops = [];
     var e = document.getElementById("items");
     //e.firstElementChild can be used.
     var child = e.lastElementChild;
@@ -130,7 +126,37 @@ function deleteChild() {
         child = e.lastElementChild;
     }
 }
-// var btn = document.getElementById(
-//     "btn").onclick = function() {
-//     deleteChild();
-// }
+
+function search() {
+    deleteChild();
+    var txtSearch = document.getElementById("txtSearch").value;
+    callUrl("SearchServlet",{"txtSearch" : txtSearch}).then(rs => {
+        model.xmlDOM = rs;
+        searchNode();
+        renderListAdvice();
+    })
+}
+
+function checkKey(input) {
+    // window.alert(input.value);
+    // window.alert(input.key);
+    window.alert(input.event.keyCode);
+
+    if (input.keyCode === 13){
+        window.alert("Enter ne");
+    }
+
+
+}
+
+function init() {
+    var input = document.getElementById("txtSearch");
+
+    input.addEventListener("keyup", function(event) {
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+            // window.alert("onInputLoad === 13")
+            search();
+        }
+    });
+}

@@ -11,7 +11,6 @@ import javax.xml.transform.TransformerException;
 import javax.xml.xpath.XPathExpressionException;
 import java.io.IOException;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -115,7 +114,6 @@ public class LaptopService {
         LaptopEntityList result = new LaptopEntityList(dao.getByRamMonitorProcessorPrice(processorLevel, minMemory, maxMemory, minSize, maxSize, fromPrice, toPrice));
         if (result.getLaptop().size() == 0 && count < TIME_INCREASE_NEARBY){
             count++;
-            System.out.println("NearBy Count: " +count);
             if (count%2 == 0){//update monitor
                 minSize -= 0.5;
                 maxSize =+ 0.5;
@@ -170,10 +168,6 @@ public class LaptopService {
         return result;
     }
 
-    public int getNumberOfLaptop(){
-        return dao.countAll();
-    }
-
     public LaptopEntityList getByBrandWithPaging(int brandId, int pageSize, int pageNumber) {
         LaptopEntityList result = new LaptopEntityList();
         result.setLaptop(dao.getByBrandWithPaging(brandId, pageSize, pageNumber));
@@ -181,6 +175,14 @@ public class LaptopService {
         result.setPageSize(pageSize);
         result.setTotalPage(getTotalPage(pageSize, dao.countByBrandId(brandId)));
         return result;
+    }
+
+    public LaptopEntityList getByName(String name){
+        return new LaptopEntityList(dao.getByName(name));
+    }
+
+    public int getNumberOfLaptop(){
+        return dao.countAll();
     }
 
     public boolean insertLaptop(LaptopEntity entity, String cpu, String ram, String lcd, String realPath) throws SAXException, JAXBException, TransformerException, IOException, XPathExpressionException, ParserConfigurationException, InterruptedException {
@@ -220,7 +222,8 @@ public class LaptopService {
     }
 
 
-    public int getTotalPage(int pageSize, int objectSize) {
+
+    private int getTotalPage(int pageSize, int objectSize) {
         if ((objectSize % pageSize) == 0) {
             return objectSize / pageSize;
         }
@@ -230,7 +233,7 @@ public class LaptopService {
         return 1;
     }
 
-    public RamEntity getRamEntityByMemoryString(String ram) {
+    private RamEntity getRamEntityByMemoryString(String ram) {
         RamEntity result = null;
         //Format ramString
         String origan = ram;
@@ -250,7 +253,7 @@ public class LaptopService {
         return result;
     }
 
-    public MonitorEntity getMonitorEntityBySize(String sizeStr) {
+    private MonitorEntity getMonitorEntityBySize(String sizeStr) {
         MonitorEntity result = null;
         double size = Double.parseDouble(StringHelper.getStringByRegex("\\d+\\.?\\d", sizeStr).get(0).trim());
         if (size == 1920) return null;
@@ -261,7 +264,7 @@ public class LaptopService {
         return result;
     }
 
-    public ProcessorEntity getProcessorByModel(String name, String model, String realPath) throws SAXException, JAXBException, TransformerException, IOException, XPathExpressionException, ParserConfigurationException {
+    private ProcessorEntity getProcessorByModel(String name, String model, String realPath) throws SAXException, JAXBException, TransformerException, IOException, XPathExpressionException, ParserConfigurationException {
         ProcessorEntity p;
         //Check laptop existed
         if (model != null) {
@@ -292,7 +295,7 @@ public class LaptopService {
      * @param brandName
      * @return newModel with formatted - null if not contain modelNumber
      */
-    public String reformatModel(String newModel, String brandName) {
+    private String reformatModel(String newModel, String brandName) {
         newModel = newModel.toUpperCase();
         if (newModel.equals("G5 5590 | USA US011")
                 || newModel.contains("THINKPAD X1 C7")
@@ -381,7 +384,7 @@ public class LaptopService {
         return newModel.toUpperCase();
     }
 
-    public String getCPUName(String cpu) {
+    private String getCPUName(String cpu) {
         cpu = cpu.replaceAll("®", "")
                 .replaceAll("™", "")
                 .replaceAll(" - ", "-")
@@ -405,7 +408,7 @@ public class LaptopService {
         return cpu;
     }
 
-    public String getCPUModel(String cpuName) {
+    private String getCPUModel(String cpuName) {
         String model = null;
         List<String> fromRegex;
         //Intel CPU
@@ -423,7 +426,7 @@ public class LaptopService {
         return model;
     }
 
-    public double reformatWeight(double weight) {
+    private double reformatWeight(double weight) {
         if (weight > 500) return weight / 1000;
         else return weight;
     }

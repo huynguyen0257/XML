@@ -1,9 +1,7 @@
 package huyng.crawler;
 
-import com.sun.org.apache.xerces.internal.dom.DeferredElementNSImpl;
 import huyng.constants.CrawlerConstant;
 import huyng.daos.BrandDAO;
-import huyng.daos.LaptopDAO;
 import huyng.entities.BrandEntity;
 import huyng.entities.LaptopEntity;
 import huyng.services.LaptopService;
@@ -16,7 +14,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-import org.xml.sax.SAXParseException;
 
 import javax.xml.bind.JAXBException;
 import javax.xml.namespace.QName;
@@ -74,11 +71,11 @@ public class KLCrawler implements Runnable {
                 Thread.currentThread().sleep(30 * 1000);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            Logger.getLogger(KLCrawler.class.getName()).log(Level.SEVERE, "IOException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
         } catch (XMLStreamException e) {
-            e.printStackTrace();
+            Logger.getLogger(KLCrawler.class.getName()).log(Level.SEVERE, "XMLStreamException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            Logger.getLogger(KLCrawler.class.getName()).log(Level.SEVERE, "InterruptedException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
         }
     }
 
@@ -132,12 +129,12 @@ public class KLCrawler implements Runnable {
                                         writer.flush();
                                     }
                                 } catch (IOException ioException) {
-                                    ioException.printStackTrace();
+                                    Logger.getLogger(KLCrawler.class.getName()).log(Level.SEVERE, "IOException e : " + ioException.getMessage() +"| Line:" + ioException.getStackTrace()[0].getLineNumber());
                                 }
                             }
                         });
                     } catch (Exception e) {
-                        e.printStackTrace();
+                        Logger.getLogger(KLCrawler.class.getName()).log(Level.SEVERE, "Exception e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
                     }
                     System.out.println("KimLongCrawler SUSSCESS Brand :" + finalBrand.getName());
                 }
@@ -253,8 +250,7 @@ public class KLCrawler implements Runnable {
                 try {
                     laptops.add(getLaptopCrawler(laptopDetailUrl, laptopEntity));
                 } catch (IOException e) {
-                    Logger.getLogger(KLCrawler.class.getName()).log(Level.SEVERE, "Writter not work");
-                    e.printStackTrace();
+                    Logger.getLogger(KLCrawler.class.getName()).log(Level.SEVERE, "IOException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
                 }
             });
         }

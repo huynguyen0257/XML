@@ -12,22 +12,21 @@ import huyng.utils.TrAxHelper;
 import huyng.utils.XMLHelper;
 import org.xml.sax.SAXException;
 
-import javax.servlet.ServletContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.namespace.QName;
-import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.Attribute;
 import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 import javax.xml.transform.TransformerException;
-import javax.xml.xpath.XPathExpressionException;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -64,11 +63,11 @@ public class PACrawler implements Runnable {
 
             }
         } catch (XMLStreamException e) {
-            e.printStackTrace();
+            Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "XMLStreamException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
         } catch (IOException e) {
-            e.printStackTrace();
+            Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "IOException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "InterruptedException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
         }
     }
 
@@ -128,9 +127,9 @@ public class PACrawler implements Runnable {
                             try {
                                 laptopOfBrand.addAll(eachPageCrawler(pageUrl));
                             } catch (IOException e) {
-                                e.printStackTrace();
+                                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "IOException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
                             } catch (XMLStreamException e) {
-                                e.printStackTrace();
+                                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "XMLStreamException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
                             }
 
                             //Save ListLaptop to DB
@@ -153,7 +152,7 @@ public class PACrawler implements Runnable {
                                             writer.flush();
                                         }
                                     } catch (IOException ioException) {
-                                        ioException.printStackTrace();
+                                        Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "IOException e : " + ioException.getMessage() +"| Line:" + ioException.getStackTrace()[0].getLineNumber());
                                     }
                                 }
                             });//End save list laptop
@@ -165,7 +164,7 @@ public class PACrawler implements Runnable {
                     t.sleep(5 * 1000);
                 }
             } catch (IOException | XMLStreamException | InterruptedException e) {
-                e.printStackTrace();
+                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "IOException | XMLStreamException | InterruptedException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
             }
         });
     }
@@ -288,13 +287,13 @@ public class PACrawler implements Runnable {
                 laptopEntity = getLaptopCrawler(laptopUrl, laptopEntity);
                 if (laptopEntity != null) result.add(laptopEntity);
             } catch (IOException e) {
-                e.printStackTrace();
+                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "IOException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
             } catch (TransformerException e) {
-                e.printStackTrace();
+                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "TransformerException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
             } catch (JAXBException e) {
-                e.printStackTrace();
+                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "JAXBException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "InterruptedException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
             }
         });
         return result;
@@ -389,7 +388,7 @@ public class PACrawler implements Runnable {
                     int number = Integer.parseInt(result);
                     return number;
                 } catch (NumberFormatException e) {
-                    e.printStackTrace();
+                    Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "NumberFormatException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
                 }
             }
         }

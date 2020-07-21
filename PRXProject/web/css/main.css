@@ -43,6 +43,23 @@ footer h4 {
     z-index: 12;
 }
 
+.search-container {
+    width: 100%;
+    text-align: right;
+    padding-top: 50px;
+}
+
+.search-container img{
+    height: 25px;
+    width: 25px;
+    padding-right: 10%;
+}
+
+.search-container input{
+    width: 25%;
+    height: 30px;
+    font-size: 20px;
+}
 .suggest-container {
     display: inline-block;
     text-align: center;
@@ -220,7 +237,6 @@ footer h4 {
     padding: 12px 0 11px;
     width: 90%;
 }
-
 
 .input-weight {
     background: red;

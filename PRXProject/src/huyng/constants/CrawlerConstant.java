@@ -18,6 +18,7 @@ public class CrawlerConstant {
 
     //KimLongCenter
     public static final String KIM_LONG_DOMAIN = "https://kimlongcenter.com";
+
     public static final String KIM_LONG_BRAND_START_SIGNAL = "<ul id=\"cate_hori\" class=\"show-menu\">";
     public static final String KIM_LONG_BRAND_TAG = "ul";
 

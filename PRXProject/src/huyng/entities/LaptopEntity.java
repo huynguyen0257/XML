@@ -10,8 +10,9 @@ import java.util.Objects;
 @XmlRootElement(name = "laptop")
 @XmlType(name = "laptop")
 @NamedQueries({
-        @NamedQuery(name = "Laptop.findByModel", query = "select l from LaptopEntity l where l.model = :model"),
         @NamedQuery(name = "Laptop.findAll", query = "select l from LaptopEntity l"),
+        @NamedQuery(name = "Laptop.findByModel", query = "select l from LaptopEntity l where l.model = :model"),
+        @NamedQuery(name = "Laptop.findByName", query = "select l from LaptopEntity l where l.name LIKE :name"),
         @NamedQuery(name = "Laptop.findByBrandId", query = "select l from LaptopEntity l where l.brand.id = :brandId"),
         @NamedQuery(name = "Laptop.countByBrand", query = "select count (l.name) from LaptopEntity l where l.brand.id = :brandId"),
         @NamedQuery(name = "Laptop.countAll", query = "select count (l.name) from LaptopEntity l"),
@@ -189,3 +190,6 @@ public class LaptopEntity {
         this.weightMark = weightMark;
     }
 }
+
+
+

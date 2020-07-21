@@ -15,9 +15,6 @@ public class StatisticHelper {
     }
 
     public static double getStandardDeviation(List<Double> x, List<Integer> counts, double mean) {
-//        double variance = processors.stream()
-//                .mapToDouble(p -> (p.getCore() - mean) * (p.getCore() - mean) * p.getCount())
-//                .sum() / (totalCount - 1);
         double totalCount = counts.stream().mapToDouble(a -> a).sum();
         double sum = 0;
         for (int i = 0; i < x.size(); i++) {

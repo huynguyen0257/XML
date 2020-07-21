@@ -10,11 +10,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html lang="en">
 <head>
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <script src="js/index.js"></script>
     <title>Smart Choice</title>
 </head>
-<body>
+<body onload="init()">
 <header>
     <h1>SMART CHOICE</h1>
 </header>
@@ -27,6 +27,10 @@
     Have some problems
 </c:if>
 <div class="content">
+    <div class="search-container">
+        <input class="txt-search" type="text" id="txtSearch" placeholder="Search ...."/>
+        <img src="images/search-img.png" onclick="search()"/>
+    </div>
     <div class="suggest-container">
         <h2>Search by your wishes</h2>
         <form>
@@ -85,12 +89,6 @@
             </div>
         </form>
     </div>
-<%--    <c:if test="${not empty INFO}">--%>
-<%--        <x:transform doc="${INFO}" xslt="${ADVICE_LAPTOP_LIST_XSLT}"/>--%>
-<%--    </c:if>--%>
-<%--    <c:if test="${empty INFO}">--%>
-<%--        Have some problems--%>
-<%--    </c:if>--%>
     <div class="some-laptops">
         <h2>Some advices</h2>
         <div class="items" id="items">

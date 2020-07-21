@@ -57,15 +57,15 @@ public class CPUCrawler implements Runnable {
                 Thread.currentThread().sleep(30 * 1000);
             }
         } catch (IOException e) {
-            Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "IOException e : " + e.getMessage());
+            Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "IOException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
         } catch (ParserConfigurationException e) {
-            Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "ParserConfigurationException e : " + e.getMessage());
+            Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "ParserConfigurationException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
         } catch (SAXException e) {
-            Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "SAXException e : " + e.getMessage());
+            Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "SAXException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
         } catch (XPathExpressionException e) {
-            Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "XPathExpressionException e : " + e.getMessage());
+            Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "XPathExpressionException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
         } catch (InterruptedException e) {
-            Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "InterruptedException e : " + e.getMessage());
+            Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "InterruptedException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
         }
     }
 
@@ -97,7 +97,7 @@ public class CPUCrawler implements Runnable {
                         eachPageCrawler(pageUrl);
                         System.out.println("IntelCrawler SUCCESS with page : " + finalI);
                     } catch (IOException | XMLStreamException e) {
-                        Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "IOException | XMLStreamException e : " + e.getMessage());
+                        Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "IOException | XMLStreamException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
                     }
                 }
             };
@@ -151,7 +151,7 @@ public class CPUCrawler implements Runnable {
                         writer.flush();
                     }
                 } catch (IOException ioException) {
-                    Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "IOException e : " + e.getMessage());
+                    Logger.getLogger(CPUCrawler.class.getName()).log(Level.SEVERE, "IOException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
                 }
             }
         }

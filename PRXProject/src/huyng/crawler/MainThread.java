@@ -6,7 +6,7 @@ public class MainThread implements Runnable {
         this.realPath = realPath;
     }
 
-    //    public static void main(String[] args) {
+//        public static void main(String[] args) {
 //        Thread main = new Thread(new MainThread());
 //        main.run();
 //    }

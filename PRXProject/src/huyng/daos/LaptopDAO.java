@@ -47,8 +47,10 @@ public class LaptopDAO extends BaseDAO<LaptopEntity, Integer> {
         }
         return result;
 
-    }public List<LaptopEntity> getByRamMonitorProcessorPrice(String processorLevel, int minMemory, int maxMemory, double minSize, double maxSize, int fromPrice, int toPrice){
-        List<LaptopEntity> result;
+    }
+
+    public List<LaptopEntity> getByRamMonitorProcessorPrice(String processorLevel, int minMemory, int maxMemory, double minSize, double maxSize, int fromPrice, int toPrice){
+        List result;
         try{
             openConnection();
             result = em.createNamedQuery("Laptop.findBySuggest")
@@ -60,6 +62,20 @@ public class LaptopDAO extends BaseDAO<LaptopEntity, Integer> {
                     .setParameter("fromPrice",fromPrice)
                     .setParameter("toPrice",toPrice)
                     .setMaxResults(5)
+                    .getResultList();
+        }finally {
+            closeConnection();
+        }
+        return result;
+    }
+
+    public List<LaptopEntity> getByName(String name){
+        List result;
+        try{
+            openConnection();
+            result = em.createNamedQuery("Laptop.findByName")
+                    .setParameter("name",'%' + name + '%')
+                    .setMaxResults(10)
                     .getResultList();
         }finally {
             closeConnection();

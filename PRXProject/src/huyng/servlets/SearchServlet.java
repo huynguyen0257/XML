@@ -1,6 +1,5 @@
 package huyng.servlets;
 
-import huyng.crawler.CPUCrawler;
 import huyng.entities.LaptopEntityList;
 import huyng.services.LaptopService;
 import huyng.utils.JAXBHelper;
@@ -12,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/AdviceServlet")
-public class AdviceServlet extends HttpServlet {
+@WebServlet("/SearchServlet")
+public class SearchServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         process(request, response);
     }
@@ -26,15 +25,14 @@ public class AdviceServlet extends HttpServlet {
         response.setContentType("text/xml");
         LaptopService service = new LaptopService();
         try {
-            String ramMemory = request.getParameter("ramMemory");
-            String monitorSize = request.getParameter("monitorSize");
-            String priceString = request.getParameter("priceString");
-            String processorLevel = request.getParameter("processorLevel");
-            LaptopEntityList laptops = service.getWithSuggest(processorLevel,ramMemory,monitorSize,priceString);
+            String txtSearch = request.getParameter("txtSearch");
+            LaptopEntityList laptops = service.getByName(txtSearch);
             JAXBHelper.marshallerToTransfer(laptops,response.getOutputStream());
         }catch (Exception e){
-            request.setAttribute("ERROR", "ERROR IN AdviceServlet \n Message: " + e.getMessage());
+            request.setAttribute("ERROR", "ERROR IN SearchServlet \n Message: "+e.getMessage());
             request.getRequestDispatcher("error.jsp").forward(request,response);
         }
     }
+
+
 }

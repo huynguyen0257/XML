@@ -1,8 +1,5 @@
 package huyng.utils;
 
-import huyng.constants.CrawlerConstant;
-import huyng.entities.LaptopEntity;
-import huyng.entities.ProcessorEntity;
 import org.w3c.dom.Node;
 
 import javax.xml.transform.*;

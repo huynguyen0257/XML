@@ -224,6 +224,8 @@ public class XMLHelper {
         return writer.toString();
     }
 
+
+
 //    public static void marshallerToTransfer(LaptopEntityList laptops, OutputStream os){
 //        try{
 //            JAXBContext jaxbContext = JAXBContext.newInstance(LaptopEntityList.class);

@@ -10,7 +10,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/xml" prefix="x" %>
 <html>
 <head>
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <script src="js/main.js"></script>
     <title>Smart Choice</title>
 </head>

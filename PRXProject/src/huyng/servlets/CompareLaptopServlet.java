@@ -56,14 +56,12 @@ public class CompareLaptopServlet extends HttpServlet {
             list.add(id1);
             list.add(id2);
             Hashtable<LaptopEntity, Double> compareLaptop = service.getCompareLaptop(list, compareType);
-            compareLaptop.forEach((laptop, markk) -> {
-                System.out.println("Name " + laptop.getName() + " have Mark : " + markk);
-            });
             LaptopEntityList laptops = new LaptopEntityList(Collections.list(compareLaptop.keys()));
 
             JAXBHelper.marshallerToTransfer(laptops, response.getOutputStream());
         } catch (Exception e) {
             request.setAttribute("ERROR", "ERROR IN CompareLaptopServlet \n Message: " + e.getMessage());
+            request.getRequestDispatcher("error.jsp").forward(request,response);
         }
     }
 }

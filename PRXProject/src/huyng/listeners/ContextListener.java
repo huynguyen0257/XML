@@ -1,20 +1,12 @@
 package huyng.listeners;
 
-import huyng.crawler.KLCrawler;
 import huyng.crawler.MainThread;
-import huyng.crawler.PACrawler;
 import huyng.daos.BrandDAO;
 import huyng.daos.MonitorDAO;
 import huyng.daos.ProcessorDAO;
 import huyng.daos.RamDAO;
 import huyng.entities.*;
 import huyng.services.LaptopService;
-import huyng.utils.JAXBHelper;
-import huyng.utils.XMLHelper;
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
@@ -27,21 +19,12 @@ import javax.servlet.http.HttpSessionBindingEvent;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Source;
-import javax.xml.transform.Templates;
-import javax.xml.transform.TransformerConfigurationException;
-import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamSource;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpressionException;
-import javax.xml.xpath.XPathFactory;
 import java.io.*;
-import java.util.Collections;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 @WebListener()
 public class ContextListener implements ServletContextListener,
@@ -80,28 +63,13 @@ public class ContextListener implements ServletContextListener,
                 try {
                     Thread.currentThread().sleep(10*1000);
                 } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    Logger.getLogger(ContextListener.class.getName()).log(Level.SEVERE, "JAXBException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
                 }
             }
-
         }
 
-        if (context.getAttribute("INFO") == null) {
-            LaptopEntityList laptops = laptopService.getAllWithPaging(6,0);
-            String xmlString = null;
-            try {
-                xmlString = marshallToXmlString(laptops, LaptopEntityList.class);
-                context.setAttribute("INFO", xmlString);
-            } catch (JAXBException e) {
-                e.printStackTrace();
-            }
-        }
-
-        if (context.getAttribute("ADVICE_LAPTOP_LIST_XSLT") == null || context.getAttribute("NAV_XSLT") == null) {
-            String xslt = realPath + "WEB-INF/xsl/index.xsl";
-            Source xslSource = new StreamSource(xslt);
-            context.setAttribute("ADVICE_LAPTOP_LIST_XSLT", xslSource);
-            xslt = realPath + "WEB-INF/xsl/nav.xsl";
+        if (context.getAttribute("NAV_XSLT") == null) {
+            String xslt = realPath + "WEB-INF/xsl/nav.xsl";
             Source navXslSource = new StreamSource(xslt);
             context.setAttribute("NAV_XSLT", navXslSource);
         }
@@ -113,7 +81,7 @@ public class ContextListener implements ServletContextListener,
                 String ramXmlString = marshallToXmlString(rams, RamEntityList.class);
                 context.setAttribute("RAM", ramXmlString);
             } catch (JAXBException e) {
-                e.printStackTrace();
+                Logger.getLogger(ContextListener.class.getName()).log(Level.SEVERE, "JAXBException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
             }
         }
 
@@ -124,7 +92,7 @@ public class ContextListener implements ServletContextListener,
                 String monitorXmlString = marshallToXmlString(monitors, MonitorEntityList.class);
                 context.setAttribute("MONITOR", monitorXmlString);
             } catch (JAXBException e) {
-                e.printStackTrace();
+                Logger.getLogger(ContextListener.class.getName()).log(Level.SEVERE, "JAXBException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
             }
         }
 
@@ -136,7 +104,7 @@ public class ContextListener implements ServletContextListener,
                 String brandXmlString = marshallToXmlString(brands, BrandEntityList.class);
                 context.setAttribute("BRAND", brandXmlString);
             } catch (JAXBException e) {
-                e.printStackTrace();
+                Logger.getLogger(ContextListener.class.getName()).log(Level.SEVERE, "JAXBException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
             }
         }
 
