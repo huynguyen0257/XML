@@ -1,11 +1,8 @@
 package huyng.servlets;
 
-import huyng.daos.LaptopDAO;
 import huyng.entities.LaptopEntity;
 import huyng.entities.LaptopEntityList;
 import huyng.services.LaptopService;
-import huyng.utils.JAXBHelper;
-import huyng.utils.StatisticHelper;
 import huyng.utils.XMLHelper;
 
 import javax.servlet.ServletException;
@@ -15,10 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.List;
-import java.util.stream.Collectors;
 
 @WebServlet("/DetailLaptopServlet")
 public class DetailLaptopServlet extends HttpServlet {

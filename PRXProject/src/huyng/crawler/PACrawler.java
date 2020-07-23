@@ -1,8 +1,8 @@
 package huyng.crawler;
 
 import huyng.constants.CrawlerConstant;
+import huyng.constants.PageConstant;
 import huyng.daos.BrandDAO;
-import huyng.daos.LaptopDAO;
 import huyng.entities.BrandEntity;
 import huyng.entities.LaptopEntity;
 import huyng.services.LaptopService;
@@ -10,21 +10,19 @@ import huyng.utils.JAXBHelper;
 import huyng.utils.StringHelper;
 import huyng.utils.TrAxHelper;
 import huyng.utils.XMLHelper;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.bind.JAXBException;
-import javax.xml.namespace.QName;
-import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.events.Attribute;
-import javax.xml.stream.events.StartElement;
-import javax.xml.stream.events.XMLEvent;
 import javax.xml.transform.TransformerException;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
@@ -40,6 +38,7 @@ public class PACrawler implements Runnable {
     private static Hashtable<LaptopEntity, String> lcds = new Hashtable<>();
     private static LaptopService laptopService = new LaptopService();
     private static String realPath;
+    private static PageConstant pageConstant;
 
     public PACrawler(String realPath) {
         this.realPath = realPath;
@@ -55,34 +54,17 @@ public class PACrawler implements Runnable {
                     if (!threads.get(i).isAlive()) count++;
                 }
                 if (count == threads.size()) {
-                    closeStream();
+//                    closeStream();
                     break;
                 }
                 count = 0;
-                Thread.currentThread().sleep(30 * 1000);
+                Thread.currentThread().sleep(CrawlerConstant.THREAD_WAIT_CHECK);
 
             }
-        } catch (XMLStreamException e) {
-            Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "XMLStreamException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
-        } catch (IOException e) {
-            Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "IOException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
-        } catch (InterruptedException e) {
-            Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "InterruptedException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
+        } catch (Exception e) {
+            Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "Exception e : " + e.getMessage() + "| Line:" + e.getStackTrace()[0].getLineNumber());
         }
     }
-
-
-    //    public static void main(String[] args) {
-//        try {
-//            crawlerProcess();
-////            eachPageCrawler("https://www.phucanh.vn/may-tinh-xach-tay-laptop-apple.html&page=1");
-////            getLaptopCrawler("https://www.phucanh.vn/laptop-apple-macbook-pro-muhr2-256gb-2019-silver-touch-bar.html",null);//Oke
-////            getLaptopCrawler("https://www.phucanh.vn/laptop-asus-gaming-gl503vd-gz119t-black.html", new LaptopEntity("NguyenGiaHuy",277777329));//Not oke
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
-
 
     public static void closeStream() throws IOException {
         writer.close();
@@ -93,9 +75,10 @@ public class PACrawler implements Runnable {
      * @throws IOException
      * @throws XMLStreamException
      */
-    public static void crawlerProcess() throws IOException, XMLStreamException {
+    public static void crawlerProcess() throws Exception {
         file = new File(realPath + CrawlerConstant.ERROR_PHUCANH);
         writer = new FileWriter(file);
+        pageConstant = JAXBHelper.unmarshaller(realPath + CrawlerConstant.PA_PAGE_CONSTANT_XML, PageConstant.class);
 
         //Get brandName,Url of laptop
         Hashtable<String, String> brands = getBrandCrawler();
@@ -113,8 +96,7 @@ public class PACrawler implements Runnable {
                 }
 
                 //Crawl Laptop
-                String document = XMLHelper.getDocument(brandUrl, CrawlerConstant.PHU_CANH_PAGESIZE_START_SIGNAL, CrawlerConstant.PHU_CANH_PAGESIZE_TAG, null);
-                int pageSize = getPageSize(document);
+                int pageSize = getPageSize(brandUrl);
 
                 for (int i = 0; i < pageSize; i++) {
                     List<LaptopEntity> laptopOfBrand = new ArrayList<>();
@@ -126,10 +108,9 @@ public class PACrawler implements Runnable {
                         public void run() {
                             try {
                                 laptopOfBrand.addAll(eachPageCrawler(pageUrl));
-                            } catch (IOException e) {
-                                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "IOException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
-                            } catch (XMLStreamException e) {
-                                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "XMLStreamException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
+                            } catch (Exception e) {
+//                                e.printStackTrace();
+                                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "Exception e : " + e.getMessage() + "| Line:" + e.getStackTrace()[0].getLineNumber());
                             }
 
                             //Save ListLaptop to DB
@@ -152,7 +133,8 @@ public class PACrawler implements Runnable {
                                             writer.flush();
                                         }
                                     } catch (IOException ioException) {
-                                        Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "IOException e : " + ioException.getMessage() +"| Line:" + ioException.getStackTrace()[0].getLineNumber());
+//                                        e.printStackTrace();
+                                        Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "IOException e : " + ioException.getMessage() + "| Line:" + ioException.getStackTrace()[0].getLineNumber());
                                     }
                                 }
                             });//End save list laptop
@@ -161,10 +143,11 @@ public class PACrawler implements Runnable {
                     };
                     threads.add(t);
                     t.start();
-                    t.sleep(5 * 1000);
+                    t.sleep(CrawlerConstant.THREAD_WAIT_CALL);
                 }
-            } catch (IOException | XMLStreamException | InterruptedException e) {
-                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "IOException | XMLStreamException | InterruptedException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
+            } catch (Exception e) {
+//                e.printStackTrace();
+                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "Exception e : " + e.getMessage() + "| Line:" + e.getStackTrace()[0].getLineNumber());
             }
         });
     }
@@ -175,36 +158,21 @@ public class PACrawler implements Runnable {
      * @throws IOException
      * @throws XMLStreamException
      */
-    public static Hashtable<String, String> getBrandCrawler() throws IOException, XMLStreamException {
-        String document = XMLHelper.getDocument(CrawlerConstant.PHU_CANH_DOMAIN, CrawlerConstant.PHU_CANH_CATEGORIES_START_SIGNAL, CrawlerConstant.PHU_CANH_CATEGORIES_TAG, new String[]{"&nbsp;"});
-        Iterator<XMLEvent> xmlEvents = XMLHelper.autoAddMissingEndTag(document);
-        String tagName = "";
+    public static Hashtable<String, String> getBrandCrawler() throws Exception {
         Hashtable<String, String> categories = new Hashtable<>();
-        String brandUrl = null;
-
-        while (xmlEvents.hasNext()) {
-            brandUrl = null;
-            //parse to get detail link
-            XMLEvent event = xmlEvents.next();
-            if (event.isStartElement()) {
-                StartElement startElement = event.asStartElement();
-                tagName = startElement.getName().getLocalPart();
-                if ("div".equals(tagName)) {
-                    Attribute attrHref = startElement.getAttributeByName(new QName("class"));
-                    if (attrHref != null && attrHref.getValue().equals("position-relative d-inline-block")) {
-                        //get brandUrl
-                        xmlEvents.next();
-                        event = xmlEvents.next();
-                        startElement = event.asStartElement();
-                        attrHref = startElement.getAttributeByName(new QName("href"));
-                        if (attrHref != null) {
-                            brandUrl = CrawlerConstant.PHU_CANH_DOMAIN + attrHref.getValue();
-                        }
-//                        xmlEvents.next();
-                        String brandName = xmlEvents.next().asCharacters().getData();
-                        categories.put(brandName, brandUrl);
-                    }
-                }
+        String document = XMLHelper.getDocument2(pageConstant.getDomainUrl(), pageConstant.getBrandStartSignal(), pageConstant.getBrandTagName(), pageConstant.getEachPageIgnoreText().getIgnoreText());
+        Document dom = XMLHelper.parseStringToDOM(document);
+        String exp = pageConstant.getBrandXPath().getContainer();
+        String exp_link = pageConstant.getBrandXPath().getLink();
+        String exp_name = pageConstant.getBrandXPath().getName();
+        XPath xPath = XMLHelper.getXPath();
+        NodeList aNodes = (NodeList) xPath.evaluate(exp, dom, XPathConstants.NODESET);
+        for (int i = 0; i < aNodes.getLength(); i++) {
+            Node aNode = aNodes.item(i);
+            if (aNode != null) {
+                String link = pageConstant.getDomainUrl() + xPath.evaluate(exp_link, aNode, XPathConstants.STRING);
+                String name = (String) xPath.evaluate(exp_name, aNode, XPathConstants.STRING);
+                categories.put(name, link);
             }
         }
         return categories;
@@ -216,67 +184,36 @@ public class PACrawler implements Runnable {
      * @throws IOException
      * @throws XMLStreamException
      */
-    public static List<LaptopEntity> eachPageCrawler(String url) throws IOException, XMLStreamException {
+    public static List<LaptopEntity> eachPageCrawler(String url) throws Exception {
         List<LaptopEntity> result = new ArrayList<>();
-        String document = XMLHelper.getDocument(url, CrawlerConstant.PHU_CANH_EACH_PAGE_START_SIGNAL, CrawlerConstant.PHU_CANH_EACH_PAGE_TAG, new String[]{"&quot;"});
-        Iterator<XMLEvent> xmlEvents = XMLHelper.autoAddMissingEndTag(document);
-        String tagName = "";
         Hashtable<LaptopEntity, String> laptops = new Hashtable<>();
+        String document = XMLHelper.getDocument2(url, pageConstant.getEachPageStartSignal(), pageConstant.getEachPageTagName(), pageConstant.getEachPageIgnoreText().getIgnoreText());
+        Document dom = XMLHelper.parseStringToDOM(document);
+        XPath xPath = XMLHelper.getXPath();
 
-        //while each product available
-        while (xmlEvents.hasNext()) {
-            String detailLink = null;
-            //parse to get detail link
-            XMLEvent event = xmlEvents.next();
-            if (event.isStartElement()) {
-                StartElement startElement = event.asStartElement();
-                tagName = startElement.getName().getLocalPart();
-                if ("div".equals(tagName)) {
-                    Attribute attrHref = startElement.getAttributeByName(new QName("class"));
-                    if (attrHref != null && attrHref.getValue().equals("p-container")) {
-                        LaptopEntity laptop = new LaptopEntity();
-                        //get detail Link
-                        xmlEvents.next();
-                        event = xmlEvents.next();
-                        startElement = event.asStartElement();
-                        attrHref = startElement.getAttributeByName(new QName("href"));
-                        if (attrHref != null) {
-                            detailLink = CrawlerConstant.PHU_CANH_DOMAIN + attrHref.getValue();
-                        }
-
-                        //get Laptop name & img
-                        while (xmlEvents.hasNext()) {
-                            if (event.isStartElement()) {
-                                startElement = event.asStartElement();
-                                tagName = startElement.getName().getLocalPart();
-                                if ("img".equals(tagName)) {
-                                    laptop.setImage(startElement.getAttributeByName(new QName("data-original")).getValue());
-                                }
-                                if ("h3".equals(tagName)) {
-                                    event = xmlEvents.next();
-                                    String productName = event.asCharacters().getData();
-                                    laptop.setName(productName);
-                                }
-                                if ("span".equals(tagName)) {
-                                    attrHref = startElement.getAttributeByName(new QName("class"));
-                                    if (attrHref != null && attrHref.getValue().equals("p-price2 ")) {
-                                        xmlEvents.next();
-                                        xmlEvents.next();
-                                        xmlEvents.next();
-                                        event = xmlEvents.next();
-                                        String price = "0";
-                                        if (event.isCharacters())
-                                            price = event.asCharacters().getData().replaceAll("[.]", "").replaceAll(" ₫ ", "");
-                                        laptop.setPrice(Integer.parseInt(price));
-                                        laptops.put(laptop, detailLink);
-                                        break;
-                                    }
-                                }
-                            }
-                            event = xmlEvents.next();
-                        }
-                    }
+        String exp_div = pageConstant.getEachPageXPath().getContainer();
+        String exp_link = pageConstant.getEachPageXPath().getLink();
+        String exp_img = pageConstant.getEachPageXPath().getImage();
+        String exp_name = pageConstant.getEachPageXPath().getName();
+        String exp_price = pageConstant.getEachPageXPath().getPrice();
+        NodeList div = (NodeList) xPath.evaluate(exp_div, dom, XPathConstants.NODESET);
+        for (int i = 0; i < div.getLength(); i++) {
+            Node divNode = div.item(i);
+            if (divNode != null) {
+                String link = pageConstant.getDomainUrl() + xPath.evaluate(exp_link, divNode, XPathConstants.STRING);
+                String img = (String) xPath.evaluate(exp_img, divNode, XPathConstants.STRING);
+                String name = (String) xPath.evaluate(exp_name, divNode, XPathConstants.STRING);
+                String priceString = (String) xPath.evaluate(exp_price, divNode, XPathConstants.STRING);
+                priceString = priceString.replaceAll("[.]", "").replaceAll(" ₫", "").trim();
+                int price = 0;
+                try {
+                    price = Integer.parseInt(priceString);
+                } catch (NumberFormatException e) {
+                    System.out.println("continue in Laptop : " + name);
+                    continue;
                 }
+                LaptopEntity laptop = new LaptopEntity(name, price, img);
+                laptops.put(laptop, link);
             }
         }
 
@@ -286,14 +223,9 @@ public class PACrawler implements Runnable {
             try {
                 laptopEntity = getLaptopCrawler(laptopUrl, laptopEntity);
                 if (laptopEntity != null) result.add(laptopEntity);
-            } catch (IOException e) {
-                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "IOException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
-            } catch (TransformerException e) {
-                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "TransformerException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
-            } catch (JAXBException e) {
-                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "JAXBException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
-            } catch (InterruptedException e) {
-                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "InterruptedException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
+            } catch (Exception e) {
+//                e.printStackTrace();
+                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "IOException e : " + e.getMessage() + "| Line:" + e.getStackTrace()[0].getLineNumber());
             }
         });
         return result;
@@ -306,8 +238,8 @@ public class PACrawler implements Runnable {
      * @throws XMLStreamException
      */
     public static LaptopEntity getLaptopCrawler(String url, LaptopEntity laptop) throws IOException, TransformerException, JAXBException, InterruptedException {
-        Thread.currentThread().sleep(2 * 1000);
-        String document = XMLHelper.getDocument(url, CrawlerConstant.PHU_CANH_DETAIL_START_SIGNAL, CrawlerConstant.PHU_CANH_DETAIL_TAG, new String[]{"<p>.*?</p>"});
+        Thread.currentThread().sleep(CrawlerConstant.THREAD_WAIT_CALL);
+        String document = XMLHelper.getDocument2(url, pageConstant.getDetailPageStartSignal(), pageConstant.getDetailPageTagName(), pageConstant.getDetailPageIgnoreText().getIgnoreText());
 
         InputStream is = new ByteArrayInputStream(document.getBytes("UTF-8"));
         String xslPath = realPath + CrawlerConstant.PA_XSL_PATH;
@@ -354,30 +286,25 @@ public class PACrawler implements Runnable {
 
     /***
      * Get page size of Phu Canh
-     * @param document
+     * @param brandUrl
      * @return
      * @throws IOException
      * @throws XMLStreamException
      */
-    private static int getPageSize(String document) throws IOException, XMLStreamException {
+    private static int getPageSize(String brandUrl) throws Exception {
+        String document = XMLHelper.getDocument2(brandUrl, pageConstant.getPageSizeStartSignal(), pageConstant.getPageSizeTagName(), pageConstant.getPageSizeIgnoreText().getIgnoreText());
         document = document.trim();
-        XMLEventReader eventReader = XMLHelper.parseStringToXMLEventReader(document);
-        String tagName = "";
-        String link = "";
-        while (eventReader.hasNext()) {
-            XMLEvent event = (XMLEvent) eventReader.next();
-            if (event.isStartElement()) {
-                StartElement startElement = event.asStartElement();
-                tagName = startElement.getName().getLocalPart();
-                if ("a".equals(tagName)) {
-                    event = (XMLEvent) eventReader.next();
-                    if (!event.asCharacters().getData().equals("Tiếp theo")) {
-                        Attribute attrHref = startElement.getAttributeByName(new QName("href"));
-                        link = attrHref == null ? "" : attrHref.getValue();
-                    }
-                }
-            }//End if start element
-        }//end While
+        Document dom = XMLHelper.parseStringToDOM(document);
+        String exp = pageConstant.getPageSizeXPath().getAllATagWithoutNext();
+        XPath xPath = XMLHelper.getXPath();
+        NodeList aTag = (NodeList) xPath.evaluate(exp, dom, XPathConstants.NODESET);
+        String link = null;
+        for (int i = 0; i < aTag.getLength(); i++) {
+            Element a = (Element) aTag.item(i);
+            if (a.hasAttribute("href")) {
+                link = a.getAttribute("href");
+            }
+        }
         if (link != null && !link.isEmpty()) {
             String regex = "[0-9]+$";
             Pattern pattern = Pattern.compile(regex);
@@ -388,7 +315,10 @@ public class PACrawler implements Runnable {
                     int number = Integer.parseInt(result);
                     return number;
                 } catch (NumberFormatException e) {
-                    Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "NumberFormatException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
+                    synchronized (LOCK) {
+                        writer.write("********************************ERROR Xpath.evaluate********************************" + "\n");
+                        writer.write("Exception: " + e.getMessage() + "\n\n");
+                    }
                 }
             }
         }

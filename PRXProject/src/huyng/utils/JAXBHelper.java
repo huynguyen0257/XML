@@ -1,19 +1,17 @@
 package huyng.utils;
 
-import com.sun.codemodel.internal.JCodeModel;
-import com.sun.tools.internal.xjc.api.ErrorListener;
-import com.sun.tools.internal.xjc.api.S2JJAXBModel;
-import com.sun.tools.internal.xjc.api.SchemaCompiler;
-import com.sun.tools.internal.xjc.api.XJC;
 import huyng.constants.CrawlerConstant;
+import huyng.constants.PageConstant;
+import huyng.crawler.PACrawler;
 import huyng.entities.*;
-import org.xml.sax.InputSource;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class JAXBHelper {
     public static Object unmarshalling(byte[] array, Class T) throws JAXBException {
@@ -25,6 +23,23 @@ public class JAXBHelper {
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
         object = unmarshaller.unmarshal(new ByteArrayInputStream(array));
         return object;
+    }
+
+    public static PageConstant unmarshaller(String XMLFilePath,Class tClass){
+        try{
+            if(tClass == PageConstant.class){
+                JAXBContext context = JAXBContext.newInstance(PageConstant.class);
+                Unmarshaller unmarshaller = context.createUnmarshaller();
+                File f = new File(XMLFilePath);
+                PageConstant item = (PageConstant) unmarshaller.unmarshal(f);
+                return item;
+            }else{
+                System.out.println("Not support");
+            }
+        } catch (JAXBException e) {
+            Logger.getLogger(JAXBHelper.class.getName()).log(Level.SEVERE, "JAXBException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
+        }
+        return null;
     }
 
     public static String getXSDPath(Class T){
@@ -46,9 +61,7 @@ public class JAXBHelper {
 //            marshal.marshal(laptops,writer);
 //            System.out.println(writer.toString());
         } catch (JAXBException e) {
-            e.printStackTrace();
+            Logger.getLogger(JAXBHelper.class.getName()).log(Level.SEVERE, "JAXBException e : " + e.getMessage() +"| Line:" + e.getStackTrace()[0].getLineNumber());
         }
     }
-
-    
 }

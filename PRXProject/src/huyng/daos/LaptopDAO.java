@@ -1,7 +1,6 @@
 package huyng.daos;
 
 import huyng.entities.LaptopEntity;
-import huyng.entities.MonitorEntity;
 
 import java.util.List;
 

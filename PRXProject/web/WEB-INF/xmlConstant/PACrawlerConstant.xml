@@ -1,0 +1,69 @@
+<lap:pageConstant xmlns:lap="http://huyng/schema/laptop"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://huyng/schema/laptop ../xsd/CrawlerConstant.xsd">
+    <lap:domainUrl>https://www.phucanh.vn</lap:domainUrl>
+    <lap:brandStartSignal><![CDATA[<div class="box-cat">]]></lap:brandStartSignal>
+    <lap:brandTagName>div</lap:brandTagName>
+    <lap:brandIgnoreText>
+        <lap:ignoreText><![CDATA[&nbsp;]]></lap:ignoreText>
+    </lap:brandIgnoreText>
+    <lap:brandXPath>
+        <lap:container>//*[@class='position-relative d-inline-block']/a</lap:container>
+        <lap:link>@href</lap:link>
+        <lap:name>text()</lap:name>
+    </lap:brandXPath>
+
+    <lap:pageSizeStartSignal><![CDATA[<div class="paging">]]></lap:pageSizeStartSignal>
+    <lap:pageSizeTagName>div</lap:pageSizeTagName>
+    <lap:pageSizeIgnoreText/>
+    <lap:pageSizeXPath>
+        <lap:allATagWithoutNext>//a[text()!='Tiếp theo']</lap:allATagWithoutNext>
+    </lap:pageSizeXPath>
+
+    <lap:eachPageStartSignal><![CDATA[<div class="category-pro-list">]]></lap:eachPageStartSignal>
+    <lap:eachPageTagName>div</lap:eachPageTagName>
+    <lap:eachPageIgnoreText>
+        <lap:ignoreText><![CDATA[&quot;]]></lap:ignoreText>
+    </lap:eachPageIgnoreText>
+    <lap:eachPageXPath>
+        <lap:container>//*[@class='p-container']</lap:container>
+        <lap:link>a/@href</lap:link>
+        <lap:name>h3[@class='p-name']</lap:name>
+        <lap:image>a/img/@data-original</lap:image>
+        <lap:price>span[@class='p-price2 ']/text()</lap:price>
+    </lap:eachPageXPath>
+
+    <lap:detailPageStartSignal><![CDATA[<div class="tbl-technical nd"]]></lap:detailPageStartSignal>
+    <lap:detailPageEndSignal/>
+    <lap:detailPageTagName>div</lap:detailPageTagName>
+    <lap:detailPageIgnoreText>
+        <lap:ignoreText><![CDATA[<p>.*?</p>]]></lap:ignoreText>
+    </lap:detailPageIgnoreText>
+
+    <lap:data>
+        <lap:entity>
+            <lap:key>containerOfAHref</lap:key>
+            <lap:value>div</lap:value>
+        </lap:entity>
+        <lap:entity>
+            <lap:key>attributeContainerOfAHref</lap:key>
+            <lap:value>class</lap:value>
+        </lap:entity>
+        <lap:entity>
+            <lap:key>valueAttributeContainerOfAHref</lap:key>
+            <lap:value>position-relative d-inline-block</lap:value>
+        </lap:entity>
+        <lap:entity>
+            <lap:key>valueAttributeContainerOfAHref</lap:key>
+            <lap:value>position-relative d-inline-block</lap:value>
+        </lap:entity>
+        <lap:entity>
+            <lap:key>hrefAttribute</lap:key>
+            <lap:value>href</lap:value>
+        </lap:entity>
+        <lap:entity>
+            <lap:key>hrefAttribute</lap:key>
+            <lap:value>href</lap:value>
+        </lap:entity>
+    </lap:data>
+</lap:pageConstant>

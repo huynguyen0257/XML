@@ -1,6 +1,5 @@
 package huyng.servlets;
 
-import huyng.crawler.CPUCrawler;
 import huyng.entities.LaptopEntityList;
 import huyng.services.LaptopService;
 import huyng.utils.JAXBHelper;

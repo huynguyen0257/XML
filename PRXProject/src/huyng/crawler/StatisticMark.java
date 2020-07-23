@@ -1,6 +1,5 @@
 package huyng.crawler;
 
-import huyng.daos.LaptopDAO;
 import huyng.daos.MonitorDAO;
 import huyng.daos.ProcessorDAO;
 import huyng.daos.RamDAO;
@@ -14,8 +13,6 @@ import huyng.utils.StatisticHelper;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import static java.lang.Math.sqrt;
 
 public class StatisticMark implements Runnable {
     @Override

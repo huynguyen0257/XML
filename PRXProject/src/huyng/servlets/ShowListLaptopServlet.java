@@ -1,11 +1,8 @@
 package huyng.servlets;
 
 import huyng.daos.BrandDAO;
-import huyng.entities.BrandEntity;
-import huyng.entities.LaptopEntity;
 import huyng.entities.LaptopEntityList;
 import huyng.services.LaptopService;
-import huyng.utils.JAXBHelper;
 import huyng.utils.XMLHelper;
 
 import javax.servlet.ServletException;

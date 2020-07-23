@@ -2,7 +2,6 @@ package huyng.daos;
 
 import huyng.constants.CrawlerConstant;
 import huyng.entities.ProcessorEntity;
-import huyng.entities.RamEntity;
 import huyng.utils.JAXBHelper;
 import huyng.utils.StringHelper;
 import huyng.utils.TrAxHelper;
@@ -73,7 +72,7 @@ public class ProcessorDAO extends BaseDAO<ProcessorEntity, Integer> {
         String url = "https://www.amd.com/en/products/apu/amd-ryzen-" + cpuNumber + "-" + cpuModel + "#product-specs";
         String doc = null;
         try {
-            doc = XMLHelper.getDocument(url, "<div class=\"fieldset-wrapper\">", "div", null);
+            doc = XMLHelper.getDocument2(url, "<div class=\"fieldset-wrapper\">", "div", null);
         } catch (NullPointerException e) {
             return null;
         }

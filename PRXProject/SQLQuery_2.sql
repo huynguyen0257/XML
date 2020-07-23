@@ -171,6 +171,7 @@ GO
 
 -- Delete rows from table '[Laptop]' in schema '[dbo]'
 DELETE FROM [dbo].[Laptop]
+-- WHERE Image LIKE '%phucanhcdn%'
 GO
 
 -- Delete rows from table '[Laptop]' in schema '[dbo]'
@@ -192,7 +193,7 @@ GO
 -- Delete rows from table '[Laptop]' in schema '[dbo]'
 DELETE FROM [dbo].[Processor]
 GO
--- -- Delete rows from table '[Laptop]' in schema '[dbo]'
+-- Delete rows from table '[Laptop]' in schema '[dbo]'
 -- DELETE FROM [dbo].[Monitor]
 -- GO
 -- DELETE FROM [dbo].[Ram]

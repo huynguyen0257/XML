@@ -1,10 +1,14 @@
 package huyng.tests;
 
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import huyng.constants.CrawlerConstant;
+import huyng.constants.PageConstant;
 import huyng.daos.*;
 import huyng.entities.*;
 import huyng.services.LaptopService;
+import huyng.utils.JAXBHelper;
 import huyng.utils.StatisticHelper;
+import huyng.utils.XMLHelper;
 import org.xml.sax.SAXException;
 
 import javax.xml.bind.JAXBException;
@@ -27,31 +31,14 @@ public class Test {
     private final int NUMBER_OF_ADVICE_LAPTOP = 5;
 
     public static void main(String[] args) throws JAXBException, ParserConfigurationException, TransformerException, SAXException, XPathExpressionException, IOException {
-        Test a = new Test();
-        a.testFunction();
+        PageConstant pageConstant = JAXBHelper.unmarshaller("src/huyng/constants/PACrawlerConstant.xml", PageConstant.class);
+//        System.out.println(XMLHelper.getDocument2(pageConstant.getDomainUrl(), pageConstant.getBrandStartSignal(), pageConstant.getBrandTagName(),pageConstant.getEachPageIgnoreText().getIgnoreText()));
+//        System.out.println(pageConstant.getValue("valueAttributeContainerOfAHref"));
+
     }
 
     public void testFunction() {
-        LaptopService service = new LaptopService();
-        String inputType = "power";
-        LaptopService.CompareType[] type = LaptopService.CompareType.values();
-        for (int i = 0; i < type.length; i++) {
-            if (inputType.toLowerCase().equals(type[i].toString().toLowerCase()))
-                System.out.println(type[i]);
-        }
-//        System.out.println(type);
-    }
 
-    public static int getTotalPage(int pageSize, int objectSize){
-        if ((objectSize % pageSize) == 0){
-            System.out.println("objectSize % pageSize");
-            return objectSize/pageSize;
-        }
-        if (pageSize < objectSize){
-            System.out.println("pageSize < objectSize");
-            return objectSize/pageSize + 1;
-        }
-        return 1;
     }
 
     public static String[] getStringTest() {

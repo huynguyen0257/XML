@@ -1,15 +1,13 @@
 package huyng.crawler;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class MainThread implements Runnable {
     private static String realPath;
     public MainThread(String realPath) {
         this.realPath = realPath;
     }
-
-//        public static void main(String[] args) {
-//        Thread main = new Thread(new MainThread());
-//        main.run();
-//    }
 
     @Override
     public void run() {
@@ -22,7 +20,9 @@ public class MainThread implements Runnable {
             try {
                 Thread.currentThread().sleep(5*1000);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+//                e.printStackTrace();
+                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "InterruptedException e : " + e.getMessage() + "| Line:" + e.getStackTrace()[0].getLineNumber());
+
             }
         }
         phucAnhThread.start();
@@ -31,7 +31,8 @@ public class MainThread implements Runnable {
             try {
                 Thread.currentThread().sleep(5*1000);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+//                e.printStackTrace();
+                Logger.getLogger(PACrawler.class.getName()).log(Level.SEVERE, "InterruptedException e : " + e.getMessage() + "| Line:" + e.getStackTrace()[0].getLineNumber());
             }
         }
         statisticMarkThread.start();

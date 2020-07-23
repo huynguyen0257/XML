@@ -1,0 +1,48 @@
+<lap:pageConstant xmlns:lap="http://huyng/schema/laptop"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://huyng/schema/laptop ../xsd/CrawlerConstant.xsd">
+    <lap:domainUrl>https://www.intel.com</lap:domainUrl>
+    <lap:brandStartSignal/>
+    <lap:brandTagName/>
+    <lap:brandIgnoreText/>
+    <lap:brandXPath>
+        <lap:container/>
+        <lap:link/>
+        <lap:name/>
+    </lap:brandXPath>
+
+    <lap:pageSizeStartSignal><![CDATA[<span class="paging-info">]]></lap:pageSizeStartSignal>
+    <lap:pageSizeTagName>span</lap:pageSizeTagName>
+    <lap:pageSizeIgnoreText/>
+    <lap:pageSizeXPath>
+        <lap:allATagWithoutNext>//span[@class='page-total']</lap:allATagWithoutNext>
+    </lap:pageSizeXPath>
+
+    <lap:eachPageStartSignal><![CDATA[<div class="container-wrap card-listings">]]></lap:eachPageStartSignal>
+    <lap:eachPageTagName>div</lap:eachPageTagName>
+    <lap:eachPageIgnoreText>
+        <lap:ignoreText><![CDATA[itemtype.+"]]></lap:ignoreText>
+        <lap:ignoreText><![CDATA[itemscope]]></lap:ignoreText>
+        <lap:ignoreText><![CDATA[data-picture data-alt="(.+|.?)"]]></lap:ignoreText>
+        <lap:ignoreText><![CDATA[<meta.*[^/]>]]></lap:ignoreText>
+    </lap:eachPageIgnoreText>
+    <lap:eachPageXPath>
+        <lap:container>//a[@class='productTitleHref blade-item-link']</lap:container>
+        <lap:link>@href</lap:link>
+        <lap:name>span</lap:name>
+        <lap:image/>
+        <lap:price/>
+    </lap:eachPageXPath>
+
+    <lap:detailPageStartSignal><![CDATA[<h3 class="tech-heading">Performance</h3>]]></lap:detailPageStartSignal>
+    <lap:detailPageEndSignal><![CDATA[<div class="tech-section">]]></lap:detailPageEndSignal>
+    <lap:detailPageTagName/>
+    <lap:detailPageIgnoreText/>
+
+    <lap:data>
+        <lap:entity>
+            <lap:key>all_product_page</lap:key>
+            <lap:value>https://www.intel.com/content/www/us/en/products/processors/core/view-all.html</lap:value>
+        </lap:entity>
+    </lap:data>
+</lap:pageConstant>

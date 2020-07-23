@@ -1,0 +1,17 @@
+<ul class="pagination">
+    <li class="disabled">
+        <a href="#">«</a>
+    </li>
+    <li class="active">
+        <a href="#">1</a>
+    </li>
+    <li>
+        <a href="https://kimlongcenter.com/danh-muc/laptop-dell-449/trang/2">2</a>
+    </li>
+    <li>
+        <a href="https://kimlongcenter.com/danh-muc/laptop-dell-449/trang/3">3</a>
+    </li>
+    <li>
+        <a href="https://kimlongcenter.com/danh-muc/laptop-dell-449/trang/2" class="next">»</a>
+    </li>
+</ul>

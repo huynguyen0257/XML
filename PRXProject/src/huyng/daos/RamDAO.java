@@ -1,6 +1,5 @@
 package huyng.daos;
 
-import huyng.entities.ProcessorEntity;
 import huyng.entities.RamEntity;
 
 import java.util.List;

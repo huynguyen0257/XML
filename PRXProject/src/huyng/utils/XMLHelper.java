@@ -40,7 +40,7 @@ import java.util.regex.Pattern;
 
 public class XMLHelper {
 
-    public static String getDocument(String url, String beginSignal, String tag, String[] IGNORE_TEXTS) throws IOException {
+    public static String getDocument2(String url, String beginSignal, String tag, List<String> IGNORE_TEXTS) throws IOException {
         BufferedReader reader = null;
         try{
             reader = getBufferedReaderForURL(url);
@@ -64,14 +64,14 @@ public class XMLHelper {
             if (tagCount > 0 && line.contains("</" + tag + ">")) {
                 tagCount = tagCount - getAllMatches(line, "</" + tag + ">");
                 if (tagCount == 0) {
-                    line = formatHTMLLine(line,IGNORE_TEXTS);
+                    line = formatHTMLLine2(line,IGNORE_TEXTS);
 
                     document += line.trim() + devide;
                     isFound = false;
                 }
             }
             if (isFound) {
-                line = formatHTMLLine(line,IGNORE_TEXTS);
+                line = formatHTMLLine2(line,IGNORE_TEXTS);
 
                 document += line.trim() + devide;
             }
@@ -86,7 +86,7 @@ public class XMLHelper {
         return document;
     }
 
-    public static String getDocumentWithStartEnd(String url, String beginSignal, String endSignal,String[] IGNORE_TEXTS) throws IOException {
+    public static String getDocumentWithStartEnd(String url, String beginSignal, String endSignal,List<String> IGNORE_TEXTS) throws IOException {
         BufferedReader reader = getBufferedReaderForURL(url);
         String line = "";
         String document = "";
@@ -98,7 +98,7 @@ public class XMLHelper {
             }
             if (isFound){
                 if (!line.contains(endSignal)){
-                    line = formatHTMLLine(line,IGNORE_TEXTS);
+                    line = formatHTMLLine2(line,IGNORE_TEXTS);
                     document += line.trim();
                 }else break;
             }
@@ -106,7 +106,7 @@ public class XMLHelper {
         return document;
     }
 
-    private static String formatHTMLLine(String line,String[] IGNORE_TEXTS){
+    private static String formatHTMLLine2(String line,List<String> IGNORE_TEXTS){
         if (IGNORE_TEXTS != null) {
             for (String ignore_text : IGNORE_TEXTS) {
                 line = line.replaceAll(ignore_text, "");
@@ -128,36 +128,6 @@ public class XMLHelper {
                 .replaceAll("&trade;", "")
                 .replaceAll("&acirc;", "â");
         return line;
-    }
-
-    public static Iterator<XMLEvent> autoAddMissingEndTag(String document) throws UnsupportedEncodingException, XMLStreamException {
-        XMLEventReader reader = parseStringToXMLEventReader(document);
-
-        ArrayList<XMLEvent> events = new ArrayList<>();
-        int endTagMarker = 0;
-        while (endTagMarker >= 0) {
-            XMLEvent event = null;
-            try {
-                event = reader.nextEvent();
-            } catch (XMLStreamException e) {
-                String msg = e.getMessage();
-                String msgErrorString = "The element type \"";
-                if (msg.contains(msgErrorString)) {
-                    String missingTagName = msg.substring(msg.indexOf(msgErrorString) + msgErrorString.length(), msg.indexOf("\" must be terminated"));
-                    EndElement missingTag = new EndElementEvent(new QName(missingTagName));
-                    event = missingTag;
-                }
-            } catch (NullPointerException | NoSuchElementException e) {
-                break;
-            }
-
-            if (event != null) {
-                if (event.isStartElement()) endTagMarker++;
-                else if (event.isEndElement()) endTagMarker--;
-                if (endTagMarker >= 0) events.add(event);
-            }
-        }
-        return events.iterator();
     }
 
     private static int getAllMatches(String text, String regex) {
@@ -223,21 +193,4 @@ public class XMLHelper {
         marshaller.marshal(objects, writer);
         return writer.toString();
     }
-
-
-
-//    public static void marshallerToTransfer(LaptopEntityList laptops, OutputStream os){
-//        try{
-//            JAXBContext jaxbContext = JAXBContext.newInstance(LaptopEntityList.class);
-//            Marshaller marshal = jaxbContext.createMarshaller();
-//            marshal.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,true);
-//            marshal.setProperty(Marshaller.JAXB_ENCODING,"UTF-8");
-//            marshal.marshal(laptops,os);
-//            StringWriter writer = new StringWriter();
-//            marshal.marshal(laptops,writer);
-//            System.out.println(writer.toString());
-//        } catch (JAXBException e) {
-//            e.printStackTrace();
-//        }
-//    }
 }

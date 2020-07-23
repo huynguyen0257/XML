@@ -1,0 +1,47 @@
+<lap:pageConstant xmlns:lap="http://huyng/schema/laptop"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://huyng/schema/laptop ../xsd/CrawlerConstant.xsd">
+    <lap:domainUrl>https://kimlongcenter.com</lap:domainUrl>
+    <lap:brandStartSignal><![CDATA[<ul id="cate_hori" class="show-menu">]]></lap:brandStartSignal>
+    <lap:brandTagName>ul</lap:brandTagName>
+    <lap:brandIgnoreText>
+        <lap:ignoreText><![CDATA[<img.*[^/]>]]></lap:ignoreText>
+        <lap:ignoreText><![CDATA[<a.*_blank">]]></lap:ignoreText>
+    </lap:brandIgnoreText>
+    <lap:brandXPath>
+        <lap:container>//*[@class=' has_child']/a</lap:container>
+        <lap:link>@href</lap:link>
+        <lap:name>@title</lap:name>
+    </lap:brandXPath>
+
+    <lap:pageSizeStartSignal><![CDATA[<ul class="pagination"]]></lap:pageSizeStartSignal>
+    <lap:pageSizeTagName>ul</lap:pageSizeTagName>
+    <lap:pageSizeIgnoreText>
+        <lap:ignoreText><![CDATA[src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="]]></lap:ignoreText>
+    </lap:pageSizeIgnoreText>
+    <lap:pageSizeXPath>
+        <lap:allATagWithoutNext>//li/a[text()!='vàraquo;']</lap:allATagWithoutNext>
+    </lap:pageSizeXPath>
+
+    <lap:eachPageStartSignal><![CDATA[<div class="list-product row">]]></lap:eachPageStartSignal>
+    <lap:eachPageTagName>div</lap:eachPageTagName>
+    <lap:eachPageIgnoreText>
+        <lap:ignoreText><![CDATA[src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="]]></lap:ignoreText>
+    </lap:eachPageIgnoreText>
+    <lap:eachPageXPath>
+        <lap:container>//*[@class='product-item']/a</lap:container>
+        <lap:link>@href</lap:link>
+        <lap:name>div[@class='product-info']/h3/text()</lap:name>
+        <lap:image>div[@class='product-img row']/img/@data-src</lap:image>
+        <lap:price>div[@class='product-info']/div/p[@class='price']</lap:price>
+    </lap:eachPageXPath>
+
+    <lap:detailPageStartSignal><![CDATA[<table class="tbl-info-product">]]></lap:detailPageStartSignal>
+    <lap:detailPageEndSignal/>
+    <lap:detailPageTagName>table</lap:detailPageTagName>
+    <lap:detailPageIgnoreText>
+        <lap:ignoreText><![CDATA["™"]]></lap:ignoreText>
+        <lap:ignoreText><![CDATA["®"]]></lap:ignoreText>
+    </lap:detailPageIgnoreText>
+    <lap:data/>
+</lap:pageConstant>

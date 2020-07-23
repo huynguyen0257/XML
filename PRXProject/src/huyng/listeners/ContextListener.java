@@ -57,6 +57,7 @@ public class ContextListener implements ServletContextListener,
         ServletContext context = sce.getServletContext();
         String realPath = context.getRealPath("/");
         if (laptopService.getNumberOfLaptop() == 0){
+            System.out.println("RUN!!!");
             Thread mainThread = new Thread(new MainThread(realPath));
             mainThread.start();
             while (mainThread.isAlive()){
